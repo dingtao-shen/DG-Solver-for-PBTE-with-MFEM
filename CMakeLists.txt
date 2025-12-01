@@ -6,11 +6,9 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-# 源码与头文件目录（按需调整）
 set(PROJECT_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR})
 set(PROJECT_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/include)
 
-# 递归收集源文件（仅为快速让 clangd 工作；大型项目建议手工列举）
 file(GLOB_RECURSE PROJECT_SOURCES
     ${PROJECT_SOURCE_DIR}/src/*.c
     ${PROJECT_SOURCE_DIR}/src/*.cc
@@ -22,11 +20,12 @@ if(EXISTS ${PROJECT_INCLUDE_DIR})
     include_directories(${PROJECT_INCLUDE_DIR})
 endif()
 
-# 可选依赖：MPI 与 MFEM（若找到则链接，否则仅提示，不中断配置）
 find_package(MPI QUIET)
 if(MPI_CXX_FOUND)
     message(STATUS "MPI found: ${MPI_CXX_COMPILER}")
 endif()
+
+
 
 find_package(MFEM QUIET)
 if(MFEM_FOUND)

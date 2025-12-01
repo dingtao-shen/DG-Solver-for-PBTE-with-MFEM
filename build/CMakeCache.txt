@@ -198,20 +198,8 @@ DG-Solver-for-PBTE-with-MFEM_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 DG-Solver-for-PBTE-with-MFEM_SOURCE_DIR:STATIC=/home/bryan/projects/DG-Solver-for-PBTE-with-MFEM
 
-//Path to HYPRE install prefix
-HYPRE_DIR:PATH=/home/bryan/MFEM/hypre_2.26.0
-
-//Path to METIS install prefix
-METIS_DIR:PATH=/home/bryan/MFEM/metis-5.1.0
-
 //The directory containing a CMake configuration file for MFEM.
 MFEM_DIR:PATH=MFEM_DIR-NOTFOUND
-
-//Path to a library.
-MFEM_LIBRARY:FILEPATH=/home/bryan/MFEM/mfem-4.8/libmfem.a
-
-//Path to MFEM (contains mfem.hpp and libmfem.*)
-MFEM_ROOT:PATH=/home/bryan/MFEM/mfem-4.8
 
 //Executable for running MPI programs.
 MPIEXEC_EXECUTABLE:FILEPATH=/usr/bin/mpiexec

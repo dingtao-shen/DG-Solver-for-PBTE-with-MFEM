@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/mfem_check.dir/src/mfem_check.cpp.o -o mfem_check  /home/bryan/MFEM/mfem-4.8/libmfem.a 
