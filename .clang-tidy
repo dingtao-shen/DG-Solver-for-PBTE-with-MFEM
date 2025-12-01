@@ -1,0 +1,28 @@
+---
+# clang-tidy configuration tuned for HPC/数值计算项目的日常开发
+# 可根据团队规范进一步裁剪
+Checks: >-
+  clang-analyzer-*,
+  bugprone-*,
+  performance-*,
+  modernize-*,
+  readability-*,
+  -readability-magic-numbers,
+  -readability-identifier-length
+
+# 不把告警当错误（避免影响日常工作流）；可按需开启
+WarningsAsErrors: ''
+
+# 仅对项目内头文件做诊断；默认匹配全部
+HeaderFilterRegex: '.*'
+
+# 避免部分过度激进的析构期分析
+AnalyzeTemporaryDtors: false
+
+# 保持与你项目现有格式化工具一致；如使用 clang-format，可改为 'file'
+FormatStyle: none
+
+# 在 CI 或批量修复场景可设置
+# Fix: false
+
+
