@@ -24,9 +24,7 @@ find_package(MPI QUIET)
 if(MPI_CXX_FOUND)
     message(STATUS "MPI found: ${MPI_CXX_COMPILER}")
 endif()
-
-
-
+ 
 find_package(MFEM QUIET)
 if(MFEM_FOUND)
     message(STATUS "MFEM found: ${MFEM_DIR}")

@@ -1,14 +1,14 @@
 [
 {
-  "directory": "/home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/build",
-  "command": "/usr/bin/c++  -I/home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -g -std=gnu++20 -o CMakeFiles/DG4PBTE.dir/src/dg_solver.cpp.o -c /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/src/dg_solver.cpp",
-  "file": "/home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/src/dg_solver.cpp",
+  "directory": "/home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/build",
+  "command": "/usr/bin/c++ -DMFEM_USE_CONFIG_H -I/home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/DG4PBTE.dir/src/dg_solver.cpp.o -c /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/src/dg_solver.cpp",
+  "file": "/home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/src/dg_solver.cpp",
   "output": "CMakeFiles/DG4PBTE.dir/src/dg_solver.cpp.o"
 },
 {
-  "directory": "/home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/build",
-  "command": "/usr/bin/c++  -I/home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -g -std=gnu++20 -o CMakeFiles/DG4PBTE.dir/src/main.cpp.o -c /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/src/main.cpp",
-  "file": "/home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/src/main.cpp",
+  "directory": "/home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/build",
+  "command": "/usr/bin/c++ -DMFEM_USE_CONFIG_H -I/home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/DG4PBTE.dir/src/main.cpp.o -c /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/src/main.cpp",
+  "file": "/home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/src/main.cpp",
   "output": "CMakeFiles/DG4PBTE.dir/src/main.cpp.o"
 }
 ]

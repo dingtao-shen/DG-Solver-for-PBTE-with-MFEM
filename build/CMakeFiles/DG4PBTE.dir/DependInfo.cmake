@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/src/dg_solver.cpp" "CMakeFiles/DG4PBTE.dir/src/dg_solver.cpp.o" "gcc" "CMakeFiles/DG4PBTE.dir/src/dg_solver.cpp.o.d"
-  "/home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/src/main.cpp" "CMakeFiles/DG4PBTE.dir/src/main.cpp.o" "gcc" "CMakeFiles/DG4PBTE.dir/src/main.cpp.o.d"
+  "/home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/src/dg_solver.cpp" "CMakeFiles/DG4PBTE.dir/src/dg_solver.cpp.o" "gcc" "CMakeFiles/DG4PBTE.dir/src/dg_solver.cpp.o.d"
+  "/home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/src/main.cpp" "CMakeFiles/DG4PBTE.dir/src/main.cpp.o" "gcc" "CMakeFiles/DG4PBTE.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
