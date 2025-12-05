@@ -168,7 +168,8 @@ public:
         if (ir == nullptr)
         {
             int order = 2 * el.GetOrder() + 2;
-            ir = &mfem::IntRules.Get(Tr.GetGeometryType(), order);
+            MFEM_VERIFY(Tr.Face != nullptr, "Boundary face transformation is null");
+            ir = &mfem::IntRules.Get(Tr.Face->GetGeometryType(), order);
         }
         elvect.SetSize(el.GetDof());
         elvect = 0.0;

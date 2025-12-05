@@ -146,24 +146,40 @@ int main(int argc, char** argv) {
                 // Add boundary penalty terms before assembling
                 // (block below may no-op if mesh has no attributes or bc disabled)
                 // Build boundary markers for hot/cold and add integrators with fallback lambdas.
-                if (cfg.useIsoBC)
+                if (cfg.useIsoBC && mesh.bdr_attributes.Size())
                 {
-                    // Coordinate-based isothermal inflow: x≈0 as hot wall, others cold.
-                    auto inflow_coord = [cfg, geq_it, dim](const std::array<double,3>&, const mfem::Vector& x)
-                        -> double {
-                            const double eps = 1e-12;
-                            const bool is_hot = (dim >= 1 && std::abs(x[0]) <= eps);
-                            const double Tw = is_hot ? cfg.Thot : cfg.Tcold;
-                            return geq_it.resistiveBE(Tw);
-                        };
+                    // Build a per-attribute boundary map: attribute -> Tw (mapped to BE(Tw))
+                    auto bmap = std::make_unique<dg::BoundaryConditionMap>();
+                    for (int k = 0; k < mesh.bdr_attributes.Size(); ++k)
+                    {
+                        int attr = mesh.bdr_attributes[k];
+                        dg::BoundaryData bd;
+                        bd.type = dg::BoundaryType::Isothermal;
+                        const bool is_hot = (attr == cfg.hotAttr);
+                        const double Tw = is_hot ? cfg.Thot : cfg.Tcold;
+                        bd.wallTemperature = geq_it.resistiveBE(Tw); // store as g_in value
+                        (*bmap)[attr] = bd;
+                    }
+                    // Keep map alive in system, then pass pointer to integrator.
+                    const dg::BoundaryConditionMap* bmap_ptr = bmap.get();
+                    sys.owned_bmaps.push_back(std::move(bmap));
                     sys.bform->AddBdrFaceIntegrator(
                         new dg::InflowBoundaryRHS(dim, params.groupVelocity, dirs.omega[i],
-                                                  /*bdr_map*/nullptr, inflow_coord));
+                                                  /*bdr_map*/bmap_ptr,
+                                                  /*fallback*/nullptr));
                 }
                 // Now assemble forms
                 sys.Aform->Assemble();
                 sys.Aform->Finalize();
-                sys.bform->Assemble();
+                if (cfg.useIsoBC && mesh.bdr_attributes.Size())
+                {
+                    // Assemble while boundary markers are still in scope
+                    sys.bform->Assemble();
+                }
+                else
+                {
+                    sys.bform->Assemble();
+                }
                 if (i == 0 && it == 0) {
                     auto &A0 = sys.Aform->SpMat();
                     std::cout << "DG Steady (dir0) assembled: size=" << A0.Height()

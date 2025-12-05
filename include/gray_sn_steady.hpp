@@ -20,6 +20,8 @@ struct DirectionSystem {
     // Keep owned coefficients alive for the lifetime of the system.
     std::vector<std::unique_ptr<mfem::Coefficient>> owned_coeffs;
     std::vector<std::unique_ptr<mfem::VectorCoefficient>> owned_vcoeffs;
+    // Keep owned boundary maps alive (for boundary face integrators).
+    std::vector<std::unique_ptr<dg::BoundaryConditionMap>> owned_bmaps;
 };
 
 inline DirectionSystem buildDirectionSystem(mfem::FiniteElementSpace& fes,
@@ -93,11 +95,11 @@ inline void solveDirectionSystem(DirectionSystem& sys)
     mfem::Vector X, B;
     sys.Aform->FormLinearSystem(ess_tdof_list, *sys.solution, *sys.bform, A, X, B);
 
-    mfem::DSmoother M(A);
+    mfem::GSSmoother M(A); // Gauss-Seidel often works better than Jacobi for advection
     mfem::GMRESSolver gmres;
     gmres.SetRelTol(1e-10);
-    gmres.SetMaxIter(500);
-    gmres.SetKDim(50);
+    gmres.SetMaxIter(1000);
+    gmres.SetKDim(100);
     gmres.SetPrintLevel(0);
     gmres.SetPreconditioner(M);
     gmres.SetOperator(A);
