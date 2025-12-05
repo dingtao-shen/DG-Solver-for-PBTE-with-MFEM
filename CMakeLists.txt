@@ -6,6 +6,12 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+option(ENABLE_ASAN "Enable AddressSanitizer for debugging" OFF)
+if(ENABLE_ASAN)
+    message(STATUS "AddressSanitizer enabled")
+    add_compile_options(-fsanitize=address -fno-omit-frame-pointer -g)
+    add_link_options(-fsanitize=address)
+endif()
 set(PROJECT_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR})
 set(PROJECT_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/include)
 

@@ -1,5 +1,5 @@
 CMakeFiles/DG4PBTE.dir/src/main.cpp.o: \
- /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/src/main.cpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/src/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -167,67 +167,56 @@ CMakeFiles/DG4PBTE.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/dg_solver.hpp \
- /usr/local/include/mfem.hpp /usr/local/include/mfem/mfem.hpp \
- /usr/local/include/mfem/config/config.hpp \
- /usr/local/include/mfem/config/_config.hpp \
- /usr/local/include/mfem/general/error.hpp \
- /usr/local/include/mfem/config/config.hpp /usr/include/c++/13/iomanip \
- /usr/include/c++/13/locale \
- /usr/include/c++/13/bits/locale_facets_nonio.h /usr/include/c++/13/ctime \
- /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
- /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h \
- /usr/include/libintl.h /usr/include/c++/13/bits/codecvt.h \
- /usr/include/c++/13/bits/locale_facets_nonio.tcc \
- /usr/include/c++/13/bits/locale_conv.h \
- /usr/include/c++/13/bits/quoted_string.h /usr/include/c++/13/sstream \
- /usr/include/c++/13/bits/sstream.tcc \
- /usr/local/include/mfem/general/device.hpp \
- /usr/local/include/mfem/general/enzyme.hpp \
- /usr/local/include/mfem/general/globals.hpp \
- /usr/local/include/mfem/general/mem_manager.hpp \
- /usr/local/include/mfem/general/error.hpp /usr/include/c++/13/cstring \
- /usr/include/string.h /usr/include/strings.h \
- /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
- /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
- /usr/local/include/mfem/general/array.hpp \
- /usr/local/include/mfem/general/device.hpp /usr/include/c++/13/algorithm \
- /usr/include/c++/13/bits/stl_algo.h \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/dg_solver.hpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/params.hpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/quadrature_sn.hpp \
+ /usr/include/c++/13/array \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/callaway_rta.hpp \
+ /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \
+ /usr/include/c++/13/unordered_map \
+ /usr/include/c++/13/bits/unordered_map.h \
+ /usr/include/c++/13/bits/hashtable.h \
+ /usr/include/c++/13/bits/hashtable_policy.h \
+ /usr/include/c++/13/ext/aligned_buffer.h \
+ /usr/include/c++/13/bits/enable_special_members.h \
+ /usr/include/c++/13/bits/node_handle.h \
+ /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/bits/stl_algo.h \
  /usr/include/c++/13/bits/algorithmfwd.h \
  /usr/include/c++/13/bits/stl_heap.h \
  /usr/include/c++/13/bits/uniform_int_dist.h \
  /usr/include/c++/13/bits/stl_tempbuf.h \
- /usr/include/c++/13/bits/ranges_algo.h \
- /usr/include/c++/13/bits/ranges_algobase.h \
- /usr/include/c++/13/pstl/glue_algorithm_defs.h \
- /usr/include/c++/13/pstl/execution_defs.h \
- /usr/local/include/mfem/general/arrays_by_name.hpp \
- /usr/local/include/mfem/general/array.hpp /usr/include/c++/13/map \
- /usr/include/c++/13/bits/stl_tree.h \
- /usr/include/c++/13/ext/aligned_buffer.h \
- /usr/include/c++/13/bits/node_handle.h \
- /usr/include/c++/13/bits/stl_map.h \
- /usr/include/c++/13/bits/stl_multimap.h \
- /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/set \
- /usr/include/c++/13/bits/stl_set.h \
- /usr/include/c++/13/bits/stl_multiset.h \
- /usr/local/include/mfem/general/sets.hpp \
- /usr/local/include/mfem/general/table.hpp \
- /usr/local/include/mfem/general/mem_alloc.hpp \
- /usr/local/include/mfem/general/hash.hpp /usr/include/c++/13/array \
- /usr/include/c++/13/cstdint \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/equilibrium_gray.hpp \
+ /usr/include/c++/13/cmath /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+ /usr/include/c++/13/bits/specfun.h /usr/include/c++/13/limits \
+ /usr/include/c++/13/tr1/gamma.tcc \
+ /usr/include/c++/13/tr1/special_function_util.h \
+ /usr/include/c++/13/tr1/bessel_function.tcc \
+ /usr/include/c++/13/tr1/beta_function.tcc \
+ /usr/include/c++/13/tr1/ell_integral.tcc \
+ /usr/include/c++/13/tr1/exp_integral.tcc \
+ /usr/include/c++/13/tr1/hypergeometric.tcc \
+ /usr/include/c++/13/tr1/legendre_function.tcc \
+ /usr/include/c++/13/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/13/tr1/poly_hermite.tcc \
+ /usr/include/c++/13/tr1/poly_laguerre.tcc \
+ /usr/include/c++/13/tr1/riemann_zeta.tcc \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/dg/transport.hpp \
+ /usr/include/c++/13/memory \
+ /usr/include/c++/13/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/13/bits/align.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /usr/include/c++/13/utility /usr/include/c++/13/bits/stl_relops.h \
- /usr/local/include/mfem/general/mem_alloc.hpp \
- /usr/local/include/mfem/general/sort_pairs.hpp \
- /usr/local/include/mfem/general/stable3d.hpp \
- /usr/local/include/mfem/general/globals.hpp \
- /usr/local/include/mfem/general/table.hpp \
- /usr/local/include/mfem/general/tic_toc.hpp /usr/include/c++/13/memory \
- /usr/include/c++/13/bits/stl_raw_storage_iter.h \
- /usr/include/c++/13/bits/align.h /usr/include/c++/13/bits/unique_ptr.h \
+ /usr/include/c++/13/bits/unique_ptr.h \
  /usr/include/c++/13/bits/shared_ptr.h \
  /usr/include/c++/13/bits/shared_ptr_base.h \
  /usr/include/c++/13/bits/allocated_ptr.h \
@@ -235,7 +224,8 @@ CMakeFiles/DG4PBTE.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/shared_ptr_atomic.h \
  /usr/include/c++/13/bits/atomic_base.h \
  /usr/include/c++/13/bits/atomic_lockfree_defines.h \
- /usr/include/c++/13/bits/atomic_wait.h /usr/include/c++/13/climits \
+ /usr/include/c++/13/bits/atomic_wait.h /usr/include/c++/13/cstdint \
+ /usr/include/c++/13/climits \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
@@ -260,7 +250,52 @@ CMakeFiles/DG4PBTE.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/std_mutex.h \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/bits/ranges_uninitialized.h \
+ /usr/include/c++/13/bits/ranges_algobase.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
+ /usr/include/c++/13/pstl/execution_defs.h /usr/local/include/mfem.hpp \
+ /usr/local/include/mfem/mfem.hpp \
+ /usr/local/include/mfem/config/config.hpp \
+ /usr/local/include/mfem/config/_config.hpp \
+ /usr/local/include/mfem/general/error.hpp \
+ /usr/local/include/mfem/config/config.hpp /usr/include/c++/13/iomanip \
+ /usr/include/c++/13/locale \
+ /usr/include/c++/13/bits/locale_facets_nonio.h /usr/include/c++/13/ctime \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/13/bits/codecvt.h \
+ /usr/include/c++/13/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/13/bits/locale_conv.h \
+ /usr/include/c++/13/bits/quoted_string.h /usr/include/c++/13/sstream \
+ /usr/include/c++/13/bits/sstream.tcc \
+ /usr/local/include/mfem/general/device.hpp \
+ /usr/local/include/mfem/general/enzyme.hpp \
+ /usr/local/include/mfem/general/globals.hpp \
+ /usr/local/include/mfem/general/mem_manager.hpp \
+ /usr/local/include/mfem/general/error.hpp /usr/include/c++/13/cstring \
+ /usr/include/string.h /usr/include/strings.h \
+ /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+ /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
+ /usr/local/include/mfem/general/array.hpp \
+ /usr/local/include/mfem/general/device.hpp /usr/include/c++/13/algorithm \
+ /usr/include/c++/13/bits/ranges_algo.h \
+ /usr/include/c++/13/pstl/glue_algorithm_defs.h \
+ /usr/local/include/mfem/general/arrays_by_name.hpp \
+ /usr/local/include/mfem/general/array.hpp /usr/include/c++/13/map \
+ /usr/include/c++/13/bits/stl_tree.h /usr/include/c++/13/bits/stl_map.h \
+ /usr/include/c++/13/bits/stl_multimap.h /usr/include/c++/13/set \
+ /usr/include/c++/13/bits/stl_set.h \
+ /usr/include/c++/13/bits/stl_multiset.h \
+ /usr/local/include/mfem/general/sets.hpp \
+ /usr/local/include/mfem/general/table.hpp \
+ /usr/local/include/mfem/general/mem_alloc.hpp \
+ /usr/local/include/mfem/general/hash.hpp /usr/include/c++/13/utility \
+ /usr/include/c++/13/bits/stl_relops.h \
+ /usr/local/include/mfem/general/mem_alloc.hpp \
+ /usr/local/include/mfem/general/sort_pairs.hpp \
+ /usr/local/include/mfem/general/stable3d.hpp \
+ /usr/local/include/mfem/general/globals.hpp \
+ /usr/local/include/mfem/general/table.hpp \
+ /usr/local/include/mfem/general/tic_toc.hpp \
  /usr/local/include/mfem/general/annotation.hpp \
  /usr/local/include/mfem/general/isockstream.hpp \
  /usr/local/include/mfem/general/osockstream.hpp \
@@ -274,29 +309,7 @@ CMakeFiles/DG4PBTE.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/fstream.tcc \
  /usr/local/include/mfem/general/version.hpp \
  /usr/local/include/mfem/general/globals.hpp \
- /usr/local/include/mfem/general/kdtree.hpp /usr/include/c++/13/cmath \
- /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
- /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
- /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
- /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
- /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
- /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /usr/include/c++/13/bits/specfun.h /usr/include/c++/13/limits \
- /usr/include/c++/13/tr1/gamma.tcc \
- /usr/include/c++/13/tr1/special_function_util.h \
- /usr/include/c++/13/tr1/bessel_function.tcc \
- /usr/include/c++/13/tr1/beta_function.tcc \
- /usr/include/c++/13/tr1/ell_integral.tcc \
- /usr/include/c++/13/tr1/exp_integral.tcc \
- /usr/include/c++/13/tr1/hypergeometric.tcc \
- /usr/include/c++/13/tr1/legendre_function.tcc \
- /usr/include/c++/13/tr1/modified_bessel_func.tcc \
- /usr/include/c++/13/tr1/poly_hermite.tcc \
- /usr/include/c++/13/tr1/poly_laguerre.tcc \
- /usr/include/c++/13/tr1/riemann_zeta.tcc \
+ /usr/local/include/mfem/general/kdtree.hpp \
  /usr/local/include/mfem/general/enzyme.hpp \
  /usr/local/include/mfem/linalg/linalg.hpp \
  /usr/local/include/mfem/linalg/vector.hpp \
@@ -354,11 +367,6 @@ CMakeFiles/DG4PBTE.dir/src/main.cpp.o: \
  /usr/local/include/mfem/fem/intrules.hpp \
  /usr/local/include/mfem/general/array.hpp \
  /usr/local/include/mfem/general/hash.hpp \
- /usr/include/c++/13/unordered_map \
- /usr/include/c++/13/bits/unordered_map.h \
- /usr/include/c++/13/bits/hashtable.h \
- /usr/include/c++/13/bits/hashtable_policy.h \
- /usr/include/c++/13/bits/enable_special_members.h \
  /usr/local/include/mfem/general/hash.hpp \
  /usr/local/include/mfem/mesh/point.hpp \
  /usr/local/include/mfem/mesh/segment.hpp \
@@ -399,7 +407,6 @@ CMakeFiles/DG4PBTE.dir/src/main.cpp.o: \
  /usr/local/include/mfem/fem/kernel_reporter.hpp \
  /usr/local/include/mfem/general/globals.hpp \
  /usr/local/include/mfem/fem/coefficient.hpp \
- /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \
  /usr/local/include/mfem/fem/eltrans.hpp \
  /usr/local/include/mfem/general/zstr.hpp \
  /usr/local/include/mfem/mesh/mesh_operators.hpp \
@@ -491,4 +498,10 @@ CMakeFiles/DG4PBTE.dir/src/main.cpp.o: \
  /usr/local/include/mfem/fem/lor/lor.hpp \
  /usr/local/include/mfem/fem/bilinearform.hpp \
  /usr/local/include/mfem/fem/dgmassinv.hpp \
- /usr/local/include/mfem/fem/hyperbolic.hpp
+ /usr/local/include/mfem/fem/hyperbolic.hpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/dg/flux_upwind.hpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/dg/boundary.hpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/normal_closure.hpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/gray_sn_steady.hpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/postprocess.hpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/cli.hpp

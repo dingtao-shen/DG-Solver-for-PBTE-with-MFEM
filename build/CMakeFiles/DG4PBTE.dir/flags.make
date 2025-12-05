@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DMFEM_USE_CONFIG_H
 
-CXX_INCLUDES = -I/home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi
+CXX_INCLUDES = -I/home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi
 
 CXX_FLAGS = -O3 -DNDEBUG -std=gnu++20
 

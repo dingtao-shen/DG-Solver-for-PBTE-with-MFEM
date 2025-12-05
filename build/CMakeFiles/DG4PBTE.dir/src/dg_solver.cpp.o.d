@@ -1,7 +1,7 @@
 CMakeFiles/DG4PBTE.dir/src/dg_solver.cpp.o: \
- /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/src/dg_solver.cpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/src/dg_solver.cpp \
  /usr/include/stdc-predef.h \
- /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/dg_solver.hpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/dg_solver.hpp \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
