@@ -1,1 +1,0 @@
-/usr/bin/c++ -g -fsanitize=address CMakeFiles/DG4PBTE.dir/src/dg_solver.cpp.o CMakeFiles/DG4PBTE.dir/src/main.cpp.o -o DG4PBTE  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/local/lib/libmfem.a /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so 

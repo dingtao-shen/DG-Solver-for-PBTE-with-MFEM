@@ -1,3 +1,0 @@
-/home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/build/CMakeFiles/DG4PBTE.dir
-/home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/build/CMakeFiles/edit_cache.dir
-/home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/build/CMakeFiles/rebuild_cache.dir
