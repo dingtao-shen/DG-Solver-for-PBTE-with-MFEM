@@ -1,0 +1,11 @@
+Mesh and DG space summary
+  mesh source          : unit-cube
+  dimension            : 3
+  element count        : 384
+  boundary elem count  : 192
+  vertex count         : 125
+  element geometry     : Tetrahedron
+  DG polynomial order  : 2
+  FE space ndofs       : 3840
+  FE space vdim        : 1
+  ordering             : byNODES

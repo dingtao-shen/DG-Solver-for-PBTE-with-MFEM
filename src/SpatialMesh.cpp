@@ -119,6 +119,7 @@ void SpatialMesh::BuildDGSpace(int order, mfem::Ordering::Type ordering,
         throw std::invalid_argument("Polynomial order must be non-negative.");
     }
 
+    last_parallel_ = false;
     last_order_ = order;
 
     fec_ = std::make_unique<mfem::L2_FECollection>(order, mesh_->Dimension());
@@ -127,6 +128,39 @@ void SpatialMesh::BuildDGSpace(int order, mfem::Ordering::Type ordering,
 
     LogSummary(log_path);
 }
+
+#ifdef MFEM_USE_MPI
+void SpatialMesh::BuildDGSpaceParallel(MPI_Comm comm, int order,
+                                       mfem::Ordering::Type ordering,
+                                       const std::string &log_path)
+{
+    if (!mesh_)
+    {
+        throw std::runtime_error("Mesh must be loaded before building FE space.");
+    }
+    if (order < 0)
+    {
+        throw std::invalid_argument("Polynomial order must be non-negative.");
+    }
+
+    last_parallel_ = true;
+    last_comm_ = comm;
+    MPI_Comm_size(comm, &mpi_size_);
+    MPI_Comm_rank(comm, &mpi_rank_);
+    last_order_ = order;
+
+    pmesh_ = std::make_unique<mfem::ParMesh>(comm, *mesh_, /*refine=*/0,
+                                             /*partition=*/0,
+                                             /*fix_orientation=*/true);
+
+    fec_ = std::make_unique<mfem::L2_FECollection>(order, pmesh_->Dimension());
+    pfes_ = std::make_unique<mfem::ParFiniteElementSpace>(pmesh_.get(),
+                                                          fec_.get(), 1,
+                                                          ordering);
+
+    LogSummary(log_path);
+}
+#endif
 
 void SpatialMesh::LoadBuiltin(const std::string &name)
 {
@@ -197,38 +231,69 @@ std::string SpatialMesh::MakeLogPath(const std::string &log_path) const
 
     std::ostringstream oss;
     oss << "output/log/mesh_" << base << "_p" << last_order_ << "_dim"
-        << mesh_->Dimension() << ".txt";
+        << ActiveMesh()->Dimension();
+    if (last_parallel_)
+    {
+        oss << "_par";
+#ifdef MFEM_USE_MPI
+        oss << "_r" << mpi_rank_;
+#endif
+    }
+    oss << ".txt";
     return oss.str();
 }
 
 std::string SpatialMesh::MakeSummary() const
 {
     std::ostringstream report;
+    const mfem::Mesh *m = ActiveMesh();
+    const mfem::FiniteElementSpace *f = ActiveFESpace();
+
     report << "Mesh and DG space summary\n";
     report << "  mesh source          : " << mesh_source_ << "\n";
-    report << "  dimension            : " << mesh_->Dimension() << "\n";
-    report << "  element count        : " << mesh_->GetNE() << "\n";
-    report << "  boundary elem count  : " << mesh_->GetNBE() << "\n";
-    report << "  vertex count         : " << mesh_->GetNV() << "\n";
-    const int ne = mesh_->GetNE();
+    report << "  dimension            : " << m->Dimension() << "\n";
+    report << "  element count        : " << m->GetNE() << "\n";
+    report << "  boundary elem count  : " << m->GetNBE() << "\n";
+    report << "  vertex count         : " << m->GetNV() << "\n";
+    const int ne = m->GetNE();
     std::string geom_name =
-        (ne > 0) ? mfem::Geometry::Name[mesh_->GetElementBaseGeometry(0)]
+        (ne > 0) ? mfem::Geometry::Name[m->GetElementBaseGeometry(0)]
                  : "unknown";
     report << "  element geometry     : " << geom_name << "\n";
     report << "  DG polynomial order  : " << last_order_ << "\n";
-    report << "  FE space ndofs       : " << fes_->GetNDofs() << "\n";
-    report << "  FE space vdim        : " << fes_->GetVDim() << "\n";
+    report << "  FE space ndofs       : " << f->GetNDofs() << "\n";
+    report << "  FE space vdim        : " << f->GetVDim() << "\n";
     report << "  ordering             : "
-           << (fes_->GetOrdering() == mfem::Ordering::byNODES ? "byNODES"
-                                                              : "byVDIM")
+           << (f->GetOrdering() == mfem::Ordering::byNODES ? "byNODES"
+                                                           : "byVDIM")
            << "\n";
+#ifdef MFEM_USE_MPI
+    if (last_parallel_ && pmesh_)
+    {
+        report << "  mpi size/rank        : " << mpi_size_ << "/" << mpi_rank_
+               << "\n";
+        report << "  global elements      : " << pmesh_->GetGlobalNE() << "\n";
+        report << "  global vertices      : " << pmesh_->GetGlobalNV() << "\n";
+        report << "  global true dofs     : " << pfes_->GlobalTrueVSize() << "\n";
+    }
+#endif
     return report.str();
 }
 
 void SpatialMesh::LogSummary(const std::string &log_path) const
 {
     const std::string summary = MakeSummary();
-    std::cout << summary << std::endl;
+    bool should_print = true;
+#ifdef MFEM_USE_MPI
+    if (last_parallel_)
+    {
+        should_print = (mpi_rank_ == 0);
+    }
+#endif
+    if (should_print)
+    {
+        std::cout << summary << std::endl;
+    }
 
     try
     {
@@ -254,5 +319,27 @@ void SpatialMesh::LogSummary(const std::string &log_path) const
     {
         std::cerr << "Failed to write log: " << ex.what() << std::endl;
     }
+}
+
+const mfem::Mesh *SpatialMesh::ActiveMesh() const
+{
+#ifdef MFEM_USE_MPI
+    if (last_parallel_ && pmesh_)
+    {
+        return pmesh_.get();
+    }
+#endif
+    return mesh_.get();
+}
+
+const mfem::FiniteElementSpace *SpatialMesh::ActiveFESpace() const
+{
+#ifdef MFEM_USE_MPI
+    if (last_parallel_ && pfes_)
+    {
+        return pfes_.get();
+    }
+#endif
+    return fes_.get();
 }
 }  // namespace pbte

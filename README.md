@@ -22,10 +22,17 @@
 
 # Use another config
 ./build/pbte_demo -c path/to/other.yaml
+
+# Parallel (requires MFEM built with MPI)
+mpirun -np 4 ./build/pbte_demo -m unit-cube -o 1 -p
+# Force serial even if MPI MFEM is available
+./build/pbte_demo -m unit-cube -o 1 -np
 ```
 - `-m/--mesh`: builtin name or mesh file path. If omitted, config is used.
 - `-c/--config`: config yaml path (default `config/config.yaml`).
 - `-o/--order`: DG polynomial order.
+- `-p/--parallel`: enable parallel mesh/space (MPI build required).
+- `-np/--no-parallel`: force serial build even if MPI is available.
 
 ### Output / logging
 - After mesh + DG space construction, a summary prints to stdout.

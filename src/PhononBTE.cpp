@@ -15,6 +15,11 @@ int main(int argc, char *argv[])
     std::string mesh_spec;  // optional override; if empty, read from config
     std::string config_path = "config/config.yaml";
     int order = 1;
+    bool use_parallel = false;
+
+#ifdef MFEM_USE_MPI
+    mfem::MPI_Session mpi(argc, argv);
+#endif
 
     mfem::OptionsParser args(argc, argv);
     args.AddOption(&mesh_spec, "-m", "--mesh",
@@ -26,6 +31,11 @@ int main(int argc, char *argv[])
                    "Path to config YAML (defaults to config/config.yaml).");
     args.AddOption(&order, "-o", "--order",
                    "Polynomial order for DG/L2 finite element space.");
+    args.AddOption(&use_parallel,
+                   "-p", "--parallel",
+                   "-np", "--no-parallel",
+                   "Use parallel mesh/space (requires MFEM built with MPI).",
+                   false);
     args.Parse();
     if (!args.Good())
     {
@@ -45,7 +55,16 @@ int main(int argc, char *argv[])
         {
             spatial.LoadMeshFromConfig(config_path);
         }
-        spatial.BuildDGSpace(order);
+#ifdef MFEM_USE_MPI
+        if (use_parallel)
+        {
+            spatial.BuildDGSpaceParallel(MPI_COMM_WORLD, order);
+        }
+        else
+#endif
+        {
+            spatial.BuildDGSpace(order);
+        }
     }
     catch (const std::exception &ex)
     {
