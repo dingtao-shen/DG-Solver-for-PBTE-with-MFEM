@@ -1,0 +1,3 @@
+mesh:
+  # Path to MFEM mesh file (relative or absolute). Defaults here to 2D unit square.
+  path: config/mesh/unit-square.mesh

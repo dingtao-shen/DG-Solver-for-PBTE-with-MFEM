@@ -1,0 +1,2 @@
+/usr/bin/ar qc libpbte.a CMakeFiles/pbte.dir/src/SpatialMesh.cpp.o
+/usr/bin/ranlib libpbte.a
