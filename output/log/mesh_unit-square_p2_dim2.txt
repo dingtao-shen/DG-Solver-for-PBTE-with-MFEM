@@ -1,11 +1,11 @@
 Mesh and DG space summary
-  mesh source          : config/mesh/unit-square.mesh
+  mesh source          : unit-square
   dimension            : 2
-  element count        : 8
-  boundary elem count  : 8
-  vertex count         : 9
+  element count        : 128
+  boundary elem count  : 32
+  vertex count         : 81
   element geometry     : Triangle
   DG polynomial order  : 2
-  FE space ndofs       : 48
+  FE space ndofs       : 768
   FE space vdim        : 1
   ordering             : byNODES

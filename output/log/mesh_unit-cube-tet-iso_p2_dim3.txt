@@ -1,0 +1,11 @@
+Mesh and DG space summary
+  mesh source          : config/mesh/unit-cube-tet-iso.mesh
+  dimension            : 3
+  element count        : 6
+  boundary elem count  : 12
+  vertex count         : 8
+  element geometry     : Tetrahedron
+  DG polynomial order  : 2
+  FE space ndofs       : 60
+  FE space vdim        : 1
+  ordering             : byNODES

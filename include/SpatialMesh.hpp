@@ -6,6 +6,7 @@
 #include <memory>
 #include <ostream>
 #include <string>
+#include <map>
 
 #ifdef MFEM_USE_MPI
 #include <mpi.h>
@@ -73,6 +74,10 @@ public:
     mfem::FiniteElementSpace &FESpace() { return *fes_; }
     const mfem::FiniteElementSpace &FESpace() const { return *fes_; }
     int Dimension() const { return mesh_ ? mesh_->Dimension() : 0; }
+    const std::map<int, double> &IsothermalBoundaryTemps() const
+    {
+        return isothermal_bc_;
+    }
 
 private:
     void LoadBuiltin(const std::string &name);
@@ -97,5 +102,8 @@ private:
     std::unique_ptr<mfem::ParMesh> pmesh_;
     std::unique_ptr<mfem::ParFiniteElementSpace> pfes_;
 #endif
+
+    // boundary attribute -> temperature (Dirichlet/isothermal)
+    std::map<int, double> isothermal_bc_;
 };
 }  // namespace pbte

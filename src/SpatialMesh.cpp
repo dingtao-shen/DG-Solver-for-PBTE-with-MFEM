@@ -56,38 +56,40 @@ void SpatialMesh::LoadMeshFromConfig(const std::string &config_path)
         return s.substr(first, last - first + 1);
     };
 
-    bool in_mesh_block = false;
-    std::string path_val;
+    std::vector<std::string> lines;
     std::string line;
     while (std::getline(in, line))
     {
-        // strip comments
         const auto hash_pos = line.find('#');
         if (hash_pos != std::string::npos)
         {
             line = line.substr(0, hash_pos);
         }
-        line = trim(line);
-        if (line.empty())
+        lines.push_back(line);
+    }
+
+    std::string path_val;
+    bool in_mesh_block = false;
+    for (const auto &raw : lines)
+    {
+        std::string l = trim(raw);
+        if (l.empty())
         {
             continue;
         }
-
-        if (line.rfind("mesh:", 0) == 0)
+        if (l.rfind("mesh:", 0) == 0)
         {
             in_mesh_block = true;
             continue;
         }
-
-        if (in_mesh_block && line.rfind("path:", 0) == 0)
+        if (in_mesh_block && l.rfind("path:", 0) == 0)
         {
-            path_val = trim(line.substr(std::string("path:").size()));
+            path_val = trim(l.substr(std::string("path:").size()));
             break;
         }
-
-        if (!in_mesh_block && line.rfind("mesh_path:", 0) == 0)
+        if (!in_mesh_block && l.rfind("mesh_path:", 0) == 0)
         {
-            path_val = trim(line.substr(std::string("mesh_path:").size()));
+            path_val = trim(l.substr(std::string("mesh_path:").size()));
             break;
         }
     }
@@ -105,6 +107,63 @@ void SpatialMesh::LoadMeshFromConfig(const std::string &config_path)
     }
 
     LoadMesh(path_val);
+
+    // Parse optional boundary temperatures
+    isothermal_bc_.clear();
+    bool in_bc_block = false;
+    int current_attr = -1;
+    auto flush_entry = [&]() {
+        if (current_attr >= 0)
+        {
+            // temperature must have been set before flush; handled below
+            current_attr = -1;
+        }
+    };
+    for (const auto &raw : lines)
+    {
+        std::string l = trim(raw);
+        if (l.empty())
+        {
+            continue;
+        }
+        if (l.rfind("boundary_conditions:", 0) == 0)
+        {
+            in_bc_block = true;
+            continue;
+        }
+        if (!in_bc_block)
+        {
+            continue;
+        }
+        if (l.rfind("-", 0) == 0)
+        {
+            // new entry
+            current_attr = -1;
+            continue;
+        }
+        if (l.rfind("attr:", 0) == 0)
+        {
+            const std::string val = trim(l.substr(std::string("attr:").size()));
+            current_attr = std::stoi(val);
+            continue;
+        }
+        if (l.rfind("temperature:", 0) == 0 && current_attr >= 0)
+        {
+            const std::string val =
+                trim(l.substr(std::string("temperature:").size()));
+            try
+            {
+                const double t = std::stod(val);
+                isothermal_bc_[current_attr] = t;
+            }
+            catch (const std::exception &)
+            {
+                std::cerr << "Warning: failed to parse temperature value: " << l
+                          << std::endl;
+            }
+            flush_entry();
+        }
+    }
 }
 
 void SpatialMesh::BuildDGSpace(int order, mfem::Ordering::Type ordering,

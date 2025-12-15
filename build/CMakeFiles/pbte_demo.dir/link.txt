@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o -o pbte_demo  libpbte.a /usr/local/lib/libmfem.a 
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o -o pbte_demo  libpbte.a /usr/local/lib/libmfem.a 

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM
+CMAKE_SOURCE_DIR = /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/build
+CMAKE_BINARY_DIR = /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/build/CMakeFiles /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/build/CMakeFiles /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -141,6 +141,30 @@ pbte_demo: cmake_check_build_system
 pbte_demo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pbte_demo.dir/build.make CMakeFiles/pbte_demo.dir/build
 .PHONY : pbte_demo/fast
+
+src/ElementIntegrator.o: src/ElementIntegrator.cpp.o
+.PHONY : src/ElementIntegrator.o
+
+# target to build an object file
+src/ElementIntegrator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pbte.dir/build.make CMakeFiles/pbte.dir/src/ElementIntegrator.cpp.o
+.PHONY : src/ElementIntegrator.cpp.o
+
+src/ElementIntegrator.i: src/ElementIntegrator.cpp.i
+.PHONY : src/ElementIntegrator.i
+
+# target to preprocess a source file
+src/ElementIntegrator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pbte.dir/build.make CMakeFiles/pbte.dir/src/ElementIntegrator.cpp.i
+.PHONY : src/ElementIntegrator.cpp.i
+
+src/ElementIntegrator.s: src/ElementIntegrator.cpp.s
+.PHONY : src/ElementIntegrator.s
+
+# target to generate assembly for a file
+src/ElementIntegrator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pbte.dir/build.make CMakeFiles/pbte.dir/src/ElementIntegrator.cpp.s
+.PHONY : src/ElementIntegrator.cpp.s
 
 src/PhononBTE.o: src/PhononBTE.cpp.o
 .PHONY : src/PhononBTE.o
@@ -200,6 +224,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... pbte"
 	@echo "... pbte_demo"
+	@echo "... src/ElementIntegrator.o"
+	@echo "... src/ElementIntegrator.i"
+	@echo "... src/ElementIntegrator.s"
 	@echo "... src/PhononBTE.o"
 	@echo "... src/PhononBTE.i"
 	@echo "... src/PhononBTE.s"

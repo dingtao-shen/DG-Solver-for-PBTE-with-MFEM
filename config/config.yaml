@@ -1,3 +1,12 @@
 mesh:
-  # Path to MFEM mesh file (relative or absolute). Defaults here to 2D unit square.
-  path: config/mesh/unit-square.mesh
+  # Choose one of:
+  #   config/mesh/unit-square-iso.mesh    (2D tri, top attr=2 high-T)
+  #   config/mesh/unit-cube-tet-iso.mesh  (3D tet, top attr=2 high-T)
+  path: config/mesh/unit-cube-tet-iso.mesh
+
+# Optional boundary temperatures (isothermal). attr=2 is high-T (top), others low-T.
+boundary_conditions:
+  - attr: 1
+    temperature: 299.5
+  - attr: 2
+    temperature: 300.5
