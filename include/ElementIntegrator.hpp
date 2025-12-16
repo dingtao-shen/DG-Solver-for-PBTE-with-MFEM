@@ -25,8 +25,9 @@ struct ElementIntegralData
     struct FaceCoupling
     {
         int face_id = -1;
-        int neighbor_elem = -1;   // -1 means boundary
+        int neighbor_elem = -1;   // -1 means boundary; -2 marks shared neighbor
         int boundary_attr = 0;     // only meaningful if neighbor_elem == -1
+        bool is_shared = false;    // true if neighbor is on another rank
         mfem::DenseMatrix coupling;  // \int_F p_i(elem) * p_j(neigh)
         mfem::Vector isothermal_rhs; // \int_F p_i(elem) * 1  (for boundary)
     };
@@ -51,10 +52,19 @@ private:
     int EffectiveOrder(const mfem::FiniteElement &fe) const;
     ElementIntegralData AssembleElement(int elem_id);
     void AssembleFaceContributions(std::vector<ElementIntegralData> &data);
+    void AssembleSharedFaceContributions(std::vector<ElementIntegralData> &data);
     void BuildFaceAttributes();
 
     const mfem::FiniteElementSpace &fes_;
     mfem::Mesh &mesh_;  // non-const: element/face transforms are non-const in MFEM
+#ifdef MFEM_USE_MPI
+    const mfem::ParFiniteElementSpace *pfes_ = nullptr;
+    const mfem::ParMesh *pmesh_ = nullptr;
+#else
+    const void *pfes_ = nullptr;
+    const void *pmesh_ = nullptr;
+#endif
+    bool is_parallel_ = false;
     int quadrature_order_;
     mfem::IntegrationRules int_rules_;
     std::vector<int> face_attributes_;

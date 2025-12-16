@@ -12,6 +12,21 @@ DGElementIntegrator::DGElementIntegrator(const mfem::FiniteElementSpace &fes,
       quadrature_order_(quadrature_order),
       int_rules_(0, mfem::Quadrature1D::GaussLegendre)
 {
+#ifdef MFEM_USE_MPI
+    pfes_ = dynamic_cast<const mfem::ParFiniteElementSpace *>(&fes_);
+    pmesh_ = (pfes_ != nullptr)
+                 ? pfes_->GetParMesh()
+                 : dynamic_cast<const mfem::ParMesh *>(&mesh_);
+    is_parallel_ = (pfes_ != nullptr && pmesh_ != nullptr);
+    if (pfes_)
+    {
+        // Ensure face-neighbor data is available.
+        const_cast<mfem::ParFiniteElementSpace *>(pfes_)->ExchangeFaceNbrData();
+    }
+#else
+    is_parallel_ = false;
+#endif
+
     BuildFaceAttributes();
 }
 
@@ -108,7 +123,14 @@ void DGElementIntegrator::AssembleFaceContributions(
             const int elem_id = elem_ids[side];
             if (elem_id < 0)
             {
-                continue;  // boundary face for the other side
+                // On ParMesh, shared faces appear with Elem2No < 0; skip here
+                // and process in shared-face loop.
+                if (is_parallel_)
+                {
+                    continue;
+                }
+                // boundary face for the other side (serial)
+                continue;
             }
 
             const mfem::FiniteElement *fe = fes_.GetFE(elem_id);
@@ -194,6 +216,7 @@ void DGElementIntegrator::AssembleFaceContributions(
             fc.face_id = face_id;
             fc.boundary_attr = face_attr;
             fc.neighbor_elem = has_neighbor ? neigh_id : -1;
+            fc.is_shared = false;
             if (has_neighbor)
             {
                 fc.coupling.Swap(coupling);
@@ -226,6 +249,92 @@ void DGElementIntegrator::BuildFaceAttributes()
             face_attributes_[face] = mesh_.GetBdrAttribute(be);
         }
     }
+}
+
+void DGElementIntegrator::AssembleSharedFaceContributions(
+    std::vector<ElementIntegralData> &edata)
+{
+#ifndef MFEM_USE_MPI
+    (void)edata;
+    return;
+#else
+    if (!is_parallel_ || !pfes_ || !pmesh_)
+    {
+        return;
+    }
+
+    const int nshf = pmesh_->GetNSharedFaces();
+    for (int sf = 0; sf < nshf; ++sf)
+    {
+        mfem::FaceElementTransformations *ftr =
+            pmesh_->GetSharedFaceTransformations(sf, /*fill2=*/true);
+        if (!ftr)
+        {
+            continue;
+        }
+        const int face_id = pmesh_->GetSharedFace(sf);
+        const int elem_id = ftr->Elem1No;  // local element
+        if (elem_id < 0)
+        {
+            continue;
+        }
+
+        const mfem::FiniteElement *fe = fes_.GetFE(elem_id);
+        const int ndof = fe->GetDof();
+
+        // Neighbor data (face neighbor element).
+        const mfem::FiniteElement *fe_neigh = pfes_->GetFaceNbrFE(sf);
+        if (!fe_neigh)
+        {
+            continue;
+        }
+        const int ndof_neigh = fe_neigh->GetDof();
+
+        mfem::DenseMatrix coupling(ndof, ndof_neigh);
+        coupling = 0.0;
+
+        const mfem::IntegrationRule &ir = int_rules_.Get(
+            ftr->GetGeometryType(), EffectiveOrder(*fe));
+
+        mfem::Vector shape(ndof);
+        mfem::Vector shape_neigh(ndof_neigh);
+
+        for (int q = 0; q < ir.GetNPoints(); ++q)
+        {
+            const mfem::IntegrationPoint &ip_face = ir.IntPoint(q);
+            ftr->Face->SetIntPoint(&ip_face);
+
+            const mfem::IntegrationPoint &ip_el =
+                ftr->GetElement1IntPoint();  // local
+            ftr->Elem1->SetIntPoint(&ip_el);
+            fe->CalcShape(ip_el, shape);
+
+            const mfem::IntegrationPoint &ip_el_neigh =
+                ftr->GetElement2IntPoint();  // neighbor
+            ftr->Elem2->SetIntPoint(&ip_el_neigh);
+            fe_neigh->CalcShape(ip_el_neigh, shape_neigh);
+
+            const double w = ip_face.weight * ftr->Face->Weight();
+            for (int i = 0; i < ndof; ++i)
+            {
+                const double si = shape(i);
+                for (int j = 0; j < ndof_neigh; ++j)
+                {
+                    coupling(i, j) += w * si * shape_neigh(j);
+                }
+            }
+        }
+
+        ElementIntegralData &edata_el = edata[elem_id];
+        ElementIntegralData::FaceCoupling fc;
+        fc.face_id = face_id;
+        fc.boundary_attr = 0;
+        fc.neighbor_elem = -2;  // shared neighbor
+        fc.is_shared = true;
+        fc.coupling.Swap(coupling);
+        edata_el.face_couplings.push_back(std::move(fc));
+    }
+#endif
 }
 
 std::vector<ElementIntegralData> DGElementIntegrator::AssembleAll()

@@ -123,11 +123,19 @@ int main(int argc, char *argv[])
         for (size_t k = 0; k < fcs.size(); ++k)
         {
             const auto &fc = fcs[k];
-            std::cout << "  face " << fc.face_id
-                      << (fc.neighbor_elem >= 0 ? " interior" : " boundary")
+            std::string type = "boundary";
+            if (fc.is_shared)
+            {
+                type = "shared";
+            }
+            else if (fc.neighbor_elem >= 0)
+            {
+                type = "interior";
+            }
+            std::cout << "  face " << fc.face_id << " " << type
                       << ", neigh=" << fc.neighbor_elem
                       << ", attr=" << fc.boundary_attr;
-            if (fc.neighbor_elem >= 0)
+            if (fc.neighbor_elem >= 0 || fc.is_shared)
             {
                 std::cout << ", coupling " << fc.coupling.Height() << "x"
                           << fc.coupling.Width();
