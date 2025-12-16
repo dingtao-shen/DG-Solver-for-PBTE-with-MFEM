@@ -16,7 +16,7 @@ DGElementIntegrator::DGElementIntegrator(const mfem::FiniteElementSpace &fes,
     pfes_ = dynamic_cast<const mfem::ParFiniteElementSpace *>(&fes_);
     pmesh_ = (pfes_ != nullptr)
                  ? pfes_->GetParMesh()
-                 : dynamic_cast<const mfem::ParMesh *>(&mesh_);
+                 : dynamic_cast<mfem::ParMesh *>(&mesh_);
     is_parallel_ = (pfes_ != nullptr && pmesh_ != nullptr);
     if (pfes_)
     {

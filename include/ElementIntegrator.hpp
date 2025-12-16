@@ -59,7 +59,7 @@ private:
     mfem::Mesh &mesh_;  // non-const: element/face transforms are non-const in MFEM
 #ifdef MFEM_USE_MPI
     const mfem::ParFiniteElementSpace *pfes_ = nullptr;
-    const mfem::ParMesh *pmesh_ = nullptr;
+    mfem::ParMesh *pmesh_ = nullptr;
 #else
     const void *pfes_ = nullptr;
     const void *pmesh_ = nullptr;

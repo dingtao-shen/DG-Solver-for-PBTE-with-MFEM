@@ -2,12 +2,13 @@ CMakeFiles/pbte.dir/src/ElementIntegrator.cpp.o: \
  /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/src/ElementIntegrator.cpp \
  /usr/include/stdc-predef.h \
  /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/ElementIntegrator.hpp \
- /usr/local/include/mfem.hpp /usr/local/include/mfem/mfem.hpp \
- /usr/local/include/mfem/config/config.hpp \
- /usr/local/include/mfem/config/_config.hpp \
- /usr/local/include/mfem/general/error.hpp \
- /usr/local/include/mfem/config/config.hpp /usr/include/c++/13/iomanip \
- /usr/include/c++/13/bits/requires_hosted.h \
+ /usr/local/mfem-parallel/include/mfem.hpp \
+ /usr/local/mfem-parallel/include/mfem/mfem.hpp \
+ /usr/local/mfem-parallel/include/mfem/config/config.hpp \
+ /usr/local/mfem-parallel/include/mfem/config/_config.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/error.hpp \
+ /usr/local/mfem-parallel/include/mfem/config/config.hpp \
+ /usr/include/c++/13/iomanip /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -35,8 +36,6 @@ CMakeFiles/pbte.dir/src/ElementIntegrator.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/x86_64-linux-gnu/bits/wchar2-decl.h \
- /usr/include/x86_64-linux-gnu/bits/wchar2.h \
  /usr/include/c++/13/bits/ios_base.h /usr/include/c++/13/ext/atomicity.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h \
@@ -121,22 +120,16 @@ CMakeFiles/pbte.dir/src/ElementIntegrator.cpp.o: \
  /usr/include/x86_64-linux-gnu/sys/select.h \
  /usr/include/x86_64-linux-gnu/bits/select.h \
  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
- /usr/include/x86_64-linux-gnu/bits/select2.h \
- /usr/include/x86_64-linux-gnu/bits/select-decl.h /usr/include/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib.h \
+ /usr/include/alloca.h /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/13/bits/std_abs.h /usr/include/c++/13/cstdio \
  /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /usr/include/x86_64-linux-gnu/bits/stdio2-decl.h \
- /usr/include/x86_64-linux-gnu/bits/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/stdio2.h /usr/include/c++/13/cerrno \
- /usr/include/errno.h /usr/include/x86_64-linux-gnu/bits/errno.h \
- /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/c++/13/cerrno /usr/include/errno.h \
+ /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/13/bits/charconv.h \
@@ -172,49 +165,87 @@ CMakeFiles/pbte.dir/src/ElementIntegrator.cpp.o: \
  /usr/include/c++/13/bits/ostream.tcc \
  /usr/include/c++/13/bits/istream.tcc \
  /usr/include/c++/13/bits/sstream.tcc \
- /usr/local/include/mfem/general/device.hpp \
- /usr/local/include/mfem/general/enzyme.hpp \
- /usr/local/include/mfem/general/globals.hpp /usr/include/c++/13/iostream \
- /usr/local/include/mfem/general/mem_manager.hpp \
- /usr/local/include/mfem/general/error.hpp /usr/include/c++/13/cstring \
+ /usr/local/mfem-parallel/include/mfem/general/device.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/enzyme.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/globals.hpp \
+ /usr/include/c++/13/iostream \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/mpi_portable_platform.h \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h \
+ /usr/include/c++/13/map /usr/include/c++/13/bits/stl_tree.h \
+ /usr/include/c++/13/ext/aligned_buffer.h \
+ /usr/include/c++/13/bits/node_handle.h \
+ /usr/include/c++/13/bits/stl_map.h \
+ /usr/include/c++/13/bits/stl_multimap.h \
+ /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/utility \
+ /usr/include/c++/13/bits/stl_relops.h \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/constants.h \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/functions.h \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/datatype.h \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/exception.h \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op.h \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/status.h \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/request.h \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/group.h \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/comm.h \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/win.h \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/file.h \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/errhandler.h \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intracomm.h \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/topology.h \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intercomm.h \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/info.h \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/datatype_inln.h \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/functions_inln.h \
  /usr/include/string.h /usr/include/strings.h \
- /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
- /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
- /usr/local/include/mfem/general/array.hpp \
- /usr/local/include/mfem/general/device.hpp /usr/include/c++/13/algorithm \
- /usr/include/c++/13/bits/stl_algo.h \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/request_inln.h \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/comm_inln.h \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intracomm_inln.h \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/topology_inln.h \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intercomm_inln.h \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/group_inln.h \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/errhandler_inln.h \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/status_inln.h \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/info_inln.h \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/win_inln.h \
+ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/file_inln.h \
+ /usr/local/mfem-parallel/include/mfem/general/mem_manager.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/error.hpp \
+ /usr/include/c++/13/cstring \
+ /home/bryan/MFEM/hypre/src/hypre/include/HYPRE_utilities.h \
+ /home/bryan/MFEM/hypre/src/hypre/include/HYPRE_config.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
+ /usr/include/c++/13/stdlib.h \
+ /usr/local/mfem-parallel/include/mfem/general/array.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/device.hpp \
+ /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \
  /usr/include/c++/13/bits/algorithmfwd.h \
  /usr/include/c++/13/bits/stl_heap.h \
  /usr/include/c++/13/bits/uniform_int_dist.h \
  /usr/include/c++/13/bits/stl_tempbuf.h \
  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /usr/local/include/mfem/general/arrays_by_name.hpp \
- /usr/local/include/mfem/general/array.hpp /usr/include/c++/13/map \
- /usr/include/c++/13/bits/stl_tree.h \
- /usr/include/c++/13/ext/aligned_buffer.h \
- /usr/include/c++/13/bits/node_handle.h \
- /usr/include/c++/13/bits/stl_map.h \
- /usr/include/c++/13/bits/stl_multimap.h \
- /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/set \
- /usr/include/c++/13/bits/stl_set.h \
+ /usr/local/mfem-parallel/include/mfem/general/arrays_by_name.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/array.hpp \
+ /usr/include/c++/13/set /usr/include/c++/13/bits/stl_set.h \
  /usr/include/c++/13/bits/stl_multiset.h \
- /usr/local/include/mfem/general/sets.hpp \
- /usr/local/include/mfem/general/table.hpp \
- /usr/local/include/mfem/general/mem_alloc.hpp \
- /usr/local/include/mfem/general/hash.hpp /usr/include/c++/13/array \
- /usr/include/c++/13/compare /usr/include/c++/13/cstdint \
+ /usr/local/mfem-parallel/include/mfem/general/sets.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/table.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/mem_alloc.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/hash.hpp \
+ /usr/include/c++/13/array /usr/include/c++/13/compare \
+ /usr/include/c++/13/cstdint \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /usr/include/c++/13/utility /usr/include/c++/13/bits/stl_relops.h \
- /usr/local/include/mfem/general/mem_alloc.hpp \
- /usr/local/include/mfem/general/sort_pairs.hpp \
- /usr/local/include/mfem/general/stable3d.hpp \
- /usr/local/include/mfem/general/globals.hpp \
- /usr/local/include/mfem/general/table.hpp \
- /usr/local/include/mfem/general/tic_toc.hpp /usr/include/c++/13/memory \
- /usr/include/c++/13/bits/stl_uninitialized.h \
+ /usr/local/mfem-parallel/include/mfem/general/mem_alloc.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/sort_pairs.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/stable3d.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/globals.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/table.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/tic_toc.hpp \
+ /usr/include/c++/13/memory /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
  /usr/include/c++/13/bits/align.h /usr/include/c++/13/bits/unique_ptr.h \
  /usr/include/c++/13/bits/shared_ptr.h \
@@ -226,21 +257,22 @@ CMakeFiles/pbte.dir/src/ElementIntegrator.cpp.o: \
  /usr/include/c++/13/bits/atomic_lockfree_defines.h \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
- /usr/local/include/mfem/general/annotation.hpp \
- /usr/local/include/mfem/general/isockstream.hpp \
- /usr/local/include/mfem/general/osockstream.hpp \
- /usr/local/include/mfem/general/socketstream.hpp \
- /usr/local/include/mfem/general/socketstream.hpp \
- /usr/local/include/mfem/general/optparser.hpp \
- /usr/local/include/mfem/general/zstr.hpp /usr/include/c++/13/cassert \
- /usr/include/assert.h /usr/include/c++/13/fstream \
+ /usr/local/mfem-parallel/include/mfem/general/annotation.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/isockstream.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/osockstream.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/socketstream.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/socketstream.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/optparser.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/zstr.hpp \
+ /usr/include/c++/13/cassert /usr/include/assert.h \
+ /usr/include/c++/13/fstream \
  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
  /usr/include/c++/13/bits/fstream.tcc \
- /usr/local/include/mfem/general/version.hpp \
- /usr/local/include/mfem/general/globals.hpp \
- /usr/local/include/mfem/general/kdtree.hpp /usr/include/c++/13/vector \
- /usr/include/c++/13/bits/stl_vector.h \
+ /usr/local/mfem-parallel/include/mfem/general/version.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/globals.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/kdtree.hpp \
+ /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc /usr/include/c++/13/cmath \
  /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
@@ -265,198 +297,252 @@ CMakeFiles/pbte.dir/src/ElementIntegrator.cpp.o: \
  /usr/include/c++/13/tr1/poly_hermite.tcc \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
  /usr/include/c++/13/tr1/riemann_zeta.tcc \
- /usr/local/include/mfem/general/enzyme.hpp \
- /usr/local/include/mfem/linalg/linalg.hpp \
- /usr/local/include/mfem/linalg/vector.hpp \
- /usr/local/include/mfem/general/array.hpp \
- /usr/local/include/mfem/general/globals.hpp \
- /usr/local/include/mfem/general/mem_manager.hpp \
- /usr/local/include/mfem/general/device.hpp \
- /usr/local/include/mfem/linalg/operator.hpp \
- /usr/local/include/mfem/linalg/matrix.hpp \
- /usr/local/include/mfem/linalg/sparsemat.hpp \
- /usr/local/include/mfem/general/backends.hpp \
- /usr/local/include/mfem/general/cuda.hpp \
- /usr/local/include/mfem/general/hip.hpp \
- /usr/local/include/mfem/general/mem_alloc.hpp \
- /usr/local/include/mfem/general/table.hpp \
- /usr/local/include/mfem/linalg/densemat.hpp \
- /usr/local/include/mfem/config/config.hpp \
- /usr/local/include/mfem/linalg/complex_operator.hpp \
- /usr/local/include/mfem/linalg/complex_densemat.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/enzyme.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/communication.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/sets.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/linalg.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/vector.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/array.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/globals.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/mem_manager.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/device.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/operator.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/matrix.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/sparsemat.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/backends.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/cuda.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/hip.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/mem_alloc.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/table.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/densemat.hpp \
+ /usr/local/mfem-parallel/include/mfem/config/config.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/complex_operator.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/hypre.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/hypre_parcsr.hpp \
+ /home/bryan/MFEM/hypre/src/hypre/include/_hypre_parcsr_mv.h \
+ /home/bryan/MFEM/hypre/src/hypre/include/HYPRE_parcsr_mv.h \
+ /home/bryan/MFEM/hypre/src/hypre/include/HYPRE_utilities.h \
+ /home/bryan/MFEM/hypre/src/hypre/include/HYPRE_seq_mv.h \
+ /home/bryan/MFEM/hypre/src/hypre/include/_hypre_utilities.h \
+ /home/bryan/MFEM/hypre/src/hypre/include/HYPRE_config.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+ /home/bryan/MFEM/hypre/src/hypre/include/seq_mv.h \
+ /usr/include/c++/13/math.h \
+ /home/bryan/MFEM/hypre/src/hypre/include/seq_mv.h \
+ /home/bryan/MFEM/hypre/src/hypre/include/temp_multivector.h \
+ /home/bryan/MFEM/hypre/src/hypre/include/interpreter.h \
+ /home/bryan/MFEM/hypre/src/hypre/include/_hypre_parcsr_ls.h \
+ /home/bryan/MFEM/hypre/src/hypre/include/HYPRE_parcsr_ls.h \
+ /home/bryan/MFEM/hypre/src/hypre/include/HYPRE_IJ_mv.h \
+ /home/bryan/MFEM/hypre/src/hypre/include/HYPRE_lobpcg.h \
+ /home/bryan/MFEM/hypre/src/hypre/include/HYPRE_krylov.h \
+ /home/bryan/MFEM/hypre/src/hypre/include/fortran_matrix.h \
+ /home/bryan/MFEM/hypre/src/hypre/include/multivector.h \
+ /home/bryan/MFEM/hypre/src/hypre/include/temp_multivector.h \
+ /home/bryan/MFEM/hypre/src/hypre/include/HYPRE_MatvecFunctions.h \
+ /home/bryan/MFEM/hypre/src/hypre/include/_hypre_parcsr_mv.h \
+ /home/bryan/MFEM/hypre/src/hypre/include/krylov.h \
+ /home/bryan/MFEM/hypre/src/hypre/include/par_csr_block_matrix.h \
+ /home/bryan/MFEM/hypre/src/hypre/include/csr_block_matrix.h \
+ /usr/local/mfem-parallel/include/mfem/linalg/complex_densemat.hpp \
  /usr/include/c++/13/complex \
- /usr/local/include/mfem/linalg/blockvector.hpp \
- /usr/local/include/mfem/linalg/blockmatrix.hpp \
- /usr/local/include/mfem/linalg/blockoperator.hpp \
- /usr/local/include/mfem/linalg/sparsesmoothers.hpp \
- /usr/local/include/mfem/linalg/symmat.hpp \
- /usr/local/include/mfem/linalg/ode.hpp \
- /usr/local/include/mfem/general/communication.hpp \
- /usr/local/include/mfem/linalg/solvers.hpp \
- /usr/local/include/mfem/linalg/handle.hpp \
- /usr/local/include/mfem/linalg/invariants.hpp \
- /usr/local/include/mfem/general/error.hpp \
- /usr/local/include/mfem/linalg/constraints.hpp \
- /usr/local/include/mfem/linalg/hypre.hpp \
- /usr/local/include/mfem/linalg/auxiliary.hpp \
- /usr/local/include/mfem/linalg/mma.hpp \
- /usr/local/include/mfem/linalg/batched/batched.hpp \
- /usr/local/include/mfem/config/config.hpp \
- /usr/local/include/mfem/linalg/densemat.hpp \
- /usr/local/include/mfem/linalg/batched/gpu_blas.hpp \
- /usr/local/include/mfem/linalg/batched/batched.hpp \
- /usr/local/include/mfem/general/backends.hpp \
- /usr/local/include/mfem/linalg/batched/solver.hpp \
- /usr/local/include/mfem/linalg/operator.hpp \
- /usr/local/include/mfem/mesh/mesh_headers.hpp \
- /usr/local/include/mfem/mesh/vertex.hpp \
- /usr/local/include/mfem/config/config.hpp \
- /usr/local/include/mfem/general/globals.hpp \
- /usr/local/include/mfem/mesh/element.hpp \
- /usr/local/include/mfem/general/array.hpp \
- /usr/local/include/mfem/general/table.hpp \
- /usr/local/include/mfem/linalg/densemat.hpp \
- /usr/local/include/mfem/fem/geom.hpp \
- /usr/local/include/mfem/config/config.hpp \
- /usr/local/include/mfem/linalg/densemat.hpp \
- /usr/local/include/mfem/fem/intrules.hpp \
- /usr/local/include/mfem/general/array.hpp \
- /usr/local/include/mfem/general/hash.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/blockvector.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/blockmatrix.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/blockoperator.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/sparsesmoothers.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/symmat.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/ode.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/communication.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/solvers.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/handle.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/invariants.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/error.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/constraints.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/auxiliary.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/mma.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/batched/batched.hpp \
+ /usr/local/mfem-parallel/include/mfem/config/config.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/densemat.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/batched/gpu_blas.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/batched/batched.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/backends.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/batched/solver.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/operator.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/mesh_headers.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/vertex.hpp \
+ /usr/local/mfem-parallel/include/mfem/config/config.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/globals.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/element.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/array.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/table.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/densemat.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/geom.hpp \
+ /usr/local/mfem-parallel/include/mfem/config/config.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/densemat.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/intrules.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/array.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/hash.hpp \
  /usr/include/c++/13/unordered_map \
  /usr/include/c++/13/bits/unordered_map.h \
  /usr/include/c++/13/bits/hashtable.h \
  /usr/include/c++/13/bits/hashtable_policy.h \
  /usr/include/c++/13/bits/enable_special_members.h \
- /usr/local/include/mfem/general/hash.hpp \
- /usr/local/include/mfem/mesh/point.hpp \
- /usr/local/include/mfem/mesh/segment.hpp \
- /usr/local/include/mfem/mesh/triangle.hpp \
- /usr/local/include/mfem/fem/fe.hpp \
- /usr/local/include/mfem/linalg/linalg.hpp \
- /usr/local/include/mfem/fem/fe/fe_base.hpp \
- /usr/local/include/mfem/fem/intrules.hpp \
- /usr/local/include/mfem/fem/geom.hpp \
- /usr/local/include/mfem/fem/doftrans.hpp \
- /usr/local/include/mfem/general/hash.hpp \
- /usr/local/include/mfem/fem/fe/fe_fixed_order.hpp \
- /usr/local/include/mfem/fem/fe/fe_base.hpp \
- /usr/local/include/mfem/fem/fe/fe_h1.hpp \
- /usr/local/include/mfem/fem/fe/fe_pyramid.hpp \
- /usr/local/include/mfem/fem/fe/fe_l2.hpp \
- /usr/local/include/mfem/fem/fe/fe_h1.hpp \
- /usr/local/include/mfem/fem/fe/fe_nd.hpp \
- /usr/local/include/mfem/fem/fe/fe_rt.hpp \
- /usr/local/include/mfem/fem/fe/fe_l2.hpp \
- /usr/local/include/mfem/fem/fe/fe_nurbs.hpp \
- /usr/local/include/mfem/fem/fe/fe_pos.hpp \
- /usr/local/include/mfem/fem/fe/fe_ser.hpp \
- /usr/local/include/mfem/mesh/quadrilateral.hpp \
- /usr/local/include/mfem/mesh/hexahedron.hpp \
- /usr/local/include/mfem/mesh/tetrahedron.hpp \
- /usr/local/include/mfem/mesh/ncmesh.hpp \
- /usr/local/include/mfem/general/sort_pairs.hpp \
- /usr/local/include/mfem/mesh/mesh.hpp \
- /usr/local/include/mfem/general/stable3d.hpp \
- /usr/local/include/mfem/mesh/attribute_sets.hpp \
- /usr/local/include/mfem/general/arrays_by_name.hpp \
- /usr/local/include/mfem/mesh/vtk.hpp \
- /usr/local/include/mfem/general/binaryio.hpp \
- /usr/local/include/mfem/fem/eltrans.hpp \
- /usr/local/include/mfem/fem/fe.hpp \
- /usr/local/include/mfem/fem/kernel_dispatch.hpp \
- /usr/local/include/mfem/fem/kernel_reporter.hpp \
- /usr/local/include/mfem/general/globals.hpp \
- /usr/local/include/mfem/fem/coefficient.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/hash.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/point.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/segment.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/triangle.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/fe.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/linalg.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/fe/fe_base.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/intrules.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/geom.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/doftrans.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/hash.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/fe/fe_fixed_order.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/fe/fe_base.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/fe/fe_h1.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/fe/fe_pyramid.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/fe/fe_l2.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/fe/fe_h1.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/fe/fe_nd.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/fe/fe_rt.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/fe/fe_l2.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/fe/fe_nurbs.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/fe/fe_pos.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/fe/fe_ser.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/quadrilateral.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/hexahedron.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/tetrahedron.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/ncmesh.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/sort_pairs.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/mesh.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/stable3d.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/attribute_sets.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/arrays_by_name.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/vtk.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/binaryio.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/eltrans.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/fe.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/kernel_dispatch.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/kernel_reporter.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/globals.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/coefficient.hpp \
  /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \
- /usr/local/include/mfem/fem/eltrans.hpp \
- /usr/local/include/mfem/general/zstr.hpp \
- /usr/local/include/mfem/mesh/mesh_operators.hpp \
- /usr/local/include/mfem/fem/estimators.hpp \
- /usr/local/include/mfem/linalg/vector.hpp \
- /usr/local/include/mfem/fem/bilinearform.hpp \
- /usr/local/include/mfem/fem/fespace.hpp \
- /usr/local/include/mfem/linalg/sparsemat.hpp \
- /usr/local/include/mfem/mesh/mesh.hpp \
- /usr/local/include/mfem/fem/fe_coll.hpp \
- /usr/local/include/mfem/fem/geom.hpp \
- /usr/local/include/mfem/fem/doftrans.hpp \
- /usr/local/include/mfem/fem/restriction.hpp \
- /usr/local/include/mfem/linalg/operator.hpp \
- /usr/local/include/mfem/fem/normal_deriv_restriction.hpp \
- /usr/local/include/mfem/fem/gridfunc.hpp \
- /usr/local/include/mfem/fem/coefficient.hpp \
- /usr/local/include/mfem/fem/bilininteg.hpp \
- /usr/local/include/mfem/fem/nonlininteg.hpp \
- /usr/local/include/mfem/fem/ceed/interface/operator.hpp \
- /usr/local/include/mfem/linalg/operator.hpp \
- /usr/local/include/mfem/fem/ceed/interface/ceed.hpp \
- /usr/local/include/mfem/config/config.hpp \
- /usr/local/include/mfem/fem/integrator.hpp \
- /usr/local/include/mfem/fem/ceed/interface/util.hpp \
- /usr/local/include/mfem/general/error.hpp \
- /usr/local/include/mfem/fem/qfunction.hpp \
- /usr/local/include/mfem/fem/qspace.hpp \
- /usr/local/include/mfem/fem/linearform.hpp \
- /usr/local/include/mfem/fem/lininteg.hpp /usr/include/c++/13/random \
- /usr/include/c++/13/bits/random.h \
+ /usr/local/mfem-parallel/include/mfem/fem/eltrans.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/zstr.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/mesh_operators.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/estimators.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/vector.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/bilinearform.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/fespace.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/sparsemat.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/mesh.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/fe_coll.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/geom.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/doftrans.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/restriction.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/operator.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/normal_deriv_restriction.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/gridfunc.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/coefficient.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/bilininteg.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/nonlininteg.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/ceed/interface/operator.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/operator.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/ceed/interface/ceed.hpp \
+ /usr/local/mfem-parallel/include/mfem/config/config.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/integrator.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/ceed/interface/util.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/error.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/qfunction.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/qspace.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/linearform.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/lininteg.hpp \
+ /usr/include/c++/13/random /usr/include/c++/13/bits/random.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/opt_random.h \
  /usr/include/c++/13/bits/random.tcc /usr/include/c++/13/numeric \
  /usr/include/c++/13/bits/stl_numeric.h \
  /usr/include/c++/13/pstl/glue_numeric_defs.h \
- /usr/local/include/mfem/fem/linearform_ext.hpp \
- /usr/local/include/mfem/fem/bilinearform_ext.hpp \
- /usr/local/include/mfem/general/device.hpp \
- /usr/local/include/mfem/fem/staticcond.hpp \
- /usr/local/include/mfem/fem/hybridization.hpp \
- /usr/local/include/mfem/mesh/submesh/ncsubmesh.hpp \
- /usr/local/include/mfem/mesh/ncmesh.hpp \
- /usr/local/include/mfem/mesh/submesh/submesh.hpp \
- /usr/local/include/mfem/mesh/mesh.hpp \
- /usr/local/include/mfem/mesh/submesh/transfermap.hpp \
- /usr/local/include/mfem/fem/gridfunc.hpp \
- /usr/local/include/mfem/mesh/submesh/transfer_category.hpp \
- /usr/local/include/mfem/mesh/submesh/submesh_utils.hpp \
- /usr/local/include/mfem/fem/fespace.hpp \
- /usr/local/include/mfem/mesh/submesh/submesh.hpp \
- /usr/local/include/mfem/mesh/submesh/submesh_utils.hpp \
- /usr/local/include/mfem/mesh/submesh/transfermap.hpp \
- /usr/local/include/mfem/mesh/submesh/transfer_category.hpp \
- /usr/local/include/mfem/mesh/nurbs.hpp \
- /usr/local/include/mfem/linalg/vector.hpp \
- /usr/local/include/mfem/mesh/spacing.hpp \
- /usr/local/include/mfem/mesh/wedge.hpp \
- /usr/local/include/mfem/mesh/pyramid.hpp \
- /usr/local/include/mfem/fem/fem.hpp \
- /usr/local/include/mfem/fem/intrules_cut.hpp \
- /usr/local/include/mfem/fem/complex_fem.hpp \
- /usr/local/include/mfem/linalg/complex_operator.hpp \
- /usr/local/include/mfem/fem/convergence.hpp \
- /usr/local/include/mfem/fem/kdtree.hpp \
- /usr/local/include/mfem/general/kdtree.hpp \
- /usr/local/include/mfem/fem/nonlinearform.hpp \
- /usr/local/include/mfem/fem/nonlinearform_ext.hpp \
- /usr/local/include/mfem/fem/datacollection.hpp \
- /usr/local/include/mfem/fem/estimators.hpp \
- /usr/local/include/mfem/fem/tmop.hpp \
- /usr/local/include/mfem/linalg/invariants.hpp \
- /usr/local/include/mfem/fem/tmop_tools.hpp \
- /usr/local/include/mfem/fem/pbilinearform.hpp \
- /usr/local/include/mfem/fem/gslib.hpp \
- /usr/local/include/mfem/fem/tmop_amr.hpp \
- /usr/local/include/mfem/fem/pnonlinearform.hpp \
- /usr/local/include/mfem/mesh/mesh_operators.hpp \
- /usr/local/include/mfem/fem/quadinterpolator.hpp \
- /usr/local/include/mfem/fem/quadinterpolator_face.hpp \
- /usr/local/include/mfem/fem/transfer.hpp \
- /usr/local/include/mfem/fem/fespacehierarchy.hpp \
- /usr/local/include/mfem/fem/multigrid.hpp \
- /usr/local/include/mfem/linalg/handle.hpp \
- /usr/local/include/mfem/fem/ceed/solvers/algebraic.hpp \
- /usr/local/include/mfem/fem/fespacehierarchy.hpp \
- /usr/local/include/mfem/fem/multigrid.hpp \
- /usr/local/include/mfem/fem/ceed/interface/operator.hpp \
- /usr/local/include/mfem/fem/ceed/interface/ceed.hpp \
- /usr/local/include/mfem/fem/lor/lor.hpp \
- /usr/local/include/mfem/fem/bilinearform.hpp \
- /usr/local/include/mfem/fem/dgmassinv.hpp \
- /usr/local/include/mfem/fem/hyperbolic.hpp
+ /usr/local/mfem-parallel/include/mfem/fem/linearform_ext.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/bilinearform_ext.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/device.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/staticcond.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/pfespace.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/hypre.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/pmesh.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/communication.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/pncmesh.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/fespace.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/nurbs.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/vector.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/spacing.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/hybridization.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/pgridfunc.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/submesh/ncsubmesh.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/ncmesh.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/submesh/submesh.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/mesh.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/submesh/transfermap.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/gridfunc.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/submesh/transfer_category.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/submesh/submesh_utils.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/fespace.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/submesh/submesh.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/submesh/submesh_utils.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/submesh/transfermap.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/submesh/transfer_category.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/nurbs.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/wedge.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/pyramid.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/pmesh.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/submesh/pncsubmesh.hpp \
+ /usr/local/mfem-parallel/include/mfem/config/config.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/pncmesh.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/submesh/psubmesh.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/submesh/ptransfermap.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/pgridfunc.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/pmesh.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/submesh/psubmesh.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/submesh/ptransfermap.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/fem.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/intrules_cut.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/complex_fem.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/complex_operator.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/plinearform.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/pbilinearform.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/convergence.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/kdtree.hpp \
+ /usr/local/mfem-parallel/include/mfem/general/kdtree.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/nonlinearform.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/nonlinearform_ext.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/datacollection.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/estimators.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/tmop.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/invariants.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/tmop_tools.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/gslib.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/tmop_amr.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/pnonlinearform.hpp \
+ /usr/local/mfem-parallel/include/mfem/mesh/mesh_operators.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/quadinterpolator.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/quadinterpolator_face.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/transfer.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/fespacehierarchy.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/multigrid.hpp \
+ /usr/local/mfem-parallel/include/mfem/linalg/handle.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/ceed/solvers/algebraic.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/fespacehierarchy.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/multigrid.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/ceed/interface/operator.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/ceed/interface/ceed.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/lor/lor.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/bilinearform.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/dgmassinv.hpp \
+ /usr/local/mfem-parallel/include/mfem/fem/hyperbolic.hpp

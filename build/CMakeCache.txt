@@ -22,7 +22,7 @@ CMAKE_AR:FILEPATH=/usr/bin/ar
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=Release
+CMAKE_BUILD_TYPE:STRING=
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
@@ -115,6 +115,9 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 //Path to a program.
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
+//No help, variable specified on the command line.
+CMAKE_PREFIX_PATH:UNINITIALIZED=/usr/local/mfem-parallel
+
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
 
@@ -198,8 +201,8 @@ DG_Solver_for_PBTE_with_MFEM_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 DG_Solver_for_PBTE_with_MFEM_SOURCE_DIR:STATIC=/home/bryan/projects/DG-Solver-for-PBTE-with-MFEM
 
-//The directory containing a CMake configuration file for MFEM.
-MFEM_DIR:PATH=/usr/local/lib/cmake/mfem
+//No help, variable specified on the command line.
+MFEM_DIR:UNINITIALIZED=/usr/local/mfem-parallel/lib/cmake/mfem
 
 
 ########################

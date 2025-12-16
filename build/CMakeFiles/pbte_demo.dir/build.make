@@ -93,7 +93,11 @@ pbte_demo_EXTERNAL_OBJECTS =
 pbte_demo: CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o
 pbte_demo: CMakeFiles/pbte_demo.dir/build.make
 pbte_demo: libpbte.a
-pbte_demo: /usr/local/lib/libmfem.a
+pbte_demo: /usr/local/mfem-parallel/lib/libmfem.a
+pbte_demo: /home/bryan/MFEM/hypre/src/hypre/lib/libHYPRE.a
+pbte_demo: /usr/lib/x86_64-linux-gnu/libmetis.so
+pbte_demo: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so
+pbte_demo: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
 pbte_demo: CMakeFiles/pbte_demo.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable pbte_demo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pbte_demo.dir/link.txt --verbose=$(VERBOSE)

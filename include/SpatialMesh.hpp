@@ -51,6 +51,11 @@ public:
         mfem::Ordering::Type ordering = mfem::Ordering::byNODES,
         const std::string &log_path = "");
 
+    /// Uniformly refine the serial mesh 'levels' times (no-op if levels <= 0).
+    /// Call before building the FE space; for parallel builds, refine the
+    /// serial mesh prior to BuildDGSpaceParallel.
+    void UniformRefine(int levels);
+
 #ifdef MFEM_USE_MPI
     /// Build a parallel DG space (ParMesh + ParFiniteElementSpace).
     /// Requires MFEM built with MPI. Uses the already-loaded serial mesh as
@@ -71,8 +76,8 @@ public:
     /// Accessors (non-owning).
     mfem::Mesh &Mesh() { return *mesh_; }
     const mfem::Mesh &Mesh() const { return *mesh_; }
-    mfem::FiniteElementSpace &FESpace() { return *fes_; }
-    const mfem::FiniteElementSpace &FESpace() const { return *fes_; }
+    mfem::FiniteElementSpace &FESpace() { return *ActiveFESpace(); }
+    const mfem::FiniteElementSpace &FESpace() const { return *ActiveFESpace(); }
     int Dimension() const { return mesh_ ? mesh_->Dimension() : 0; }
     const std::map<int, double> &IsothermalBoundaryTemps() const
     {
@@ -86,6 +91,7 @@ private:
     void LogSummary(const std::string &log_path) const;
     const mfem::Mesh *ActiveMesh() const;
     const mfem::FiniteElementSpace *ActiveFESpace() const;
+    mfem::FiniteElementSpace *ActiveFESpace();
 
     std::string mesh_source_;
     int last_order_ = -1;

@@ -38,6 +38,28 @@ void SpatialMesh::LoadMesh(const std::string &path_or_builtin)
     LoadBuiltin(path_or_builtin);
 }
 
+void SpatialMesh::UniformRefine(int levels)
+{
+    if (!mesh_ || levels <= 0)
+    {
+        return;
+    }
+#ifdef MFEM_USE_MPI
+    if (last_parallel_ && pmesh_)
+    {
+        for (int i = 0; i < levels; ++i)
+        {
+            pmesh_->UniformRefinement();
+        }
+        return;
+    }
+#endif
+    for (int i = 0; i < levels; ++i)
+    {
+        mesh_->UniformRefinement();
+    }
+}
+
 void SpatialMesh::LoadMeshFromConfig(const std::string &config_path)
 {
     std::ifstream in(config_path);
@@ -208,9 +230,11 @@ void SpatialMesh::BuildDGSpaceParallel(MPI_Comm comm, int order,
     MPI_Comm_rank(comm, &mpi_rank_);
     last_order_ = order;
 
-    pmesh_ = std::make_unique<mfem::ParMesh>(comm, *mesh_, /*refine=*/0,
-                                             /*partition=*/0,
-                                             /*fix_orientation=*/true);
+    // Partition serial mesh into ParMesh (no user partitioning provided).
+    pmesh_ = std::make_unique<mfem::ParMesh>(comm, *mesh_,
+                                             /*partitioning=*/nullptr,
+                                             /*part_method=*/1);
+    pmesh_->ExchangeFaceNbrData();
 
     fec_ = std::make_unique<mfem::L2_FECollection>(order, pmesh_->Dimension());
     pfes_ = std::make_unique<mfem::ParFiniteElementSpace>(pmesh_.get(),
@@ -332,7 +356,6 @@ std::string SpatialMesh::MakeSummary() const
         report << "  mpi size/rank        : " << mpi_size_ << "/" << mpi_rank_
                << "\n";
         report << "  global elements      : " << pmesh_->GetGlobalNE() << "\n";
-        report << "  global vertices      : " << pmesh_->GetGlobalNV() << "\n";
         report << "  global true dofs     : " << pfes_->GlobalTrueVSize() << "\n";
     }
 #endif
@@ -392,6 +415,17 @@ const mfem::Mesh *SpatialMesh::ActiveMesh() const
 }
 
 const mfem::FiniteElementSpace *SpatialMesh::ActiveFESpace() const
+{
+#ifdef MFEM_USE_MPI
+    if (last_parallel_ && pfes_)
+    {
+        return pfes_.get();
+    }
+#endif
+    return fes_.get();
+}
+
+mfem::FiniteElementSpace *SpatialMesh::ActiveFESpace()
 {
 #ifdef MFEM_USE_MPI
     if (last_parallel_ && pfes_)
