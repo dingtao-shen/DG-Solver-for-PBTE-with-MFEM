@@ -11,6 +11,7 @@ add_library(pbte STATIC
     src/SpatialMesh.cpp
     src/ElementIntegrator.cpp
     src/AngularQuadrature.cpp
+    src/AngularSweepOrder.cpp
 )
 
 target_include_directories(pbte PUBLIC

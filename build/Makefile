@@ -166,6 +166,30 @@ src/AngularQuadrature.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pbte.dir/build.make CMakeFiles/pbte.dir/src/AngularQuadrature.cpp.s
 .PHONY : src/AngularQuadrature.cpp.s
 
+src/AngularSweepOrder.o: src/AngularSweepOrder.cpp.o
+.PHONY : src/AngularSweepOrder.o
+
+# target to build an object file
+src/AngularSweepOrder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pbte.dir/build.make CMakeFiles/pbte.dir/src/AngularSweepOrder.cpp.o
+.PHONY : src/AngularSweepOrder.cpp.o
+
+src/AngularSweepOrder.i: src/AngularSweepOrder.cpp.i
+.PHONY : src/AngularSweepOrder.i
+
+# target to preprocess a source file
+src/AngularSweepOrder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pbte.dir/build.make CMakeFiles/pbte.dir/src/AngularSweepOrder.cpp.i
+.PHONY : src/AngularSweepOrder.cpp.i
+
+src/AngularSweepOrder.s: src/AngularSweepOrder.cpp.s
+.PHONY : src/AngularSweepOrder.s
+
+# target to generate assembly for a file
+src/AngularSweepOrder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pbte.dir/build.make CMakeFiles/pbte.dir/src/AngularSweepOrder.cpp.s
+.PHONY : src/AngularSweepOrder.cpp.s
+
 src/ElementIntegrator.o: src/ElementIntegrator.cpp.o
 .PHONY : src/ElementIntegrator.o
 
@@ -251,6 +275,9 @@ help:
 	@echo "... src/AngularQuadrature.o"
 	@echo "... src/AngularQuadrature.i"
 	@echo "... src/AngularQuadrature.s"
+	@echo "... src/AngularSweepOrder.o"
+	@echo "... src/AngularSweepOrder.i"
+	@echo "... src/AngularSweepOrder.s"
 	@echo "... src/ElementIntegrator.o"
 	@echo "... src/ElementIntegrator.i"
 	@echo "... src/ElementIntegrator.s"

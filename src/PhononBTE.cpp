@@ -1,4 +1,5 @@
 #include "AngularQuadrature.hpp"
+#include "AngularSweepOrder.hpp"
 #include "ElementIntegrator.hpp"
 #include "SpatialMesh.hpp"
 
@@ -229,6 +230,24 @@ int main(int argc, char *argv[])
         catch (const std::exception &log_ex)
         {
             std::cerr << "Failed to write angular log: " << log_ex.what()
+                      << std::endl;
+        }
+
+        // Build sweep order (element ordering) for each direction and log it.
+        try
+        {
+            const auto sweep = pbte::AngularSweepOrder::Build(spatial.Mesh(), angle_quad);
+            std::ostringstream sw_path;
+            sw_path << "output/log/sweep_dim" << angle_opts.dimension
+                    << "_tp" << angle_opts.polar_points << "_" << polar_scheme
+                    << "_ap" << angle_opts.azimuth_points << "_" << azimuth_scheme
+                    << ".txt";
+            sweep.WriteToFile(angle_quad, spatial.Mesh(), sw_path.str());
+            std::cout << "Sweep order written to: " << sw_path.str() << std::endl;
+        }
+        catch (const std::exception &sweep_ex)
+        {
+            std::cerr << "Failed to build/write sweep order: " << sweep_ex.what()
                       << std::endl;
         }
     }
