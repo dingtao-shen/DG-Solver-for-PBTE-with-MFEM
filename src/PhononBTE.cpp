@@ -1,3 +1,4 @@
+#include "AngularQuadrature.hpp"
 #include "ElementIntegrator.hpp"
 #include "SpatialMesh.hpp"
 
@@ -52,6 +53,11 @@ int main(int argc, char *argv[])
     int order = 1;
     int refine_levels = 0;
     bool use_parallel = false;
+    int angle_dim_cli = -1;
+    int polar_pts_cli = -1;
+    int azimuth_pts_cli = -1;
+    std::string polar_scheme_cli;
+    std::string azimuth_scheme_cli;
 
 #ifdef MFEM_USE_MPI
     mfem::MPI_Session mpi(argc, argv);
@@ -79,6 +85,16 @@ int main(int argc, char *argv[])
                    "-np", "--no-parallel",
                    "Use parallel mesh/space (requires MFEM built with MPI).",
                    false);
+    args.AddOption(&angle_dim_cli, "-ad", "--angle-dim",
+                   "Angular quadrature dimension (2 or 3). Negative uses config.");
+    args.AddOption(&polar_pts_cli, "-ap", "--polar-pts",
+                   "Number of polar (theta) points. <=0 uses config.");
+    args.AddOption(&azimuth_pts_cli, "-az", "--azimuth-pts",
+                   "Number of azimuth (phi) points. <=0 uses config.");
+    args.AddOption(&polar_scheme_cli, "-aps", "--polar-scheme",
+                   "Polar scheme: uniform | gauss. Empty uses config.");
+    args.AddOption(&azimuth_scheme_cli, "-aas", "--azimuth-scheme",
+                   "Azimuth scheme: uniform | gauss. Empty uses config.");
     args.Parse();
     if (!args.Good())
     {
@@ -134,6 +150,87 @@ int main(int argc, char *argv[])
     {
         std::cerr << "Error constructing mesh/FE space: " << ex.what() << "\n";
         return 1;
+    }
+
+    pbte::AngleDiscretizationOptions angle_opts;
+    try
+    {
+        angle_opts = pbte::AngleQuadrature::LoadOptionsFromConfig(config_path);
+    }
+    catch (const std::exception &ex)
+    {
+        if (is_root)
+        {
+            std::cerr << "Warning: failed to read angular options from config: "
+                      << ex.what()
+                      << ". Using built-in defaults.\n";
+        }
+        angle_opts = pbte::AngleDiscretizationOptions{};
+    }
+
+    if (angle_dim_cli > 0)
+    {
+        angle_opts.dimension = angle_dim_cli;
+    }
+    if (polar_pts_cli > 0)
+    {
+        angle_opts.polar_points = polar_pts_cli;
+    }
+    if (azimuth_pts_cli > 0)
+    {
+        angle_opts.azimuth_points = azimuth_pts_cli;
+    }
+    if (!polar_scheme_cli.empty())
+    {
+        angle_opts.polar_scheme =
+            pbte::AngleQuadrature::ParseSchemeName(polar_scheme_cli);
+    }
+    if (!azimuth_scheme_cli.empty())
+    {
+        angle_opts.azimuth_scheme =
+            pbte::AngleQuadrature::ParseSchemeName(azimuth_scheme_cli);
+    }
+
+    pbte::AngleQuadrature angle_quad;
+    try
+    {
+        angle_quad = pbte::AngleQuadrature::Build(angle_opts);
+    }
+    catch (const std::exception &ex)
+    {
+        std::cerr << "Error constructing angular quadrature: " << ex.what()
+                  << "\n";
+        return 1;
+    }
+    if (is_root)
+    {
+        std::cout << "Angular quadrature built: dim=" << angle_opts.dimension
+                  << ", polar pts=" << angle_quad.PolarAngles().size()
+                  << ", azimuth pts=" << angle_quad.AzimuthAngles().size()
+                  << ", directions=" << angle_quad.Directions().size()
+                  << ", total weight=" << angle_quad.TotalWeight() << std::endl;
+
+        // Write angular quadrature to log.
+        const std::string polar_scheme =
+            pbte::AngleQuadrature::SchemeName(angle_opts.polar_scheme);
+        const std::string azimuth_scheme =
+            pbte::AngleQuadrature::SchemeName(angle_opts.azimuth_scheme);
+        std::ostringstream ang_path;
+        ang_path << "output/log/angles_dim" << angle_opts.dimension
+                 << "_tp" << angle_opts.polar_points << "_" << polar_scheme
+                 << "_ap" << angle_opts.azimuth_points << "_" << azimuth_scheme
+                 << ".txt";
+        try
+        {
+            angle_quad.WriteToFile(ang_path.str());
+            std::cout << "Angular quadrature written to: " << ang_path.str()
+                      << std::endl;
+        }
+        catch (const std::exception &log_ex)
+        {
+            std::cerr << "Failed to write angular log: " << log_ex.what()
+                      << std::endl;
+        }
     }
 
     // Assemble element-wise integrals to verify DG data is accessible.

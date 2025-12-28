@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include -isystem /usr/local/mfem-parallel/include -isystem /home/bryan/MFEM/hypre/src/hypre/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi
+CXX_INCLUDES = -I/home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include
 
 CXX_FLAGS = -std=gnu++17 -fPIC
 

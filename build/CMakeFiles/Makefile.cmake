@@ -7,13 +7,13 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/CMakeLists.txt"
+  "/home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/CMakeLists.txt"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
-  "/usr/local/mfem-parallel/lib/cmake/mfem/MFEMConfig.cmake"
-  "/usr/local/mfem-parallel/lib/cmake/mfem/MFEMConfigVersion.cmake"
-  "/usr/local/mfem-parallel/lib/cmake/mfem/MFEMTargets-release.cmake"
-  "/usr/local/mfem-parallel/lib/cmake/mfem/MFEMTargets.cmake"
+  "/usr/local/lib/cmake/mfem/MFEMConfig.cmake"
+  "/usr/local/lib/cmake/mfem/MFEMConfigVersion.cmake"
+  "/usr/local/lib/cmake/mfem/MFEMTargets-release.cmake"
+  "/usr/local/lib/cmake/mfem/MFEMTargets.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake"

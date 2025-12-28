@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/pbte.dir/src/AngularQuadrature.cpp.o"
+  "CMakeFiles/pbte.dir/src/AngularQuadrature.cpp.o.d"
   "CMakeFiles/pbte.dir/src/ElementIntegrator.cpp.o"
   "CMakeFiles/pbte.dir/src/ElementIntegrator.cpp.o.d"
   "CMakeFiles/pbte.dir/src/SpatialMesh.cpp.o"

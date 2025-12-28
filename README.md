@@ -43,6 +43,18 @@ mpirun -np 4 ./build/pbte_demo -m unit-cube -o 1 -p
 - After mesh + DG space construction, a summary prints to stdout.
 - A log file is written to `output/log/mesh_<source>_p<order>_dim<dim>.txt` by default. Pass a custom path via `BuildDGSpace` if embedding.
 
+## Angular discretization
+- Configure in `config/config.yaml`:
+  ```yaml
+  angles:
+    dimension: 3          # 2 (in-plane) or 3 (full solid angle)
+    polar_points: 8       # theta or cos(theta) points
+    azimuth_points: 16    # phi points
+    polar_scheme: gauss   # gauss | uniform
+    azimuth_scheme: uniform
+  ```
+- CLI overrides (negative/empty uses config): `-ad/--angle-dim`, `-ap/--polar-pts`, `-az/--azimuth-pts`, `-aps/--polar-scheme`, `-aas/--azimuth-scheme`.
+
 ### Sample meshes provided
 - `config/mesh/unit-square.mesh`: simple 2D triangular unit square.
 - `config/mesh/unit-cube-hex.mesh`: simple 3D hexahedral unit cube.

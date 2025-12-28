@@ -10,6 +10,7 @@ find_package(MFEM REQUIRED CONFIG)
 add_library(pbte STATIC
     src/SpatialMesh.cpp
     src/ElementIntegrator.cpp
+    src/AngularQuadrature.cpp
 )
 
 target_include_directories(pbte PUBLIC
