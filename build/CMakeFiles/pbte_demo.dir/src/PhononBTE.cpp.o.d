@@ -453,6 +453,7 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: \
  /usr/local/include/mfem/fem/dgmassinv.hpp \
  /usr/local/include/mfem/fem/hyperbolic.hpp \
  /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/ElementIntegrator.hpp \
+ /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/PhononProperties.hpp \
  /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/SpatialMesh.hpp \
  /usr/include/c++/13/filesystem /usr/include/c++/13/bits/fs_fwd.h \
  /usr/include/c++/13/bits/chrono.h /usr/include/c++/13/ratio \

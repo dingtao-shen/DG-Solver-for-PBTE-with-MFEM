@@ -6,12 +6,14 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 find_package(MFEM REQUIRED CONFIG)
+find_package(yaml-cpp REQUIRED)
 
 add_library(pbte STATIC
     src/SpatialMesh.cpp
     src/ElementIntegrator.cpp
     src/AngularQuadrature.cpp
     src/AngularSweepOrder.cpp
+    src/PhononProperties.cpp
 )
 
 target_include_directories(pbte PUBLIC
@@ -19,6 +21,7 @@ target_include_directories(pbte PUBLIC
 )
 
 target_link_libraries(pbte PUBLIC mfem)
+target_link_libraries(pbte PUBLIC yaml-cpp)
 
 add_executable(pbte_demo
     src/PhononBTE.cpp

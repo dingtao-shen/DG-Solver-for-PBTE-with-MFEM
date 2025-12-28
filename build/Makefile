@@ -238,6 +238,30 @@ src/PhononBTE.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pbte_demo.dir/build.make CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.s
 .PHONY : src/PhononBTE.cpp.s
 
+src/PhononProperties.o: src/PhononProperties.cpp.o
+.PHONY : src/PhononProperties.o
+
+# target to build an object file
+src/PhononProperties.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pbte.dir/build.make CMakeFiles/pbte.dir/src/PhononProperties.cpp.o
+.PHONY : src/PhononProperties.cpp.o
+
+src/PhononProperties.i: src/PhononProperties.cpp.i
+.PHONY : src/PhononProperties.i
+
+# target to preprocess a source file
+src/PhononProperties.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pbte.dir/build.make CMakeFiles/pbte.dir/src/PhononProperties.cpp.i
+.PHONY : src/PhononProperties.cpp.i
+
+src/PhononProperties.s: src/PhononProperties.cpp.s
+.PHONY : src/PhononProperties.s
+
+# target to generate assembly for a file
+src/PhononProperties.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pbte.dir/build.make CMakeFiles/pbte.dir/src/PhononProperties.cpp.s
+.PHONY : src/PhononProperties.cpp.s
+
 src/SpatialMesh.o: src/SpatialMesh.cpp.o
 .PHONY : src/SpatialMesh.o
 
@@ -284,6 +308,9 @@ help:
 	@echo "... src/PhononBTE.o"
 	@echo "... src/PhononBTE.i"
 	@echo "... src/PhononBTE.s"
+	@echo "... src/PhononProperties.o"
+	@echo "... src/PhononProperties.i"
+	@echo "... src/PhononProperties.s"
 	@echo "... src/SpatialMesh.o"
 	@echo "... src/SpatialMesh.i"
 	@echo "... src/SpatialMesh.s"

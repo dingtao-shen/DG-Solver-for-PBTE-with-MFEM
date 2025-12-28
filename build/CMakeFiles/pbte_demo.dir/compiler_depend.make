@@ -3,7 +3,9 @@
 
 CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/src/PhononBTE.cpp \
   /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/AngularQuadrature.hpp \
+  /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/AngularSweepOrder.hpp \
   /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/ElementIntegrator.hpp \
+  /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/PhononProperties.hpp \
   /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/SpatialMesh.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -652,15 +654,9 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
-/usr/local/include/mfem/general/binaryio.hpp:
+/usr/local/include/mfem/linalg/matrix.hpp:
 
-/usr/include/c++/13/cstdio:
-
-/usr/include/c++/13/bits/fs_path.h:
-
-/usr/local/include/mfem/fem/nonlinearform_ext.hpp:
-
-/usr/include/c++/13/fstream:
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
 /usr/include/c++/13/codecvt:
 
@@ -740,11 +736,11 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
-/usr/include/c++/13/cstdlib:
-
 /usr/local/include/mfem/general/kdtree.hpp:
 
 /usr/include/c++/13/cstdint:
+
+/usr/include/c++/13/cstdlib:
 
 /usr/include/c++/13/bits/sstream.tcc:
 
@@ -848,23 +844,9 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 
 /usr/include/c++/13/bits/locale_facets.h:
 
-/usr/include/c++/13/bits/stl_vector.h:
-
-/usr/local/include/mfem/general/mem_manager.hpp:
-
-/usr/include/c++/13/bits/stl_tempbuf.h:
-
-/usr/local/include/mfem/config/config.hpp:
-
-/usr/include/c++/13/bits/random.h:
-
-/usr/include/c++/13/bits/codecvt.h:
-
-/usr/include/c++/13/bits/stl_tree.h:
+/usr/include/c++/13/backward/binders.h:
 
 /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/src/PhononBTE.cpp:
-
-/usr/include/c++/13/backward/binders.h:
 
 /usr/local/include/mfem/fem/quadinterpolator.hpp:
 
@@ -902,6 +884,20 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+/usr/include/c++/13/bits/charconv.h:
+
+/usr/include/c++/13/bits/fs_path.h:
+
+/usr/local/include/mfem/general/binaryio.hpp:
+
+/usr/include/c++/13/cstdio:
+
+/usr/local/include/mfem/fem/nonlinearform_ext.hpp:
+
+/usr/include/c++/13/fstream:
+
 /usr/include/c++/13/bits/allocated_ptr.h:
 
 /usr/include/c++/13/bit:
@@ -911,10 +907,6 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 /usr/local/include/mfem/fem/fe/fe_base.hpp:
 
 /usr/include/c++/13/bits/enable_special_members.h:
-
-/usr/include/assert.h:
-
-/usr/include/c++/13/backward/auto_ptr.h:
 
 /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/AngularQuadrature.hpp:
 
@@ -932,14 +924,6 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 
 /usr/include/c++/13/bits/hashtable_policy.h:
 
-/usr/local/include/mfem/linalg/matrix.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
-
-/usr/include/c++/13/bits/streambuf.tcc:
-
-/usr/include/c++/13/bits/specfun.h:
-
 /usr/include/c++/13/bits/basic_string.h:
 
 /usr/local/include/mfem/fem/linearform.hpp:
@@ -956,6 +940,12 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
+/usr/include/c++/13/bits/shared_ptr_base.h:
+
+/usr/include/wchar.h:
+
+/usr/include/c++/13/bits/invoke.h:
+
 /usr/local/include/mfem/fem/multigrid.hpp:
 
 /usr/local/include/mfem/fem/fe/fe_pyramid.hpp:
@@ -966,6 +956,16 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 
 /usr/include/c++/13/bits/cxxabi_forced.h:
 
+/usr/local/include/mfem/mesh/element.hpp:
+
+/usr/include/c++/13/functional:
+
+/usr/include/c++/13/bits/specfun.h:
+
+/usr/include/c++/13/bits/streambuf.tcc:
+
+/home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/PhononProperties.hpp:
+
 /usr/local/include/mfem/fem/qspace.hpp:
 
 /usr/local/include/mfem/fem/intrules_cut.hpp:
@@ -974,9 +974,23 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 
 /usr/include/errno.h:
 
-/usr/include/c++/13/bits/istream.tcc:
+/usr/include/c++/13/backward/auto_ptr.h:
 
-/usr/include/c++/13/bits/locale_conv.h:
+/usr/include/assert.h:
+
+/usr/include/c++/13/bits/stl_vector.h:
+
+/usr/local/include/mfem/general/mem_manager.hpp:
+
+/usr/include/c++/13/bits/stl_tempbuf.h:
+
+/usr/local/include/mfem/config/config.hpp:
+
+/usr/include/c++/13/bits/random.h:
+
+/usr/include/c++/13/bits/stl_tree.h:
+
+/usr/include/c++/13/bits/codecvt.h:
 
 /usr/local/include/mfem/linalg/batched/batched.hpp:
 
@@ -1011,6 +1025,10 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 /usr/include/c++/13/bits/hash_bytes.h:
 
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
+
+/usr/include/c++/13/bits/istream.tcc:
+
+/usr/include/c++/13/bits/locale_conv.h:
 
 /usr/local/include/mfem/fem/coefficient.hpp:
 
@@ -1048,6 +1066,10 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 
 /usr/include/c++/13/bits/exception.h:
 
+/usr/include/c++/13/bits/memory_resource.h:
+
+/usr/include/c++/13/streambuf:
+
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/local/include/mfem/fem/tmop_tools.hpp:
@@ -1075,16 +1097,6 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 /usr/include/c++/13/bits/stl_heap.h:
 
 /usr/include/c++/13/utility:
-
-/usr/include/c++/13/bits/invoke.h:
-
-/usr/include/c++/13/streambuf:
-
-/usr/include/c++/13/bits/memory_resource.h:
-
-/usr/include/c++/13/bits/shared_ptr_base.h:
-
-/usr/include/wchar.h:
 
 /usr/local/include/mfem/mesh/submesh/submesh_utils.hpp:
 
@@ -1131,10 +1143,6 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 /usr/include/c++/13/ext/string_conversions.h:
 
 /usr/include/c++/13/ext/type_traits.h:
-
-/usr/local/include/mfem/mesh/element.hpp:
-
-/usr/include/c++/13/functional:
 
 /usr/local/include/mfem/general/communication.hpp:
 
@@ -1248,6 +1256,8 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 
 /usr/include/c++/13/bits/stl_iterator_base_types.h:
 
+/home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/AngularSweepOrder.hpp:
+
 /usr/include/stdio.h:
 
 /usr/local/include/mfem/general/tic_toc.hpp:
@@ -1333,7 +1343,3 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
-
-/usr/include/c++/13/bits/charconv.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:

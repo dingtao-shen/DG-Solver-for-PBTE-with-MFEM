@@ -4,7 +4,9 @@
 CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o
  /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/src/PhononBTE.cpp
  /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/AngularQuadrature.hpp
+ /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/AngularSweepOrder.hpp
  /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/ElementIntegrator.hpp
+ /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/PhononProperties.hpp
  /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/SpatialMesh.hpp
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h

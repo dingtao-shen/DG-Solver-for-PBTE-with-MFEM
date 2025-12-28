@@ -1,6 +1,7 @@
 #include "AngularQuadrature.hpp"
 #include "AngularSweepOrder.hpp"
 #include "ElementIntegrator.hpp"
+#include "PhononProperties.hpp"
 #include "SpatialMesh.hpp"
 
 #include "mfem.hpp"
@@ -296,6 +297,24 @@ int main(int argc, char *argv[])
                 }
                 std::cout << "\n";
             }
+        }
+    }
+
+    // Build phonon properties from material config.
+    if (is_root)
+    {
+        try
+        {
+            const auto material = pbte::PhononProperties::LoadMaterial("config/si.yaml");
+            const auto props = pbte::PhononProperties::Build(material);
+            const std::string ph_path = "output/log/phonon_properties.txt";
+            props.WriteToFile(ph_path);
+            std::cout << "Phonon properties written to: " << ph_path << std::endl;
+        }
+        catch (const std::exception &ph_ex)
+        {
+            std::cerr << "Failed to build/write phonon properties: " << ph_ex.what()
+                      << std::endl;
         }
     }
 

@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/src/AngularQuadrature.cpp" "CMakeFiles/pbte.dir/src/AngularQuadrature.cpp.o" "gcc" "CMakeFiles/pbte.dir/src/AngularQuadrature.cpp.o.d"
   "/home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/src/AngularSweepOrder.cpp" "CMakeFiles/pbte.dir/src/AngularSweepOrder.cpp.o" "gcc" "CMakeFiles/pbte.dir/src/AngularSweepOrder.cpp.o.d"
   "/home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/src/ElementIntegrator.cpp" "CMakeFiles/pbte.dir/src/ElementIntegrator.cpp.o" "gcc" "CMakeFiles/pbte.dir/src/ElementIntegrator.cpp.o.d"
+  "/home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/src/PhononProperties.cpp" "CMakeFiles/pbte.dir/src/PhononProperties.cpp.o" "gcc" "CMakeFiles/pbte.dir/src/PhononProperties.cpp.o.d"
   "/home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/src/SpatialMesh.cpp" "CMakeFiles/pbte.dir/src/SpatialMesh.cpp.o" "gcc" "CMakeFiles/pbte.dir/src/SpatialMesh.cpp.o.d"
   )
 

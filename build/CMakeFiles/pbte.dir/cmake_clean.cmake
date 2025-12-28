@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/pbte.dir/src/AngularSweepOrder.cpp.o.d"
   "CMakeFiles/pbte.dir/src/ElementIntegrator.cpp.o"
   "CMakeFiles/pbte.dir/src/ElementIntegrator.cpp.o.d"
+  "CMakeFiles/pbte.dir/src/PhononProperties.cpp.o"
+  "CMakeFiles/pbte.dir/src/PhononProperties.cpp.o.d"
   "CMakeFiles/pbte.dir/src/SpatialMesh.cpp.o"
   "CMakeFiles/pbte.dir/src/SpatialMesh.cpp.o.d"
   "libpbte.a"

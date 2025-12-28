@@ -201,6 +201,9 @@ DG_Solver_for_PBTE_with_MFEM_SOURCE_DIR:STATIC=/home/dtshen/Dev/DG-Solver-for-PB
 //The directory containing a CMake configuration file for MFEM.
 MFEM_DIR:PATH=/usr/local/lib/cmake/mfem
 
+//The directory containing a CMake configuration file for yaml-cpp.
+yaml-cpp_DIR:PATH=/home/dtshen/miniconda3/lib/cmake/yaml-cpp
+
 
 ########################
 # INTERNAL cache entries
