@@ -1,6 +1,7 @@
 #include "AngularQuadrature.hpp"
 #include "AngularSweepOrder.hpp"
 #include "ElementIntegrator.hpp"
+#include "MacroscopicQuantities.hpp"
 #include "PhononProperties.hpp"
 #include "SpatialMesh.hpp"
 
@@ -317,6 +318,28 @@ int main(int argc, char *argv[])
                       << std::endl;
         }
     }
+
+    // ---- Macroscopic quantities skeleton ----
+    // Rebuild phonon properties for solver use (scope above is root-only).
+    pbte::PhononProperties props;
+    try
+    {
+        const auto material = pbte::PhononProperties::LoadMaterial("config/si.yaml");
+        props = pbte::PhononProperties::Build(material);
+    }
+    catch (const std::exception &ph_ex)
+    {
+        std::cerr << "Failed to build phonon properties: " << ph_ex.what() << std::endl;
+        return 1;
+    }
+
+    pbte::MacroscopicQuantities macro(spatial.FESpace(), props, angle_quad);
+    macro.Reset();
+    // TODO: In the solver loop, call macro.AccumulateDirectionalCoeff(...) per
+    // (dir, branch, spec) then Finalize/Residual. Here we just emit zero fields
+    // as a wiring test.
+    macro.Finalize(element_data);
+    macro.WriteParaView("pbte_fields_parallel");
 
     // Serialize local integrals to a string (per rank).
     std::ostringstream oss;

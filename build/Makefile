@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM
+CMAKE_SOURCE_DIR = /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/build
+CMAKE_BINARY_DIR = /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/build/CMakeFiles /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/build/CMakeFiles /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -214,6 +214,30 @@ src/ElementIntegrator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pbte.dir/build.make CMakeFiles/pbte.dir/src/ElementIntegrator.cpp.s
 .PHONY : src/ElementIntegrator.cpp.s
 
+src/MacroscopicQuantities.o: src/MacroscopicQuantities.cpp.o
+.PHONY : src/MacroscopicQuantities.o
+
+# target to build an object file
+src/MacroscopicQuantities.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pbte.dir/build.make CMakeFiles/pbte.dir/src/MacroscopicQuantities.cpp.o
+.PHONY : src/MacroscopicQuantities.cpp.o
+
+src/MacroscopicQuantities.i: src/MacroscopicQuantities.cpp.i
+.PHONY : src/MacroscopicQuantities.i
+
+# target to preprocess a source file
+src/MacroscopicQuantities.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pbte.dir/build.make CMakeFiles/pbte.dir/src/MacroscopicQuantities.cpp.i
+.PHONY : src/MacroscopicQuantities.cpp.i
+
+src/MacroscopicQuantities.s: src/MacroscopicQuantities.cpp.s
+.PHONY : src/MacroscopicQuantities.s
+
+# target to generate assembly for a file
+src/MacroscopicQuantities.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pbte.dir/build.make CMakeFiles/pbte.dir/src/MacroscopicQuantities.cpp.s
+.PHONY : src/MacroscopicQuantities.cpp.s
+
 src/PhononBTE.o: src/PhononBTE.cpp.o
 .PHONY : src/PhononBTE.o
 
@@ -305,6 +329,9 @@ help:
 	@echo "... src/ElementIntegrator.o"
 	@echo "... src/ElementIntegrator.i"
 	@echo "... src/ElementIntegrator.s"
+	@echo "... src/MacroscopicQuantities.o"
+	@echo "... src/MacroscopicQuantities.i"
+	@echo "... src/MacroscopicQuantities.s"
 	@echo "... src/PhononBTE.o"
 	@echo "... src/PhononBTE.i"
 	@echo "... src/PhononBTE.s"

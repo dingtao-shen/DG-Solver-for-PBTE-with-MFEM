@@ -47,6 +47,9 @@ public:
     const std::vector<std::vector<double>> &Frequency() const { return w_; }
     const std::vector<double> &Frequency(int branch) const { return w_[branch]; }
 
+    const std::vector<std::vector<double>> &FrequencyWeight() const { return dw_; }
+    const std::vector<double> &FrequencyWeight(int branch) const { return dw_[branch]; }
+
     const std::vector<std::vector<double>> &GroupVelocity() const { return vg_; }
     const std::vector<double> &GroupVelocity(int branch) const { return vg_[branch]; }
 
@@ -59,7 +62,7 @@ public:
     const std::vector<std::vector<double>> &HeatCapacity() const { return heat_cap_; }
     const std::vector<double> &HeatCapacity(int branch) const { return heat_cap_[branch]; }
 
-    double HeatCapacityWeightedInvKn() const { return heat_cap_v_; }
+    double avgHeatCapacity() const { return heat_cap_v_; }
 
 private:
     int num_branches_ = 0;

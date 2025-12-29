@@ -14,6 +14,7 @@ add_library(pbte STATIC
     src/AngularQuadrature.cpp
     src/AngularSweepOrder.cpp
     src/PhononProperties.cpp
+    src/MacroscopicQuantities.cpp
 )
 
 target_include_directories(pbte PUBLIC

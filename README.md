@@ -68,4 +68,8 @@ cmake -B build -S . -DMFEM_DIR=/path/to/mfem-mpi
 cmake --build build -j
 mpirun -np 4 ./build/pbte_demo -p -o 2 -r 2
 ```
+_Note: for example, at office station:_ 
+```
+rm -rf build && cmake -B build -S . -DMFEM_DIR=/usr/local/mfem-parallel/lib/cmake/mfem -DCMAKE_PREFIX_PATH=/usr/local/mfem-parallel && cmake --build build -j && mpirun -np 4 ./build/pbte_demo -p -o 2
+```
 Only rank 0 prints to stdout and writes `output/log/integrals_all.txt`; all ranks contribute their local integrals to that file.
