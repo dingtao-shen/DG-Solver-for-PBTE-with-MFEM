@@ -238,6 +238,30 @@ src/MacroscopicQuantities.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pbte.dir/build.make CMakeFiles/pbte.dir/src/MacroscopicQuantities.cpp.s
 .PHONY : src/MacroscopicQuantities.cpp.s
 
+src/PBTESolver.o: src/PBTESolver.cpp.o
+.PHONY : src/PBTESolver.o
+
+# target to build an object file
+src/PBTESolver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pbte.dir/build.make CMakeFiles/pbte.dir/src/PBTESolver.cpp.o
+.PHONY : src/PBTESolver.cpp.o
+
+src/PBTESolver.i: src/PBTESolver.cpp.i
+.PHONY : src/PBTESolver.i
+
+# target to preprocess a source file
+src/PBTESolver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pbte.dir/build.make CMakeFiles/pbte.dir/src/PBTESolver.cpp.i
+.PHONY : src/PBTESolver.cpp.i
+
+src/PBTESolver.s: src/PBTESolver.cpp.s
+.PHONY : src/PBTESolver.s
+
+# target to generate assembly for a file
+src/PBTESolver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pbte.dir/build.make CMakeFiles/pbte.dir/src/PBTESolver.cpp.s
+.PHONY : src/PBTESolver.cpp.s
+
 src/PhononBTE.o: src/PhononBTE.cpp.o
 .PHONY : src/PhononBTE.o
 
@@ -332,6 +356,9 @@ help:
 	@echo "... src/MacroscopicQuantities.o"
 	@echo "... src/MacroscopicQuantities.i"
 	@echo "... src/MacroscopicQuantities.s"
+	@echo "... src/PBTESolver.o"
+	@echo "... src/PBTESolver.i"
+	@echo "... src/PBTESolver.s"
 	@echo "... src/PhononBTE.o"
 	@echo "... src/PhononBTE.i"
 	@echo "... src/PhononBTE.s"

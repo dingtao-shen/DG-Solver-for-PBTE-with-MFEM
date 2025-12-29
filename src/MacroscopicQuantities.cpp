@@ -101,7 +101,7 @@ double MacroscopicQuantities::Residual(const mfem::Vector &prev_Tv) const
     const double den = Tv_.Norml2();
     if (den == 0.0)
     {
-        return 0.0;
+        return num; // fall back to absolute change if new Tv is zero
     }
     return num / den;
 }

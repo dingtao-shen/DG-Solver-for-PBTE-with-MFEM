@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/pbte.dir/src/ElementIntegrator.cpp.o.d"
   "CMakeFiles/pbte.dir/src/MacroscopicQuantities.cpp.o"
   "CMakeFiles/pbte.dir/src/MacroscopicQuantities.cpp.o.d"
+  "CMakeFiles/pbte.dir/src/PBTESolver.cpp.o"
+  "CMakeFiles/pbte.dir/src/PBTESolver.cpp.o.d"
   "CMakeFiles/pbte.dir/src/PhononProperties.cpp.o"
   "CMakeFiles/pbte.dir/src/PhononProperties.cpp.o.d"
   "CMakeFiles/pbte.dir/src/SpatialMesh.cpp.o"

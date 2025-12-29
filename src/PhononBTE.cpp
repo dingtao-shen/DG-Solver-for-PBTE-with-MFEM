@@ -3,6 +3,7 @@
 #include "ElementIntegrator.hpp"
 #include "MacroscopicQuantities.hpp"
 #include "PhononProperties.hpp"
+#include "PBTESolver.hpp"
 #include "SpatialMesh.hpp"
 
 #include "mfem.hpp"
@@ -319,8 +320,7 @@ int main(int argc, char *argv[])
         }
     }
 
-    // ---- Macroscopic quantities skeleton ----
-    // Rebuild phonon properties for solver use (scope above is root-only).
+    // Build phonon properties for solver use (all ranks).
     pbte::PhononProperties props;
     try
     {
@@ -335,11 +335,84 @@ int main(int argc, char *argv[])
 
     pbte::MacroscopicQuantities macro(spatial.FESpace(), props, angle_quad);
     macro.Reset();
-    // TODO: In the solver loop, call macro.AccumulateDirectionalCoeff(...) per
-    // (dir, branch, spec) then Finalize/Residual. Here we just emit zero fields
-    // as a wiring test.
-    macro.Finalize(element_data);
-    macro.WriteParaView("pbte_fields_parallel");
+
+    // Debug: print isothermal BC map
+    const auto &bc_map = spatial.IsothermalBoundaryTemps();
+    if (is_root)
+    {
+        std::cout << "Isothermal BC count = " << bc_map.size() << std::endl;
+        for (const auto &kv : bc_map)
+        {
+            std::cout << "  attr " << kv.first << " -> T = " << kv.second << std::endl;
+        }
+    }
+
+#ifdef MFEM_USE_MPI
+    if (use_parallel)
+    {
+        pbte::AngularSweepOrder sweep = pbte::AngularSweepOrder::Build(spatial.Mesh(), angle_quad);
+        pbte::PBTESolverPar solver(*spatial.ParMeshPtr(),
+                                   *spatial.ParFESpacePtr(),
+                                   angle_quad,
+                                   sweep,
+                                   element_data,
+                                   props,
+                                   spatial.IsothermalBoundaryTemps(),
+                                   pbte::CachePolicy::FullLU,
+                                   1e-8,
+                                   100); // 100-step test
+
+        const int ndir = static_cast<int>(angle_quad.Directions().size());
+        const int nbranch = static_cast<int>(props.Frequency().size());
+        const int nspec = nbranch > 0 ? static_cast<int>(props.Frequency(0).size()) : 0;
+        const int ndof = spatial.FESpace().GetFE(0)->GetDof();
+        const int ne_local = spatial.Mesh().GetNE();
+        std::vector<std::vector<std::vector<mfem::DenseMatrix>>> coeff(
+            ndir, std::vector<std::vector<mfem::DenseMatrix>>(
+                      nbranch, std::vector<mfem::DenseMatrix>(
+                                   nspec, mfem::DenseMatrix(ndof, ne_local))));
+
+        double res = solver.Solve(coeff, macro);
+        if (is_root)
+        {
+            std::cout << "[Parallel] residual = " << res << std::endl;
+        }
+        macro.WriteParaView("pbte_fields");
+        return 0;
+    }
+#endif
+
+    // Serial path
+    {
+        pbte::AngularSweepOrder sweep = pbte::AngularSweepOrder::Build(spatial.Mesh(), angle_quad);
+        pbte::PBTESolver solver(spatial.Mesh(),
+                                spatial.FESpace(),
+                                angle_quad,
+                                sweep,
+                                element_data,
+                                props,
+                                spatial.IsothermalBoundaryTemps(),
+                                pbte::CachePolicy::FullLU,
+                                1e-8,
+                                100); // 100-step test
+
+        const int ndir = static_cast<int>(angle_quad.Directions().size());
+        const int nbranch = static_cast<int>(props.Frequency().size());
+        const int nspec = nbranch > 0 ? static_cast<int>(props.Frequency(0).size()) : 0;
+        const int ndof = spatial.FESpace().GetFE(0)->GetDof();
+        const int ne = spatial.Mesh().GetNE();
+        std::vector<std::vector<std::vector<mfem::DenseMatrix>>> coeff(
+            ndir, std::vector<std::vector<mfem::DenseMatrix>>(
+                      nbranch, std::vector<mfem::DenseMatrix>(
+                                   nspec, mfem::DenseMatrix(ndof, ne))));
+
+        double res = solver.Solve(coeff, macro);
+        if (is_root)
+        {
+            std::cout << "[Serial] residual = " << res << std::endl;
+        }
+        macro.WriteParaView("pbte_fields");
+    }
 
     // Serialize local integrals to a string (per rank).
     std::ostringstream oss;

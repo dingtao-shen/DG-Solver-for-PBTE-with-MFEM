@@ -134,13 +134,7 @@ void SpatialMesh::LoadMeshFromConfig(const std::string &config_path)
     isothermal_bc_.clear();
     bool in_bc_block = false;
     int current_attr = -1;
-    auto flush_entry = [&]() {
-        if (current_attr >= 0)
-        {
-            // temperature must have been set before flush; handled below
-            current_attr = -1;
-        }
-    };
+    auto flush_entry = [&]() { current_attr = -1; };
     for (const auto &raw : lines)
     {
         std::string l = trim(raw);
@@ -159,8 +153,28 @@ void SpatialMesh::LoadMeshFromConfig(const std::string &config_path)
         }
         if (l.rfind("-", 0) == 0)
         {
-            // new entry
-            current_attr = -1;
+            flush_entry();
+            // parse inline after dash if present
+            const std::string rest = trim(l.substr(1));
+            if (rest.rfind("attr:", 0) == 0)
+            {
+                const std::string val = trim(rest.substr(std::string("attr:").size()));
+                current_attr = std::stoi(val);
+            }
+            else if (rest.rfind("temperature:", 0) == 0 && current_attr >= 0)
+            {
+                const std::string val = trim(rest.substr(std::string("temperature:").size()));
+                try
+                {
+                    const double t = std::stod(val);
+                    isothermal_bc_[current_attr] = t;
+                }
+                catch (const std::exception &)
+                {
+                    std::cerr << "Warning: failed to parse temperature value: " << l
+                              << std::endl;
+                }
+            }
             continue;
         }
         if (l.rfind("attr:", 0) == 0)

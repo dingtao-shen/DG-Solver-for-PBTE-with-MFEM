@@ -27,6 +27,7 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o
  /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/AngularSweepOrder.hpp
  /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/ElementIntegrator.hpp
  /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/MacroscopicQuantities.hpp
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/PBTESolver.hpp
  /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/PhononProperties.hpp
  /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/SpatialMesh.hpp
  /usr/include/alloca.h
@@ -182,6 +183,7 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o
  /usr/include/c++/13/memory
  /usr/include/c++/13/new
  /usr/include/c++/13/numeric
+ /usr/include/c++/13/optional
  /usr/include/c++/13/ostream
  /usr/include/c++/13/pstl/execution_defs.h
  /usr/include/c++/13/pstl/glue_algorithm_defs.h

@@ -15,6 +15,7 @@ add_library(pbte STATIC
     src/AngularSweepOrder.cpp
     src/PhononProperties.cpp
     src/MacroscopicQuantities.cpp
+    src/PBTESolver.cpp
 )
 
 target_include_directories(pbte PUBLIC

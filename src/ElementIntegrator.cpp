@@ -348,6 +348,12 @@ std::vector<ElementIntegralData> DGElementIntegrator::AssembleAll()
     }
 
     AssembleFaceContributions(results);
+#ifdef MFEM_USE_MPI
+    if (is_parallel_)
+    {
+        AssembleSharedFaceContributions(results);
+    }
+#endif
     return results;
 }
 }  // namespace pbte

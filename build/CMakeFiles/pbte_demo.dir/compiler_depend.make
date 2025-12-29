@@ -26,6 +26,7 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/bryan/projects/DG-Solver-for
   /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/AngularSweepOrder.hpp \
   /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/ElementIntegrator.hpp \
   /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/MacroscopicQuantities.hpp \
+  /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/PBTESolver.hpp \
   /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/PhononProperties.hpp \
   /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/SpatialMesh.hpp \
   /usr/include/alloca.h \
@@ -181,6 +182,7 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/bryan/projects/DG-Solver-for
   /usr/include/c++/13/memory \
   /usr/include/c++/13/new \
   /usr/include/c++/13/numeric \
+  /usr/include/c++/13/optional \
   /usr/include/c++/13/ostream \
   /usr/include/c++/13/pstl/execution_defs.h \
   /usr/include/c++/13/pstl/glue_algorithm_defs.h \
@@ -849,6 +851,10 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/bryan/projects/DG-Solver-for
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
+
 /usr/include/c++/13/bits/stl_numeric.h:
 
 /usr/include/c++/13/bits/stl_map.h:
@@ -973,8 +979,6 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/bryan/projects/DG-Solver-for
 
 /usr/include/c++/13/bits/uses_allocator.h:
 
-/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
-
 /usr/include/c++/13/bits/locale_facets_nonio.tcc:
 
 /usr/include/c++/13/bits/stl_heap.h:
@@ -1037,6 +1041,16 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/bryan/projects/DG-Solver-for
 
 /usr/include/c++/13/bits/stl_multimap.h:
 
+/usr/include/c++/13/bits/localefwd.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/usr/include/c++/13/bits/exception_defines.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+/usr/include/math.h:
+
 /usr/include/c++/13/bits/locale_conv.h:
 
 /usr/include/c++/13/bits/istream.tcc:
@@ -1077,6 +1091,8 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/bryan/projects/DG-Solver-for
 
 /home/bryan/MFEM/hypre/src/hypre/include/krylov.h:
 
+/usr/include/c++/13/optional:
+
 /usr/include/c++/13/bits/vector.tcc:
 
 /usr/local/mfem-parallel/include/mfem/general/tic_toc.hpp:
@@ -1110,16 +1126,6 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/bryan/projects/DG-Solver-for
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
 /usr/include/c++/13/bits/basic_string.tcc:
-
-/usr/include/c++/13/bits/localefwd.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/c++/13/bits/exception_defines.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
-
-/usr/include/math.h:
 
 /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/AngularQuadrature.hpp:
 
@@ -1161,6 +1167,8 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/bryan/projects/DG-Solver-for
 
 /usr/include/c++/13/bits/cxxabi_forced.h:
 
+/home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/PBTESolver.hpp:
+
 /usr/local/mfem-parallel/include/mfem/linalg/blockvector.hpp:
 
 /usr/include/c++/13/bits/fs_path.h:
@@ -1200,20 +1208,6 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/bryan/projects/DG-Solver-for
 /home/bryan/MFEM/hypre/src/hypre/include/HYPRE_parcsr_mv.h:
 
 /usr/include/pthread.h:
-
-/usr/include/c++/13/bits/hash_bytes.h:
-
-/usr/include/x86_64-linux-gnu/bits/math-vector.h:
-
-/usr/local/mfem-parallel/include/mfem/mesh/vtk.hpp:
-
-/usr/include/c++/13/array:
-
-/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intercomm_inln.h:
-
-/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
-
-/usr/include/asm-generic/errno-base.h:
 
 /usr/local/mfem-parallel/include/mfem/fem/restriction.hpp:
 
@@ -1255,13 +1249,25 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/bryan/projects/DG-Solver-for
 
 /usr/include/locale.h:
 
+/usr/include/c++/13/bits/hash_bytes.h:
+
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+
+/usr/local/mfem-parallel/include/mfem/mesh/vtk.hpp:
+
+/usr/include/c++/13/array:
+
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intercomm_inln.h:
+
+/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
+
+/usr/include/asm-generic/errno-base.h:
+
 /usr/include/c++/13/backward/auto_ptr.h:
 
 /usr/local/mfem-parallel/include/mfem/mesh/point.hpp:
 
 /usr/include/assert.h:
-
-/usr/include/c++/13/bits/stl_vector.h:
 
 /usr/include/c++/13/bits/stl_tempbuf.h:
 
@@ -1272,8 +1278,6 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/bryan/projects/DG-Solver-for
 /usr/include/c++/13/bits/codecvt.h:
 
 /usr/include/c++/13/bits/stl_raw_storage_iter.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
 /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/exception.h:
 
@@ -1306,6 +1310,8 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/bryan/projects/DG-Solver-for
 /usr/include/c++/13/pstl/execution_defs.h:
 
 /usr/include/alloca.h:
+
+/usr/include/c++/13/bits/stl_vector.h:
 
 /usr/include/c++/13/bits/specfun.h:
 
@@ -1386,6 +1392,10 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/bryan/projects/DG-Solver-for
 /usr/include/c++/13/pstl/glue_memory_defs.h:
 
 /usr/include/c++/13/exception:
+
+/usr/include/sched.h:
+
+/usr/include/wctype.h:
 
 /usr/include/c++/13/bits/stl_pair.h:
 
@@ -1528,10 +1538,6 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/bryan/projects/DG-Solver-for
 /usr/include/endian.h:
 
 /usr/include/stdint.h:
-
-/usr/include/wctype.h:
-
-/usr/include/sched.h:
 
 /usr/include/string.h:
 
