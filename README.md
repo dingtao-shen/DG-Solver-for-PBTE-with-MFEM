@@ -60,11 +60,11 @@ mpirun -np 4 ./build/pbte_demo -m unit-cube -o 1 -p
 - `config/mesh/unit-cube-hex.mesh`: simple 3D hexahedral unit cube.
 
 ### Parallel build and run (MPI)
-- Ensure MFEM is built with MPI; point `-DMFEM_DIR` to the MPI-enabled prefix.
+- Ensure MFEM is built with MPI; point `-DUSE_MPI=ON` to .
 - Example clean rebuild and run (4 ranks, order 2, with two levels of uniform refinement):
 ```bash
 rm -rf build
-cmake -B build -S . -DMFEM_DIR=/path/to/mfem-mpi
+cmake -B build -S . -DUSE_MPI=ON
 cmake --build build -j
 mpirun -np 4 ./build/pbte_demo -p -o 2 -r 2
 ```
