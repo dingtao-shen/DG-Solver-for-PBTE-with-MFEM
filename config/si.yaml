@@ -1,5 +1,5 @@
 model: non-gray-smrt
-num_spectral: 64
+num_spectral: 20
 reference_temperature: 300.0 # K
 reference_length: 1.0e-6 # m
 

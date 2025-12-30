@@ -13,7 +13,7 @@ boundary_conditions:
 
 angles:
   dimension: 3           # 2 => in-plane, 3 => full space
-  polar_points: 8        # theta or cos(theta) points
-  azimuth_points: 16     # phi points
+  polar_points: 16        # theta or cos(theta) points
+  azimuth_points: 24     # phi points
   polar_scheme: gauss    # gauss | uniform
   azimuth_scheme: gauss
