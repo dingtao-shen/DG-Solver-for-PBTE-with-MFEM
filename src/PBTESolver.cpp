@@ -191,7 +191,8 @@ mfem::DenseMatrix PBTESolver::AssembleA(int dir_idx, int branch, int spec, int e
     A *= dt_inv_;
     for (int d = 0; d < dim_; ++d)
     {
-        A.Add(-vg * dir.direction[d], cd.stiff[d]);
+        A.Add(-vg * dir.direction[d], cd.stiff[d]); 
+        // 注意这里有问题，stiff的dim是空间物理网格，dir.direction的维度是立体角离散维度，目前都为3没有问题，但要考虑不匹配时的情况
     }
     // faces
     for (const auto &f : cd.faces)
@@ -199,11 +200,13 @@ mfem::DenseMatrix PBTESolver::AssembleA(int dir_idx, int branch, int spec, int e
         const double f_dot = f.normal * mfem::Vector(const_cast<double *>(dir.direction.data()), dim_);
         if (f_dot > 0.0)
         {
-            const double coeff = 0.5 * vg * (f_dot + std::abs(f_dot));
-            if (coeff != 0.0 && f.face_mass.Height() == ndof_)
-            {
-                A.Add(coeff, f.face_mass);
-            }
+            const double coeff = vg * f_dot;
+            A.Add(coeff, f.face_mass);
+            // const double coeff = 0.5 * vg * (f_dot + std::abs(f_dot));
+            // if (coeff != 0.0 && f.face_mass.Height() == ndof_)
+            // {
+            //     A.Add(coeff, f.face_mass);
+            // }
         }
     }
     return A;
@@ -284,8 +287,8 @@ double PBTESolver::Solve(std::vector<std::vector<std::vector<mfem::DenseMatrix>>
                         coeff_mat = 0.0;
                     }
 
-                        mfem::Vector rhs(ndof_);
-                        mfem::Vector sol(ndof_);
+                    mfem::Vector rhs(ndof_);
+                    mfem::Vector sol(ndof_);
 
                     for (int idx = 0; idx < static_cast<int>(order.size()); ++idx)
                     {
@@ -311,7 +314,7 @@ double PBTESolver::Solve(std::vector<std::vector<std::vector<mfem::DenseMatrix>>
                         }
 
                         // boundary / neighbor terms
-                            double max_coeff_in_dbg = 0.0;
+                        double max_coeff_in_dbg = 0.0;
                         for (const auto &f : cd.faces)
                         {
                             const double f_dot = f.normal * dir_vec;
@@ -323,8 +326,8 @@ double PBTESolver::Solve(std::vector<std::vector<std::vector<mfem::DenseMatrix>>
                                 if (coeff_in != 0.0 && iso_bc_.count(f.boundary_attr))
                                 {
                                     const double Tbc = iso_bc_.at(f.boundary_attr);
-                                        rhs.Add(-coeff_in * Cwp / omega_ * Tbc, f.face_integral);
-                                        bndry_rhs_acc += std::abs(coeff_in * Cwp / omega_ * Tbc) * f.face_integral.Norml2();
+                                    rhs.Add(-coeff_in * Cwp / omega_ * Tbc, f.face_integral);
+                                    bndry_rhs_acc += std::abs(coeff_in * Cwp / omega_ * Tbc) * f.face_integral.Norml2();
                                 }
                             }
                             else

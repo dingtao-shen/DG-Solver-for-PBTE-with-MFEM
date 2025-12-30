@@ -74,13 +74,14 @@ std::vector<std::pair<double, double>> GaussLegendreRule(int points,
 
     std::vector<std::pair<double, double>> nodes;
     nodes.reserve(points);
-    const double half_scale = 0.5 * (b - a);
-    const double shift = 0.5 * (a + b);
+    // MFEM's 1D integration points/weights are defined on the reference
+    // segment [0, 1]. Map them affinely to [a, b].
+    const double scale = (b - a);
     for (int i = 0; i < ir.GetNPoints(); ++i)
     {
         const mfem::IntegrationPoint &ip = ir.IntPoint(i);
-        const double x = half_scale * ip.x + shift;
-        const double w = half_scale * ip.weight;
+        const double x = a + scale * ip.x;
+        const double w = scale * ip.weight;
         nodes.emplace_back(x, w);
     }
     return nodes;

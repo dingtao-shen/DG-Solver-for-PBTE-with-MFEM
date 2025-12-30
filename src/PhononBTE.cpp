@@ -336,7 +336,7 @@ int main(int argc, char *argv[])
     pbte::MacroscopicQuantities macro(spatial.FESpace(), props, angle_quad);
     macro.Reset();
 
-    // Debug: print isothermal BC map
+    // Debug: print isothermal BC map and all boundary faces carrying them
     const auto &bc_map = spatial.IsothermalBoundaryTemps();
     if (is_root)
     {
@@ -344,6 +344,27 @@ int main(int argc, char *argv[])
         for (const auto &kv : bc_map)
         {
             std::cout << "  attr " << kv.first << " -> T = " << kv.second << std::endl;
+        }
+        const mfem::Mesh &m = spatial.Mesh();
+        const int nbe = m.GetNBE();
+        std::cout << "Boundary faces with isothermal attributes:" << std::endl;
+        for (int be = 0; be < nbe; ++be)
+        {
+            const int face_id = m.GetBdrElementFaceIndex(be);
+            const int attr = m.GetBdrAttribute(be);
+            if (!bc_map.count(attr))
+            {
+                continue;
+            }
+            mfem::Array<int> fv;
+            m.GetFaceVertices(face_id, fv);
+            std::cout << "  be " << be << " face " << face_id << " attr=" << attr
+                      << " verts=";
+            for (int i = 0; i < fv.Size(); ++i)
+            {
+                std::cout << fv[i] << (i + 1 < fv.Size() ? "," : "");
+            }
+            std::cout << std::endl;
         }
     }
 
