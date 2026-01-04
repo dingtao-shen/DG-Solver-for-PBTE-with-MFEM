@@ -1,6 +1,7 @@
 #include "MacroscopicQuantities.hpp"
 
 #include <cassert>
+#include <iostream>
 
 namespace pbte
 {
@@ -60,12 +61,38 @@ void MacroscopicQuantities::AccumulateDirectionalCoeff(int dir_idx,
         const double flux_factor = factor * vg * dir.direction[d];
         Qc_[d].Add(flux_factor, coeff);
     }
+
+    // One-time debug to ensure accumulation is nonzero.
+    static bool printed = false;
+    if (!printed)
+    {
+        printed = true;
+        std::cout << "[Macro dbg] dir_idx=" << dir_idx
+                  << " branch=" << branch
+                  << " spec=" << spec
+                  << " inv_kn=" << inv_kn
+                  << " dw=" << dw
+                  << " dir_w=" << dir.weight
+                  << " factor=" << factor
+                  << " coeff_F=" << coeff.FNorm()
+                  << std::endl;
+    }
 }
 
 void MacroscopicQuantities::Finalize(const std::vector<ElementIntegralData> &elem_data)
 {
-    const double scale = (heat_cap_v_ != 0.0) ? (1.0 / heat_cap_v_) : 0.0;
+    // const double scale = (heat_cap_v_ != 0.0) ? (1.0 / heat_cap_v_) : 0.0;
+    std::cout << "[Macro dbg] Tc_FNorm_before_scale=" << Tc_.FNorm() << std::endl;
+    const double scale = 1.0 / heat_cap_v_;
     Tc_ *= scale;
+
+    static bool printed = false;
+    if (!printed)
+    {
+        printed = true;
+        std::cout << "[Macro dbg] Tc_FNorm_after_scale=" << Tc_.FNorm()
+                  << " scale=" << scale << std::endl;
+    }
 
     // Compute cell-average temperature and heat flux using basis integrals.
     for (int e = 0; e < ne_; ++e)

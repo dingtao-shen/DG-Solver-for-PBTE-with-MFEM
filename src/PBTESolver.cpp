@@ -368,6 +368,12 @@ double PBTESolver::Solve(std::vector<std::vector<std::vector<mfem::DenseMatrix>>
 
                     // accumulate macro for this (dir,b,s)
                     macro.AccumulateDirectionalCoeff(k, b, s, coeff_mat);
+                    if (iter == 0 && b == 0 && s == 0 && coeff_mat.FNorm() != 0.0)
+                    {
+                        std::cout << "[Serial dbg] dir " << k
+                                  << " coeff_F=" << coeff_mat.FNorm()
+                                  << " dir_w=" << dir.weight << std::endl;
+                    }
                     inflow_acc = std::max(inflow_acc, bndry_rhs_acc);
                 }
             }
