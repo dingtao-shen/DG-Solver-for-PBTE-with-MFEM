@@ -218,7 +218,7 @@ void SpatialMesh::BuildDGSpace(int order, mfem::Ordering::Type ordering,
     last_order_ = order;
 
     // nodal basis function based on Gauss-Lobatto quadrature
-    fec_ = std::make_unique<mfem::L2_FECollection>(order, mesh_->Dimension(),mfem::BasisType::GaussLobatto);
+    fec_ = std::make_unique<mfem::L2_FECollection>(order, mesh_->Dimension(),mfem::BasisType::ClosedUniform);
     // fec_ = std::make_unique<mfem::L2_FECollection>(order, mesh_->Dimension());
     fes_ = std::make_unique<mfem::FiniteElementSpace>(mesh_.get(), fec_.get(), 1,
                                                       ordering);
