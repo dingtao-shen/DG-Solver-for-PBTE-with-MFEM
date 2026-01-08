@@ -53,6 +53,8 @@ void MacroscopicQuantities::AccumulateDirectionalCoeff(int dir_idx,
     const double factor = inv_kn * dir.weight * dw;
 
     Tc_.Add(factor, coeff);
+    const double scale = 1.0 / heat_cap_v_;
+    Tc_ *= scale;
 
     // Heat flux components.
     const double vg = props_.GroupVelocity(branch)[spec];
@@ -82,16 +84,13 @@ void MacroscopicQuantities::AccumulateDirectionalCoeff(int dir_idx,
 void MacroscopicQuantities::Finalize(const std::vector<ElementIntegralData> &elem_data)
 {
     // const double scale = (heat_cap_v_ != 0.0) ? (1.0 / heat_cap_v_) : 0.0;
-    std::cout << "[Macro dbg] Tc_FNorm_before_scale=" << Tc_.FNorm() << std::endl;
-    const double scale = 1.0 / heat_cap_v_;
-    Tc_ *= scale;
+    // std::cout << "[Macro dbg] Tc_FNorm_before_scale=" << Tc_.FNorm() << std::endl;
 
     static bool printed = false;
     if (!printed)
     {
         printed = true;
-        std::cout << "[Macro dbg] Tc_FNorm_after_scale=" << Tc_.FNorm()
-                  << " scale=" << scale << std::endl;
+        std::cout << "[Macro dbg] Tc_FNorm_after_scale=" << Tc_.FNorm() << std::endl;
     }
 
     // Compute cell-average temperature and heat flux using basis integrals.
@@ -122,15 +121,8 @@ void MacroscopicQuantities::Finalize(const std::vector<ElementIntegralData> &ele
 
 double MacroscopicQuantities::Residual(const mfem::Vector &prev_Tv) const
 {
-    mfem::Vector diff = Tv_;
-    diff -= prev_Tv;
-    const double num = diff.Norml2();
-    const double den = Tv_.Norml2();
-    if (den == 0.0)
-    {
-        return num; // fall back to absolute change if new Tv is zero
-    }
-    return num / den;
+    assert(Tv_.Norml2() > 0.0);
+    return (Tv_.Norml2() - prev_Tv.Norml2()) / Tv_.Norml2();
 }
 
 void MacroscopicQuantities::WriteParaView(const std::string &prefix, bool high_order) const

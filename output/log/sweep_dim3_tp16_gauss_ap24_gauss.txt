@@ -1,389 +1,389 @@
 Sweep order per direction
-dimension: 3
-elements: 6
+dimension: 2
+elements: 8
 directions: 384
 
-dir 0 theta=2.99587 phi=0.0151198 w=0.00105273 order: 3 4 5 2 1 0
-dir 1 theta=2.99587 phi=0.0793926 w=0.00243378 order: 3 4 5 2 1 0
-dir 2 theta=2.99587 phi=0.193916 w=0.00377695 order: 3 4 5 2 1 0
-dir 3 theta=2.99587 phi=0.356836 w=0.00505829 order: 3 4 5 2 1 0
-dir 4 theta=2.99587 phi=0.56548 w=0.0062566 order: 3 4 5 2 1 0
-dir 5 theta=2.99587 phi=0.816424 w=0.00735219 order: 4 5 0 3 2 1
-dir 6 theta=2.99587 phi=1.10555 w=0.00832706 order: 4 5 0 3 2 1
-dir 7 theta=2.99587 phi=1.4281 w=0.00916521 order: 4 5 0 3 2 1
-dir 8 theta=2.99587 phi=1.77879 w=0.00985286 order: 4 5 0 3 2 1
-dir 9 theta=2.99587 phi=2.15186 w=0.0103787 order: 4 5 0 3 2 1
-dir 10 theta=2.99587 phi=2.54118 w=0.0107342 order: 4 5 0 3 2 1
-dir 11 theta=2.99587 phi=2.94035 w=0.0109134 order: 4 5 0 3 2 1
-dir 12 theta=2.99587 phi=3.34283 w=0.0109134 order: 4 5 0 3 2 1
-dir 13 theta=2.99587 phi=3.74201 w=0.0107342 order: 4 5 0 3 2 1
-dir 14 theta=2.99587 phi=4.13133 w=0.0103787 order: 3 4 5 2 1 0
-dir 15 theta=2.99587 phi=4.5044 w=0.00985286 order: 3 4 5 2 1 0
-dir 16 theta=2.99587 phi=4.85508 w=0.00916521 order: 3 4 5 2 1 0
-dir 17 theta=2.99587 phi=5.17764 w=0.00832706 order: 3 4 5 2 1 0
-dir 18 theta=2.99587 phi=5.46676 w=0.00735219 order: 3 4 5 2 1 0
-dir 19 theta=2.99587 phi=5.7177 w=0.0062566 order: 3 4 5 2 1 0
-dir 20 theta=2.99587 phi=5.92635 w=0.00505829 order: 3 4 5 2 1 0
-dir 21 theta=2.99587 phi=6.08927 w=0.00377695 order: 3 4 5 2 1 0
-dir 22 theta=2.99587 phi=6.20379 w=0.00243378 order: 3 4 5 2 1 0
-dir 23 theta=2.99587 phi=6.26807 w=0.00105273 order: 3 4 5 2 1 0
-dir 24 theta=2.80709 phi=0.0151198 w=0.00241364 order: 3 4 5 2 1 0
-dir 25 theta=2.80709 phi=0.0793926 w=0.00558003 order: 3 4 5 2 1 0
-dir 26 theta=2.80709 phi=0.193916 w=0.00865957 order: 3 4 5 2 1 0
-dir 27 theta=2.80709 phi=0.356836 w=0.0115973 order: 3 4 5 2 1 0
-dir 28 theta=2.80709 phi=0.56548 w=0.0143448 order: 3 4 5 2 1 0
-dir 29 theta=2.80709 phi=0.816424 w=0.0168567 order: 4 5 0 3 2 1
-dir 30 theta=2.80709 phi=1.10555 w=0.0190918 order: 4 5 0 3 2 1
-dir 31 theta=2.80709 phi=1.4281 w=0.0210134 order: 4 5 0 3 2 1
-dir 32 theta=2.80709 phi=1.77879 w=0.02259 order: 4 5 0 3 2 1
-dir 33 theta=2.80709 phi=2.15186 w=0.0237957 order: 4 5 0 3 2 1
-dir 34 theta=2.80709 phi=2.54118 w=0.0246107 order: 4 5 0 3 2 1
-dir 35 theta=2.80709 phi=2.94035 w=0.0250215 order: 4 5 0 3 2 1
-dir 36 theta=2.80709 phi=3.34283 w=0.0250215 order: 4 5 0 3 2 1
-dir 37 theta=2.80709 phi=3.74201 w=0.0246107 order: 4 5 0 3 2 1
-dir 38 theta=2.80709 phi=4.13133 w=0.0237957 order: 3 4 5 2 1 0
-dir 39 theta=2.80709 phi=4.5044 w=0.02259 order: 3 4 5 2 1 0
-dir 40 theta=2.80709 phi=4.85508 w=0.0210134 order: 3 4 5 2 1 0
-dir 41 theta=2.80709 phi=5.17764 w=0.0190918 order: 3 4 5 2 1 0
-dir 42 theta=2.80709 phi=5.46676 w=0.0168567 order: 3 4 5 2 1 0
-dir 43 theta=2.80709 phi=5.7177 w=0.0143448 order: 3 4 5 2 1 0
-dir 44 theta=2.80709 phi=5.92635 w=0.0115973 order: 3 4 5 2 1 0
-dir 45 theta=2.80709 phi=6.08927 w=0.00865957 order: 3 4 5 2 1 0
-dir 46 theta=2.80709 phi=6.20379 w=0.00558003 order: 3 4 5 2 1 0
-dir 47 theta=2.80709 phi=6.26807 w=0.00241364 order: 3 4 5 2 1 0
-dir 48 theta=2.61721 phi=0.0151198 w=0.0036894 order: 3 4 5 2 1 0
-dir 49 theta=2.61721 phi=0.0793926 w=0.00852944 order: 3 4 5 2 1 0
-dir 50 theta=2.61721 phi=0.193916 w=0.0132367 order: 3 4 5 2 1 0
-dir 51 theta=2.61721 phi=0.356836 w=0.0177273 order: 3 4 5 2 1 0
-dir 52 theta=2.61721 phi=0.56548 w=0.0219269 order: 3 4 5 2 1 0
-dir 53 theta=2.61721 phi=0.816424 w=0.0257665 order: 4 5 0 3 2 1
-dir 54 theta=2.61721 phi=1.10555 w=0.029183 order: 4 5 0 3 2 1
-dir 55 theta=2.61721 phi=1.4281 w=0.0321204 order: 4 5 0 3 2 1
-dir 56 theta=2.61721 phi=1.77879 w=0.0345303 order: 4 5 0 3 2 1
-dir 57 theta=2.61721 phi=2.15186 w=0.0363733 order: 4 5 0 3 2 1
-dir 58 theta=2.61721 phi=2.54118 w=0.037619 order: 4 5 0 3 2 1
-dir 59 theta=2.61721 phi=2.94035 w=0.038247 order: 4 5 0 3 2 1
-dir 60 theta=2.61721 phi=3.34283 w=0.038247 order: 4 5 0 3 2 1
-dir 61 theta=2.61721 phi=3.74201 w=0.037619 order: 4 5 0 3 2 1
-dir 62 theta=2.61721 phi=4.13133 w=0.0363733 order: 3 4 5 2 1 0
-dir 63 theta=2.61721 phi=4.5044 w=0.0345303 order: 3 4 5 2 1 0
-dir 64 theta=2.61721 phi=4.85508 w=0.0321204 order: 3 4 5 2 1 0
-dir 65 theta=2.61721 phi=5.17764 w=0.029183 order: 3 4 5 2 1 0
-dir 66 theta=2.61721 phi=5.46676 w=0.0257665 order: 3 4 5 2 1 0
-dir 67 theta=2.61721 phi=5.7177 w=0.0219269 order: 3 4 5 2 1 0
-dir 68 theta=2.61721 phi=5.92635 w=0.0177273 order: 3 4 5 2 1 0
-dir 69 theta=2.61721 phi=6.08927 w=0.0132367 order: 3 4 5 2 1 0
-dir 70 theta=2.61721 phi=6.20379 w=0.00852944 order: 3 4 5 2 1 0
-dir 71 theta=2.61721 phi=6.26807 w=0.0036894 order: 3 4 5 2 1 0
-dir 72 theta=2.42707 phi=0.0151198 w=0.004832 order: 3 4 5 2 1 0
-dir 73 theta=2.42707 phi=0.0793926 w=0.011171 order: 3 4 5 2 1 0
-dir 74 theta=2.42707 phi=0.193916 w=0.0173361 order: 3 4 5 2 1 0
-dir 75 theta=2.42707 phi=0.356836 w=0.0232174 order: 3 4 5 2 1 0
-dir 76 theta=2.42707 phi=0.56548 w=0.0287176 order: 3 4 5 2 1 0
-dir 77 theta=2.42707 phi=0.816424 w=0.0337463 order: 4 5 0 3 2 1
-dir 78 theta=2.42707 phi=1.10555 w=0.038221 order: 4 5 0 3 2 1
-dir 79 theta=2.42707 phi=1.4281 w=0.042068 order: 4 5 0 3 2 1
-dir 80 theta=2.42707 phi=1.77879 w=0.0452243 order: 4 5 0 3 2 1
-dir 81 theta=2.42707 phi=2.15186 w=0.0476381 order: 4 5 0 3 2 1
-dir 82 theta=2.42707 phi=2.54118 w=0.0492696 order: 4 5 0 3 2 1
-dir 83 theta=2.42707 phi=2.94035 w=0.0500921 order: 4 5 0 3 2 1
-dir 84 theta=2.42707 phi=3.34283 w=0.0500921 order: 4 5 0 3 2 1
-dir 85 theta=2.42707 phi=3.74201 w=0.0492696 order: 4 5 0 3 2 1
-dir 86 theta=2.42707 phi=4.13133 w=0.0476381 order: 3 4 5 2 1 0
-dir 87 theta=2.42707 phi=4.5044 w=0.0452243 order: 3 4 5 2 1 0
-dir 88 theta=2.42707 phi=4.85508 w=0.042068 order: 3 4 5 2 1 0
-dir 89 theta=2.42707 phi=5.17764 w=0.038221 order: 3 4 5 2 1 0
-dir 90 theta=2.42707 phi=5.46676 w=0.0337463 order: 3 4 5 2 1 0
-dir 91 theta=2.42707 phi=5.7177 w=0.0287176 order: 3 4 5 2 1 0
-dir 92 theta=2.42707 phi=5.92635 w=0.0232174 order: 3 4 5 2 1 0
-dir 93 theta=2.42707 phi=6.08927 w=0.0173361 order: 3 4 5 2 1 0
-dir 94 theta=2.42707 phi=6.20379 w=0.011171 order: 3 4 5 2 1 0
-dir 95 theta=2.42707 phi=6.26807 w=0.004832 order: 3 4 5 2 1 0
-dir 96 theta=2.23684 phi=0.0151198 w=0.0058 order: 3 4 5 2 1 0
-dir 97 theta=2.23684 phi=0.0793926 w=0.0134089 order: 3 4 5 2 1 0
-dir 98 theta=2.23684 phi=0.193916 w=0.0208091 order: 3 4 5 2 1 0
-dir 99 theta=2.23684 phi=0.356836 w=0.0278685 order: 3 4 5 2 1 0
-dir 100 theta=2.23684 phi=0.56548 w=0.0344706 order: 3 4 5 2 1 0
-dir 101 theta=2.23684 phi=0.816424 w=0.0405068 order: 4 5 0 3 2 1
-dir 102 theta=2.23684 phi=1.10555 w=0.0458778 order: 4 5 0 3 2 1
-dir 103 theta=2.23684 phi=1.4281 w=0.0504955 order: 4 5 0 3 2 1
-dir 104 theta=2.23684 phi=1.77879 w=0.0542842 order: 4 5 0 3 2 1
-dir 105 theta=2.23684 phi=2.15186 w=0.0571814 order: 4 5 0 3 2 1
-dir 106 theta=2.23684 phi=2.54118 w=0.0591398 order: 5 0 1 4 3 2
-dir 107 theta=2.23684 phi=2.94035 w=0.0601271 order: 5 0 1 4 3 2
-dir 108 theta=2.23684 phi=3.34283 w=0.0601271 order: 5 0 1 4 3 2
-dir 109 theta=2.23684 phi=3.74201 w=0.0591398 order: 5 0 1 4 3 2
-dir 110 theta=2.23684 phi=4.13133 w=0.0571814 order: 2 3 4 1 0 5
-dir 111 theta=2.23684 phi=4.5044 w=0.0542842 order: 2 3 4 1 0 5
-dir 112 theta=2.23684 phi=4.85508 w=0.0504955 order: 2 3 4 1 0 5
-dir 113 theta=2.23684 phi=5.17764 w=0.0458778 order: 2 3 4 1 0 5
-dir 114 theta=2.23684 phi=5.46676 w=0.0405068 order: 3 4 5 2 1 0
-dir 115 theta=2.23684 phi=5.7177 w=0.0344706 order: 3 4 5 2 1 0
-dir 116 theta=2.23684 phi=5.92635 w=0.0278685 order: 3 4 5 2 1 0
-dir 117 theta=2.23684 phi=6.08927 w=0.0208091 order: 3 4 5 2 1 0
-dir 118 theta=2.23684 phi=6.20379 w=0.0134089 order: 3 4 5 2 1 0
-dir 119 theta=2.23684 phi=6.26807 w=0.0058 order: 3 4 5 2 1 0
-dir 120 theta=2.04656 phi=0.0151198 w=0.00655839 order: 3 4 5 2 1 0
-dir 121 theta=2.04656 phi=0.0793926 w=0.0151622 order: 3 4 5 2 1 0
-dir 122 theta=2.04656 phi=0.193916 w=0.02353 order: 3 4 5 2 1 0
-dir 123 theta=2.04656 phi=0.356836 w=0.0315125 order: 3 4 5 2 1 0
-dir 124 theta=2.04656 phi=0.56548 w=0.0389779 order: 3 4 5 2 1 0
-dir 125 theta=2.04656 phi=0.816424 w=0.0458033 order: 4 5 0 3 2 1
-dir 126 theta=2.04656 phi=1.10555 w=0.0518766 order: 4 5 0 3 2 1
-dir 127 theta=2.04656 phi=1.4281 w=0.0570981 order: 4 5 0 3 2 1
-dir 128 theta=2.04656 phi=1.77879 w=0.0613821 order: 4 5 0 3 2 1
-dir 129 theta=2.04656 phi=2.15186 w=0.0646582 order: 5 0 1 4 3 2
-dir 130 theta=2.04656 phi=2.54118 w=0.0668727 order: 5 0 1 4 3 2
-dir 131 theta=2.04656 phi=2.94035 w=0.067989 order: 5 0 1 4 3 2
-dir 132 theta=2.04656 phi=3.34283 w=0.067989 order: 5 0 1 4 3 2
-dir 133 theta=2.04656 phi=3.74201 w=0.0668727 order: 0 1 2 5 4 3
-dir 134 theta=2.04656 phi=4.13133 w=0.0646582 order: 1 2 3 0 5 4
-dir 135 theta=2.04656 phi=4.5044 w=0.0613821 order: 2 3 4 1 0 5
-dir 136 theta=2.04656 phi=4.85508 w=0.0570981 order: 2 3 4 1 0 5
-dir 137 theta=2.04656 phi=5.17764 w=0.0518766 order: 2 3 4 1 0 5
-dir 138 theta=2.04656 phi=5.46676 w=0.0458033 order: 2 3 4 1 0 5
-dir 139 theta=2.04656 phi=5.7177 w=0.0389779 order: 2 3 4 1 0 5
-dir 140 theta=2.04656 phi=5.92635 w=0.0315125 order: 3 4 5 2 1 0
-dir 141 theta=2.04656 phi=6.08927 w=0.02353 order: 3 4 5 2 1 0
-dir 142 theta=2.04656 phi=6.20379 w=0.0151622 order: 3 4 5 2 1 0
-dir 143 theta=2.04656 phi=6.26807 w=0.00655839 order: 3 4 5 2 1 0
-dir 144 theta=1.85626 phi=0.0151198 w=0.00707974 order: 3 4 5 2 1 0
-dir 145 theta=1.85626 phi=0.0793926 w=0.0163675 order: 3 4 5 2 1 0
-dir 146 theta=1.85626 phi=0.193916 w=0.0254004 order: 3 4 5 2 1 0
-dir 147 theta=1.85626 phi=0.356836 w=0.0340176 order: 3 4 5 2 1 0
-dir 148 theta=1.85626 phi=0.56548 w=0.0420763 order: 3 4 5 2 1 0
-dir 149 theta=1.85626 phi=0.816424 w=0.0494443 order: 4 5 0 3 2 1
-dir 150 theta=1.85626 phi=1.10555 w=0.0560005 order: 4 5 0 3 2 1
-dir 151 theta=1.85626 phi=1.4281 w=0.0616371 order: 4 5 0 3 2 1
-dir 152 theta=1.85626 phi=1.77879 w=0.0662616 order: 4 5 0 3 2 1
-dir 153 theta=1.85626 phi=2.15186 w=0.0697982 order: 5 0 1 4 3 2
-dir 154 theta=1.85626 phi=2.54118 w=0.0721886 order: 5 0 1 4 3 2
-dir 155 theta=1.85626 phi=2.94035 w=0.0733937 order: 5 0 1 4 3 2
-dir 156 theta=1.85626 phi=3.34283 w=0.0733937 order: 5 0 1 4 3 2
-dir 157 theta=1.85626 phi=3.74201 w=0.0721886 order: 0 1 2 5 4 3
-dir 158 theta=1.85626 phi=4.13133 w=0.0697982 order: 1 2 3 0 5 4
-dir 159 theta=1.85626 phi=4.5044 w=0.0662616 order: 2 3 4 1 0 5
-dir 160 theta=1.85626 phi=4.85508 w=0.0616371 order: 2 3 4 1 0 5
-dir 161 theta=1.85626 phi=5.17764 w=0.0560005 order: 2 3 4 1 0 5
-dir 162 theta=1.85626 phi=5.46676 w=0.0494443 order: 2 3 4 1 0 5
-dir 163 theta=1.85626 phi=5.7177 w=0.0420763 order: 2 3 4 1 0 5
-dir 164 theta=1.85626 phi=5.92635 w=0.0340176 order: 2 3 4 1 0 5
-dir 165 theta=1.85626 phi=6.08927 w=0.0254004 order: 3 4 5 2 1 0
-dir 166 theta=1.85626 phi=6.20379 w=0.0163675 order: 3 4 5 2 1 0
-dir 167 theta=1.85626 phi=6.26807 w=0.00707974 order: 3 4 5 2 1 0
-dir 168 theta=1.66595 phi=0.0151198 w=0.00734521 order: 3 4 5 2 1 0
-dir 169 theta=1.66595 phi=0.0793926 w=0.0169812 order: 3 4 5 2 1 0
-dir 170 theta=1.66595 phi=0.193916 w=0.0263529 order: 3 4 5 2 1 0
-dir 171 theta=1.66595 phi=0.356836 w=0.0352931 order: 3 4 5 2 1 0
-dir 172 theta=1.66595 phi=0.56548 w=0.0436541 order: 3 4 5 2 1 0
-dir 173 theta=1.66595 phi=0.816424 w=0.0512984 order: 4 5 0 3 2 1
-dir 174 theta=1.66595 phi=1.10555 w=0.0581003 order: 4 5 0 3 2 1
-dir 175 theta=1.66595 phi=1.4281 w=0.0639483 order: 4 5 0 3 2 1
-dir 176 theta=1.66595 phi=1.77879 w=0.0687463 order: 5 0 1 4 3 2
-dir 177 theta=1.66595 phi=2.15186 w=0.0724154 order: 5 0 1 4 3 2
-dir 178 theta=1.66595 phi=2.54118 w=0.0748955 order: 5 0 1 4 3 2
-dir 179 theta=1.66595 phi=2.94035 w=0.0761458 order: 5 0 1 4 3 2
-dir 180 theta=1.66595 phi=3.34283 w=0.0761458 order: 0 1 2 5 4 3
-dir 181 theta=1.66595 phi=3.74201 w=0.0748955 order: 0 1 2 5 4 3
-dir 182 theta=1.66595 phi=4.13133 w=0.0724154 order: 1 2 3 0 5 4
-dir 183 theta=1.66595 phi=4.5044 w=0.0687463 order: 1 2 3 0 5 4
-dir 184 theta=1.66595 phi=4.85508 w=0.0639483 order: 2 3 4 1 0 5
-dir 185 theta=1.66595 phi=5.17764 w=0.0581003 order: 2 3 4 1 0 5
-dir 186 theta=1.66595 phi=5.46676 w=0.0512984 order: 2 3 4 1 0 5
-dir 187 theta=1.66595 phi=5.7177 w=0.0436541 order: 2 3 4 1 0 5
-dir 188 theta=1.66595 phi=5.92635 w=0.0352931 order: 2 3 4 1 0 5
-dir 189 theta=1.66595 phi=6.08927 w=0.0263529 order: 2 3 4 1 0 5
-dir 190 theta=1.66595 phi=6.20379 w=0.0169812 order: 3 4 5 2 1 0
-dir 191 theta=1.66595 phi=6.26807 w=0.00734521 order: 3 4 5 2 1 0
-dir 192 theta=1.47564 phi=0.0151198 w=0.00734521 order: 2 3 4 1 0 5
-dir 193 theta=1.47564 phi=0.0793926 w=0.0169812 order: 2 3 4 1 0 5
-dir 194 theta=1.47564 phi=0.193916 w=0.0263529 order: 3 4 5 2 1 0
-dir 195 theta=1.47564 phi=0.356836 w=0.0352931 order: 3 4 5 2 1 0
-dir 196 theta=1.47564 phi=0.56548 w=0.0436541 order: 3 4 5 2 1 0
-dir 197 theta=1.47564 phi=0.816424 w=0.0512984 order: 4 5 0 3 2 1
-dir 198 theta=1.47564 phi=1.10555 w=0.0581003 order: 4 5 0 3 2 1
-dir 199 theta=1.47564 phi=1.4281 w=0.0639483 order: 4 5 0 3 2 1
-dir 200 theta=1.47564 phi=1.77879 w=0.0687463 order: 5 0 1 4 3 2
-dir 201 theta=1.47564 phi=2.15186 w=0.0724154 order: 5 0 1 4 3 2
-dir 202 theta=1.47564 phi=2.54118 w=0.0748955 order: 5 0 1 4 3 2
-dir 203 theta=1.47564 phi=2.94035 w=0.0761458 order: 5 0 1 4 3 2
-dir 204 theta=1.47564 phi=3.34283 w=0.0761458 order: 0 1 2 5 4 3
-dir 205 theta=1.47564 phi=3.74201 w=0.0748955 order: 0 1 2 5 4 3
-dir 206 theta=1.47564 phi=4.13133 w=0.0724154 order: 1 2 3 0 5 4
-dir 207 theta=1.47564 phi=4.5044 w=0.0687463 order: 1 2 3 0 5 4
-dir 208 theta=1.47564 phi=4.85508 w=0.0639483 order: 2 3 4 1 0 5
-dir 209 theta=1.47564 phi=5.17764 w=0.0581003 order: 2 3 4 1 0 5
-dir 210 theta=1.47564 phi=5.46676 w=0.0512984 order: 2 3 4 1 0 5
-dir 211 theta=1.47564 phi=5.7177 w=0.0436541 order: 2 3 4 1 0 5
-dir 212 theta=1.47564 phi=5.92635 w=0.0352931 order: 2 3 4 1 0 5
-dir 213 theta=1.47564 phi=6.08927 w=0.0263529 order: 2 3 4 1 0 5
-dir 214 theta=1.47564 phi=6.20379 w=0.0169812 order: 2 3 4 1 0 5
-dir 215 theta=1.47564 phi=6.26807 w=0.00734521 order: 2 3 4 1 0 5
-dir 216 theta=1.28533 phi=0.0151198 w=0.00707974 order: 2 3 4 1 0 5
-dir 217 theta=1.28533 phi=0.0793926 w=0.0163675 order: 2 3 4 1 0 5
-dir 218 theta=1.28533 phi=0.193916 w=0.0254004 order: 2 3 4 1 0 5
-dir 219 theta=1.28533 phi=0.356836 w=0.0340176 order: 3 4 5 2 1 0
-dir 220 theta=1.28533 phi=0.56548 w=0.0420763 order: 3 4 5 2 1 0
-dir 221 theta=1.28533 phi=0.816424 w=0.0494443 order: 4 5 0 3 2 1
-dir 222 theta=1.28533 phi=1.10555 w=0.0560005 order: 4 5 0 3 2 1
-dir 223 theta=1.28533 phi=1.4281 w=0.0616371 order: 5 0 1 4 3 2
-dir 224 theta=1.28533 phi=1.77879 w=0.0662616 order: 5 0 1 4 3 2
-dir 225 theta=1.28533 phi=2.15186 w=0.0697982 order: 5 0 1 4 3 2
-dir 226 theta=1.28533 phi=2.54118 w=0.0721886 order: 5 0 1 4 3 2
-dir 227 theta=1.28533 phi=2.94035 w=0.0733937 order: 0 1 2 5 4 3
-dir 228 theta=1.28533 phi=3.34283 w=0.0733937 order: 0 1 2 5 4 3
-dir 229 theta=1.28533 phi=3.74201 w=0.0721886 order: 0 1 2 5 4 3
-dir 230 theta=1.28533 phi=4.13133 w=0.0697982 order: 1 2 3 0 5 4
-dir 231 theta=1.28533 phi=4.5044 w=0.0662616 order: 1 2 3 0 5 4
-dir 232 theta=1.28533 phi=4.85508 w=0.0616371 order: 1 2 3 0 5 4
-dir 233 theta=1.28533 phi=5.17764 w=0.0560005 order: 2 3 4 1 0 5
-dir 234 theta=1.28533 phi=5.46676 w=0.0494443 order: 2 3 4 1 0 5
-dir 235 theta=1.28533 phi=5.7177 w=0.0420763 order: 2 3 4 1 0 5
-dir 236 theta=1.28533 phi=5.92635 w=0.0340176 order: 2 3 4 1 0 5
-dir 237 theta=1.28533 phi=6.08927 w=0.0254004 order: 2 3 4 1 0 5
-dir 238 theta=1.28533 phi=6.20379 w=0.0163675 order: 2 3 4 1 0 5
-dir 239 theta=1.28533 phi=6.26807 w=0.00707974 order: 2 3 4 1 0 5
-dir 240 theta=1.09503 phi=0.0151198 w=0.00655839 order: 2 3 4 1 0 5
-dir 241 theta=1.09503 phi=0.0793926 w=0.0151622 order: 2 3 4 1 0 5
-dir 242 theta=1.09503 phi=0.193916 w=0.02353 order: 2 3 4 1 0 5
-dir 243 theta=1.09503 phi=0.356836 w=0.0315125 order: 2 3 4 1 0 5
-dir 244 theta=1.09503 phi=0.56548 w=0.0389779 order: 3 4 5 2 1 0
-dir 245 theta=1.09503 phi=0.816424 w=0.0458033 order: 4 5 0 3 2 1
-dir 246 theta=1.09503 phi=1.10555 w=0.0518766 order: 5 0 1 4 3 2
-dir 247 theta=1.09503 phi=1.4281 w=0.0570981 order: 5 0 1 4 3 2
-dir 248 theta=1.09503 phi=1.77879 w=0.0613821 order: 5 0 1 4 3 2
-dir 249 theta=1.09503 phi=2.15186 w=0.0646582 order: 5 0 1 4 3 2
-dir 250 theta=1.09503 phi=2.54118 w=0.0668727 order: 5 0 1 4 3 2
-dir 251 theta=1.09503 phi=2.94035 w=0.067989 order: 0 1 2 5 4 3
-dir 252 theta=1.09503 phi=3.34283 w=0.067989 order: 0 1 2 5 4 3
-dir 253 theta=1.09503 phi=3.74201 w=0.0668727 order: 0 1 2 5 4 3
-dir 254 theta=1.09503 phi=4.13133 w=0.0646582 order: 1 2 3 0 5 4
-dir 255 theta=1.09503 phi=4.5044 w=0.0613821 order: 1 2 3 0 5 4
-dir 256 theta=1.09503 phi=4.85508 w=0.0570981 order: 1 2 3 0 5 4
-dir 257 theta=1.09503 phi=5.17764 w=0.0518766 order: 1 2 3 0 5 4
-dir 258 theta=1.09503 phi=5.46676 w=0.0458033 order: 2 3 4 1 0 5
-dir 259 theta=1.09503 phi=5.7177 w=0.0389779 order: 2 3 4 1 0 5
-dir 260 theta=1.09503 phi=5.92635 w=0.0315125 order: 2 3 4 1 0 5
-dir 261 theta=1.09503 phi=6.08927 w=0.02353 order: 2 3 4 1 0 5
-dir 262 theta=1.09503 phi=6.20379 w=0.0151622 order: 2 3 4 1 0 5
-dir 263 theta=1.09503 phi=6.26807 w=0.00655839 order: 2 3 4 1 0 5
-dir 264 theta=0.904758 phi=0.0151198 w=0.0058 order: 2 3 4 1 0 5
-dir 265 theta=0.904758 phi=0.0793926 w=0.0134089 order: 2 3 4 1 0 5
-dir 266 theta=0.904758 phi=0.193916 w=0.0208091 order: 2 3 4 1 0 5
-dir 267 theta=0.904758 phi=0.356836 w=0.0278685 order: 2 3 4 1 0 5
-dir 268 theta=0.904758 phi=0.56548 w=0.0344706 order: 2 3 4 1 0 5
-dir 269 theta=0.904758 phi=0.816424 w=0.0405068 order: 0 1 2 5 4 3
-dir 270 theta=0.904758 phi=1.10555 w=0.0458778 order: 5 0 1 4 3 2
-dir 271 theta=0.904758 phi=1.4281 w=0.0504955 order: 5 0 1 4 3 2
-dir 272 theta=0.904758 phi=1.77879 w=0.0542842 order: 5 0 1 4 3 2
-dir 273 theta=0.904758 phi=2.15186 w=0.0571814 order: 5 0 1 4 3 2
-dir 274 theta=0.904758 phi=2.54118 w=0.0591398 order: 0 1 2 5 4 3
-dir 275 theta=0.904758 phi=2.94035 w=0.0601271 order: 0 1 2 5 4 3
-dir 276 theta=0.904758 phi=3.34283 w=0.0601271 order: 0 1 2 5 4 3
-dir 277 theta=0.904758 phi=3.74201 w=0.0591398 order: 0 1 2 5 4 3
-dir 278 theta=0.904758 phi=4.13133 w=0.0571814 order: 1 2 3 0 5 4
-dir 279 theta=0.904758 phi=4.5044 w=0.0542842 order: 1 2 3 0 5 4
-dir 280 theta=0.904758 phi=4.85508 w=0.0504955 order: 1 2 3 0 5 4
-dir 281 theta=0.904758 phi=5.17764 w=0.0458778 order: 1 2 3 0 5 4
-dir 282 theta=0.904758 phi=5.46676 w=0.0405068 order: 1 2 3 0 5 4
-dir 283 theta=0.904758 phi=5.7177 w=0.0344706 order: 2 3 4 1 0 5
-dir 284 theta=0.904758 phi=5.92635 w=0.0278685 order: 2 3 4 1 0 5
-dir 285 theta=0.904758 phi=6.08927 w=0.0208091 order: 2 3 4 1 0 5
-dir 286 theta=0.904758 phi=6.20379 w=0.0134089 order: 2 3 4 1 0 5
-dir 287 theta=0.904758 phi=6.26807 w=0.0058 order: 2 3 4 1 0 5
-dir 288 theta=0.714525 phi=0.0151198 w=0.004832 order: 1 2 3 0 5 4
-dir 289 theta=0.714525 phi=0.0793926 w=0.011171 order: 1 2 3 0 5 4
-dir 290 theta=0.714525 phi=0.193916 w=0.0173361 order: 1 2 3 0 5 4
-dir 291 theta=0.714525 phi=0.356836 w=0.0232174 order: 1 2 3 0 5 4
-dir 292 theta=0.714525 phi=0.56548 w=0.0287176 order: 1 2 3 0 5 4
-dir 293 theta=0.714525 phi=0.816424 w=0.0337463 order: 0 1 2 5 4 3
-dir 294 theta=0.714525 phi=1.10555 w=0.038221 order: 0 1 2 5 4 3
-dir 295 theta=0.714525 phi=1.4281 w=0.042068 order: 0 1 2 5 4 3
-dir 296 theta=0.714525 phi=1.77879 w=0.0452243 order: 0 1 2 5 4 3
-dir 297 theta=0.714525 phi=2.15186 w=0.0476381 order: 0 1 2 5 4 3
-dir 298 theta=0.714525 phi=2.54118 w=0.0492696 order: 0 1 2 5 4 3
-dir 299 theta=0.714525 phi=2.94035 w=0.0500921 order: 0 1 2 5 4 3
-dir 300 theta=0.714525 phi=3.34283 w=0.0500921 order: 0 1 2 5 4 3
-dir 301 theta=0.714525 phi=3.74201 w=0.0492696 order: 0 1 2 5 4 3
-dir 302 theta=0.714525 phi=4.13133 w=0.0476381 order: 1 2 3 0 5 4
-dir 303 theta=0.714525 phi=4.5044 w=0.0452243 order: 1 2 3 0 5 4
-dir 304 theta=0.714525 phi=4.85508 w=0.042068 order: 1 2 3 0 5 4
-dir 305 theta=0.714525 phi=5.17764 w=0.038221 order: 1 2 3 0 5 4
-dir 306 theta=0.714525 phi=5.46676 w=0.0337463 order: 1 2 3 0 5 4
-dir 307 theta=0.714525 phi=5.7177 w=0.0287176 order: 1 2 3 0 5 4
-dir 308 theta=0.714525 phi=5.92635 w=0.0232174 order: 1 2 3 0 5 4
-dir 309 theta=0.714525 phi=6.08927 w=0.0173361 order: 1 2 3 0 5 4
-dir 310 theta=0.714525 phi=6.20379 w=0.011171 order: 1 2 3 0 5 4
-dir 311 theta=0.714525 phi=6.26807 w=0.004832 order: 1 2 3 0 5 4
-dir 312 theta=0.524387 phi=0.0151198 w=0.0036894 order: 1 2 3 0 5 4
-dir 313 theta=0.524387 phi=0.0793926 w=0.00852944 order: 1 2 3 0 5 4
-dir 314 theta=0.524387 phi=0.193916 w=0.0132367 order: 1 2 3 0 5 4
-dir 315 theta=0.524387 phi=0.356836 w=0.0177273 order: 1 2 3 0 5 4
-dir 316 theta=0.524387 phi=0.56548 w=0.0219269 order: 1 2 3 0 5 4
-dir 317 theta=0.524387 phi=0.816424 w=0.0257665 order: 0 1 2 5 4 3
-dir 318 theta=0.524387 phi=1.10555 w=0.029183 order: 0 1 2 5 4 3
-dir 319 theta=0.524387 phi=1.4281 w=0.0321204 order: 0 1 2 5 4 3
-dir 320 theta=0.524387 phi=1.77879 w=0.0345303 order: 0 1 2 5 4 3
-dir 321 theta=0.524387 phi=2.15186 w=0.0363733 order: 0 1 2 5 4 3
-dir 322 theta=0.524387 phi=2.54118 w=0.037619 order: 0 1 2 5 4 3
-dir 323 theta=0.524387 phi=2.94035 w=0.038247 order: 0 1 2 5 4 3
-dir 324 theta=0.524387 phi=3.34283 w=0.038247 order: 0 1 2 5 4 3
-dir 325 theta=0.524387 phi=3.74201 w=0.037619 order: 0 1 2 5 4 3
-dir 326 theta=0.524387 phi=4.13133 w=0.0363733 order: 1 2 3 0 5 4
-dir 327 theta=0.524387 phi=4.5044 w=0.0345303 order: 1 2 3 0 5 4
-dir 328 theta=0.524387 phi=4.85508 w=0.0321204 order: 1 2 3 0 5 4
-dir 329 theta=0.524387 phi=5.17764 w=0.029183 order: 1 2 3 0 5 4
-dir 330 theta=0.524387 phi=5.46676 w=0.0257665 order: 1 2 3 0 5 4
-dir 331 theta=0.524387 phi=5.7177 w=0.0219269 order: 1 2 3 0 5 4
-dir 332 theta=0.524387 phi=5.92635 w=0.0177273 order: 1 2 3 0 5 4
-dir 333 theta=0.524387 phi=6.08927 w=0.0132367 order: 1 2 3 0 5 4
-dir 334 theta=0.524387 phi=6.20379 w=0.00852944 order: 1 2 3 0 5 4
-dir 335 theta=0.524387 phi=6.26807 w=0.0036894 order: 1 2 3 0 5 4
-dir 336 theta=0.334499 phi=0.0151198 w=0.00241364 order: 1 2 3 0 5 4
-dir 337 theta=0.334499 phi=0.0793926 w=0.00558003 order: 1 2 3 0 5 4
-dir 338 theta=0.334499 phi=0.193916 w=0.00865957 order: 1 2 3 0 5 4
-dir 339 theta=0.334499 phi=0.356836 w=0.0115973 order: 1 2 3 0 5 4
-dir 340 theta=0.334499 phi=0.56548 w=0.0143448 order: 1 2 3 0 5 4
-dir 341 theta=0.334499 phi=0.816424 w=0.0168567 order: 0 1 2 5 4 3
-dir 342 theta=0.334499 phi=1.10555 w=0.0190918 order: 0 1 2 5 4 3
-dir 343 theta=0.334499 phi=1.4281 w=0.0210134 order: 0 1 2 5 4 3
-dir 344 theta=0.334499 phi=1.77879 w=0.02259 order: 0 1 2 5 4 3
-dir 345 theta=0.334499 phi=2.15186 w=0.0237957 order: 0 1 2 5 4 3
-dir 346 theta=0.334499 phi=2.54118 w=0.0246107 order: 0 1 2 5 4 3
-dir 347 theta=0.334499 phi=2.94035 w=0.0250215 order: 0 1 2 5 4 3
-dir 348 theta=0.334499 phi=3.34283 w=0.0250215 order: 0 1 2 5 4 3
-dir 349 theta=0.334499 phi=3.74201 w=0.0246107 order: 0 1 2 5 4 3
-dir 350 theta=0.334499 phi=4.13133 w=0.0237957 order: 1 2 3 0 5 4
-dir 351 theta=0.334499 phi=4.5044 w=0.02259 order: 1 2 3 0 5 4
-dir 352 theta=0.334499 phi=4.85508 w=0.0210134 order: 1 2 3 0 5 4
-dir 353 theta=0.334499 phi=5.17764 w=0.0190918 order: 1 2 3 0 5 4
-dir 354 theta=0.334499 phi=5.46676 w=0.0168567 order: 1 2 3 0 5 4
-dir 355 theta=0.334499 phi=5.7177 w=0.0143448 order: 1 2 3 0 5 4
-dir 356 theta=0.334499 phi=5.92635 w=0.0115973 order: 1 2 3 0 5 4
-dir 357 theta=0.334499 phi=6.08927 w=0.00865957 order: 1 2 3 0 5 4
-dir 358 theta=0.334499 phi=6.20379 w=0.00558003 order: 1 2 3 0 5 4
-dir 359 theta=0.334499 phi=6.26807 w=0.00241364 order: 1 2 3 0 5 4
-dir 360 theta=0.145725 phi=0.0151198 w=0.00105273 order: 1 2 3 0 5 4
-dir 361 theta=0.145725 phi=0.0793926 w=0.00243378 order: 1 2 3 0 5 4
-dir 362 theta=0.145725 phi=0.193916 w=0.00377695 order: 1 2 3 0 5 4
-dir 363 theta=0.145725 phi=0.356836 w=0.00505829 order: 1 2 3 0 5 4
-dir 364 theta=0.145725 phi=0.56548 w=0.0062566 order: 1 2 3 0 5 4
-dir 365 theta=0.145725 phi=0.816424 w=0.00735219 order: 0 1 2 5 4 3
-dir 366 theta=0.145725 phi=1.10555 w=0.00832706 order: 0 1 2 5 4 3
-dir 367 theta=0.145725 phi=1.4281 w=0.00916521 order: 0 1 2 5 4 3
-dir 368 theta=0.145725 phi=1.77879 w=0.00985286 order: 0 1 2 5 4 3
-dir 369 theta=0.145725 phi=2.15186 w=0.0103787 order: 0 1 2 5 4 3
-dir 370 theta=0.145725 phi=2.54118 w=0.0107342 order: 0 1 2 5 4 3
-dir 371 theta=0.145725 phi=2.94035 w=0.0109134 order: 0 1 2 5 4 3
-dir 372 theta=0.145725 phi=3.34283 w=0.0109134 order: 0 1 2 5 4 3
-dir 373 theta=0.145725 phi=3.74201 w=0.0107342 order: 0 1 2 5 4 3
-dir 374 theta=0.145725 phi=4.13133 w=0.0103787 order: 1 2 3 0 5 4
-dir 375 theta=0.145725 phi=4.5044 w=0.00985286 order: 1 2 3 0 5 4
-dir 376 theta=0.145725 phi=4.85508 w=0.00916521 order: 1 2 3 0 5 4
-dir 377 theta=0.145725 phi=5.17764 w=0.00832706 order: 1 2 3 0 5 4
-dir 378 theta=0.145725 phi=5.46676 w=0.00735219 order: 1 2 3 0 5 4
-dir 379 theta=0.145725 phi=5.7177 w=0.0062566 order: 1 2 3 0 5 4
-dir 380 theta=0.145725 phi=5.92635 w=0.00505829 order: 1 2 3 0 5 4
-dir 381 theta=0.145725 phi=6.08927 w=0.00377695 order: 1 2 3 0 5 4
-dir 382 theta=0.145725 phi=6.20379 w=0.00243378 order: 1 2 3 0 5 4
-dir 383 theta=0.145725 phi=6.26807 w=0.00105273 order: 1 2 3 0 5 4
+dir 0 theta=2.99587 phi=0.0151198 w=0.00105273 order: 4 7 2 5 6 1 3 0
+dir 1 theta=2.99587 phi=0.0793926 w=0.00243378 order: 4 7 2 5 6 1 3 0
+dir 2 theta=2.99587 phi=0.193916 w=0.00377695 order: 4 7 2 5 6 1 3 0
+dir 3 theta=2.99587 phi=0.356836 w=0.00505829 order: 4 7 2 5 6 1 3 0
+dir 4 theta=2.99587 phi=0.56548 w=0.0062566 order: 4 7 2 5 6 1 3 0
+dir 5 theta=2.99587 phi=0.816424 w=0.00735219 order: 2 3 4 5 7 1 0 6
+dir 6 theta=2.99587 phi=1.10555 w=0.00832706 order: 2 3 4 5 7 1 0 6
+dir 7 theta=2.99587 phi=1.4281 w=0.00916521 order: 2 3 4 5 7 1 0 6
+dir 8 theta=2.99587 phi=1.77879 w=0.00985286 order: 3 1 2 4 0 6 5 7
+dir 9 theta=2.99587 phi=2.15186 w=0.0103787 order: 3 1 2 4 0 6 5 7
+dir 10 theta=2.99587 phi=2.54118 w=0.0107342 order: 3 1 2 4 0 6 5 7
+dir 11 theta=2.99587 phi=2.94035 w=0.0109134 order: 3 1 2 4 0 6 5 7
+dir 12 theta=2.99587 phi=3.34283 w=0.0109134 order: 0 3 6 1 2 5 7 4
+dir 13 theta=2.99587 phi=3.74201 w=0.0107342 order: 0 3 6 1 2 5 7 4
+dir 14 theta=2.99587 phi=4.13133 w=0.0103787 order: 6 7 0 1 3 5 4 2
+dir 15 theta=2.99587 phi=4.5044 w=0.00985286 order: 6 7 0 1 3 5 4 2
+dir 16 theta=2.99587 phi=4.85508 w=0.00916521 order: 7 5 6 0 4 2 1 3
+dir 17 theta=2.99587 phi=5.17764 w=0.00832706 order: 7 5 6 0 4 2 1 3
+dir 18 theta=2.99587 phi=5.46676 w=0.00735219 order: 7 5 6 0 4 2 1 3
+dir 19 theta=2.99587 phi=5.7177 w=0.0062566 order: 7 5 6 0 4 2 1 3
+dir 20 theta=2.99587 phi=5.92635 w=0.00505829 order: 7 5 6 0 4 2 1 3
+dir 21 theta=2.99587 phi=6.08927 w=0.00377695 order: 7 5 6 0 4 2 1 3
+dir 22 theta=2.99587 phi=6.20379 w=0.00243378 order: 7 5 6 0 4 2 1 3
+dir 23 theta=2.99587 phi=6.26807 w=0.00105273 order: 7 5 6 0 4 2 1 3
+dir 24 theta=2.80709 phi=0.0151198 w=0.00241364 order: 4 7 2 5 6 1 3 0
+dir 25 theta=2.80709 phi=0.0793926 w=0.00558003 order: 4 7 2 5 6 1 3 0
+dir 26 theta=2.80709 phi=0.193916 w=0.00865957 order: 4 7 2 5 6 1 3 0
+dir 27 theta=2.80709 phi=0.356836 w=0.0115973 order: 4 7 2 5 6 1 3 0
+dir 28 theta=2.80709 phi=0.56548 w=0.0143448 order: 4 7 2 5 6 1 3 0
+dir 29 theta=2.80709 phi=0.816424 w=0.0168567 order: 2 3 4 5 7 1 0 6
+dir 30 theta=2.80709 phi=1.10555 w=0.0190918 order: 2 3 4 5 7 1 0 6
+dir 31 theta=2.80709 phi=1.4281 w=0.0210134 order: 2 3 4 5 7 1 0 6
+dir 32 theta=2.80709 phi=1.77879 w=0.02259 order: 3 1 2 4 0 6 5 7
+dir 33 theta=2.80709 phi=2.15186 w=0.0237957 order: 3 1 2 4 0 6 5 7
+dir 34 theta=2.80709 phi=2.54118 w=0.0246107 order: 3 1 2 4 0 6 5 7
+dir 35 theta=2.80709 phi=2.94035 w=0.0250215 order: 3 1 2 4 0 6 5 7
+dir 36 theta=2.80709 phi=3.34283 w=0.0250215 order: 0 3 6 1 2 5 7 4
+dir 37 theta=2.80709 phi=3.74201 w=0.0246107 order: 0 3 6 1 2 5 7 4
+dir 38 theta=2.80709 phi=4.13133 w=0.0237957 order: 6 7 0 1 3 5 4 2
+dir 39 theta=2.80709 phi=4.5044 w=0.02259 order: 6 7 0 1 3 5 4 2
+dir 40 theta=2.80709 phi=4.85508 w=0.0210134 order: 7 5 6 0 4 2 1 3
+dir 41 theta=2.80709 phi=5.17764 w=0.0190918 order: 7 5 6 0 4 2 1 3
+dir 42 theta=2.80709 phi=5.46676 w=0.0168567 order: 7 5 6 0 4 2 1 3
+dir 43 theta=2.80709 phi=5.7177 w=0.0143448 order: 7 5 6 0 4 2 1 3
+dir 44 theta=2.80709 phi=5.92635 w=0.0115973 order: 7 5 6 0 4 2 1 3
+dir 45 theta=2.80709 phi=6.08927 w=0.00865957 order: 7 5 6 0 4 2 1 3
+dir 46 theta=2.80709 phi=6.20379 w=0.00558003 order: 7 5 6 0 4 2 1 3
+dir 47 theta=2.80709 phi=6.26807 w=0.00241364 order: 7 5 6 0 4 2 1 3
+dir 48 theta=2.61721 phi=0.0151198 w=0.0036894 order: 4 7 2 5 6 1 3 0
+dir 49 theta=2.61721 phi=0.0793926 w=0.00852944 order: 4 7 2 5 6 1 3 0
+dir 50 theta=2.61721 phi=0.193916 w=0.0132367 order: 4 7 2 5 6 1 3 0
+dir 51 theta=2.61721 phi=0.356836 w=0.0177273 order: 4 7 2 5 6 1 3 0
+dir 52 theta=2.61721 phi=0.56548 w=0.0219269 order: 4 7 2 5 6 1 3 0
+dir 53 theta=2.61721 phi=0.816424 w=0.0257665 order: 2 3 4 5 7 1 0 6
+dir 54 theta=2.61721 phi=1.10555 w=0.029183 order: 2 3 4 5 7 1 0 6
+dir 55 theta=2.61721 phi=1.4281 w=0.0321204 order: 2 3 4 5 7 1 0 6
+dir 56 theta=2.61721 phi=1.77879 w=0.0345303 order: 3 1 2 4 0 6 5 7
+dir 57 theta=2.61721 phi=2.15186 w=0.0363733 order: 3 1 2 4 0 6 5 7
+dir 58 theta=2.61721 phi=2.54118 w=0.037619 order: 3 1 2 4 0 6 5 7
+dir 59 theta=2.61721 phi=2.94035 w=0.038247 order: 3 1 2 4 0 6 5 7
+dir 60 theta=2.61721 phi=3.34283 w=0.038247 order: 0 3 6 1 2 5 7 4
+dir 61 theta=2.61721 phi=3.74201 w=0.037619 order: 0 3 6 1 2 5 7 4
+dir 62 theta=2.61721 phi=4.13133 w=0.0363733 order: 6 7 0 1 3 5 4 2
+dir 63 theta=2.61721 phi=4.5044 w=0.0345303 order: 6 7 0 1 3 5 4 2
+dir 64 theta=2.61721 phi=4.85508 w=0.0321204 order: 7 5 6 0 4 2 1 3
+dir 65 theta=2.61721 phi=5.17764 w=0.029183 order: 7 5 6 0 4 2 1 3
+dir 66 theta=2.61721 phi=5.46676 w=0.0257665 order: 7 5 6 0 4 2 1 3
+dir 67 theta=2.61721 phi=5.7177 w=0.0219269 order: 7 5 6 0 4 2 1 3
+dir 68 theta=2.61721 phi=5.92635 w=0.0177273 order: 7 5 6 0 4 2 1 3
+dir 69 theta=2.61721 phi=6.08927 w=0.0132367 order: 7 5 6 0 4 2 1 3
+dir 70 theta=2.61721 phi=6.20379 w=0.00852944 order: 7 5 6 0 4 2 1 3
+dir 71 theta=2.61721 phi=6.26807 w=0.0036894 order: 7 5 6 0 4 2 1 3
+dir 72 theta=2.42707 phi=0.0151198 w=0.004832 order: 4 7 2 5 6 1 3 0
+dir 73 theta=2.42707 phi=0.0793926 w=0.011171 order: 4 7 2 5 6 1 3 0
+dir 74 theta=2.42707 phi=0.193916 w=0.0173361 order: 4 7 2 5 6 1 3 0
+dir 75 theta=2.42707 phi=0.356836 w=0.0232174 order: 4 7 2 5 6 1 3 0
+dir 76 theta=2.42707 phi=0.56548 w=0.0287176 order: 4 7 2 5 6 1 3 0
+dir 77 theta=2.42707 phi=0.816424 w=0.0337463 order: 2 3 4 5 7 1 0 6
+dir 78 theta=2.42707 phi=1.10555 w=0.038221 order: 2 3 4 5 7 1 0 6
+dir 79 theta=2.42707 phi=1.4281 w=0.042068 order: 2 3 4 5 7 1 0 6
+dir 80 theta=2.42707 phi=1.77879 w=0.0452243 order: 3 1 2 4 0 6 5 7
+dir 81 theta=2.42707 phi=2.15186 w=0.0476381 order: 3 1 2 4 0 6 5 7
+dir 82 theta=2.42707 phi=2.54118 w=0.0492696 order: 3 1 2 4 0 6 5 7
+dir 83 theta=2.42707 phi=2.94035 w=0.0500921 order: 3 1 2 4 0 6 5 7
+dir 84 theta=2.42707 phi=3.34283 w=0.0500921 order: 0 3 6 1 2 5 7 4
+dir 85 theta=2.42707 phi=3.74201 w=0.0492696 order: 0 3 6 1 2 5 7 4
+dir 86 theta=2.42707 phi=4.13133 w=0.0476381 order: 6 7 0 1 3 5 4 2
+dir 87 theta=2.42707 phi=4.5044 w=0.0452243 order: 6 7 0 1 3 5 4 2
+dir 88 theta=2.42707 phi=4.85508 w=0.042068 order: 7 5 6 0 4 2 1 3
+dir 89 theta=2.42707 phi=5.17764 w=0.038221 order: 7 5 6 0 4 2 1 3
+dir 90 theta=2.42707 phi=5.46676 w=0.0337463 order: 7 5 6 0 4 2 1 3
+dir 91 theta=2.42707 phi=5.7177 w=0.0287176 order: 7 5 6 0 4 2 1 3
+dir 92 theta=2.42707 phi=5.92635 w=0.0232174 order: 7 5 6 0 4 2 1 3
+dir 93 theta=2.42707 phi=6.08927 w=0.0173361 order: 7 5 6 0 4 2 1 3
+dir 94 theta=2.42707 phi=6.20379 w=0.011171 order: 7 5 6 0 4 2 1 3
+dir 95 theta=2.42707 phi=6.26807 w=0.004832 order: 7 5 6 0 4 2 1 3
+dir 96 theta=2.23684 phi=0.0151198 w=0.0058 order: 4 7 2 5 6 1 3 0
+dir 97 theta=2.23684 phi=0.0793926 w=0.0134089 order: 4 7 2 5 6 1 3 0
+dir 98 theta=2.23684 phi=0.193916 w=0.0208091 order: 4 7 2 5 6 1 3 0
+dir 99 theta=2.23684 phi=0.356836 w=0.0278685 order: 4 7 2 5 6 1 3 0
+dir 100 theta=2.23684 phi=0.56548 w=0.0344706 order: 4 7 2 5 6 1 3 0
+dir 101 theta=2.23684 phi=0.816424 w=0.0405068 order: 2 3 4 5 7 1 0 6
+dir 102 theta=2.23684 phi=1.10555 w=0.0458778 order: 2 3 4 5 7 1 0 6
+dir 103 theta=2.23684 phi=1.4281 w=0.0504955 order: 2 3 4 5 7 1 0 6
+dir 104 theta=2.23684 phi=1.77879 w=0.0542842 order: 3 1 2 4 0 6 5 7
+dir 105 theta=2.23684 phi=2.15186 w=0.0571814 order: 3 1 2 4 0 6 5 7
+dir 106 theta=2.23684 phi=2.54118 w=0.0591398 order: 3 1 2 4 0 6 5 7
+dir 107 theta=2.23684 phi=2.94035 w=0.0601271 order: 3 1 2 4 0 6 5 7
+dir 108 theta=2.23684 phi=3.34283 w=0.0601271 order: 0 3 6 1 2 5 7 4
+dir 109 theta=2.23684 phi=3.74201 w=0.0591398 order: 0 3 6 1 2 5 7 4
+dir 110 theta=2.23684 phi=4.13133 w=0.0571814 order: 6 7 0 1 3 5 4 2
+dir 111 theta=2.23684 phi=4.5044 w=0.0542842 order: 6 7 0 1 3 5 4 2
+dir 112 theta=2.23684 phi=4.85508 w=0.0504955 order: 7 5 6 0 4 2 1 3
+dir 113 theta=2.23684 phi=5.17764 w=0.0458778 order: 7 5 6 0 4 2 1 3
+dir 114 theta=2.23684 phi=5.46676 w=0.0405068 order: 7 5 6 0 4 2 1 3
+dir 115 theta=2.23684 phi=5.7177 w=0.0344706 order: 7 5 6 0 4 2 1 3
+dir 116 theta=2.23684 phi=5.92635 w=0.0278685 order: 7 5 6 0 4 2 1 3
+dir 117 theta=2.23684 phi=6.08927 w=0.0208091 order: 7 5 6 0 4 2 1 3
+dir 118 theta=2.23684 phi=6.20379 w=0.0134089 order: 7 5 6 0 4 2 1 3
+dir 119 theta=2.23684 phi=6.26807 w=0.0058 order: 7 5 6 0 4 2 1 3
+dir 120 theta=2.04656 phi=0.0151198 w=0.00655839 order: 4 7 2 5 6 1 3 0
+dir 121 theta=2.04656 phi=0.0793926 w=0.0151622 order: 4 7 2 5 6 1 3 0
+dir 122 theta=2.04656 phi=0.193916 w=0.02353 order: 4 7 2 5 6 1 3 0
+dir 123 theta=2.04656 phi=0.356836 w=0.0315125 order: 4 7 2 5 6 1 3 0
+dir 124 theta=2.04656 phi=0.56548 w=0.0389779 order: 4 7 2 5 6 1 3 0
+dir 125 theta=2.04656 phi=0.816424 w=0.0458033 order: 2 3 4 5 7 1 0 6
+dir 126 theta=2.04656 phi=1.10555 w=0.0518766 order: 2 3 4 5 7 1 0 6
+dir 127 theta=2.04656 phi=1.4281 w=0.0570981 order: 2 3 4 5 7 1 0 6
+dir 128 theta=2.04656 phi=1.77879 w=0.0613821 order: 3 1 2 4 0 6 5 7
+dir 129 theta=2.04656 phi=2.15186 w=0.0646582 order: 3 1 2 4 0 6 5 7
+dir 130 theta=2.04656 phi=2.54118 w=0.0668727 order: 3 1 2 4 0 6 5 7
+dir 131 theta=2.04656 phi=2.94035 w=0.067989 order: 3 1 2 4 0 6 5 7
+dir 132 theta=2.04656 phi=3.34283 w=0.067989 order: 0 3 6 1 2 5 7 4
+dir 133 theta=2.04656 phi=3.74201 w=0.0668727 order: 0 3 6 1 2 5 7 4
+dir 134 theta=2.04656 phi=4.13133 w=0.0646582 order: 6 7 0 1 3 5 4 2
+dir 135 theta=2.04656 phi=4.5044 w=0.0613821 order: 6 7 0 1 3 5 4 2
+dir 136 theta=2.04656 phi=4.85508 w=0.0570981 order: 7 5 6 0 4 2 1 3
+dir 137 theta=2.04656 phi=5.17764 w=0.0518766 order: 7 5 6 0 4 2 1 3
+dir 138 theta=2.04656 phi=5.46676 w=0.0458033 order: 7 5 6 0 4 2 1 3
+dir 139 theta=2.04656 phi=5.7177 w=0.0389779 order: 7 5 6 0 4 2 1 3
+dir 140 theta=2.04656 phi=5.92635 w=0.0315125 order: 7 5 6 0 4 2 1 3
+dir 141 theta=2.04656 phi=6.08927 w=0.02353 order: 7 5 6 0 4 2 1 3
+dir 142 theta=2.04656 phi=6.20379 w=0.0151622 order: 7 5 6 0 4 2 1 3
+dir 143 theta=2.04656 phi=6.26807 w=0.00655839 order: 7 5 6 0 4 2 1 3
+dir 144 theta=1.85626 phi=0.0151198 w=0.00707974 order: 4 7 2 5 6 1 3 0
+dir 145 theta=1.85626 phi=0.0793926 w=0.0163675 order: 4 7 2 5 6 1 3 0
+dir 146 theta=1.85626 phi=0.193916 w=0.0254004 order: 4 7 2 5 6 1 3 0
+dir 147 theta=1.85626 phi=0.356836 w=0.0340176 order: 4 7 2 5 6 1 3 0
+dir 148 theta=1.85626 phi=0.56548 w=0.0420763 order: 4 7 2 5 6 1 3 0
+dir 149 theta=1.85626 phi=0.816424 w=0.0494443 order: 2 3 4 5 7 1 0 6
+dir 150 theta=1.85626 phi=1.10555 w=0.0560005 order: 2 3 4 5 7 1 0 6
+dir 151 theta=1.85626 phi=1.4281 w=0.0616371 order: 2 3 4 5 7 1 0 6
+dir 152 theta=1.85626 phi=1.77879 w=0.0662616 order: 3 1 2 4 0 6 5 7
+dir 153 theta=1.85626 phi=2.15186 w=0.0697982 order: 3 1 2 4 0 6 5 7
+dir 154 theta=1.85626 phi=2.54118 w=0.0721886 order: 3 1 2 4 0 6 5 7
+dir 155 theta=1.85626 phi=2.94035 w=0.0733937 order: 3 1 2 4 0 6 5 7
+dir 156 theta=1.85626 phi=3.34283 w=0.0733937 order: 0 3 6 1 2 5 7 4
+dir 157 theta=1.85626 phi=3.74201 w=0.0721886 order: 0 3 6 1 2 5 7 4
+dir 158 theta=1.85626 phi=4.13133 w=0.0697982 order: 6 7 0 1 3 5 4 2
+dir 159 theta=1.85626 phi=4.5044 w=0.0662616 order: 6 7 0 1 3 5 4 2
+dir 160 theta=1.85626 phi=4.85508 w=0.0616371 order: 7 5 6 0 4 2 1 3
+dir 161 theta=1.85626 phi=5.17764 w=0.0560005 order: 7 5 6 0 4 2 1 3
+dir 162 theta=1.85626 phi=5.46676 w=0.0494443 order: 7 5 6 0 4 2 1 3
+dir 163 theta=1.85626 phi=5.7177 w=0.0420763 order: 7 5 6 0 4 2 1 3
+dir 164 theta=1.85626 phi=5.92635 w=0.0340176 order: 7 5 6 0 4 2 1 3
+dir 165 theta=1.85626 phi=6.08927 w=0.0254004 order: 7 5 6 0 4 2 1 3
+dir 166 theta=1.85626 phi=6.20379 w=0.0163675 order: 7 5 6 0 4 2 1 3
+dir 167 theta=1.85626 phi=6.26807 w=0.00707974 order: 7 5 6 0 4 2 1 3
+dir 168 theta=1.66595 phi=0.0151198 w=0.00734521 order: 4 7 2 5 6 1 3 0
+dir 169 theta=1.66595 phi=0.0793926 w=0.0169812 order: 4 7 2 5 6 1 3 0
+dir 170 theta=1.66595 phi=0.193916 w=0.0263529 order: 4 7 2 5 6 1 3 0
+dir 171 theta=1.66595 phi=0.356836 w=0.0352931 order: 4 7 2 5 6 1 3 0
+dir 172 theta=1.66595 phi=0.56548 w=0.0436541 order: 4 7 2 5 6 1 3 0
+dir 173 theta=1.66595 phi=0.816424 w=0.0512984 order: 2 3 4 5 7 1 0 6
+dir 174 theta=1.66595 phi=1.10555 w=0.0581003 order: 2 3 4 5 7 1 0 6
+dir 175 theta=1.66595 phi=1.4281 w=0.0639483 order: 2 3 4 5 7 1 0 6
+dir 176 theta=1.66595 phi=1.77879 w=0.0687463 order: 3 1 2 4 0 6 5 7
+dir 177 theta=1.66595 phi=2.15186 w=0.0724154 order: 3 1 2 4 0 6 5 7
+dir 178 theta=1.66595 phi=2.54118 w=0.0748955 order: 3 1 2 4 0 6 5 7
+dir 179 theta=1.66595 phi=2.94035 w=0.0761458 order: 3 1 2 4 0 6 5 7
+dir 180 theta=1.66595 phi=3.34283 w=0.0761458 order: 0 3 6 1 2 5 7 4
+dir 181 theta=1.66595 phi=3.74201 w=0.0748955 order: 0 3 6 1 2 5 7 4
+dir 182 theta=1.66595 phi=4.13133 w=0.0724154 order: 6 7 0 1 3 5 4 2
+dir 183 theta=1.66595 phi=4.5044 w=0.0687463 order: 6 7 0 1 3 5 4 2
+dir 184 theta=1.66595 phi=4.85508 w=0.0639483 order: 7 5 6 0 4 2 1 3
+dir 185 theta=1.66595 phi=5.17764 w=0.0581003 order: 7 5 6 0 4 2 1 3
+dir 186 theta=1.66595 phi=5.46676 w=0.0512984 order: 7 5 6 0 4 2 1 3
+dir 187 theta=1.66595 phi=5.7177 w=0.0436541 order: 7 5 6 0 4 2 1 3
+dir 188 theta=1.66595 phi=5.92635 w=0.0352931 order: 7 5 6 0 4 2 1 3
+dir 189 theta=1.66595 phi=6.08927 w=0.0263529 order: 7 5 6 0 4 2 1 3
+dir 190 theta=1.66595 phi=6.20379 w=0.0169812 order: 7 5 6 0 4 2 1 3
+dir 191 theta=1.66595 phi=6.26807 w=0.00734521 order: 7 5 6 0 4 2 1 3
+dir 192 theta=1.47564 phi=0.0151198 w=0.00734521 order: 4 7 2 5 6 1 3 0
+dir 193 theta=1.47564 phi=0.0793926 w=0.0169812 order: 4 7 2 5 6 1 3 0
+dir 194 theta=1.47564 phi=0.193916 w=0.0263529 order: 4 7 2 5 6 1 3 0
+dir 195 theta=1.47564 phi=0.356836 w=0.0352931 order: 4 7 2 5 6 1 3 0
+dir 196 theta=1.47564 phi=0.56548 w=0.0436541 order: 4 7 2 5 6 1 3 0
+dir 197 theta=1.47564 phi=0.816424 w=0.0512984 order: 2 3 4 5 7 1 0 6
+dir 198 theta=1.47564 phi=1.10555 w=0.0581003 order: 2 3 4 5 7 1 0 6
+dir 199 theta=1.47564 phi=1.4281 w=0.0639483 order: 2 3 4 5 7 1 0 6
+dir 200 theta=1.47564 phi=1.77879 w=0.0687463 order: 3 1 2 4 0 6 5 7
+dir 201 theta=1.47564 phi=2.15186 w=0.0724154 order: 3 1 2 4 0 6 5 7
+dir 202 theta=1.47564 phi=2.54118 w=0.0748955 order: 3 1 2 4 0 6 5 7
+dir 203 theta=1.47564 phi=2.94035 w=0.0761458 order: 3 1 2 4 0 6 5 7
+dir 204 theta=1.47564 phi=3.34283 w=0.0761458 order: 0 3 6 1 2 5 7 4
+dir 205 theta=1.47564 phi=3.74201 w=0.0748955 order: 0 3 6 1 2 5 7 4
+dir 206 theta=1.47564 phi=4.13133 w=0.0724154 order: 6 7 0 1 3 5 4 2
+dir 207 theta=1.47564 phi=4.5044 w=0.0687463 order: 6 7 0 1 3 5 4 2
+dir 208 theta=1.47564 phi=4.85508 w=0.0639483 order: 7 5 6 0 4 2 1 3
+dir 209 theta=1.47564 phi=5.17764 w=0.0581003 order: 7 5 6 0 4 2 1 3
+dir 210 theta=1.47564 phi=5.46676 w=0.0512984 order: 7 5 6 0 4 2 1 3
+dir 211 theta=1.47564 phi=5.7177 w=0.0436541 order: 7 5 6 0 4 2 1 3
+dir 212 theta=1.47564 phi=5.92635 w=0.0352931 order: 7 5 6 0 4 2 1 3
+dir 213 theta=1.47564 phi=6.08927 w=0.0263529 order: 7 5 6 0 4 2 1 3
+dir 214 theta=1.47564 phi=6.20379 w=0.0169812 order: 7 5 6 0 4 2 1 3
+dir 215 theta=1.47564 phi=6.26807 w=0.00734521 order: 7 5 6 0 4 2 1 3
+dir 216 theta=1.28533 phi=0.0151198 w=0.00707974 order: 4 7 2 5 6 1 3 0
+dir 217 theta=1.28533 phi=0.0793926 w=0.0163675 order: 4 7 2 5 6 1 3 0
+dir 218 theta=1.28533 phi=0.193916 w=0.0254004 order: 4 7 2 5 6 1 3 0
+dir 219 theta=1.28533 phi=0.356836 w=0.0340176 order: 4 7 2 5 6 1 3 0
+dir 220 theta=1.28533 phi=0.56548 w=0.0420763 order: 4 7 2 5 6 1 3 0
+dir 221 theta=1.28533 phi=0.816424 w=0.0494443 order: 2 3 4 5 7 1 0 6
+dir 222 theta=1.28533 phi=1.10555 w=0.0560005 order: 2 3 4 5 7 1 0 6
+dir 223 theta=1.28533 phi=1.4281 w=0.0616371 order: 2 3 4 5 7 1 0 6
+dir 224 theta=1.28533 phi=1.77879 w=0.0662616 order: 3 1 2 4 0 6 5 7
+dir 225 theta=1.28533 phi=2.15186 w=0.0697982 order: 3 1 2 4 0 6 5 7
+dir 226 theta=1.28533 phi=2.54118 w=0.0721886 order: 3 1 2 4 0 6 5 7
+dir 227 theta=1.28533 phi=2.94035 w=0.0733937 order: 3 1 2 4 0 6 5 7
+dir 228 theta=1.28533 phi=3.34283 w=0.0733937 order: 0 3 6 1 2 5 7 4
+dir 229 theta=1.28533 phi=3.74201 w=0.0721886 order: 0 3 6 1 2 5 7 4
+dir 230 theta=1.28533 phi=4.13133 w=0.0697982 order: 6 7 0 1 3 5 4 2
+dir 231 theta=1.28533 phi=4.5044 w=0.0662616 order: 6 7 0 1 3 5 4 2
+dir 232 theta=1.28533 phi=4.85508 w=0.0616371 order: 7 5 6 0 4 2 1 3
+dir 233 theta=1.28533 phi=5.17764 w=0.0560005 order: 7 5 6 0 4 2 1 3
+dir 234 theta=1.28533 phi=5.46676 w=0.0494443 order: 7 5 6 0 4 2 1 3
+dir 235 theta=1.28533 phi=5.7177 w=0.0420763 order: 7 5 6 0 4 2 1 3
+dir 236 theta=1.28533 phi=5.92635 w=0.0340176 order: 7 5 6 0 4 2 1 3
+dir 237 theta=1.28533 phi=6.08927 w=0.0254004 order: 7 5 6 0 4 2 1 3
+dir 238 theta=1.28533 phi=6.20379 w=0.0163675 order: 7 5 6 0 4 2 1 3
+dir 239 theta=1.28533 phi=6.26807 w=0.00707974 order: 7 5 6 0 4 2 1 3
+dir 240 theta=1.09503 phi=0.0151198 w=0.00655839 order: 4 7 2 5 6 1 3 0
+dir 241 theta=1.09503 phi=0.0793926 w=0.0151622 order: 4 7 2 5 6 1 3 0
+dir 242 theta=1.09503 phi=0.193916 w=0.02353 order: 4 7 2 5 6 1 3 0
+dir 243 theta=1.09503 phi=0.356836 w=0.0315125 order: 4 7 2 5 6 1 3 0
+dir 244 theta=1.09503 phi=0.56548 w=0.0389779 order: 4 7 2 5 6 1 3 0
+dir 245 theta=1.09503 phi=0.816424 w=0.0458033 order: 2 3 4 5 7 1 0 6
+dir 246 theta=1.09503 phi=1.10555 w=0.0518766 order: 2 3 4 5 7 1 0 6
+dir 247 theta=1.09503 phi=1.4281 w=0.0570981 order: 2 3 4 5 7 1 0 6
+dir 248 theta=1.09503 phi=1.77879 w=0.0613821 order: 3 1 2 4 0 6 5 7
+dir 249 theta=1.09503 phi=2.15186 w=0.0646582 order: 3 1 2 4 0 6 5 7
+dir 250 theta=1.09503 phi=2.54118 w=0.0668727 order: 3 1 2 4 0 6 5 7
+dir 251 theta=1.09503 phi=2.94035 w=0.067989 order: 3 1 2 4 0 6 5 7
+dir 252 theta=1.09503 phi=3.34283 w=0.067989 order: 0 3 6 1 2 5 7 4
+dir 253 theta=1.09503 phi=3.74201 w=0.0668727 order: 0 3 6 1 2 5 7 4
+dir 254 theta=1.09503 phi=4.13133 w=0.0646582 order: 6 7 0 1 3 5 4 2
+dir 255 theta=1.09503 phi=4.5044 w=0.0613821 order: 6 7 0 1 3 5 4 2
+dir 256 theta=1.09503 phi=4.85508 w=0.0570981 order: 7 5 6 0 4 2 1 3
+dir 257 theta=1.09503 phi=5.17764 w=0.0518766 order: 7 5 6 0 4 2 1 3
+dir 258 theta=1.09503 phi=5.46676 w=0.0458033 order: 7 5 6 0 4 2 1 3
+dir 259 theta=1.09503 phi=5.7177 w=0.0389779 order: 7 5 6 0 4 2 1 3
+dir 260 theta=1.09503 phi=5.92635 w=0.0315125 order: 7 5 6 0 4 2 1 3
+dir 261 theta=1.09503 phi=6.08927 w=0.02353 order: 7 5 6 0 4 2 1 3
+dir 262 theta=1.09503 phi=6.20379 w=0.0151622 order: 7 5 6 0 4 2 1 3
+dir 263 theta=1.09503 phi=6.26807 w=0.00655839 order: 7 5 6 0 4 2 1 3
+dir 264 theta=0.904758 phi=0.0151198 w=0.0058 order: 4 7 2 5 6 1 3 0
+dir 265 theta=0.904758 phi=0.0793926 w=0.0134089 order: 4 7 2 5 6 1 3 0
+dir 266 theta=0.904758 phi=0.193916 w=0.0208091 order: 4 7 2 5 6 1 3 0
+dir 267 theta=0.904758 phi=0.356836 w=0.0278685 order: 4 7 2 5 6 1 3 0
+dir 268 theta=0.904758 phi=0.56548 w=0.0344706 order: 4 7 2 5 6 1 3 0
+dir 269 theta=0.904758 phi=0.816424 w=0.0405068 order: 2 3 4 5 7 1 0 6
+dir 270 theta=0.904758 phi=1.10555 w=0.0458778 order: 2 3 4 5 7 1 0 6
+dir 271 theta=0.904758 phi=1.4281 w=0.0504955 order: 2 3 4 5 7 1 0 6
+dir 272 theta=0.904758 phi=1.77879 w=0.0542842 order: 3 1 2 4 0 6 5 7
+dir 273 theta=0.904758 phi=2.15186 w=0.0571814 order: 3 1 2 4 0 6 5 7
+dir 274 theta=0.904758 phi=2.54118 w=0.0591398 order: 3 1 2 4 0 6 5 7
+dir 275 theta=0.904758 phi=2.94035 w=0.0601271 order: 3 1 2 4 0 6 5 7
+dir 276 theta=0.904758 phi=3.34283 w=0.0601271 order: 0 3 6 1 2 5 7 4
+dir 277 theta=0.904758 phi=3.74201 w=0.0591398 order: 0 3 6 1 2 5 7 4
+dir 278 theta=0.904758 phi=4.13133 w=0.0571814 order: 6 7 0 1 3 5 4 2
+dir 279 theta=0.904758 phi=4.5044 w=0.0542842 order: 6 7 0 1 3 5 4 2
+dir 280 theta=0.904758 phi=4.85508 w=0.0504955 order: 7 5 6 0 4 2 1 3
+dir 281 theta=0.904758 phi=5.17764 w=0.0458778 order: 7 5 6 0 4 2 1 3
+dir 282 theta=0.904758 phi=5.46676 w=0.0405068 order: 7 5 6 0 4 2 1 3
+dir 283 theta=0.904758 phi=5.7177 w=0.0344706 order: 7 5 6 0 4 2 1 3
+dir 284 theta=0.904758 phi=5.92635 w=0.0278685 order: 7 5 6 0 4 2 1 3
+dir 285 theta=0.904758 phi=6.08927 w=0.0208091 order: 7 5 6 0 4 2 1 3
+dir 286 theta=0.904758 phi=6.20379 w=0.0134089 order: 7 5 6 0 4 2 1 3
+dir 287 theta=0.904758 phi=6.26807 w=0.0058 order: 7 5 6 0 4 2 1 3
+dir 288 theta=0.714525 phi=0.0151198 w=0.004832 order: 4 7 2 5 6 1 3 0
+dir 289 theta=0.714525 phi=0.0793926 w=0.011171 order: 4 7 2 5 6 1 3 0
+dir 290 theta=0.714525 phi=0.193916 w=0.0173361 order: 4 7 2 5 6 1 3 0
+dir 291 theta=0.714525 phi=0.356836 w=0.0232174 order: 4 7 2 5 6 1 3 0
+dir 292 theta=0.714525 phi=0.56548 w=0.0287176 order: 4 7 2 5 6 1 3 0
+dir 293 theta=0.714525 phi=0.816424 w=0.0337463 order: 2 3 4 5 7 1 0 6
+dir 294 theta=0.714525 phi=1.10555 w=0.038221 order: 2 3 4 5 7 1 0 6
+dir 295 theta=0.714525 phi=1.4281 w=0.042068 order: 2 3 4 5 7 1 0 6
+dir 296 theta=0.714525 phi=1.77879 w=0.0452243 order: 3 1 2 4 0 6 5 7
+dir 297 theta=0.714525 phi=2.15186 w=0.0476381 order: 3 1 2 4 0 6 5 7
+dir 298 theta=0.714525 phi=2.54118 w=0.0492696 order: 3 1 2 4 0 6 5 7
+dir 299 theta=0.714525 phi=2.94035 w=0.0500921 order: 3 1 2 4 0 6 5 7
+dir 300 theta=0.714525 phi=3.34283 w=0.0500921 order: 0 3 6 1 2 5 7 4
+dir 301 theta=0.714525 phi=3.74201 w=0.0492696 order: 0 3 6 1 2 5 7 4
+dir 302 theta=0.714525 phi=4.13133 w=0.0476381 order: 6 7 0 1 3 5 4 2
+dir 303 theta=0.714525 phi=4.5044 w=0.0452243 order: 6 7 0 1 3 5 4 2
+dir 304 theta=0.714525 phi=4.85508 w=0.042068 order: 7 5 6 0 4 2 1 3
+dir 305 theta=0.714525 phi=5.17764 w=0.038221 order: 7 5 6 0 4 2 1 3
+dir 306 theta=0.714525 phi=5.46676 w=0.0337463 order: 7 5 6 0 4 2 1 3
+dir 307 theta=0.714525 phi=5.7177 w=0.0287176 order: 7 5 6 0 4 2 1 3
+dir 308 theta=0.714525 phi=5.92635 w=0.0232174 order: 7 5 6 0 4 2 1 3
+dir 309 theta=0.714525 phi=6.08927 w=0.0173361 order: 7 5 6 0 4 2 1 3
+dir 310 theta=0.714525 phi=6.20379 w=0.011171 order: 7 5 6 0 4 2 1 3
+dir 311 theta=0.714525 phi=6.26807 w=0.004832 order: 7 5 6 0 4 2 1 3
+dir 312 theta=0.524387 phi=0.0151198 w=0.0036894 order: 4 7 2 5 6 1 3 0
+dir 313 theta=0.524387 phi=0.0793926 w=0.00852944 order: 4 7 2 5 6 1 3 0
+dir 314 theta=0.524387 phi=0.193916 w=0.0132367 order: 4 7 2 5 6 1 3 0
+dir 315 theta=0.524387 phi=0.356836 w=0.0177273 order: 4 7 2 5 6 1 3 0
+dir 316 theta=0.524387 phi=0.56548 w=0.0219269 order: 4 7 2 5 6 1 3 0
+dir 317 theta=0.524387 phi=0.816424 w=0.0257665 order: 2 3 4 5 7 1 0 6
+dir 318 theta=0.524387 phi=1.10555 w=0.029183 order: 2 3 4 5 7 1 0 6
+dir 319 theta=0.524387 phi=1.4281 w=0.0321204 order: 2 3 4 5 7 1 0 6
+dir 320 theta=0.524387 phi=1.77879 w=0.0345303 order: 3 1 2 4 0 6 5 7
+dir 321 theta=0.524387 phi=2.15186 w=0.0363733 order: 3 1 2 4 0 6 5 7
+dir 322 theta=0.524387 phi=2.54118 w=0.037619 order: 3 1 2 4 0 6 5 7
+dir 323 theta=0.524387 phi=2.94035 w=0.038247 order: 3 1 2 4 0 6 5 7
+dir 324 theta=0.524387 phi=3.34283 w=0.038247 order: 0 3 6 1 2 5 7 4
+dir 325 theta=0.524387 phi=3.74201 w=0.037619 order: 0 3 6 1 2 5 7 4
+dir 326 theta=0.524387 phi=4.13133 w=0.0363733 order: 6 7 0 1 3 5 4 2
+dir 327 theta=0.524387 phi=4.5044 w=0.0345303 order: 6 7 0 1 3 5 4 2
+dir 328 theta=0.524387 phi=4.85508 w=0.0321204 order: 7 5 6 0 4 2 1 3
+dir 329 theta=0.524387 phi=5.17764 w=0.029183 order: 7 5 6 0 4 2 1 3
+dir 330 theta=0.524387 phi=5.46676 w=0.0257665 order: 7 5 6 0 4 2 1 3
+dir 331 theta=0.524387 phi=5.7177 w=0.0219269 order: 7 5 6 0 4 2 1 3
+dir 332 theta=0.524387 phi=5.92635 w=0.0177273 order: 7 5 6 0 4 2 1 3
+dir 333 theta=0.524387 phi=6.08927 w=0.0132367 order: 7 5 6 0 4 2 1 3
+dir 334 theta=0.524387 phi=6.20379 w=0.00852944 order: 7 5 6 0 4 2 1 3
+dir 335 theta=0.524387 phi=6.26807 w=0.0036894 order: 7 5 6 0 4 2 1 3
+dir 336 theta=0.334499 phi=0.0151198 w=0.00241364 order: 4 7 2 5 6 1 3 0
+dir 337 theta=0.334499 phi=0.0793926 w=0.00558003 order: 4 7 2 5 6 1 3 0
+dir 338 theta=0.334499 phi=0.193916 w=0.00865957 order: 4 7 2 5 6 1 3 0
+dir 339 theta=0.334499 phi=0.356836 w=0.0115973 order: 4 7 2 5 6 1 3 0
+dir 340 theta=0.334499 phi=0.56548 w=0.0143448 order: 4 7 2 5 6 1 3 0
+dir 341 theta=0.334499 phi=0.816424 w=0.0168567 order: 2 3 4 5 7 1 0 6
+dir 342 theta=0.334499 phi=1.10555 w=0.0190918 order: 2 3 4 5 7 1 0 6
+dir 343 theta=0.334499 phi=1.4281 w=0.0210134 order: 2 3 4 5 7 1 0 6
+dir 344 theta=0.334499 phi=1.77879 w=0.02259 order: 3 1 2 4 0 6 5 7
+dir 345 theta=0.334499 phi=2.15186 w=0.0237957 order: 3 1 2 4 0 6 5 7
+dir 346 theta=0.334499 phi=2.54118 w=0.0246107 order: 3 1 2 4 0 6 5 7
+dir 347 theta=0.334499 phi=2.94035 w=0.0250215 order: 3 1 2 4 0 6 5 7
+dir 348 theta=0.334499 phi=3.34283 w=0.0250215 order: 0 3 6 1 2 5 7 4
+dir 349 theta=0.334499 phi=3.74201 w=0.0246107 order: 0 3 6 1 2 5 7 4
+dir 350 theta=0.334499 phi=4.13133 w=0.0237957 order: 6 7 0 1 3 5 4 2
+dir 351 theta=0.334499 phi=4.5044 w=0.02259 order: 6 7 0 1 3 5 4 2
+dir 352 theta=0.334499 phi=4.85508 w=0.0210134 order: 7 5 6 0 4 2 1 3
+dir 353 theta=0.334499 phi=5.17764 w=0.0190918 order: 7 5 6 0 4 2 1 3
+dir 354 theta=0.334499 phi=5.46676 w=0.0168567 order: 7 5 6 0 4 2 1 3
+dir 355 theta=0.334499 phi=5.7177 w=0.0143448 order: 7 5 6 0 4 2 1 3
+dir 356 theta=0.334499 phi=5.92635 w=0.0115973 order: 7 5 6 0 4 2 1 3
+dir 357 theta=0.334499 phi=6.08927 w=0.00865957 order: 7 5 6 0 4 2 1 3
+dir 358 theta=0.334499 phi=6.20379 w=0.00558003 order: 7 5 6 0 4 2 1 3
+dir 359 theta=0.334499 phi=6.26807 w=0.00241364 order: 7 5 6 0 4 2 1 3
+dir 360 theta=0.145725 phi=0.0151198 w=0.00105273 order: 4 7 2 5 6 1 3 0
+dir 361 theta=0.145725 phi=0.0793926 w=0.00243378 order: 4 7 2 5 6 1 3 0
+dir 362 theta=0.145725 phi=0.193916 w=0.00377695 order: 4 7 2 5 6 1 3 0
+dir 363 theta=0.145725 phi=0.356836 w=0.00505829 order: 4 7 2 5 6 1 3 0
+dir 364 theta=0.145725 phi=0.56548 w=0.0062566 order: 4 7 2 5 6 1 3 0
+dir 365 theta=0.145725 phi=0.816424 w=0.00735219 order: 2 3 4 5 7 1 0 6
+dir 366 theta=0.145725 phi=1.10555 w=0.00832706 order: 2 3 4 5 7 1 0 6
+dir 367 theta=0.145725 phi=1.4281 w=0.00916521 order: 2 3 4 5 7 1 0 6
+dir 368 theta=0.145725 phi=1.77879 w=0.00985286 order: 3 1 2 4 0 6 5 7
+dir 369 theta=0.145725 phi=2.15186 w=0.0103787 order: 3 1 2 4 0 6 5 7
+dir 370 theta=0.145725 phi=2.54118 w=0.0107342 order: 3 1 2 4 0 6 5 7
+dir 371 theta=0.145725 phi=2.94035 w=0.0109134 order: 3 1 2 4 0 6 5 7
+dir 372 theta=0.145725 phi=3.34283 w=0.0109134 order: 0 3 6 1 2 5 7 4
+dir 373 theta=0.145725 phi=3.74201 w=0.0107342 order: 0 3 6 1 2 5 7 4
+dir 374 theta=0.145725 phi=4.13133 w=0.0103787 order: 6 7 0 1 3 5 4 2
+dir 375 theta=0.145725 phi=4.5044 w=0.00985286 order: 6 7 0 1 3 5 4 2
+dir 376 theta=0.145725 phi=4.85508 w=0.00916521 order: 7 5 6 0 4 2 1 3
+dir 377 theta=0.145725 phi=5.17764 w=0.00832706 order: 7 5 6 0 4 2 1 3
+dir 378 theta=0.145725 phi=5.46676 w=0.00735219 order: 7 5 6 0 4 2 1 3
+dir 379 theta=0.145725 phi=5.7177 w=0.0062566 order: 7 5 6 0 4 2 1 3
+dir 380 theta=0.145725 phi=5.92635 w=0.00505829 order: 7 5 6 0 4 2 1 3
+dir 381 theta=0.145725 phi=6.08927 w=0.00377695 order: 7 5 6 0 4 2 1 3
+dir 382 theta=0.145725 phi=6.20379 w=0.00243378 order: 7 5 6 0 4 2 1 3
+dir 383 theta=0.145725 phi=6.26807 w=0.00105273 order: 7 5 6 0 4 2 1 3

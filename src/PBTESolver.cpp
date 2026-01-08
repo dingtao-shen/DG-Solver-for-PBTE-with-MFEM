@@ -259,11 +259,34 @@ double PBTESolver::Solve(std::vector<std::vector<std::vector<mfem::DenseMatrix>>
 
     mfem::Vector prev_Tv = macro.Tv();  // initial (all zeros)
 
+    // One-time debug: boundary map size
+    if (iso_bc_.empty())
+    {
+        std::cout << "[Serial dbg] iso_bc_ is empty; no isothermal boundaries configured."
+                  << std::endl;
+    }
+    else
+    {
+        std::cout << "[Serial dbg] iso_bc_ size=" << iso_bc_.size() << " keys:";
+        for (const auto &kv : iso_bc_)
+        {
+            std::cout << " attr" << kv.first << "->T=" << kv.second;
+        }
+        std::cout << std::endl;
+    }
+
     for (int iter = 0; iter < max_iter_; ++iter)
     {
+        // Keep previous Tc for RHS construction; reset accumulators for new Tc.
+        mfem::DenseMatrix prev_Tc(macro.Tc());
         macro.Reset();
         double bndry_rhs_acc = 0.0;
         double inflow_acc = 0.0;
+        // Debug accumulators for inflow statistics (iter 0)
+        double dbg_inflow_sum = 0.0;
+        int dbg_inflow_count = 0;
+        double dbg_min_fdot = std::numeric_limits<double>::infinity();
+        double dbg_max_fdot = -std::numeric_limits<double>::infinity();
 
         for (int k = 0; k < ndir_; ++k)
         {
@@ -301,7 +324,7 @@ double PBTESolver::Solve(std::vector<std::vector<std::vector<mfem::DenseMatrix>>
                         mfem::Vector tmp(ndof_);
                         {
                             mfem::Vector tc_col(tmp.GetData(), ndof_);
-                            macro.Tc().GetColumn(e, tc_col);
+                            prev_Tc.GetColumn(e, tc_col);
                             cd.mass_t.Mult(tc_col, tmp);
                             rhs.Add(invKn * Cwp / omega_, tmp);
                         }
@@ -313,13 +336,22 @@ double PBTESolver::Solve(std::vector<std::vector<std::vector<mfem::DenseMatrix>>
                             rhs.Add(dt_inv_ - invKn, tmp);
                         }
 
+                        // Debug: track contribution norms on first element/dir/spec
+                        double term_old_norm = 0.0;
+                        if (iter == 0 && k == 0 && b == 0 && s == 0 && e == 0)
+                        {
+                            term_old_norm = tmp.Norml2(); // tmp currently holds (dt_inv - invKn)*M^T*u_old term
+                        }
+
                         // boundary / neighbor terms
                         double max_coeff_in_dbg = 0.0;
                         for (const auto &f : cd.faces)
                         {
                             const double f_dot = f.normal * dir_vec;
+                            dbg_min_fdot = std::min(dbg_min_fdot, f_dot);
+                            dbg_max_fdot = std::max(dbg_max_fdot, f_dot);
                             const double coeff_in = 0.5 * vg * (f_dot - std::abs(f_dot));
-                                max_coeff_in_dbg = std::max(max_coeff_in_dbg, std::abs(coeff_in));
+                            max_coeff_in_dbg = std::max(max_coeff_in_dbg, std::abs(coeff_in));
 
                             if (f.is_boundary)
                             {
@@ -328,6 +360,26 @@ double PBTESolver::Solve(std::vector<std::vector<std::vector<mfem::DenseMatrix>>
                                     const double Tbc = iso_bc_.at(f.boundary_attr);
                                     rhs.Add(-coeff_in * Cwp / omega_ * Tbc, f.face_integral);
                                     bndry_rhs_acc += std::abs(coeff_in * Cwp / omega_ * Tbc) * f.face_integral.Norml2();
+                                    dbg_inflow_count += 1;
+                                    dbg_inflow_sum += std::abs(coeff_in * Cwp / omega_ * Tbc) * f.face_integral.Norml2();
+
+                                    if (iter == 0 && k == 0 && b == 0 && s == 0 && e == 0)
+                                    {
+                                        std::cout << "[Serial dbg] boundary inflow face_id=" << f.face_id
+                                                  << " attr=" << f.boundary_attr
+                                                  << " coeff_in=" << coeff_in
+                                                  << " |face_int|=" << f.face_integral.Norml2()
+                                                  << " Tbc=" << Tbc
+                                                  << " f_dot=" << f_dot
+                                                  << std::endl;
+                                    }
+                                }
+                                else if (iter == 0 && k == 0 && b == 0 && s == 0 && e == 0)
+                                {
+                                    std::cout << "[Serial dbg] boundary face_id=" << f.face_id
+                                              << " attr=" << f.boundary_attr
+                                              << " coeff_in=" << coeff_in
+                                              << " (skipped: no iso_bc or coeff_in=0)" << std::endl;
                                 }
                             }
                             else
@@ -347,11 +399,16 @@ double PBTESolver::Solve(std::vector<std::vector<std::vector<mfem::DenseMatrix>>
                             }
                         }
 
-                            if (iter == 0 && k == 0 && b == 0 && s == 0 && e == 0)
-                            {
-                                std::cout << "[Serial dbg] rhs_norm=" << rhs.Norml2()
-                                          << " max_coeff_in=" << max_coeff_in_dbg << std::endl;
-                            }
+                        if (iter == 0 && k == 0 && b == 0 && s == 0 && e == 0)
+                        {
+                            std::cout << "[Serial dbg] rhs_norm=" << rhs.Norml2()
+                                      << " max_coeff_in=" << max_coeff_in_dbg
+                                      << " term_old_norm=" << term_old_norm
+                                      << " dir_w=" << dir.weight
+                                      << " invKn=" << invKn
+                                      << " dt_inv=" << dt_inv_
+                                      << std::endl;
+                        }
 
                         // Solve
                         EnsureLU(k, b, s, e);
@@ -366,18 +423,39 @@ double PBTESolver::Solve(std::vector<std::vector<std::vector<mfem::DenseMatrix>>
                         }
                     }  // cells
 
+
+                    if (iter == 0 && k == 0 && b == 0 && s == 0)
+                    {
+                        std::cout << "[Serial dbg] first coeff_mat norm=" << coeff_mat.FNorm() << std::endl;
+                    }
+
                     // accumulate macro for this (dir,b,s)
                     macro.AccumulateDirectionalCoeff(k, b, s, coeff_mat);
+
+                    if (iter == 0 && k == 1 && b == 1 && s == 1)
+                    {
+                        std::cout << "[Serial dbg] first Tc norm for dir " << k << " branch " << b << " spec " << s << "=" << macro.Tc().FNorm() << std::endl;
+                    }
                     if (iter == 0 && b == 0 && s == 0 && coeff_mat.FNorm() != 0.0)
                     {
                         std::cout << "[Serial dbg] dir " << k
                                   << " coeff_F=" << coeff_mat.FNorm()
                                   << " dir_w=" << dir.weight << std::endl;
                     }
+                    if (iter == 0 && k == 0 && b == 0 && s == 0)
+                    {
+                        std::cout << "[Serial dbg] coeff_FNorm_dir0_branch0_spec0=" << coeff_mat.FNorm()
+                                  << std::endl;
+                    }
                     inflow_acc = std::max(inflow_acc, bndry_rhs_acc);
                 }
             }
         }  // dirs
+
+        if (iter == 0)
+        {
+            std::cout << "[Serial dbg] first macro.Tc norm=" << macro.Tc().FNorm() << std::endl;
+        }
 
         macro.Finalize(elem_data_);
         const double res = macro.Residual(prev_Tv);
@@ -389,6 +467,14 @@ double PBTESolver::Solve(std::vector<std::vector<std::vector<mfem::DenseMatrix>>
             std::cout << "[Serial dbg] boundary_rhs_acc=" << inflow_acc
                       << " Tv_norm=" << macro.Tv().Norml2()
                       << " Tc_norm=" << macro.Tc().FNorm() << std::endl;
+            if (iter == 0)
+            {
+                std::cout << "[Serial dbg] inflow faces count=" << dbg_inflow_count
+                          << " inflow_sum=" << dbg_inflow_sum
+                          << " min_fdot=" << dbg_min_fdot
+                          << " max_fdot=" << dbg_max_fdot
+                          << std::endl;
+            }
             std::cout.unsetf(std::ios::scientific);
         }
         if (res < tol_) return res;

@@ -2,7 +2,7 @@ mesh:
   # Choose one of:
   #   config/mesh/unit-square-iso.mesh    (2D tri, top attr=2 high-T)
   #   config/mesh/unit-cube-tet-iso.mesh  (3D tet, top attr=2 high-T)
-  path: config/mesh/unit-cube-tet-iso.mesh
+  path: config/mesh/unit-square-iso.mesh
 
 # Optional boundary temperatures (isothermal). attr=2 is high-T (top), others low-T.
 boundary_conditions:

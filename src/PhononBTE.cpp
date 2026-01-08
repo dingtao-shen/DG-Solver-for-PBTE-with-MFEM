@@ -414,8 +414,8 @@ int main(int argc, char *argv[])
                                 props,
                                 spatial.IsothermalBoundaryTemps(),
                                 pbte::CachePolicy::FullLU,
-                                1e-8,
-                                100); // 100-step test
+                                1e-7,
+                                1000000); // 1 million-step test
 
         const int ndir = static_cast<int>(angle_quad.Directions().size());
         const int nbranch = static_cast<int>(props.Frequency().size());
