@@ -46,6 +46,23 @@ public:
     /// high_order: if true, writes high-order L2; else exports as linearized.
     void WriteParaView(const std::string &prefix, bool high_order = true) const;
 
+    /// Sample DG temperature field on a uniform 2D grid and export (x,y,T) to text.
+    ///
+    /// The algorithm mirrors reference `NonGraySMRT::output_2D_slice_T_Q`:
+    /// - compute mesh bounding box in physical coordinates
+    /// - generate Nx×Ny uniform sampling points
+    /// - for each point, locate containing element via MFEM inverse mapping
+    /// - evaluate element shape and reconstruct T = Σ_i Tc_i(e) * φ_i(x)
+    ///
+    /// Output format:
+    ///   line 1: "# nx <Nx> ny <Ny>"
+    ///   line 2: "x y T"
+    ///   remaining: one sample per line.
+    void Write2DSliceTemperature(const std::string &out_path,
+                                int Nx = 50,
+                                int Ny = 50,
+                                double clamp_tol = 1e-12) const;
+
     // Accessors (local data).
     const mfem::DenseMatrix &Tc() const { return Tc_; }
     const mfem::Vector &Tv() const { return Tv_; }

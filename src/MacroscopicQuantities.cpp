@@ -1,10 +1,75 @@
 #include "MacroscopicQuantities.hpp"
 
 #include <cassert>
+#include <cmath>
+#include <filesystem>
+#include <fstream>
 #include <iostream>
+#include <limits>
 
 namespace pbte
 {
+namespace
+{
+mfem::Vector ComputeBBoxMin(const mfem::Mesh &mesh)
+{
+    const int sdim = mesh.SpaceDimension();
+    mfem::Vector mn(sdim);
+    for (int d = 0; d < sdim; ++d) { mn[d] = std::numeric_limits<double>::infinity(); }
+    for (int v = 0; v < mesh.GetNV(); ++v)
+    {
+        const double *x = mesh.GetVertex(v);
+        for (int d = 0; d < sdim; ++d) { mn[d] = std::min(mn[d], x[d]); }
+    }
+    return mn;
+}
+
+mfem::Vector ComputeBBoxMax(const mfem::Mesh &mesh)
+{
+    const int sdim = mesh.SpaceDimension();
+    mfem::Vector mx(sdim);
+    for (int d = 0; d < sdim; ++d) { mx[d] = -std::numeric_limits<double>::infinity(); }
+    for (int v = 0; v < mesh.GetNV(); ++v)
+    {
+        const double *x = mesh.GetVertex(v);
+        for (int d = 0; d < sdim; ++d) { mx[d] = std::max(mx[d], x[d]); }
+    }
+    return mx;
+}
+
+/// Brute-force point location: loop all elements, try inverse mapping.
+/// Returns element id or -1 if not found.
+int FindContainingElement2D(mfem::Mesh &mesh,
+                            const mfem::Vector &pt,
+                            mfem::IntegrationPoint &ip_out,
+                            double tol = 1e-10)
+{
+    MFEM_VERIFY(mesh.Dimension() == 2, "FindContainingElement2D requires a 2D mesh.");
+    const int ne = mesh.GetNE();
+    for (int e = 0; e < ne; ++e)
+    {
+        mfem::ElementTransformation *tr = mesh.GetElementTransformation(e);
+        mfem::InverseElementTransformation inv(tr);
+        // inv.SetPrintLevel(0);
+        inv.SetPrintLevel(-1);
+        inv.SetMaxIter(64);
+        inv.SetReferenceTol(tol);
+        inv.SetPhysicalRelTol(tol);
+        inv.SetInitialGuessType(mfem::InverseElementTransformation::ClosestPhysNode);
+        inv.SetSolverType(mfem::InverseElementTransformation::NewtonElementProject);
+
+        mfem::IntegrationPoint ip_ref;
+        const int res = inv.Transform(pt, ip_ref);
+        if (res == mfem::InverseElementTransformation::Inside)
+        {
+            ip_out = ip_ref;
+            return e;
+        }
+    }
+    return -1;
+}
+} // namespace
+
 MacroscopicQuantities::MacroscopicQuantities(const mfem::FiniteElementSpace &fes,
                                              const PhononProperties &props,
                                              const AngleQuadrature &quad)
@@ -50,11 +115,8 @@ void MacroscopicQuantities::AccumulateDirectionalCoeff(int dir_idx,
     // Scalar weight factor for temperature accumulation.
     const double inv_kn = props_.InvKn(branch)[spec];
     const double dw = props_.FrequencyWeight(branch)[spec];
-    const double factor = inv_kn * dir.weight * dw;
-
+    const double factor = inv_kn * dir.weight * dw / heat_cap_v_;
     Tc_.Add(factor, coeff);
-    const double scale = 1.0 / heat_cap_v_;
-    Tc_ *= scale;
 
     // Heat flux components.
     const double vg = props_.GroupVelocity(branch)[spec];
@@ -121,8 +183,11 @@ void MacroscopicQuantities::Finalize(const std::vector<ElementIntegralData> &ele
 
 double MacroscopicQuantities::Residual(const mfem::Vector &prev_Tv) const
 {
-    assert(Tv_.Norml2() > 0.0);
-    return (Tv_.Norml2() - prev_Tv.Norml2()) / Tv_.Norml2();
+    const double denom = Tv_.Norml2();
+    MFEM_VERIFY(denom > 0.0, "Tv norm is zero; cannot compute residual.");
+    mfem::Vector diff(Tv_);
+    diff -= prev_Tv;
+    return diff.Norml2() / denom;
 }
 
 void MacroscopicQuantities::WriteParaView(const std::string &prefix, bool high_order) const
@@ -230,6 +295,81 @@ void MacroscopicQuantities::WriteParaView(const std::string &prefix, bool high_o
         dc.Save();
     }
 }
+
+void MacroscopicQuantities::Write2DSliceTemperature(const std::string &out_path,
+                                                    int Nx,
+                                                    int Ny,
+                                                    double clamp_tol) const
+{
+    MFEM_VERIFY(fes_.GetMesh() != nullptr, "FESpace has null mesh.");
+    mfem::Mesh &mesh = *fes_.GetMesh();
+    MFEM_VERIFY(mesh.SpaceDimension() == 2, "Write2DSliceTemperature currently supports 2D meshes only.");
+    MFEM_VERIFY(Nx >= 2 && Ny >= 2, "Nx/Ny must be >= 2.");
+
+    const mfem::Vector mn = ComputeBBoxMin(mesh);
+    const mfem::Vector mx = ComputeBBoxMax(mesh);
+
+    // Prepare output file.
+    namespace fs = std::filesystem;
+    fs::path p(out_path);
+    if (p.has_parent_path())
+    {
+        fs::create_directories(p.parent_path());
+    }
+    std::ofstream ofs(p);
+    MFEM_VERIFY(static_cast<bool>(ofs), "Failed to open output file for sampling: " + p.string());
+    ofs.setf(std::ios::fixed);
+    ofs.precision(16);
+    ofs << "# nx " << Nx << " ny " << Ny << "\n";
+    ofs << "x y T\n";
+
+    const int sdim = mesh.SpaceDimension();
+    mfem::Vector pt(sdim);
+    mfem::IntegrationPoint ip;
+
+    // Sampling grid in the bounding box.
+    for (int j = 0; j < Ny; ++j)
+    {
+        const double tj = static_cast<double>(j) / static_cast<double>(Ny - 1);
+        const double y = mn[1] + tj * (mx[1] - mn[1]);
+        for (int i = 0; i < Nx; ++i)
+        {
+            const double ti = static_cast<double>(i) / static_cast<double>(Nx - 1);
+            const double x = mn[0] + ti * (mx[0] - mn[0]);
+
+            // Clamp slightly inside the domain to avoid ambiguous boundary inverse maps.
+            double xc = x, yc = y;
+            if (i == Nx - 1) { xc = mx[0] - clamp_tol; }
+            if (j == Ny - 1) { yc = mx[1] - clamp_tol; }
+            if (i == 0) { xc = mn[0] + clamp_tol; }
+            if (j == 0) { yc = mn[1] + clamp_tol; }
+
+            pt[0] = xc;
+            pt[1] = yc;
+
+            int elem = FindContainingElement2D(mesh, pt, ip);
+            double T = std::numeric_limits<double>::quiet_NaN();
+            if (elem >= 0)
+            {
+                const mfem::FiniteElement *fe = fes_.GetFE(elem);
+                const int ndof = fe->GetDof();
+                mfem::Vector shape(ndof);
+                fe->CalcShape(ip, shape);
+                double val = 0.0;
+                for (int k = 0; k < ndof; ++k)
+                {
+                    val += Tc_(k, elem) * shape[k];
+                }
+                T = val;
+            }
+
+            ofs << x << " " << y << " " << T << "\n";
+        }
+    }
+    ofs << std::flush;
+    std::cout << "2D temperature slice written to: " << p << std::endl;
+}
+
 }  // namespace pbte
 
 

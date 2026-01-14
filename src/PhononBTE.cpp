@@ -138,6 +138,28 @@ int main(int argc, char *argv[])
         {
             spatial.LoadMeshFromConfig(config_path);
         }
+
+        // Scale non-dimensional mesh coordinates using reference_length from si.yaml.
+        // Example: unit-square mesh (0..1) becomes (0..reference_length) in meters.
+        try
+        {
+            const auto material = pbte::PhononProperties::LoadMaterial("config/si.yaml");
+            spatial.ScaleCoordinates(material.ref_len);
+            if (is_root)
+            {
+                std::cout << "Mesh coordinates scaled by reference_length = "
+                          << material.ref_len << std::endl;
+            }
+        }
+        catch (const std::exception &scale_ex)
+        {
+            if (is_root)
+            {
+                std::cerr << "Warning: failed to scale mesh by si.yaml reference_length: "
+                          << scale_ex.what() << std::endl;
+            }
+        }
+
         spatial.UniformRefine(refine_levels);
 #ifdef MFEM_USE_MPI
         if (use_parallel)
@@ -398,7 +420,14 @@ int main(int argc, char *argv[])
         {
             std::cout << "[Parallel] residual = " << res << std::endl;
         }
-        macro.WriteParaView("pbte_fields");
+
+        // macro.WriteParaView("pbte_fields");
+        // For debugging/validation, export a sampled 2D temperature slice instead of ParaView.
+        // (Only meaningful for 2D meshes.)
+        if (spatial.Mesh().SpaceDimension() == 2)
+        {
+            macro.Write2DSliceTemperature("output/2D/results/T_slice.txt", 100, 100);
+        }
         return 0;
     }
 #endif
@@ -426,13 +455,33 @@ int main(int argc, char *argv[])
             ndir, std::vector<std::vector<mfem::DenseMatrix>>(
                       nbranch, std::vector<mfem::DenseMatrix>(
                                    nspec, mfem::DenseMatrix(ndof, ne))));
+        // Explicitly zero-initialize all directional coefficient blocks so the
+        // first sweep starts from a clean state (mfem::DenseMatrix does not
+        // zero-fill on construction).
+        for (auto &dir_block : coeff)
+        {
+            for (auto &branch_block : dir_block)
+            {
+                for (auto &m : branch_block)
+                {
+                    m = 0.0;
+                }
+            }
+        }
 
         double res = solver.Solve(coeff, macro);
         if (is_root)
         {
             std::cout << "[Serial] residual = " << res << std::endl;
         }
+
         macro.WriteParaView("pbte_fields");
+        // For debugging/validation, export a sampled 2D temperature slice instead of ParaView.
+        // (Only meaningful for 2D meshes.)
+        if (spatial.Mesh().SpaceDimension() == 2)
+        {
+            macro.Write2DSliceTemperature("output/2D/results/T_slice.txt", 100, 100);
+        }
     }
 
     // Serialize local integrals to a string (per rank).

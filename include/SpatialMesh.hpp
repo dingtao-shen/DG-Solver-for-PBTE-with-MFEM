@@ -56,6 +56,14 @@ public:
     /// serial mesh prior to BuildDGSpaceParallel.
     void UniformRefine(int levels);
 
+    /// Uniformly scale the mesh coordinates by a constant factor.
+    /// This is useful to convert non-dimensional meshes (e.g. unit-square)
+    /// into physical units using reference_length from si.yaml.
+    ///
+    /// Call this AFTER loading the mesh and BEFORE building FE spaces / assembling
+    /// integrals.
+    void ScaleCoordinates(double factor);
+
 #ifdef MFEM_USE_MPI
     /// Build a parallel DG space (ParMesh + ParFiniteElementSpace).
     /// Requires MFEM built with MPI. Uses the already-loaded serial mesh as

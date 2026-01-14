@@ -40,6 +40,20 @@ int DGElementIntegrator::EffectiveOrder(const mfem::FiniteElement &fe) const
     return 2 * fe.GetOrder() + 1;
 }
 
+int DGElementIntegrator::EffectiveFaceOrder(
+    const mfem::FiniteElement &fe,
+    const mfem::FiniteElement *fe_neigh) const
+{
+    if (quadrature_order_ > 0)
+    {
+        return quadrature_order_;
+    }
+    // Safe default: exact for products up to degree p1+p2 on the face.
+    const int p1 = fe.GetOrder();
+    const int p2 = fe_neigh ? fe_neigh->GetOrder() : p1;
+    return p1 + p2 + 1;
+}
+
 ElementIntegralData DGElementIntegrator::AssembleElement(int elem_id)
 {
     ElementIntegralData data;
@@ -156,7 +170,7 @@ void DGElementIntegrator::AssembleFaceContributions(
             }
 
             const mfem::IntegrationRule &ir = int_rules_.Get(
-                ftr->GetGeometryType(), EffectiveOrder(*fe));
+                ftr->GetGeometryType(), EffectiveFaceOrder(*fe, fe_neigh));
 
             mfem::Vector shape(ndof);
             mfem::Vector shape_neigh;
@@ -231,6 +245,14 @@ void DGElementIntegrator::AssembleFaceContributions(
             // After recording boundary RHS and couplings, move face data into
             // storage vectors.
             edata_el.face_integrals.back().Swap(face_int);
+
+            // Keep per-face vectors aligned (same push order as face_couplings).
+            MFEM_VERIFY(edata_el.face_mass_matrices.size() ==
+                            edata_el.face_couplings.size(),
+                        "face_mass_matrices not aligned with face_couplings");
+            MFEM_VERIFY(edata_el.face_integrals.size() ==
+                            edata_el.face_couplings.size(),
+                        "face_integrals not aligned with face_couplings");
         }
     }
 }

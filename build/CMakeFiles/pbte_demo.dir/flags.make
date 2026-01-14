@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include
+CXX_INCLUDES = -I/home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include
 
 CXX_FLAGS = -std=gnu++17 -fPIE
 

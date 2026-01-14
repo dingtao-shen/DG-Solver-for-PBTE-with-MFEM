@@ -7,9 +7,9 @@ mesh:
 # Optional boundary temperatures (isothermal). attr=2 is high-T (top), others low-T.
 boundary_conditions:
   - attr: 1
-    temperature: 299.5
+    temperature: -0.5
   - attr: 2
-    temperature: 300.5
+    temperature: 0.5
 
 angles:
   dimension: 3           # 2 => in-plane, 3 => full space

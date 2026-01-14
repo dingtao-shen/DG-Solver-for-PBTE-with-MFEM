@@ -21,6 +21,48 @@ constexpr int kDefaultNy3D = 4;
 constexpr int kDefaultNz3D = 4;
 }  // namespace
 
+void SpatialMesh::ScaleCoordinates(double factor)
+{
+    if (factor == 1.0)
+    {
+        return;
+    }
+
+    auto scale_one_mesh = [&](mfem::Mesh &m)
+    {
+        // Prefer scaling nodes if this is a high-order mesh.
+        if (mfem::GridFunction *nodes = m.GetNodes())
+        {
+            (*nodes) *= factor;
+            // MFEM tracks node updates via nodes_sequence internally.
+            return;
+        }
+
+        // Otherwise scale the vertex coordinates.
+        const int nv = m.GetNV();
+        const int sdim = m.SpaceDimension();
+        for (int i = 0; i < nv; ++i)
+        {
+            mfem::real_t *v = m.GetVertex(i);
+            for (int d = 0; d < sdim; ++d)
+            {
+                v[d] *= factor;
+            }
+        }
+    };
+
+    if (mesh_)
+    {
+        scale_one_mesh(*mesh_);
+    }
+#ifdef MFEM_USE_MPI
+    if (pmesh_)
+    {
+        scale_one_mesh(*pmesh_);
+    }
+#endif
+}
+
 void SpatialMesh::LoadMesh(const std::string &path_or_builtin)
 {
     mesh_source_ = path_or_builtin;
@@ -218,10 +260,15 @@ void SpatialMesh::BuildDGSpace(int order, mfem::Ordering::Type ordering,
     last_order_ = order;
 
     // nodal basis function based on Gauss-Lobatto quadrature
-    fec_ = std::make_unique<mfem::L2_FECollection>(order, mesh_->Dimension(),mfem::BasisType::ClosedUniform);
-    // fec_ = std::make_unique<mfem::L2_FECollection>(order, mesh_->Dimension());
+    // fec_ = std::make_unique<mfem::L2_FECollection>(order, mesh_->Dimension(),mfem::BasisType::GaussLobatto);
+    // fec_ = std::make_unique<mfem::L2_FECollection>(order, mesh_->Dimension(),mfem::BasisType::ClosedUniform);
+    fec_ = std::make_unique<mfem::L2_FECollection>(order, mesh_->Dimension());
     fes_ = std::make_unique<mfem::FiniteElementSpace>(mesh_.get(), fec_.get(), 1,
                                                       ordering);
+    // fec_ = std::make_unique<mfem::DG_FECollection>(order, mesh_->Dimension(),
+    //                                                    mfem::BasisType::Positive);
+    // fes_ = std::make_unique<mfem::FiniteElementSpace>(mesh_.get(), fec_.get(), 1,
+    //                                                       mfem::Ordering::byNODES);
 
     LogSummary(log_path);
 }
@@ -375,6 +422,79 @@ std::string SpatialMesh::MakeSummary() const
         report << "  global true dofs     : " << pfes_->GlobalTrueVSize() << "\n";
     }
 #endif
+
+    // Detailed per-element geometry/connectivity (serial mesh view).
+    // For each element: list vertices (with coordinates) and faces with neighbor
+    // /boundary attribute info. Faces on interfaces will appear once per
+    // adjacent element as requested.
+    const int sdim = m->SpaceDimension();
+    const int nfaces = m->GetNumFaces();
+    std::vector<int> face_attr(nfaces, 0);
+    {
+        const int nbe = m->GetNBE();
+        for (int be = 0; be < nbe; ++be)
+        {
+            const int face = m->GetBdrElementFaceIndex(be);
+            if (face >= 0 && face < nfaces)
+            {
+                face_attr[face] = m->GetBdrAttribute(be);
+            }
+        }
+    }
+
+    // Build element -> faces map using face-element adjacency (public API).
+    std::vector<std::vector<int>> elem_faces(ne);
+    for (int f = 0; f < nfaces; ++f)
+    {
+        int e1 = -1, e2 = -1;
+        m->GetFaceElements(f, &e1, &e2);
+        if (e1 >= 0 && e1 < ne) { elem_faces[e1].push_back(f); }
+        if (e2 >= 0 && e2 < ne) { elem_faces[e2].push_back(f); }
+    }
+
+    mfem::Array<int> verts, faces, ori;
+    report << "Element details (vertices and faces):\n";
+    for (int e = 0; e < ne; ++e)
+    {
+        report << "  elem " << e << "\n";
+        m->GetElementVertices(e, verts);
+        report << "    vertices:";
+        for (int v_idx = 0; v_idx < verts.Size(); ++v_idx)
+        {
+            const int v = verts[v_idx];
+            const double *x = m->GetVertex(v);
+            report << " v" << v << "(";
+            for (int d = 0; d < sdim; ++d)
+            {
+                report << x[d];
+                if (d + 1 < sdim)
+                {
+                    report << ",";
+                }
+            }
+            report << ")";
+        }
+        report << "\n";
+
+        for (int face : elem_faces[e])
+        {
+            int e1 = -1, e2 = -1;
+            m->GetFaceElements(face, &e1, &e2);
+            const int neigh = (e1 == e) ? e2 : e1;
+            const bool is_bdr = (neigh < 0);
+            report << "    face " << face << " neigh=" << neigh;
+            if (is_bdr)
+            {
+                report << " boundary attr=" << face_attr[face];
+            }
+            else
+            {
+                report << " interior";
+            }
+            report << "\n";
+        }
+    }
+
     return report.str();
 }
 

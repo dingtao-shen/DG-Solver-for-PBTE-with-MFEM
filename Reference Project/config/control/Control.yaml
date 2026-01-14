@@ -1,0 +1,45 @@
+# Material properties
+MATERIAL: Si
+MATERIAL_DIM: 3
+POLAR_DIM: 2
+
+T_REF: 300.0 # K
+L_REF: 1.0e-6 # m
+
+# Model
+MODEL: NonGRAY_SMRT
+SPATIAL_DIM: 3
+
+POLYDEG: 3
+NPOLE: 16
+NAZIM: 24
+SOLID_ANGLE_PATTERN: 1
+NSPEC: 20
+
+MESH_TYPE: 0
+MESH_PATH: "./config/mesh/"
+MESH_TAG: "cuboid_5x5x5"
+N_BOUNDARY: 6
+# 1: thermalizing, 2: diffuse, 3: specular, 4: periodic
+BOUNDARY_COND:
+  1: [1, 0.5]
+  2: [1, -0.5]
+  3: [1, -0.5]
+  4: [1, -0.5]
+  5: [1, -0.5]
+  6: [1, -0.5]
+
+# MESH_TYPE: 0
+# MESH_PATH: "./config/mesh/"
+# MESH_TAG: "square_mesh"
+# N_BOUNDARY: 4
+# # 1: thermalizing, 2: diffuse, 3: specular, 4: periodic
+# BOUNDARY_COND:
+#   1: [1, 0.5]
+#   2: [1, -0.5]
+#   3: [1, -0.5]
+#   4: [1, -0.5]
+
+TMAX: 1000000
+TOL: 1.0e-7
+OUTPUT_PATH: "output/3D/results/"

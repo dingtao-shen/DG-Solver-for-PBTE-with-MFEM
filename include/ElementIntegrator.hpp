@@ -50,6 +50,11 @@ public:
 
 private:
     int EffectiveOrder(const mfem::FiniteElement &fe) const;
+    /// Quadrature order for face integrals that may involve two different FEs.
+    /// If quadrature_order_ > 0, that value is used directly.
+    /// Otherwise uses a safe default exact for products up to degree p1+p2.
+    int EffectiveFaceOrder(const mfem::FiniteElement &fe,
+                           const mfem::FiniteElement *fe_neigh) const;
     ElementIntegralData AssembleElement(int elem_id);
     void AssembleFaceContributions(std::vector<ElementIntegralData> &data);
     void AssembleSharedFaceContributions(std::vector<ElementIntegralData> &data);
