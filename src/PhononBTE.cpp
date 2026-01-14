@@ -5,50 +5,15 @@
 #include "PhononProperties.hpp"
 #include "PBTESolver.hpp"
 #include "SpatialMesh.hpp"
+#include "Utils.hpp"
 
 #include "mfem.hpp"
 
-#include <filesystem>
 #include <fstream>
 #include <iostream>
 #include <sstream>
 #include <stdexcept>
 #include <vector>
-
-namespace fs = std::filesystem;
-
-namespace
-{
-void WriteVector(std::ostream &os, const mfem::Vector &v,
-                 const std::string &label)
-{
-    os << label << " [size=" << v.Size() << "]:";
-    for (int i = 0; i < v.Size(); ++i)
-    {
-        os << " " << v[i];
-    }
-    os << "\n";
-}
-
-void WriteMatrix(std::ostream &os, const mfem::DenseMatrix &m,
-                 const std::string &label)
-{
-    os << label << " [shape=" << m.Height() << "x" << m.Width() << "]\n";
-    for (int i = 0; i < m.Height(); ++i)
-    {
-        os << "  ";
-        for (int j = 0; j < m.Width(); ++j)
-        {
-            os << m(i, j);
-            if (j + 1 < m.Width())
-            {
-                os << " ";
-            }
-        }
-        os << "\n";
-    }
-}
-}  // namespace
 
 int main(int argc, char *argv[])
 {
@@ -57,12 +22,6 @@ int main(int argc, char *argv[])
     int order = 1;
     int refine_levels = 0;
     bool use_parallel = false;
-    int angle_dim_cli = -1;
-    int polar_pts_cli = -1;
-    int azimuth_pts_cli = -1;
-    std::string polar_scheme_cli;
-    std::string azimuth_scheme_cli;
-
 #ifdef MFEM_USE_MPI
     mfem::MPI_Session mpi(argc, argv);
     int mpi_rank = 0;
@@ -89,16 +48,6 @@ int main(int argc, char *argv[])
                    "-np", "--no-parallel",
                    "Use parallel mesh/space (requires MFEM built with MPI).",
                    false);
-    args.AddOption(&angle_dim_cli, "-ad", "--angle-dim",
-                   "Angular quadrature dimension (2 or 3). Negative uses config.");
-    args.AddOption(&polar_pts_cli, "-ap", "--polar-pts",
-                   "Number of polar (theta) points. <=0 uses config.");
-    args.AddOption(&azimuth_pts_cli, "-az", "--azimuth-pts",
-                   "Number of azimuth (phi) points. <=0 uses config.");
-    args.AddOption(&polar_scheme_cli, "-aps", "--polar-scheme",
-                   "Polar scheme: uniform | gauss. Empty uses config.");
-    args.AddOption(&azimuth_scheme_cli, "-aas", "--azimuth-scheme",
-                   "Azimuth scheme: uniform | gauss. Empty uses config.");
     args.Parse();
     if (!args.Good())
     {
@@ -138,18 +87,12 @@ int main(int argc, char *argv[])
         {
             spatial.LoadMeshFromConfig(config_path);
         }
-
-        // Scale non-dimensional mesh coordinates using reference_length from si.yaml.
-        // Example: unit-square mesh (0..1) becomes (0..reference_length) in meters.
         try
         {
             const auto material = pbte::PhononProperties::LoadMaterial("config/si.yaml");
+            // Scale non-dimensional mesh coordinates using reference_length from si.yaml.
+            // Example: unit-square mesh (0..1) becomes (0..reference_length) in meters.
             spatial.ScaleCoordinates(material.ref_len);
-            if (is_root)
-            {
-                std::cout << "Mesh coordinates scaled by reference_length = "
-                          << material.ref_len << std::endl;
-            }
         }
         catch (const std::exception &scale_ex)
         {
@@ -194,29 +137,6 @@ int main(int argc, char *argv[])
         angle_opts = pbte::AngleDiscretizationOptions{};
     }
 
-    if (angle_dim_cli > 0)
-    {
-        angle_opts.dimension = angle_dim_cli;
-    }
-    if (polar_pts_cli > 0)
-    {
-        angle_opts.polar_points = polar_pts_cli;
-    }
-    if (azimuth_pts_cli > 0)
-    {
-        angle_opts.azimuth_points = azimuth_pts_cli;
-    }
-    if (!polar_scheme_cli.empty())
-    {
-        angle_opts.polar_scheme =
-            pbte::AngleQuadrature::ParseSchemeName(polar_scheme_cli);
-    }
-    if (!azimuth_scheme_cli.empty())
-    {
-        angle_opts.azimuth_scheme =
-            pbte::AngleQuadrature::ParseSchemeName(azimuth_scheme_cli);
-    }
-
     pbte::AngleQuadrature angle_quad;
     try
     {
@@ -243,8 +163,8 @@ int main(int argc, char *argv[])
             pbte::AngleQuadrature::SchemeName(angle_opts.azimuth_scheme);
         std::ostringstream ang_path;
         ang_path << "output/log/angles_dim" << angle_opts.dimension
-                 << "_tp" << angle_opts.polar_points << "_" << polar_scheme
-                 << "_ap" << angle_opts.azimuth_points << "_" << azimuth_scheme
+                 << "_np" << angle_opts.polar_points << "_" << polar_scheme
+                 << "_na" << angle_opts.azimuth_points << "_" << azimuth_scheme
                  << ".txt";
         try
         {
@@ -264,8 +184,8 @@ int main(int argc, char *argv[])
             const auto sweep = pbte::AngularSweepOrder::Build(spatial.Mesh(), angle_quad);
             std::ostringstream sw_path;
             sw_path << "output/log/sweep_dim" << angle_opts.dimension
-                    << "_tp" << angle_opts.polar_points << "_" << polar_scheme
-                    << "_ap" << angle_opts.azimuth_points << "_" << azimuth_scheme
+                    << "_np" << angle_opts.polar_points << "_" << polar_scheme
+                    << "_na" << angle_opts.azimuth_points << "_" << azimuth_scheme
                     << ".txt";
             sweep.WriteToFile(angle_quad, spatial.Mesh(), sw_path.str());
             std::cout << "Sweep order written to: " << sw_path.str() << std::endl;
@@ -277,7 +197,6 @@ int main(int argc, char *argv[])
         }
     }
 
-    // Assemble element-wise integrals to verify DG data is accessible.
     pbte::DGElementIntegrator integrator(spatial.FESpace());
     const auto element_data = integrator.AssembleAll();
     if (is_root)
@@ -391,45 +310,45 @@ int main(int argc, char *argv[])
     }
 
 #ifdef MFEM_USE_MPI
-    if (use_parallel)
-    {
-        pbte::AngularSweepOrder sweep = pbte::AngularSweepOrder::Build(spatial.Mesh(), angle_quad);
-        pbte::PBTESolverPar solver(*spatial.ParMeshPtr(),
-                                   *spatial.ParFESpacePtr(),
-                                   angle_quad,
-                                   sweep,
-                                   element_data,
-                                   props,
-                                   spatial.IsothermalBoundaryTemps(),
-                                   pbte::CachePolicy::FullLU,
-                                   1e-8,
-                                   100); // 100-step test
+    // if (use_parallel)
+    // {
+    //     pbte::AngularSweepOrder sweep = pbte::AngularSweepOrder::Build(spatial.Mesh(), angle_quad);
+    //     pbte::PBTESolverPar solver(*spatial.ParMeshPtr(),
+    //                                *spatial.ParFESpacePtr(),
+    //                                angle_quad,
+    //                                sweep,
+    //                                element_data,
+    //                                props,
+    //                                spatial.IsothermalBoundaryTemps(),
+    //                                pbte::CachePolicy::FullLU,
+    //                                1e-8,
+    //                                100); // 100-step test
 
-        const int ndir = static_cast<int>(angle_quad.Directions().size());
-        const int nbranch = static_cast<int>(props.Frequency().size());
-        const int nspec = nbranch > 0 ? static_cast<int>(props.Frequency(0).size()) : 0;
-        const int ndof = spatial.FESpace().GetFE(0)->GetDof();
-        const int ne_local = spatial.Mesh().GetNE();
-        std::vector<std::vector<std::vector<mfem::DenseMatrix>>> coeff(
-            ndir, std::vector<std::vector<mfem::DenseMatrix>>(
-                      nbranch, std::vector<mfem::DenseMatrix>(
-                                   nspec, mfem::DenseMatrix(ndof, ne_local))));
+    //     const int ndir = static_cast<int>(angle_quad.Directions().size());
+    //     const int nbranch = static_cast<int>(props.Frequency().size());
+    //     const int nspec = nbranch > 0 ? static_cast<int>(props.Frequency(0).size()) : 0;
+    //     const int ndof = spatial.FESpace().GetFE(0)->GetDof();
+    //     const int ne_local = spatial.Mesh().GetNE();
+    //     std::vector<std::vector<std::vector<mfem::DenseMatrix>>> coeff(
+    //         ndir, std::vector<std::vector<mfem::DenseMatrix>>(
+    //                   nbranch, std::vector<mfem::DenseMatrix>(
+    //                                nspec, mfem::DenseMatrix(ndof, ne_local))));
 
-        double res = solver.Solve(coeff, macro);
-        if (is_root)
-        {
-            std::cout << "[Parallel] residual = " << res << std::endl;
-        }
+    //     double res = solver.Solve(coeff, macro);
+    //     if (is_root)
+    //     {
+    //         std::cout << "[Parallel] final residual = " << res << std::endl;
+    //     }
 
-        // macro.WriteParaView("pbte_fields");
-        // For debugging/validation, export a sampled 2D temperature slice instead of ParaView.
-        // (Only meaningful for 2D meshes.)
-        if (spatial.Mesh().SpaceDimension() == 2)
-        {
-            macro.Write2DSliceTemperature("output/2D/results/T_slice.txt", 100, 100);
-        }
-        return 0;
-    }
+    //     // macro.WriteParaView("pbte_fields");
+    //     // For debugging/validation, export a sampled 2D temperature slice instead of ParaView.
+    //     // (Only meaningful for 2D meshes.)
+    //     if (spatial.Mesh().SpaceDimension() == 2)
+    //     {
+    //         macro.Write2DSliceTemperature("output/2D/results/T_slice.txt", 100, 100);
+    //     }
+    //     return 0;
+    // }
 #endif
 
     // Serial path
@@ -444,35 +363,14 @@ int main(int argc, char *argv[])
                                 spatial.IsothermalBoundaryTemps(),
                                 pbte::CachePolicy::FullLU,
                                 1e-7,
-                                1000000); // 1 million-step test
+                                1); // 1 million-step test
 
-        const int ndir = static_cast<int>(angle_quad.Directions().size());
-        const int nbranch = static_cast<int>(props.Frequency().size());
-        const int nspec = nbranch > 0 ? static_cast<int>(props.Frequency(0).size()) : 0;
-        const int ndof = spatial.FESpace().GetFE(0)->GetDof();
-        const int ne = spatial.Mesh().GetNE();
-        std::vector<std::vector<std::vector<mfem::DenseMatrix>>> coeff(
-            ndir, std::vector<std::vector<mfem::DenseMatrix>>(
-                      nbranch, std::vector<mfem::DenseMatrix>(
-                                   nspec, mfem::DenseMatrix(ndof, ne))));
-        // Explicitly zero-initialize all directional coefficient blocks so the
-        // first sweep starts from a clean state (mfem::DenseMatrix does not
-        // zero-fill on construction).
-        for (auto &dir_block : coeff)
-        {
-            for (auto &branch_block : dir_block)
-            {
-                for (auto &m : branch_block)
-                {
-                    m = 0.0;
-                }
-            }
-        }
+        auto coeff = solver.CreateInitialCoefficients();
 
         double res = solver.Solve(coeff, macro);
         if (is_root)
         {
-            std::cout << "[Serial] residual = " << res << std::endl;
+            std::cout << "[Serial] final residual = " << res << std::endl;
         }
 
         macro.WriteParaView("pbte_fields");
@@ -484,118 +382,10 @@ int main(int argc, char *argv[])
         }
     }
 
-    // Serialize local integrals to a string (per rank).
-    std::ostringstream oss;
-    oss << "DG integral dump (local rank block)\n";
-#ifdef MFEM_USE_MPI
-    int world_rank = 0, world_size = 1;
-    MPI_Comm_rank(MPI_COMM_WORLD, &world_rank);
-    MPI_Comm_size(MPI_COMM_WORLD, &world_size);
-    oss << "rank: " << world_rank << "/" << world_size << "\n";
-#else
-    oss << "rank: 0/1\n";
-    const int world_rank = 0;
-#endif
-    oss << "elements: " << element_data.size() << "\n";
-    for (size_t e = 0; e < element_data.size(); ++e)
+    if (!utils::DumpElementIntegrals(element_data, is_root))
     {
-        const auto &ed = element_data[e];
-        oss << "\n=== Element " << e << " (rank " << world_rank << ") ===\n";
-        WriteVector(oss, ed.basis_integrals, "basis_integrals");
-        WriteMatrix(oss, ed.mass_matrix, "mass_matrix");
-        for (size_t d = 0; d < ed.stiffness_matrices.size(); ++d)
-        {
-            WriteMatrix(oss, ed.stiffness_matrices[d],
-                        "stiffness_matrix_dim" + std::to_string(d));
-        }
-        for (size_t f = 0; f < ed.face_mass_matrices.size(); ++f)
-        {
-            WriteMatrix(oss, ed.face_mass_matrices[f],
-                        "face_mass_matrix[" + std::to_string(f) + "]");
-            WriteVector(oss, ed.face_integrals[f],
-                        "face_integral[" + std::to_string(f) + "]");
-        }
-        for (size_t k = 0; k < ed.face_couplings.size(); ++k)
-        {
-            const auto &fc = ed.face_couplings[k];
-            oss << "face_coupling[" << k << "]: face_id=" << fc.face_id
-                << ", neighbor=" << fc.neighbor_elem
-                << ", attr=" << fc.boundary_attr
-                << ", shared=" << (fc.is_shared ? 1 : 0) << "\n";
-            if (fc.neighbor_elem >= 0 || fc.is_shared)
-            {
-                WriteMatrix(oss, fc.coupling, "  coupling");
-            }
-            else
-            {
-                WriteVector(oss, fc.isothermal_rhs, "  isothermal_rhs");
-            }
-        }
-    }
-
-#ifdef MFEM_USE_MPI
-    // Gather all rank strings to root and write once.
-    const std::string local_str = oss.str();
-    int local_len = static_cast<int>(local_str.size());
-    std::vector<int> recv_counts, displs;
-    std::vector<char> recv_buf;
-    if (is_root)
-    {
-        recv_counts.resize(world_size);
-    }
-    MPI_Gather(&local_len, 1, MPI_INT,
-               is_root ? recv_counts.data() : nullptr, 1, MPI_INT,
-               0, MPI_COMM_WORLD);
-    if (is_root)
-    {
-        displs.resize(world_size);
-        int total = 0;
-        for (int i = 0; i < world_size; ++i)
-        {
-            displs[i] = total;
-            total += recv_counts[i];
-        }
-        recv_buf.resize(total);
-        MPI_Gatherv(local_str.data(), local_len, MPI_CHAR,
-                    recv_buf.data(), recv_counts.data(), displs.data(),
-                    MPI_CHAR, 0, MPI_COMM_WORLD);
-
-        const fs::path out_path = fs::path("output/log/integrals_all.txt");
-        fs::create_directories(out_path.parent_path());
-        std::ofstream ofs(out_path);
-        if (!ofs)
-        {
-            std::cerr << "Failed to open " << out_path << " for writing.\n";
-            return 0;
-        }
-        // Write concatenated rank blocks in rank order.
-        for (int r = 0; r < world_size; ++r)
-        {
-            ofs.write(recv_buf.data() + displs[r], recv_counts[r]);
-            ofs << "\n";
-        }
-        ofs << std::flush;
-        std::cout << "Integral dump written to: " << out_path << std::endl;
-    }
-    else
-    {
-        MPI_Gatherv(local_str.data(), local_len, MPI_CHAR,
-                    nullptr, nullptr, nullptr, MPI_CHAR,
-                    0, MPI_COMM_WORLD);
-    }
-#else
-    // Serial: write directly.
-    const fs::path out_path = fs::path("output/log/integrals_all.txt");
-    fs::create_directories(out_path.parent_path());
-    std::ofstream ofs(out_path);
-    if (!ofs)
-    {
-        std::cerr << "Failed to open " << out_path << " for writing.\n";
         return 0;
     }
-    ofs << oss.str();
-    std::cout << "Integral dump written to: " << out_path << std::endl;
-#endif
 
     return 0;
 }

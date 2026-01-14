@@ -12,8 +12,13 @@ boundary_conditions:
     temperature: 0.5
 
 angles:
-  dimension: 3           # 2 => in-plane, 3 => full space
-  polar_points: 16        # theta or cos(theta) points
+  dimension: 2           # 2 => in-plane, 3 => full space
+  polar_points: 24        # theta or cos(theta) points
   azimuth_points: 24     # phi points
   polar_scheme: gauss    # gauss | uniform
   azimuth_scheme: gauss
+
+numerical:
+  n_spectral: 20
+  tolerance: 1e-7
+  max_iter: 1000000

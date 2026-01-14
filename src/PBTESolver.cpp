@@ -1,6 +1,7 @@
 #include "PBTESolver.hpp"
 
 #include <cmath>
+#include <iostream>
 #include <memory>
 
 namespace pbte
@@ -69,6 +70,27 @@ PBTESolver::PBTESolver(const mfem::Mesh &mesh,
             }
         }
     }
+}
+
+std::vector<std::vector<std::vector<mfem::DenseMatrix>>>
+PBTESolver::CreateInitialCoefficients() const
+{
+    std::vector<std::vector<std::vector<mfem::DenseMatrix>>> coeff(
+        ndir_, std::vector<std::vector<mfem::DenseMatrix>>(
+                   nbranch_, std::vector<mfem::DenseMatrix>(
+                                 nspec_, mfem::DenseMatrix(ndof_, ne_))));
+
+    for (auto &dir_block : coeff)
+    {
+        for (auto &branch_block : dir_block)
+        {
+            for (auto &m : branch_block)
+            {
+                m = 0.0;  // DenseMatrix default constructor leaves entries uninitialized
+            }
+        }
+    }
+    return coeff;
 }
 
 void PBTESolver::BuildCellData()
@@ -252,6 +274,7 @@ double PBTESolver::Solve(std::vector<std::vector<std::vector<mfem::DenseMatrix>>
     MFEM_VERIFY(static_cast<int>(coeff[0][0].size()) == nspec_, "coeff size mismatch (spec)");
 
     mfem::Vector prev_Tv = macro.Tv();  // initial (all zeros)
+    mfem::DenseMatrix prev_Tc(macro.Tc());
 
     // One-time debug: boundary map size
     if (iso_bc_.empty())
@@ -268,15 +291,10 @@ double PBTESolver::Solve(std::vector<std::vector<std::vector<mfem::DenseMatrix>>
         }
         std::cout << std::endl;
     }
-
+    double res = 0.0;
     for (int iter = 0; iter < max_iter_; ++iter)
     {
-        // Keep previous Tc for RHS construction; reset accumulators for new Tc.
-        mfem::DenseMatrix prev_Tc(macro.Tc());
         macro.Reset();
-        double bndry_rhs_acc = 0.0;
-        double inflow_acc = 0.0;
-
         for (int k = 0; k < ndir_; ++k)
         {
             const auto &order = sweep_.Order(k);
@@ -292,12 +310,6 @@ double PBTESolver::Solve(std::vector<std::vector<std::vector<mfem::DenseMatrix>>
                     for (int d = 0; d < dim_; ++d) dir_vec[d] = dir.direction[d];
 
                     auto &coeff_mat = coeff[k][b][s];
-                    // // sanity
-                    // if (coeff_mat.Height() != ndof_ || coeff_mat.Width() != ne_)
-                    // {
-                    //     coeff_mat.SetSize(ndof_, ne_);
-                    //     coeff_mat = 0.0;
-                    // }
 
                     mfem::Vector rhs(ndof_);
                     mfem::Vector sol(ndof_);
@@ -311,19 +323,15 @@ double PBTESolver::Solve(std::vector<std::vector<std::vector<mfem::DenseMatrix>>
                         rhs = 0.0;
                         // invKn*Cwp/Ω * M^T * Tc
                         mfem::Vector tmp(ndof_);
-                        {
-                            mfem::Vector tc_col(tmp.GetData(), ndof_);
-                            prev_Tc.GetColumn(e, tc_col);
-                            cd.mass_t.Mult(tc_col, tmp);
-                            rhs.Add(invKn * Cwp / omega_, tmp);
-                        }
+                        mfem::Vector tc_col(tmp.GetData(), ndof_);
+                        prev_Tc.GetColumn(e, tc_col);
+                        cd.mass_t.Mult(tc_col, tmp);
+                        rhs.Add(invKn * Cwp / omega_, tmp);
                         // (dt_inv - invKn) * M^T * u_old
-                        {
-                            mfem::Vector u_col(tmp.GetData(), ndof_);
-                            coeff_mat.GetColumn(e, u_col);
-                            cd.mass_t.Mult(u_col, tmp);
-                            rhs.Add(dt_inv_ - invKn, tmp);
-                        }
+                        mfem::Vector u_col(tmp.GetData(), ndof_);
+                        coeff_mat.GetColumn(e, u_col);
+                        cd.mass_t.Mult(u_col, tmp);
+                        rhs.Add(dt_inv_ - invKn, tmp);
 
                         // boundary / neighbor terms
                         for (const auto &f : cd.faces)
@@ -333,6 +341,19 @@ double PBTESolver::Solve(std::vector<std::vector<std::vector<mfem::DenseMatrix>>
 
                             if (f.is_boundary)
                             {
+                                if (k == 8 && b == 0 && s == 0)
+                                {
+                                    std::ostringstream dir_ss;
+                                    dir_ss << "[" << dir.direction[0] << ", "
+                                           << dir.direction[1] << ", "
+                                           << dir.direction[2] << "]";
+                                    std::cout << "[BC] dir=" << dir_ss.str()
+                                              << " elem=" << e
+                                              << " face=" << f.face_id
+                                              << " attr=" << f.boundary_attr
+                                              << " f_dot=" << f_dot
+                                              << std::endl;
+                                }
                                 assert(iso_bc_.count(f.boundary_attr));
                                 const double Tbc = iso_bc_.at(f.boundary_attr);
                                 rhs.Add(-coeff_in * Cwp / omega_ * Tbc, f.face_integral);
@@ -364,7 +385,7 @@ double PBTESolver::Solve(std::vector<std::vector<std::vector<mfem::DenseMatrix>>
         }  // dirs
 
         macro.Finalize(elem_data_);
-        const double res = macro.Residual(prev_Tv);
+        res = macro.Residual(prev_Tv);
         if (iter == 0 || res > tol_)
         {
             std::cout.setf(std::ios::scientific);
@@ -376,8 +397,9 @@ double PBTESolver::Solve(std::vector<std::vector<std::vector<mfem::DenseMatrix>>
         }
         if (res < tol_) return res;
         prev_Tv = macro.Tv();
+        prev_Tc = macro.Tc();
     }
-    return macro.Residual(prev_Tv);
+    return res;
 }
 
 }  // namespace pbte

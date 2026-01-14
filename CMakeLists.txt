@@ -46,6 +46,7 @@ add_library(pbte STATIC
     src/PhononProperties.cpp
     src/MacroscopicQuantities.cpp
     src/PBTESolver.cpp
+    src/Utils.cpp
 )
 
 target_include_directories(pbte PUBLIC

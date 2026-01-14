@@ -41,6 +41,10 @@ public:
     double Solve(std::vector<std::vector<std::vector<mfem::DenseMatrix>>> &coeff,
                  MacroscopicQuantities &macro);
 
+    /// Allocate and zero-initialize coefficient blocks sized to the problem.
+    /// Layout: coeff[dir][branch][spec] -> (ndof x ne) matrices.
+    std::vector<std::vector<std::vector<mfem::DenseMatrix>>> CreateInitialCoefficients() const;
+
 private:
     struct FaceInfo
     {

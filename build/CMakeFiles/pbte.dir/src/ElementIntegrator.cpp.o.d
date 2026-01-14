@@ -1,7 +1,7 @@
 CMakeFiles/pbte.dir/src/ElementIntegrator.cpp.o: \
- /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/src/ElementIntegrator.cpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/src/ElementIntegrator.cpp \
  /usr/include/stdc-predef.h \
- /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/ElementIntegrator.hpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/ElementIntegrator.hpp \
  /usr/local/include/mfem.hpp /usr/local/include/mfem/mfem.hpp \
  /usr/local/include/mfem/config/config.hpp \
  /usr/local/include/mfem/config/_config.hpp \

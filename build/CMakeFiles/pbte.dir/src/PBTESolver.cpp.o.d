@@ -1,8 +1,8 @@
 CMakeFiles/pbte.dir/src/PBTESolver.cpp.o: \
- /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/src/PBTESolver.cpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/src/PBTESolver.cpp \
  /usr/include/stdc-predef.h \
- /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/PBTESolver.hpp \
- /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/AngularQuadrature.hpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/PBTESolver.hpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/AngularQuadrature.hpp \
  /usr/include/c++/13/array /usr/include/c++/13/compare \
  /usr/include/c++/13/initializer_list \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -121,7 +121,7 @@ CMakeFiles/pbte.dir/src/PBTESolver.cpp.o: \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/AngularSweepOrder.hpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/AngularSweepOrder.hpp \
  /usr/local/include/mfem.hpp /usr/local/include/mfem/mfem.hpp \
  /usr/local/include/mfem/config/config.hpp \
  /usr/local/include/mfem/config/_config.hpp \
@@ -453,7 +453,7 @@ CMakeFiles/pbte.dir/src/PBTESolver.cpp.o: \
  /usr/local/include/mfem/fem/bilinearform.hpp \
  /usr/local/include/mfem/fem/dgmassinv.hpp \
  /usr/local/include/mfem/fem/hyperbolic.hpp \
- /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/ElementIntegrator.hpp \
- /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/MacroscopicQuantities.hpp \
- /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/PhononProperties.hpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/ElementIntegrator.hpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/MacroscopicQuantities.hpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/PhononProperties.hpp \
  /usr/include/c++/13/optional

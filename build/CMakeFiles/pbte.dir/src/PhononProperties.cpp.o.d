@@ -1,7 +1,7 @@
 CMakeFiles/pbte.dir/src/PhononProperties.cpp.o: \
- /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/src/PhononProperties.cpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/src/PhononProperties.cpp \
  /usr/include/stdc-predef.h \
- /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/PhononProperties.hpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/PhononProperties.hpp \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

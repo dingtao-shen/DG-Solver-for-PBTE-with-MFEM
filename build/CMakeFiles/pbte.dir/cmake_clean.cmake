@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/pbte.dir/src/PhononProperties.cpp.o.d"
   "CMakeFiles/pbte.dir/src/SpatialMesh.cpp.o"
   "CMakeFiles/pbte.dir/src/SpatialMesh.cpp.o.d"
+  "CMakeFiles/pbte.dir/src/Utils.cpp.o"
+  "CMakeFiles/pbte.dir/src/Utils.cpp.o.d"
   "libpbte.a"
   "libpbte.pdb"
 )

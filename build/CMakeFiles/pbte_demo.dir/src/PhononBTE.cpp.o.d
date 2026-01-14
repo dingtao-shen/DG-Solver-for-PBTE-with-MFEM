@@ -1,7 +1,7 @@
 CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: \
- /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/src/PhononBTE.cpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/src/PhononBTE.cpp \
  /usr/include/stdc-predef.h \
- /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/AngularQuadrature.hpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/AngularQuadrature.hpp \
  /usr/include/c++/13/array /usr/include/c++/13/compare \
  /usr/include/c++/13/initializer_list \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -120,7 +120,7 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/AngularSweepOrder.hpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/AngularSweepOrder.hpp \
  /usr/local/include/mfem.hpp /usr/local/include/mfem/mfem.hpp \
  /usr/local/include/mfem/config/config.hpp \
  /usr/local/include/mfem/config/_config.hpp \
@@ -452,14 +452,10 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: \
  /usr/local/include/mfem/fem/bilinearform.hpp \
  /usr/local/include/mfem/fem/dgmassinv.hpp \
  /usr/local/include/mfem/fem/hyperbolic.hpp \
- /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/ElementIntegrator.hpp \
- /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/MacroscopicQuantities.hpp \
- /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/PhononProperties.hpp \
- /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/PBTESolver.hpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/ElementIntegrator.hpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/MacroscopicQuantities.hpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/PhononProperties.hpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/PBTESolver.hpp \
  /usr/include/c++/13/optional \
- /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/SpatialMesh.hpp \
- /usr/include/c++/13/filesystem /usr/include/c++/13/bits/fs_fwd.h \
- /usr/include/c++/13/bits/chrono.h /usr/include/c++/13/ratio \
- /usr/include/c++/13/bits/parse_numbers.h \
- /usr/include/c++/13/bits/fs_path.h /usr/include/c++/13/codecvt \
- /usr/include/c++/13/bits/fs_dir.h /usr/include/c++/13/bits/fs_ops.h
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/SpatialMesh.hpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/Utils.hpp

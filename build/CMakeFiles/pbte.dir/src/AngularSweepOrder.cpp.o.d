@@ -1,8 +1,8 @@
 CMakeFiles/pbte.dir/src/AngularSweepOrder.cpp.o: \
- /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/src/AngularSweepOrder.cpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/src/AngularSweepOrder.cpp \
  /usr/include/stdc-predef.h \
- /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/AngularSweepOrder.hpp \
- /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/AngularQuadrature.hpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/AngularSweepOrder.hpp \
+ /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/AngularQuadrature.hpp \
  /usr/include/c++/13/array /usr/include/c++/13/compare \
  /usr/include/c++/13/initializer_list \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \

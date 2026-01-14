@@ -74,20 +74,43 @@ std::vector<std::pair<double, double>> GaussLegendreRule(int points,
 
     std::vector<std::pair<double, double>> nodes;
     nodes.reserve(points);
-    // MFEM's 1D integration points/weights are defined on the reference
-    // segment [-1, 1]. Map them affinely to [a, b].
-    //
-    // Note: the previous implementation incorrectly treated ip.x as living
-    // on [0, 1], which shifted nodes outside the target interval and doubled
-    // weights. Here we use the standard affine map from [-1, 1] to [a, b].
-    const double half = 0.5 * (b - a);
-    const double mid = 0.5 * (b + a);
+    // Robustly map quadrature nodes from the rule's reference interval to [a, b].
+    // Some MFEM builds return Gauss-Legendre nodes on [-1, 1], others on [0, 1]
+    // for SEGMENT. Detect the range and map accordingly.
+    double min_x = std::numeric_limits<double>::infinity();
+    double max_x = -std::numeric_limits<double>::infinity();
     for (int i = 0; i < ir.GetNPoints(); ++i)
     {
-        const mfem::IntegrationPoint &ip = ir.IntPoint(i);
-        const double x = mid + half * ip.x;
-        const double w = half * ip.weight;
-        nodes.emplace_back(x, w);
+        min_x = std::min(min_x, ir.IntPoint(i).x);
+        max_x = std::max(max_x, ir.IntPoint(i).x);
+    }
+
+    const double eps = 1e-12;
+    const bool on_unit = (min_x >= -eps && max_x <= 1.0 + eps);
+    if (on_unit)
+    {
+        // ip.x in [0, 1]
+        const double scale = (b - a);
+        for (int i = 0; i < ir.GetNPoints(); ++i)
+        {
+            const mfem::IntegrationPoint &ip = ir.IntPoint(i);
+            const double x = a + scale * ip.x;
+            const double w = scale * ip.weight;
+            nodes.emplace_back(x, w);
+        }
+    }
+    else
+    {
+        // ip.x assumed in [-1, 1]
+        const double half = 0.5 * (b - a);
+        const double mid = 0.5 * (b + a);
+        for (int i = 0; i < ir.GetNPoints(); ++i)
+        {
+            const mfem::IntegrationPoint &ip = ir.IntPoint(i);
+            const double x = mid + half * ip.x;
+            const double w = half * ip.weight;
+            nodes.emplace_back(x, w);
+        }
     }
     return nodes;
 }
