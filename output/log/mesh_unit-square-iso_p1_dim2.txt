@@ -1,0 +1,22 @@
+Mesh and DG space summary
+  mesh source          : config/mesh/unit-square-iso.mesh
+  dimension            : 2
+  element count        : 2
+  boundary elem count  : 4
+  vertex count         : 4
+  element geometry     : Triangle
+  DG polynomial order  : 1
+  FE space ndofs       : 6
+  FE space vdim        : 1
+  ordering             : byNODES
+Element details (vertices and faces):
+  elem 0
+    vertices: v2(1e-06,1e-06) v0(0,0) v1(1e-06,0)
+    face 0 neigh=1 interior
+    face 1 neigh=-1 boundary attr=1
+    face 2 neigh=-1 boundary attr=1
+  elem 1
+    vertices: v0(0,0) v2(1e-06,1e-06) v3(0,1e-06)
+    face 0 neigh=0 interior
+    face 3 neigh=-1 boundary attr=2
+    face 4 neigh=-1 boundary attr=1

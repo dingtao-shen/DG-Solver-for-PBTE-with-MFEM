@@ -1,0 +1,52 @@
+Mesh and DG space summary
+  mesh source          : config/mesh/unit-square-iso.mesh
+  dimension            : 2
+  element count        : 8
+  boundary elem count  : 8
+  vertex count         : 9
+  element geometry     : Triangle
+  DG polynomial order  : 2
+  FE space ndofs       : 48
+  FE space vdim        : 1
+  ordering             : byNODES
+Element details (vertices and faces):
+  elem 0
+    vertices: v2(1e-06,1e-06) v4(5e-07,5e-07) v6(1e-06,5e-07)
+    face 0 neigh=6 interior
+    face 1 neigh=1 interior
+    face 2 neigh=-1 boundary attr=1
+  elem 1
+    vertices: v5(5e-07,0) v6(1e-06,5e-07) v4(5e-07,5e-07)
+    face 1 neigh=0 interior
+    face 3 neigh=3 interior
+    face 4 neigh=2 interior
+  elem 2
+    vertices: v4(5e-07,5e-07) v0(0,0) v5(5e-07,0)
+    face 4 neigh=1 interior
+    face 5 neigh=4 interior
+    face 6 neigh=-1 boundary attr=1
+  elem 3
+    vertices: v6(1e-06,5e-07) v5(5e-07,0) v1(1e-06,0)
+    face 3 neigh=1 interior
+    face 7 neigh=-1 boundary attr=1
+    face 8 neigh=-1 boundary attr=1
+  elem 4
+    vertices: v0(0,0) v4(5e-07,5e-07) v8(0,5e-07)
+    face 5 neigh=2 interior
+    face 9 neigh=5 interior
+    face 10 neigh=-1 boundary attr=1
+  elem 5
+    vertices: v7(5e-07,1e-06) v8(0,5e-07) v4(5e-07,5e-07)
+    face 9 neigh=4 interior
+    face 11 neigh=7 interior
+    face 12 neigh=6 interior
+  elem 6
+    vertices: v4(5e-07,5e-07) v2(1e-06,1e-06) v7(5e-07,1e-06)
+    face 0 neigh=0 interior
+    face 12 neigh=5 interior
+    face 13 neigh=-1 boundary attr=2
+  elem 7
+    vertices: v8(0,5e-07) v7(5e-07,1e-06) v3(0,1e-06)
+    face 11 neigh=5 interior
+    face 14 neigh=-1 boundary attr=2
+    face 15 neigh=-1 boundary attr=1

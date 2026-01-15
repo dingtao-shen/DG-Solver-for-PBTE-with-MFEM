@@ -259,12 +259,12 @@ void MacroscopicQuantities::WriteParaView(const std::string &prefix, bool high_o
             Q_gf->SetSubVector(vdofs, loc);
         }
 
-        mfem::ParaViewDataCollection dc(prefix, mesh);
+        mfem::ParaViewDataCollection dc(prefix, mesh); 
         dc.SetPrefixPath("output/vis");
         dc.SetDataFormat(mfem::VTKFormat::BINARY);
         dc.SetHighOrderOutput(high_order);
         dc.SetLevelsOfDetail(1);
-        dc.RegisterField("Tc", Tc_gf.get());
+        dc.RegisterField("T", Tc_gf.get());
         dc.RegisterField("Q", Q_gf.get());
         dc.Save();
     }

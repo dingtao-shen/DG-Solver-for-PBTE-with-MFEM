@@ -1,0 +1,7680 @@
+# dir 0 branch 0 spec 0
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-2.7711e-13 1.17745e-12 -1.06067e-12
+elem 1
+-2.82334e-13 -1.19251e-12 1.28366e-12
+
+# dir 0 branch 0 spec 1
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-2.51327e-12 7.40977e-12 -6.28284e-12
+elem 1
+-2.61468e-12 -7.94429e-12 8.62622e-12
+
+# dir 0 branch 0 spec 2
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-6.9483e-12 1.14401e-11 -8.11108e-12
+elem 1
+-7.41455e-12 -1.34405e-11 1.48838e-11
+
+# dir 0 branch 0 spec 3
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-1.34402e-11 1.18772e-11 -5.14586e-12
+elem 1
+-1.46468e-11 -1.49609e-11 1.71845e-11
+
+# dir 0 branch 0 spec 4
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-2.17753e-11 1.11504e-11 7.53561e-14
+elem 1
+-2.41394e-11 -1.40439e-11 1.70831e-11
+
+# dir 0 branch 0 spec 5
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-3.17097e-11 1.02177e-11 6.49733e-12
+elem 1
+-3.56661e-11 -1.18901e-11 1.57168e-11
+
+# dir 0 branch 0 spec 6
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-4.30324e-11 9.13245e-12 1.39998e-11
+elem 1
+-4.89772e-11 -8.96103e-12 1.34283e-11
+
+# dir 0 branch 0 spec 7
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-5.5614e-11 7.84687e-12 2.25977e-11
+elem 1
+-6.38249e-11 -5.46142e-12 1.02962e-11
+
+# dir 0 branch 0 spec 8
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-6.94311e-11 6.33984e-12 3.23211e-11
+elem 1
+-7.99897e-11 -1.51343e-12 6.32364e-12
+
+# dir 0 branch 0 spec 9
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-8.45678e-11 4.61043e-12 4.32229e-11
+elem 1
+-9.73004e-11 2.80154e-12 1.48636e-12
+
+# dir 0 branch 0 spec 10
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-1.01203e-10 2.66841e-12 5.53847e-11
+elem 1
+-1.15647e-10 7.4306e-12 -4.25317e-12
+
+# dir 0 branch 0 spec 11
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-1.19592e-10 5.27778e-13 6.89171e-11
+elem 1
+-1.34983e-10 1.23445e-11 -1.09414e-11
+
+# dir 0 branch 0 spec 12
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-1.40043e-10 -1.79796e-12 8.39589e-11
+elem 1
+-1.55332e-10 1.75349e-11 -1.86336e-11
+
+# dir 0 branch 0 spec 13
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-1.6291e-10 -4.29913e-12 1.00676e-10
+elem 1
+-1.76777e-10 2.30122e-11 -2.73961e-11
+
+# dir 0 branch 0 spec 14
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-1.88579e-10 -6.97217e-12 1.19265e-10
+elem 1
+-1.99465e-10 2.88038e-11 -3.73094e-11
+
+# dir 0 branch 0 spec 15
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-2.17474e-10 -9.82105e-12 1.39953e-10
+elem 1
+-2.23601e-10 3.49536e-11 -4.84728e-11
+
+# dir 0 branch 0 spec 16
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-2.50068e-10 -1.28581e-11 1.63012e-10
+elem 1
+-2.49449e-10 4.15212e-11 -6.10098e-11
+
+# dir 0 branch 0 spec 17
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-2.86892e-10 -1.61049e-11 1.88762e-10
+elem 1
+-2.77334e-10 4.85826e-11 -7.50741e-11
+
+# dir 0 branch 0 spec 18
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-3.28566e-10 -1.95926e-11 2.1759e-10
+elem 1
+-3.07653e-10 5.6232e-11 -9.08583e-11
+
+# dir 0 branch 0 spec 19
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-3.75825e-10 -2.33633e-11 2.49966e-10
+elem 1
+-3.40883e-10 6.45848e-11 -1.08603e-10
+
+# dir 0 branch 1 spec 0
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-4.30929e-13 2.25176e-13 -7.7556e-15
+elem 1
+-4.7505e-13 -2.44251e-13 3.1366e-13
+
+# dir 0 branch 1 spec 1
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-3.52091e-12 4.57283e-13 1.46607e-12
+elem 1
+-4.03844e-12 -2.2542e-13 5.40919e-13
+
+# dir 0 branch 1 spec 2
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-9.42094e-12 3.96277e-13 4.94859e-12
+elem 1
+-1.07878e-11 5.53491e-13 -1.24638e-13
+
+# dir 0 branch 1 spec 3
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-1.84547e-11 1.16527e-14 1.07065e-11
+elem 1
+-2.06819e-11 2.07804e-12 -1.91513e-12
+
+# dir 0 branch 1 spec 4
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-3.12498e-11 -7.27624e-13 1.91489e-11
+elem 1
+-3.39175e-11 4.39437e-12 -5.08969e-12
+
+# dir 0 branch 1 spec 5
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-4.86635e-11 -1.86246e-12 3.08192e-11
+elem 1
+-5.08832e-11 7.59616e-12 -9.95975e-12
+
+# dir 0 branch 1 spec 6
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-7.1813e-11 -3.45041e-12 4.64285e-11
+elem 1
+-7.21654e-11 1.18259e-11 -1.69183e-11
+
+# dir 0 branch 1 spec 7
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-1.02165e-10 -5.57232e-12 6.69176e-11
+elem 1
+-9.85917e-11 1.72855e-11 -2.64789e-11
+
+# dir 0 branch 1 spec 8
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-1.41691e-10 -8.34151e-12 9.35575e-11
+elem 1
+-1.31313e-10 2.42568e-11 -3.93324e-11
+
+# dir 0 branch 1 spec 9
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-1.93108e-10 -1.19182e-11 1.28108e-10
+elem 1
+-1.71941e-10 3.31359e-11 -5.64351e-11
+
+# dir 0 branch 1 spec 10
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-3.98261e-10 2.99668e-10 -1.21145e-10
+elem 1
+-4.21359e-10 -2.38461e-10 3.42644e-10
+
+# dir 0 branch 1 spec 11
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-5.25591e-10 3.43147e-10 -1.0578e-10
+elem 1
+-5.58845e-10 -2.57794e-10 3.92397e-10
+
+# dir 0 branch 1 spec 12
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-6.91342e-10 3.88207e-10 -7.36778e-11
+elem 1
+-7.39027e-10 -2.69207e-10 4.42666e-10
+
+# dir 0 branch 1 spec 13
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-9.11464e-10 4.35143e-10 -1.74011e-11
+elem 1
+-9.80032e-10 -2.68585e-10 4.92732e-10
+
+# dir 0 branch 1 spec 14
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-1.21246e-09 4.84351e-10 7.5595e-11
+elem 1
+-1.31211e-09 -2.49056e-10 5.41246e-10
+
+# dir 0 branch 1 spec 15
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-1.64195e-09 5.36172e-10 2.28461e-10
+elem 1
+-1.78988e-09 -1.98037e-10 5.8517e-10
+
+# dir 0 branch 1 spec 16
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-2.29497e-09 5.90355e-10 4.89118e-10
+elem 1
+-2.52316e-09 -8.9843e-11 6.16623e-10
+
+# dir 0 branch 1 spec 17
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-3.39265e-09 6.4363e-10 9.74977e-10
+elem 1
+-3.77103e-09 1.3669e-10 6.1085e-10
+
+# dir 0 branch 1 spec 18
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-5.62794e-09 6.76896e-10 2.07935e-09
+elem 1
+-6.33299e-09 6.69966e-10 4.56287e-10
+
+# dir 0 branch 1 spec 19
+# ndof 3 ne 2
+# direction: 0.999886 0.0151192 0 weight 0.0387711
+elem 0
+-1.51614e-08 6.35991e-10 7.19808e-09
+elem 1
+-1.53017e-08 2.67988e-09 -1.12096e-09
+
+# dir 1 branch 0 spec 0
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-2.68773e-13 1.0015e-12 -8.50531e-13
+elem 1
+-2.92144e-13 -1.38529e-12 1.4194e-12
+
+# dir 1 branch 0 spec 1
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-2.45892e-12 6.42414e-12 -5.07762e-12
+elem 1
+-2.67418e-12 -9.00003e-12 9.30509e-12
+
+# dir 1 branch 0 spec 2
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-6.86145e-12 1.02302e-11 -6.55012e-12
+elem 1
+-7.49526e-12 -1.46763e-11 1.5477e-11
+
+# dir 1 branch 0 spec 3
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-1.33577e-11 1.0981e-11 -3.86738e-12
+elem 1
+-1.47011e-11 -1.57789e-11 1.72473e-11
+
+# dir 1 branch 0 spec 4
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-2.1735e-11 1.05748e-11 1.03631e-12
+elem 1
+-2.414e-11 -1.44607e-11 1.67005e-11
+
+# dir 1 branch 0 spec 5
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-3.17575e-11 9.85687e-12 7.25617e-12
+elem 1
+-3.55993e-11 -1.20619e-11 1.5064e-11
+
+# dir 1 branch 0 spec 6
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-4.32248e-11 8.92495e-12 1.46379e-11
+elem 1
+-4.88353e-11 -8.99396e-12 1.26186e-11
+
+# dir 1 branch 0 spec 7
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-5.60137e-11 7.76517e-12 2.31667e-11
+elem 1
+-6.36043e-11 -5.41624e-12 9.39434e-12
+
+# dir 1 branch 0 spec 8
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-7.01012e-11 6.37168e-12 3.2858e-11
+elem 1
+-7.96899e-11 -1.42571e-12 5.36836e-12
+
+# dir 1 branch 0 spec 9
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-8.55661e-11 4.75002e-12 4.37571e-11
+elem 1
+-9.69234e-11 2.91025e-12 5.01819e-13
+
+# dir 1 branch 0 spec 10
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-1.02578e-10 2.91241e-12 5.59401e-11
+elem 1
+-1.15196e-10 7.54704e-12 -5.25149e-12
+
+# dir 1 branch 0 spec 11
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-1.2138e-10 8.73398e-13 6.95129e-11
+elem 1
+-1.34464e-10 1.24605e-11 -1.19435e-11
+
+# dir 1 branch 0 spec 12
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-1.4227e-10 -1.35381e-12 8.46096e-11
+elem 1
+-1.54749e-10 1.76456e-11 -1.96331e-11
+
+# dir 1 branch 0 spec 13
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-1.65588e-10 -3.76009e-12 1.01393e-10
+elem 1
+-1.76137e-10 2.31147e-11 -2.8389e-11
+
+# dir 1 branch 0 spec 14
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-1.91711e-10 -6.34241e-12 1.20054e-10
+elem 1
+-1.98773e-10 2.88968e-11 -3.82935e-11
+
+# dir 1 branch 0 spec 15
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-2.21056e-10 -9.10507e-12 1.4082e-10
+elem 1
+-2.22863e-10 3.50365e-11 -4.94472e-11
+
+# dir 1 branch 0 spec 16
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-2.54089e-10 -1.20606e-11 1.63958e-10
+elem 1
+-2.48668e-10 4.15939e-11 -6.19742e-11
+
+# dir 1 branch 0 spec 17
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-2.91339e-10 -1.52303e-11 1.89788e-10
+elem 1
+-2.76515e-10 4.86454e-11 -7.60292e-11
+
+# dir 1 branch 0 spec 18
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-3.33423e-10 -1.86453e-11 2.18696e-10
+elem 1
+-3.06798e-10 5.62855e-11 -9.18049e-11
+
+# dir 1 branch 0 spec 19
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-3.81078e-10 -2.23471e-11 2.51151e-10
+elem 1
+-3.39997e-10 6.46296e-11 -1.09543e-10
+
+# dir 1 branch 1 spec 0
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-4.30326e-13 2.1457e-13 1.05505e-14
+elem 1
+-4.74871e-13 -2.5042e-13 3.05484e-13
+
+# dir 1 branch 1 spec 1
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-3.54956e-12 4.54656e-13 1.49912e-12
+elem 1
+-4.02406e-12 -2.21703e-13 4.8787e-13
+
+# dir 1 branch 1 spec 2
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-9.54247e-12 4.16151e-13 5.00385e-12
+elem 1
+-1.07459e-11 5.6486e-13 -2.23308e-13
+
+# dir 1 branch 1 spec 3
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-1.87385e-11 6.71834e-14 1.07965e-11
+elem 1
+-2.06033e-11 2.09451e-12 -2.05948e-12
+
+# dir 1 branch 1 spec 4
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-3.17634e-11 -6.24441e-13 1.92874e-11
+elem 1
+-3.37949e-11 4.41409e-12 -5.28028e-12
+
+# dir 1 branch 1 spec 5
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-4.94714e-11 -1.70052e-12 3.10199e-11
+elem 1
+-5.07104e-11 7.61771e-12 -1.01976e-11
+
+# dir 1 branch 1 spec 6
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-7.29774e-11 -3.21917e-12 4.67049e-11
+elem 1
+-7.19369e-11 1.18482e-11 -1.72047e-11
+
+# dir 1 branch 1 spec 7
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-1.03748e-10 -5.26142e-12 6.72834e-11
+elem 1
+-9.83019e-11 1.73075e-11 -2.68156e-11
+
+# dir 1 branch 1 spec 8
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-1.43753e-10 -7.9405e-12 9.40266e-11
+elem 1
+-1.30956e-10 2.42776e-11 -3.97214e-11
+
+# dir 1 branch 1 spec 9
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-1.95715e-10 -1.14161e-11 1.28695e-10
+elem 1
+-1.71512e-10 3.31547e-11 -5.68787e-11
+
+# dir 1 branch 1 spec 10
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-3.96884e-10 2.88017e-10 -1.00128e-10
+elem 1
+-4.21564e-10 -2.43023e-10 3.3392e-10
+
+# dir 1 branch 1 spec 11
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-5.24448e-10 3.31506e-10 -8.33762e-11
+elem 1
+-5.5866e-10 -2.61478e-10 3.80791e-10
+
+# dir 1 branch 1 spec 12
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-6.90769e-10 3.77001e-10 -5.02113e-11
+elem 1
+-7.38239e-10 -2.71751e-10 4.27823e-10
+
+# dir 1 branch 1 spec 13
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-9.12034e-10 4.24876e-10 6.79038e-12
+elem 1
+-9.78342e-10 -2.69764e-10 4.74323e-10
+
+# dir 1 branch 1 spec 14
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-1.2152e-09 4.75669e-10 1.00161e-10
+elem 1
+-1.30909e-09 -2.48696e-10 5.18975e-10
+
+# dir 1 branch 1 spec 15
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-1.64884e-09 5.29999e-10 2.53052e-10
+elem 1
+-1.78486e-09 -1.96053e-10 5.58799e-10
+
+# dir 1 branch 1 spec 16
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-2.31024e-09 5.88214e-10 5.13484e-10
+elem 1
+-2.51507e-09 -8.63068e-11 5.86055e-10
+
+# dir 1 branch 1 spec 17
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-3.42717e-09 6.48553e-10 9.99532e-10
+elem 1
+-3.75795e-09 1.41351e-10 5.76355e-10
+
+# dir 1 branch 1 spec 18
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-5.71847e-09 6.96828e-10 2.10874e-09
+elem 1
+-6.31116e-09 6.74432e-10 4.19241e-10
+
+# dir 1 branch 1 spec 19
+# ndof 3 ne 2
+# direction: 0.99685 0.0793092 0 weight 0.089634
+elem 0
+-1.54849e-08 7.01332e-10 7.26708e-09
+elem 1
+-1.52633e-08 2.68027e-09 -1.15516e-09
+
+# dir 2 branch 0 spec 0
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-2.55216e-13 7.55929e-13 -5.67805e-13
+elem 1
+-3.16884e-13 -1.81352e-12 1.69135e-12
+
+# dir 2 branch 0 spec 1
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-2.36897e-12 5.00934e-12 -3.4064e-12
+elem 1
+-2.81647e-12 -1.12642e-11 1.0601e-11
+
+# dir 2 branch 0 spec 2
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-6.71493e-12 8.40249e-12 -4.26485e-12
+elem 1
+-7.67166e-12 -1.71535e-11 1.64602e-11
+
+# dir 2 branch 0 spec 3
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-1.32191e-11 9.52679e-12 -1.85526e-12
+elem 1
+-1.48029e-11 -1.72345e-11 1.71125e-11
+
+# dir 2 branch 0 spec 4
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-2.16743e-11 9.56599e-12 2.6575e-12
+elem 1
+-2.41191e-11 -1.50495e-11 1.57133e-11
+
+# dir 2 branch 0 spec 5
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-3.18571e-11 9.17517e-12 8.60621e-12
+elem 1
+-3.54327e-11 -1.21653e-11 1.35978e-11
+
+# dir 2 branch 0 spec 6
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-4.35833e-11 8.49296e-12 1.58182e-11
+elem 1
+-4.85058e-11 -8.84194e-12 1.08882e-11
+
+# dir 2 branch 0 spec 7
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-5.67403e-11 7.54665e-12 2.42484e-11
+elem 1
+-6.30985e-11 -5.13146e-12 7.51354e-12
+
+# dir 2 branch 0 spec 8
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-7.13064e-11 6.35064e-12 3.38969e-11
+elem 1
+-7.89991e-11 -1.07756e-12 3.40162e-12
+
+# dir 2 branch 0 spec 9
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-8.73529e-11 4.91934e-12 4.47995e-11
+elem 1
+-9.60439e-11 3.28032e-12 -1.51211e-12
+
+# dir 2 branch 0 spec 10
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-1.05035e-10 3.26821e-12 5.70247e-11
+elem 1
+-1.14128e-10 7.91362e-12 -7.28845e-12
+
+# dir 2 branch 0 spec 11
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-1.24575e-10 1.41222e-12 7.06716e-11
+elem 1
+-1.33212e-10 1.28081e-11 -1.39882e-11
+
+# dir 2 branch 0 spec 12
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-1.46251e-10 -6.36227e-13 8.58675e-11
+elem 1
+-1.53321e-10 1.79649e-11 -2.1676e-11
+
+# dir 2 branch 0 spec 13
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-1.70382e-10 -2.86925e-12 1.02768e-10
+elem 1
+-1.74541e-10 2.34007e-11 -3.04245e-11
+
+# dir 2 branch 0 spec 14
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-1.97328e-10 -5.28497e-12 1.2156e-10
+elem 1
+-1.97019e-10 2.91473e-11 -4.03184e-11
+
+# dir 2 branch 0 spec 15
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-2.27493e-10 -7.88852e-12 1.42465e-10
+elem 1
+-2.20961e-10 3.52509e-11 -5.14603e-11
+
+# dir 2 branch 0 spec 16
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-2.61329e-10 -1.06928e-11 1.65747e-10
+elem 1
+-2.46629e-10 4.17731e-11 -6.39757e-11
+
+# dir 2 branch 0 spec 17
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-2.9936e-10 -1.37192e-11 1.91722e-10
+elem 1
+-2.74347e-10 4.87908e-11 -7.80201e-11
+
+# dir 2 branch 0 spec 18
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-3.42202e-10 -1.69983e-11 2.20775e-10
+elem 1
+-3.04511e-10 5.63988e-11 -9.37871e-11
+
+# dir 2 branch 0 spec 19
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-3.90589e-10 -2.05711e-11 2.53374e-10
+elem 1
+-3.37596e-10 6.47128e-11 -1.11519e-10
+
+# dir 2 branch 1 spec 0
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-4.29466e-13 1.9564e-13 4.18392e-14
+elem 1
+-4.74069e-13 -2.58201e-13 2.85301e-13
+
+# dir 2 branch 1 spec 1
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-3.60132e-12 4.45479e-13 1.56241e-12
+elem 1
+-3.99103e-12 -2.03611e-13 3.77876e-13
+
+# dir 2 branch 1 spec 2
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-9.75958e-12 4.4346e-13 5.11176e-12
+elem 1
+-1.06474e-11 6.01622e-13 -4.24798e-13
+
+# dir 2 branch 1 spec 3
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-1.92454e-11 1.54946e-13 1.09713e-11
+elem 1
+-2.04125e-11 2.14309e-12 -2.35423e-12
+
+# dir 2 branch 1 spec 4
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-3.26826e-11 -4.54246e-13 1.95534e-11
+elem 1
+-3.34891e-11 4.46913e-12 -5.67105e-12
+
+# dir 2 branch 1 spec 5
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-5.09212e-11 -1.42744e-12 3.14021e-11
+elem 1
+-5.02693e-11 7.67484e-12 -1.06878e-11
+
+# dir 2 branch 1 spec 6
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-7.50725e-11 -2.82368e-12 4.72282e-11
+elem 1
+-7.13416e-11 1.19036e-11 -1.77986e-11
+
+# dir 2 branch 1 spec 7
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-1.06602e-10 -4.72432e-12 6.79727e-11
+elem 1
+-9.75339e-11 1.7358e-11 -2.75178e-11
+
+# dir 2 branch 1 spec 8
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-1.47483e-10 -7.24238e-12 9.49076e-11
+elem 1
+-1.29997e-10 2.432e-11 -4.05373e-11
+
+# dir 2 branch 1 spec 9
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-2.0044e-10 -1.05368e-11 1.29795e-10
+elem 1
+-1.70342e-10 3.31858e-11 -5.78145e-11
+
+# dir 2 branch 1 spec 10
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-3.94591e-10 2.6628e-10 -6.32082e-11
+elem 1
+-4.21539e-10 -2.47531e-10 3.12843e-10
+
+# dir 2 branch 1 spec 11
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-5.22621e-10 3.09274e-10 -4.34007e-11
+elem 1
+-5.57756e-10 -2.63792e-10 3.53984e-10
+
+# dir 2 branch 1 spec 12
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-6.90019e-10 3.54983e-10 -7.63827e-12
+elem 1
+-7.36014e-10 -2.71421e-10 3.94713e-10
+
+# dir 2 branch 1 spec 13
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-9.13392e-10 4.03928e-10 5.14752e-11
+elem 1
+-9.74168e-10 -2.66426e-10 4.34379e-10
+
+# dir 2 branch 1 spec 14
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-1.22049e-09 4.56906e-10 1.46447e-10
+elem 1
+-1.30203e-09 -2.42103e-10 4.71718e-10
+
+# dir 2 branch 1 spec 15
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-1.66153e-09 5.15035e-10 3.00426e-10
+elem 1
+-1.77345e-09 -1.86146e-10 5.03842e-10
+
+# dir 2 branch 1 spec 16
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-2.33765e-09 5.79724e-10 5.61575e-10
+elem 1
+-2.49674e-09 -7.33964e-11 5.23208e-10
+
+# dir 2 branch 1 spec 17
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-3.48782e-09 6.5187e-10 1.04899e-09
+elem 1
+-3.72768e-09 1.56081e-10 5.05935e-10
+
+# dir 2 branch 1 spec 18
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-5.87529e-09 7.26042e-10 2.16708e-09
+elem 1
+-6.2567e-09 6.87238e-10 3.42973e-10
+
+# dir 2 branch 1 spec 19
+# ndof 3 ne 2
+# direction: 0.981257 0.192703 0 weight 0.139102
+elem 0
+-1.60549e-08 8.12285e-10 7.39458e-09
+elem 1
+-1.51441e-08 2.67765e-09 -1.23132e-09
+
+# dir 3 branch 0 spec 0
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-2.33515e-13 5.12018e-13 -3.04818e-13
+elem 1
+-3.73321e-13 -2.63389e-12 2.09523e-12
+
+# dir 3 branch 0 spec 1
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-2.23327e-12 3.54726e-12 -1.77747e-12
+elem 1
+-3.11843e-12 -1.53825e-11 1.23395e-11
+
+# dir 3 branch 0 spec 2
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-6.51355e-12 6.37222e-12 -1.84303e-12
+elem 1
+-7.99907e-12 -2.1218e-11 1.73229e-11
+
+# dir 3 branch 0 spec 3
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-1.30571e-11 7.74649e-12 5.1768e-13
+elem 1
+-1.49428e-11 -1.91674e-11 1.61214e-11
+
+# dir 3 branch 0 spec 4
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-2.16539e-11 8.20416e-12 4.76877e-12
+elem 1
+-2.40144e-11 -1.54382e-11 1.35089e-11
+
+# dir 3 branch 0 spec 5
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-3.20956e-11 8.17214e-12 1.05028e-11
+elem 1
+-3.50594e-11 -1.17987e-11 1.07949e-11
+
+# dir 3 branch 0 spec 6
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-4.42197e-11 7.79565e-12 1.75723e-11
+elem 1
+-4.78324e-11 -8.12612e-12 7.7856e-12
+
+# dir 3 branch 0 spec 7
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-5.79276e-11 7.12968e-12 2.59244e-11
+elem 1
+-6.20917e-11 -4.26197e-12 4.25047e-12
+
+# dir 3 branch 0 spec 8
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-7.31997e-11 6.20427e-12 3.55529e-11
+elem 1
+-7.76304e-11 -1.59115e-13 4.99243e-14
+
+# dir 3 branch 0 spec 9
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-9.00973e-11 5.04065e-12 4.64882e-11
+elem 1
+-9.42926e-11 4.18666e-12 -4.91213e-12
+
+# dir 3 branch 0 spec 10
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-1.08755e-10 3.65605e-12 5.8793e-11
+elem 1
+-1.11983e-10 8.77088e-12 -1.07131e-11
+
+# dir 3 branch 0 spec 11
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-1.29371e-10 2.06452e-12 7.25587e-11
+elem 1
+-1.30671e-10 1.3594e-11 -1.74234e-11
+
+# dir 3 branch 0 spec 12
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-1.52191e-10 2.76365e-13 8.79052e-11
+elem 1
+-1.50388e-10 1.86669e-11 -2.51136e-11
+
+# dir 3 branch 0 spec 13
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-1.77508e-10 -1.70294e-12 1.0498e-10
+elem 1
+-1.71228e-10 2.40126e-11 -3.38598e-11
+
+# dir 3 branch 0 spec 14
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-2.05655e-10 -3.8736e-12 1.23963e-10
+elem 1
+-1.93341e-10 2.96674e-11 -4.37495e-11
+
+# dir 3 branch 0 spec 15
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-2.37016e-10 -6.24231e-12 1.45069e-10
+elem 1
+-2.16936e-10 3.56805e-11 -5.4887e-11
+
+# dir 3 branch 0 spec 16
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-2.72027e-10 -8.82284e-12 1.68558e-10
+elem 1
+-2.42275e-10 4.21153e-11 -6.7399e-11
+
+# dir 3 branch 0 spec 17
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-3.11204e-10 -1.16367e-11 1.94742e-10
+elem 1
+-2.69684e-10 4.90499e-11 -8.14423e-11
+
+# dir 3 branch 0 spec 18
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-3.55156e-10 -1.47141e-11 2.24002e-10
+elem 1
+-2.99556e-10 5.65796e-11 -9.72112e-11
+
+# dir 3 branch 0 spec 19
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-4.04617e-10 -1.80951e-11 2.56807e-10
+elem 1
+-3.32363e-10 6.48201e-11 -1.14949e-10
+
+# dir 3 branch 1 spec 0
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-4.29551e-13 1.69545e-13 8.32411e-14
+elem 1
+-4.71353e-13 -2.60317e-13 2.42356e-13
+
+# dir 3 branch 1 spec 1
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-3.68431e-12 4.25734e-13 1.66146e-12
+elem 1
+-3.92546e-12 -1.52132e-13 1.88578e-13
+
+# dir 3 branch 1 spec 2
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-1.00899e-11 4.70061e-13 5.28726e-12
+elem 1
+-1.045e-11 6.89027e-13 -7.64007e-13
+
+# dir 3 branch 1 spec 3
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-2.00041e-11 2.63186e-13 1.12553e-11
+elem 1
+-2.0023e-11 2.25168e-12 -2.8497e-12
+
+# dir 3 branch 1 spec 4
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-3.40488e-11 -2.32054e-13 1.99813e-11
+elem 1
+-3.28541e-11 4.58695e-12 -6.3306e-12
+
+# dir 3 branch 1 spec 5
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-5.3068e-11 -1.06122e-12 3.20098e-11
+elem 1
+-4.93402e-11 7.79178e-12 -1.15202e-11
+
+# dir 3 branch 1 spec 6
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-7.81689e-11 -2.28471e-12 4.80517e-11
+elem 1
+-7.00725e-11 1.20108e-11 -1.88134e-11
+
+# dir 3 branch 1 spec 7
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-1.10816e-10 -3.98442e-12 6.90485e-11
+elem 1
+-9.588e-11 1.74473e-11 -2.87255e-11
+
+# dir 3 branch 1 spec 8
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-1.52984e-10 -6.27302e-12 9.6273e-11
+elem 1
+-1.27913e-10 2.43837e-11 -4.19494e-11
+
+# dir 3 branch 1 spec 9
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-2.07407e-10 -9.30842e-12 1.31489e-10
+elem 1
+-1.67781e-10 3.32162e-11 -5.94436e-11
+
+# dir 3 branch 1 spec 10
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-3.92424e-10 2.3465e-10 -1.28109e-11
+elem 1
+-4.20159e-10 -2.44346e-10 2.69447e-10
+
+# dir 3 branch 1 spec 11
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-5.21462e-10 2.76002e-10 1.2424e-11
+elem 1
+-5.54645e-10 -2.56216e-10 3.01407e-10
+
+# dir 3 branch 1 spec 12
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-6.90831e-10 3.20946e-10 5.32581e-11
+elem 1
+-7.30389e-10 -2.58929e-10 3.32328e-10
+
+# dir 3 branch 1 spec 13
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-9.17766e-10 3.70232e-10 1.17055e-10
+elem 1
+-9.64906e-10 -2.48644e-10 3.61609e-10
+
+# dir 3 branch 1 spec 14
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-1.23118e-09 4.25048e-10 2.16301e-10
+elem 1
+-1.28742e-09 -2.18869e-10 3.88037e-10
+
+# dir 3 branch 1 spec 15
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-1.68364e-09 4.87242e-10 3.74164e-10
+elem 1
+-1.75068e-09 -1.57648e-10 4.088e-10
+
+# dir 3 branch 1 spec 16
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-2.38172e-09 5.59757e-10 6.39009e-10
+elem 1
+-2.46073e-09 -4.05354e-11 4.16527e-10
+
+# dir 3 branch 1 spec 17
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-3.57972e-09 6.47304e-10 1.13123e-09
+elem 1
+-3.66755e-09 1.90613e-10 3.87722e-10
+
+# dir 3 branch 1 spec 18
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-6.10212e-09 7.57052e-10 2.26418e-09
+elem 1
+-6.14269e-09 7.14992e-10 2.1401e-10
+
+# dir 3 branch 1 spec 19
+# ndof 3 ne 2
+# direction: 0.937007 0.349311 0 weight 0.186292
+elem 0
+-1.68664e-08 9.60534e-10 7.58858e-09
+elem 1
+-1.48616e-08 2.66546e-09 -1.37108e-09
+
+# dir 4 branch 0 spec 0
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-2.00973e-13 3.14873e-13 -1.12031e-13
+elem 1
+-4.84158e-13 -3.97649e-12 2.32793e-12
+
+# dir 4 branch 0 spec 1
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-2.05906e-12 2.31281e-12 -4.98272e-13
+elem 1
+-3.66251e-12 -2.16755e-11 1.2778e-11
+
+# dir 4 branch 0 spec 2
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-6.32939e-12 4.51124e-12 2.97904e-13
+elem 1
+-8.48577e-12 -2.65717e-11 1.58673e-11
+
+# dir 4 branch 0 spec 3
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-1.30297e-11 5.93154e-12 2.9314e-12
+elem 1
+-1.50188e-11 -2.0807e-11 1.26191e-11
+
+# dir 4 branch 0 spec 4
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-2.19189e-11 6.67218e-12 7.19911e-12
+elem 1
+-2.36489e-11 -1.48364e-11 9.00165e-12
+
+# dir 4 branch 0 spec 5
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-3.2812e-11 6.9569e-12 1.29021e-11
+elem 1
+-3.42387e-11 -1.02973e-11 5.91167e-12
+
+# dir 4 branch 0 spec 6
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-4.55758e-11 6.90102e-12 1.99559e-11
+elem 1
+-4.64996e-11 -6.30236e-12 2.75546e-12
+
+# dir 4 branch 0 spec 7
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-6.01247e-11 6.56172e-12 2.83286e-11
+elem 1
+-6.01763e-11 -2.35973e-12 -8.44882e-13
+
+# dir 4 branch 0 spec 8
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-7.64348e-11 5.97118e-12 3.80226e-11
+elem 1
+-7.50679e-11 1.69962e-12 -5.0777e-12
+
+# dir 4 branch 0 spec 9
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-9.45483e-11 5.14974e-12 4.90698e-11
+elem 1
+-9.10333e-11 5.93294e-12 -1.00579e-11
+
+# dir 4 branch 0 spec 10
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-1.1457e-10 4.11141e-12 6.15296e-11
+elem 1
+-1.07996e-10 1.03641e-11 -1.58714e-11
+
+# dir 4 branch 0 spec 11
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-1.36658e-10 2.86585e-12 7.54872e-11
+elem 1
+-1.25942e-10 1.50112e-11 -2.25924e-11
+
+# dir 4 branch 0 spec 12
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-1.61021e-10 1.41868e-12 9.10543e-11
+elem 1
+-1.44921e-10 1.98969e-11 -3.02935e-11
+
+# dir 4 branch 0 spec 13
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-1.87915e-10 -2.28771e-13 1.08371e-10
+elem 1
+-1.65039e-10 2.50526e-11 -3.9052e-11
+
+# dir 4 branch 0 spec 14
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-2.1764e-10 -2.07999e-12 1.27608e-10
+elem 1
+-1.86458e-10 3.05202e-11 -4.89559e-11
+
+# dir 4 branch 0 spec 15
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-2.50556e-10 -4.14384e-12 1.48975e-10
+elem 1
+-2.0939e-10 3.63527e-11 -6.01099e-11
+
+# dir 4 branch 0 spec 16
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-2.87083e-10 -6.43521e-12 1.72726e-10
+elem 1
+-2.34101e-10 4.26157e-11 -7.26414e-11
+
+# dir 4 branch 0 spec 17
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-3.27725e-10 -8.97578e-12 1.99171e-10
+elem 1
+-2.60917e-10 4.93887e-11 -8.67076e-11
+
+# dir 4 branch 0 spec 18
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-3.73087e-10 -1.1795e-11 2.2869e-10
+elem 1
+-2.90227e-10 5.67674e-11 -1.02504e-10
+
+# dir 4 branch 0 spec 19
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-4.23905e-10 -1.49316e-11 2.61748e-10
+elem 1
+-3.22503e-10 6.48671e-11 -1.20273e-10
+
+# dir 4 branch 1 spec 0
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-4.35297e-13 1.39514e-13 1.31641e-13
+elem 1
+-4.63316e-13 -2.42644e-13 1.59122e-13
+
+# dir 4 branch 1 spec 1
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-3.83246e-12 3.97782e-13 1.80542e-12
+elem 1
+-3.80164e-12 -4.34062e-14 -1.04258e-13
+
+# dir 4 branch 1 spec 2
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-1.0613e-11 4.99281e-13 5.5574e-12
+elem 1
+-1.00829e-11 8.53656e-13 -1.27567e-12
+
+# dir 4 branch 1 spec 3
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-2.11461e-11 3.96779e-13 1.16951e-11
+elem 1
+-1.92974e-11 2.4452e-12 -3.59557e-12
+
+# dir 4 branch 1 spec 4
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-3.60446e-11 4.81284e-14 2.06369e-11
+elem 1
+-3.16675e-11 4.78724e-12 -7.32753e-12
+
+# dir 4 branch 1 spec 5
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-5.61417e-11 -5.95758e-13 3.29272e-11
+elem 1
+-4.75992e-11 7.98e-12 -1.27858e-11
+
+# dir 4 branch 1 spec 6
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-8.25365e-11 -1.59743e-12 4.92763e-11
+elem 1
+-6.76892e-11 1.21703e-11 -2.03661e-11
+
+# dir 4 branch 1 spec 7
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-1.16691e-10 -3.03968e-12 7.06259e-11
+elem 1
+-9.27686e-11 1.75626e-11 -3.05847e-11
+
+# dir 4 branch 1 spec 8
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-1.60583e-10 -5.035e-12 9.82502e-11
+elem 1
+-1.23987e-10 2.444e-11 -4.41359e-11
+
+# dir 4 branch 1 spec 9
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-2.16953e-10 -7.74003e-12 1.33915e-10
+elem 1
+-1.6295e-10 3.3199e-11 -6.19801e-11
+
+# dir 4 branch 1 spec 10
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-3.94416e-10 1.95888e-10 4.73513e-11
+elem 1
+-4.14492e-10 -2.20208e-10 1.89358e-10
+
+# dir 4 branch 1 spec 11
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-5.26127e-10 2.34066e-10 8.10199e-11
+elem 1
+-5.45694e-10 -2.24837e-10 2.08682e-10
+
+# dir 4 branch 1 spec 12
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-6.99803e-10 2.76732e-10 1.30385e-10
+elem 1
+-7.16854e-10 -2.19969e-10 2.26573e-10
+
+# dir 4 branch 1 spec 13
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-9.33645e-10 3.24973e-10 2.02822e-10
+elem 1
+-9.44877e-10 -2.02003e-10 2.42448e-10
+
+# dir 4 branch 1 spec 14
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-1.25832e-09 3.80525e-10 3.10876e-10
+elem 1
+-1.25793e-09 -1.64783e-10 2.55086e-10
+
+# dir 4 branch 1 spec 15
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-1.72981e-09 4.46257e-10 4.7787e-10
+elem 1
+-1.70672e-09 -9.69461e-11 2.61667e-10
+
+# dir 4 branch 1 spec 16
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-2.46229e-09 5.27219e-10 7.52633e-10
+elem 1
+-2.39288e-09 2.46819e-11 2.54804e-10
+
+# dir 4 branch 1 spec 17
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-3.73085e-09 6.33296e-10 1.25749e-09
+elem 1
+-3.55476e-09 2.54928e-10 2.1082e-10
+
+# dir 4 branch 1 spec 18
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-6.43958e-09 7.88369e-10 2.41716e-09
+elem 1
+-5.92433e-09 7.61955e-10 1.96412e-11
+
+# dir 4 branch 1 spec 19
+# ndof 3 ne 2
+# direction: 0.844331 0.535822 0 weight 0.230425
+elem 0
+-1.79484e-08 1.14122e-09 7.86539e-09
+elem 1
+-1.43001e-08 2.63084e-09 -1.59845e-09
+
+# dir 5 branch 0 spec 0
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-2.51359e-13 2.23608e-13 2.07629e-14
+elem 1
+-6.18398e-13 -5.31608e-12 1.03928e-12
+
+# dir 5 branch 0 spec 1
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-2.35779e-12 1.63916e-12 4.65775e-13
+elem 1
+-4.24734e-12 -2.72095e-11 5.34179e-12
+
+# dir 5 branch 0 spec 2
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-6.82349e-12 3.25237e-12 2.15834e-12
+elem 1
+-8.83818e-12 -2.97619e-11 5.74709e-12
+
+# dir 5 branch 0 spec 3
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-1.37744e-11 4.44121e-12 5.37409e-12
+elem 1
+-1.47713e-11 -1.98222e-11 3.32288e-12
+
+# dir 5 branch 0 spec 4
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-2.31532e-11 5.23839e-12 9.9929e-12
+elem 1
+-2.28183e-11 -1.18962e-11 8.11013e-13
+
+# dir 5 branch 0 spec 5
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-3.48212e-11 5.73568e-12 1.59407e-11
+elem 1
+-3.27964e-11 -6.83853e-12 -1.64608e-12
+
+# dir 5 branch 0 spec 6
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-4.86346e-11 5.97784e-12 2.32016e-11
+elem 1
+-4.43399e-11 -2.82015e-12 -4.46158e-12
+
+# dir 5 branch 0 spec 7
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-6.44808e-11 5.98818e-12 3.17787e-11
+elem 1
+-5.71772e-11 9.70016e-13 -7.86685e-12
+
+# dir 5 branch 0 spec 8
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-8.22958e-11 5.77865e-12 4.16909e-11
+elem 1
+-7.11227e-11 4.79521e-12 -1.19853e-11
+
+# dir 5 branch 0 spec 9
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-1.02072e-10 5.35464e-12 5.29753e-11
+elem 1
+-8.60638e-11 8.74997e-12 -1.69013e-11
+
+# dir 5 branch 0 spec 10
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-1.23858e-10 4.71814e-12 6.56896e-11
+elem 1
+-1.01956e-10 1.28791e-11 -2.26839e-11
+
+# dir 5 branch 0 spec 11
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-1.4776e-10 3.86908e-12 7.99145e-11
+elem 1
+-1.18817e-10 1.72148e-11 -2.93973e-11
+
+# dir 5 branch 0 spec 12
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-1.73941e-10 2.80565e-12 9.57554e-11
+elem 1
+-1.36724e-10 2.17903e-11 -3.71068e-11
+
+# dir 5 branch 0 spec 13
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-2.02618e-10 1.52396e-12 1.13346e-10
+elem 1
+-1.55802e-10 2.66444e-11 -4.58851e-11
+
+# dir 5 branch 0 spec 14
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-2.34066e-10 1.73307e-14 1.32854e-10
+elem 1
+-1.76226e-10 3.1824e-11 -5.58169e-11
+
+# dir 5 branch 0 spec 15
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-2.68625e-10 -1.72454e-12 1.54485e-10
+elem 1
+-1.98218e-10 3.73855e-11 -6.70051e-11
+
+# dir 5 branch 0 spec 16
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-3.0671e-10 -3.71654e-12 1.78491e-10
+elem 1
+-2.22046e-10 4.33959e-11 -7.95762e-11
+
+# dir 5 branch 0 spec 17
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-3.48823e-10 -5.97923e-12 2.05181e-10
+elem 1
+-2.48033e-10 4.99349e-11 -9.3687e-11
+
+# dir 5 branch 0 spec 18
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-3.95573e-10 -8.5402e-12 2.34935e-10
+elem 1
+-2.76566e-10 5.7098e-11 -1.09533e-10
+
+# dir 5 branch 0 spec 19
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-4.47707e-10 -1.14357e-11 2.68222e-10
+elem 1
+-3.08109e-10 6.49993e-11 -1.27359e-10
+
+# dir 5 branch 1 spec 0
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-4.59118e-13 1.10322e-13 1.8761e-13
+elem 1
+-4.4652e-13 -1.84275e-13 1.7045e-14
+
+# dir 5 branch 1 spec 1
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-4.11529e-12 3.69559e-13 2.01404e-12
+elem 1
+-3.6093e-12 1.42653e-13 -5.03535e-13
+
+# dir 5 branch 1 spec 2
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-1.14671e-11 5.40445e-13 5.96683e-12
+elem 1
+-9.52539e-12 1.11544e-12 -1.9528e-12
+
+# dir 5 branch 1 spec 3
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-2.28575e-11 5.61236e-13 1.23566e-11
+elem 1
+-1.8206e-11 2.74455e-12 -4.57682e-12
+
+# dir 5 branch 1 spec 4
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-3.88681e-11 3.80856e-13 2.15994e-11
+elem 1
+-2.98954e-11 5.09358e-12 -8.63938e-12
+
+# dir 5 branch 1 spec 5
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-6.03082e-11 -5.5382e-14 3.42369e-11
+elem 1
+-4.50149e-11 8.26781e-12 -1.44547e-11
+
+# dir 5 branch 1 spec 6
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-8.82629e-11 -8.13273e-13 5.09781e-11
+elem 1
+-6.417e-11 1.24173e-11 -2.2419e-11
+
+# dir 5 branch 1 spec 7
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-1.24188e-10 -1.97713e-12 7.27644e-11
+elem 1
+-8.81959e-11 1.77486e-11 -3.30494e-11
+
+# dir 5 branch 1 spec 8
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-1.70062e-10 -3.65957e-12 1.00871e-10
+elem 1
+-1.18241e-10 2.45458e-11 -4.70419e-11
+
+# dir 5 branch 1 spec 9
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-2.28634e-10 -6.01621e-12 1.37066e-10
+elem 1
+-1.55909e-10 3.32055e-11 -6.53593e-11
+
+# dir 5 branch 1 spec 10
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-4.10776e-10 1.54805e-10 1.16005e-10
+elem 1
+-4.0179e-10 -1.58842e-10 6.14303e-11
+
+# dir 5 branch 1 spec 11
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-5.49166e-10 1.88331e-10 1.61805e-10
+elem 1
+-5.28055e-10 -1.53815e-10 6.63415e-11
+
+# dir 5 branch 1 spec 12
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-7.32449e-10 2.27129e-10 2.24254e-10
+elem 1
+-6.92484e-10 -1.39483e-10 7.00114e-11
+
+# dir 5 branch 1 spec 13
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-9.80417e-10 2.72751e-10 3.10891e-10
+elem 1
+-9.11077e-10 -1.12522e-10 7.17753e-11
+
+# dir 5 branch 1 spec 14
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-1.32652e-09 3.27702e-10 4.34551e-10
+elem 1
+-1.21038e-09 -6.72255e-11 7.03062e-11
+
+# dir 5 branch 1 spec 15
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-1.83206e-09 3.96258e-10 6.19084e-10
+elem 1
+-1.6379e-09 6.89788e-12 6.26326e-11
+
+# dir 5 branch 1 spec 16
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-2.62265e-09 4.86361e-10 9.14471e-10
+elem 1
+-2.28797e-09 1.31029e-10 4.10373e-11
+
+# dir 5 branch 1 spec 17
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-4.00278e-09 6.14771e-10 1.44637e-09
+elem 1
+-3.379e-09 3.54586e-10 -1.94027e-11
+
+# dir 5 branch 1 spec 18
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-6.97289e-09 8.25389e-10 2.65286e-09
+elem 1
+-5.57584e-09 8.27945e-10 -2.34703e-10
+
+# dir 5 branch 1 spec 19
+# ndof 3 ne 2
+# direction: 0.684831 0.728701 0 weight 0.270774
+elem 0
+-1.93032e-08 1.34161e-09 8.23615e-09
+elem 1
+-1.34014e-08 2.56514e-09 -1.91552e-09
+
+# dir 6 branch 0 spec 0
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-2.50602e-13 1.20692e-13 1.25649e-13
+elem 1
+-1.06827e-12 -4.92624e-12 -4.86451e-12
+
+# dir 6 branch 0 spec 1
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-2.3466e-12 8.82587e-13 1.25895e-12
+elem 1
+-6.36351e-12 -2.38841e-11 -2.3814e-11
+
+# dir 6 branch 0 spec 2
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-6.78996e-12 1.76116e-12 3.80051e-12
+elem 1
+-1.08514e-11 -2.3489e-11 -2.45341e-11
+
+# dir 6 branch 0 spec 3
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-1.37402e-11 2.4572e-12 7.69173e-12
+elem 1
+-1.5944e-11 -1.28327e-11 -1.6209e-11
+
+# dir 6 branch 0 spec 4
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-2.3189e-11 2.99309e-12 1.27811e-11
+elem 1
+-2.36032e-11 -5.32789e-12 -1.19736e-11
+
+# dir 6 branch 0 spec 5
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-3.50314e-11 3.3908e-12 1.90437e-11
+elem 1
+-3.35218e-11 -7.72995e-13 -1.15864e-11
+
+# dir 6 branch 0 spec 6
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-4.91364e-11 3.64395e-12 2.65132e-11
+elem 1
+-4.50911e-11 2.86501e-12 -1.30625e-11
+
+# dir 6 branch 0 spec 7
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-6.53875e-11 3.74019e-12 3.52311e-11
+elem 1
+-5.79407e-11 6.35921e-12 -1.56751e-11
+
+# dir 6 branch 0 spec 8
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-8.37045e-11 3.66582e-12 4.52428e-11
+elem 1
+-7.18497e-11 9.93201e-12 -1.92457e-11
+
+# dir 6 branch 0 spec 9
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-1.04056e-10 3.40743e-12 5.66023e-11
+elem 1
+-8.66937e-11 1.36567e-11 -2.37496e-11
+
+# dir 6 branch 0 spec 10
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-1.26466e-10 2.95298e-12 6.93775e-11
+elem 1
+-1.02429e-10 1.75685e-11 -2.92082e-11
+
+# dir 6 branch 0 spec 11
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-1.51016e-10 2.29209e-12 8.36547e-11
+elem 1
+-1.1908e-10 2.16965e-11 -3.56612e-11
+
+# dir 6 branch 0 spec 12
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-1.77848e-10 1.41556e-12 9.95425e-11
+elem 1
+-1.36734e-10 2.6073e-11 -4.31596e-11
+
+# dir 6 branch 0 spec 13
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-2.07162e-10 3.14396e-13 1.17177e-10
+elem 1
+-1.55529e-10 3.07376e-11 -5.17663e-11
+
+# dir 6 branch 0 spec 14
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-2.39222e-10 -1.02131e-12 1.36726e-10
+elem 1
+-1.75651e-10 3.57385e-11 -6.15592e-11
+
+# dir 6 branch 0 spec 15
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-2.74363e-10 -2.60367e-12 1.58396e-10
+elem 1
+-1.9733e-10 4.11328e-11 -7.26359e-11
+
+# dir 6 branch 0 spec 16
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-3.12995e-10 -4.44836e-12 1.82441e-10
+elem 1
+-2.20844e-10 4.69885e-11 -8.51189e-11
+
+# dir 6 branch 0 spec 17
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-3.5562e-10 -6.57599e-12 2.0917e-10
+elem 1
+-2.4652e-10 5.33858e-11 -9.91619e-11
+
+# dir 6 branch 0 spec 18
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-4.02852e-10 -9.01365e-12 2.38964e-10
+elem 1
+-2.74749e-10 6.04203e-11 -1.14958e-10
+
+# dir 6 branch 0 spec 19
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-4.55437e-10 -1.17968e-11 2.72291e-10
+elem 1
+-3.05996e-10 6.82062e-11 -1.32751e-10
+
+# dir 6 branch 1 spec 0
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-4.59861e-13 6.53934e-14 2.43538e-13
+elem 1
+-4.59585e-13 -6.91215e-14 -1.89038e-13
+
+# dir 6 branch 1 spec 1
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-4.17762e-12 2.38293e-13 2.22095e-12
+elem 1
+-3.65386e-12 4.45498e-13 -9.37156e-13
+
+# dir 6 branch 1 spec 2
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-1.17013e-11 3.52531e-13 6.33804e-12
+elem 1
+-9.58124e-12 1.58941e-12 -2.61175e-12
+
+# dir 6 branch 1 spec 3
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-2.3366e-11 3.39372e-13 1.29066e-11
+elem 1
+-1.82325e-11 3.37888e-12 -5.4658e-12
+
+# dir 6 branch 1 spec 4
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-3.97401e-11 1.42328e-13 2.23434e-11
+elem 1
+-2.98473e-11 5.88012e-12 -9.76783e-12
+
+# dir 6 branch 1 spec 5
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-6.1623e-11 -2.96814e-13 3.51904e-11
+elem 1
+-4.48473e-11 9.20062e-12 -1.5835e-11
+
+# dir 6 branch 1 spec 6
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-9.00937e-11 -1.04608e-12 5.21569e-11
+elem 1
+-6.38392e-11 1.34923e-11 -2.40654e-11
+
+# dir 6 branch 1 spec 7
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-1.26605e-10 -2.19115e-12 7.41849e-11
+elem 1
+-8.76588e-11 1.89631e-11 -3.4978e-11
+
+# dir 6 branch 1 spec 8
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-1.73135e-10 -3.8454e-12 1.02551e-10
+elem 1
+-1.17455e-10 2.58982e-11 -4.92704e-11
+
+# dir 6 branch 1 spec 9
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-2.32435e-10 -6.16471e-12 1.39023e-10
+elem 1
+-1.54829e-10 3.46954e-11 -6.79072e-11
+
+# dir 6 branch 1 spec 10
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-4.08725e-10 9.78291e-11 1.85356e-10
+elem 1
+-4.12789e-10 -5.39357e-11 -1.10303e-10
+
+# dir 6 branch 1 spec 11
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-5.47295e-10 1.21543e-10 2.44664e-10
+elem 1
+-5.41368e-10 -3.76834e-11 -1.17608e-10
+
+# dir 6 branch 1 spec 12
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-7.31333e-10 1.50152e-10 3.21867e-10
+elem 1
+-7.0877e-10 -1.25426e-11 -1.24707e-10
+
+# dir 6 branch 1 spec 13
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-9.81121e-10 1.85413e-10 4.24566e-10
+elem 1
+-9.31235e-10 2.47883e-11 -1.32193e-10
+
+# dir 6 branch 1 spec 14
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-1.33108e-09 2.30221e-10 5.65669e-10
+elem 1
+-1.2356e-09 7.99249e-11 -1.4112e-10
+
+# dir 6 branch 1 spec 15
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-1.84463e-09 2.89674e-10 7.69092e-10
+elem 1
+-1.66964e-09 1.63071e-10 -1.5381e-10
+
+# dir 6 branch 1 spec 16
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-2.65283e-09 3.7365e-10 1.08492e-09
+elem 1
+-2.32713e-09 2.94545e-10 -1.76702e-10
+
+# dir 6 branch 1 spec 17
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-4.07677e-09 5.04049e-10 1.63946e-09
+elem 1
+-3.41977e-09 5.20722e-10 -2.32878e-10
+
+# dir 6 branch 1 spec 18
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-7.17697e-09 7.40622e-10 2.87513e-09
+elem 1
+-5.56387e-09 9.78069e-10 -4.40397e-10
+
+# dir 6 branch 1 spec 19
+# ndof 3 ne 2
+# direction: 0.448646 0.893709 0 weight 0.306678
+elem 0
+-1.99743e-08 1.36395e-09 8.51987e-09
+elem 1
+-1.29431e-08 2.60079e-09 -2.15781e-09
+
+# dir 7 branch 0 spec 0
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-2.50365e-13 3.42501e-14 2.12723e-13
+elem 1
+-1.55239e-12 1.46135e-12 -1.71875e-11
+
+# dir 7 branch 0 spec 1
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-2.34196e-12 2.22683e-13 1.9342e-12
+elem 1
+-8.56431e-12 7.19004e-12 -8.18096e-11
+
+# dir 7 branch 0 spec 2
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-6.7735e-12 3.75779e-13 5.25608e-12
+elem 1
+-1.28095e-11 7.88863e-12 -7.95342e-11
+
+# dir 7 branch 0 spec 3
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-1.37182e-11 4.80151e-13 9.83254e-12
+elem 1
+-1.69368e-11 6.53141e-12 -4.67052e-11
+
+# dir 7 branch 0 spec 4
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-2.31913e-11 6.08147e-13 1.54413e-11
+elem 1
+-2.41419e-11 6.81242e-12 -2.89051e-11
+
+# dir 7 branch 0 spec 5
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-3.51068e-11 7.57294e-13 2.20687e-11
+elem 1
+-3.39291e-11 8.45283e-12 -2.34937e-11
+
+# dir 7 branch 0 spec 6
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-4.93434e-11 8.8609e-13 2.97808e-11
+elem 1
+-4.54196e-11 1.07674e-11 -2.28875e-11
+
+# dir 7 branch 0 spec 7
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-6.57857e-11 9.49533e-13 3.86527e-11
+elem 1
+-5.81383e-11 1.34796e-11 -2.43817e-11
+
+# dir 7 branch 0 spec 8
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-8.43486e-11 9.07385e-13 4.87575e-11
+elem 1
+-7.18262e-11 1.64879e-11 -2.72359e-11
+
+# dir 7 branch 0 spec 9
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-1.04991e-10 7.25699e-13 6.01696e-11
+elem 1
+-8.63466e-11 1.97509e-11 -3.12367e-11
+
+# dir 7 branch 0 spec 10
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-1.27726e-10 3.76825e-13 7.2971e-11
+elem 1
+-1.01657e-10 2.32567e-11 -3.63271e-11
+
+# dir 7 branch 0 spec 11
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-1.52623e-10 -1.61383e-13 8.7258e-11
+elem 1
+-1.17795e-10 2.70135e-11 -4.25074e-11
+
+# dir 7 branch 0 spec 12
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-1.79811e-10 -9.06873e-13 1.03146e-10
+elem 1
+-1.34864e-10 3.10445e-11 -4.98055e-11
+
+# dir 7 branch 0 spec 13
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-2.09481e-10 -1.87497e-12 1.20775e-10
+elem 1
+-1.5302e-10 3.53855e-11 -5.82687e-11
+
+# dir 7 branch 0 spec 14
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-2.41892e-10 -3.08008e-12 1.40316e-10
+elem 1
+-1.72469e-10 4.00833e-11 -6.79635e-11
+
+# dir 7 branch 0 spec 15
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-2.77371e-10 -4.53732e-12 1.61978e-10
+elem 1
+-1.93457e-10 4.51948e-11 -7.89788e-11
+
+# dir 7 branch 0 spec 16
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-3.16326e-10 -6.26428e-12 1.86016e-10
+elem 1
+-2.16275e-10 5.07879e-11 -9.14301e-11
+
+# dir 7 branch 0 spec 17
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-3.59259e-10 -8.28264e-12 2.1274e-10
+elem 1
+-2.41261e-10 5.69427e-11 -1.05466e-10
+
+# dir 7 branch 0 spec 18
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-4.06781e-10 -1.062e-11 2.42533e-10
+elem 1
+-2.68811e-10 6.37543e-11 -1.21276e-10
+
+# dir 7 branch 0 spec 19
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-4.59643e-10 -1.33118e-11 2.75864e-10
+elem 1
+-2.99395e-10 7.13365e-11 -1.391e-10
+
+# dir 7 branch 1 spec 0
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-4.59917e-13 1.75387e-14 2.96973e-13
+elem 1
+-4.67941e-13 1.24202e-13 -4.47982e-13
+
+# dir 7 branch 1 spec 1
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-4.2054e-12 7.29014e-14 2.42602e-12
+elem 1
+-3.66189e-12 8.40038e-13 -1.41811e-12
+
+# dir 7 branch 1 spec 2
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-1.18133e-11 8.59783e-14 6.70142e-12
+elem 1
+-9.52417e-12 2.16972e-12 -3.33128e-12
+
+# dir 7 branch 1 spec 3
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-2.36186e-11 -1.35625e-14 1.34344e-11
+elem 1
+-1.80163e-11 4.12486e-12 -6.4392e-12
+
+# dir 7 branch 1 spec 4
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-4.01849e-11 -2.85724e-13 2.3043e-11
+elem 1
+-2.93704e-11 6.77353e-12 -1.10156e-11
+
+# dir 7 branch 1 spec 5
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-6.23071e-11 -7.91384e-13 3.60707e-11
+elem 1
+-4.40075e-11 1.02257e-11 -1.7381e-11
+
+# dir 7 branch 1 spec 6
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-9.10612e-11 -1.60046e-12 5.32276e-11
+elem 1
+-6.2535e-11 1.46354e-11 -2.59358e-11
+
+# dir 7 branch 1 spec 7
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-1.27899e-10 -2.79995e-12 7.54568e-11
+elem 1
+-8.57886e-11 2.0212e-11 -3.72009e-11
+
+# dir 7 branch 1 spec 8
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-1.74798e-10 -4.50416e-12 1.04036e-10
+elem 1
+-1.14915e-10 2.72421e-11 -5.18762e-11
+
+# dir 7 branch 1 spec 9
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-2.34512e-10 -6.86959e-12 1.40735e-10
+elem 1
+-1.51512e-10 3.61238e-11 -7.09287e-11
+
+# dir 7 branch 1 spec 10
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-4.07517e-10 3.78343e-11 2.51534e-10
+elem 1
+-4.19645e-10 1.0492e-10 -3.13496e-10
+
+# dir 7 branch 1 spec 11
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-5.46038e-10 4.97573e-11 3.24589e-10
+elem 1
+-5.49499e-10 1.32101e-10 -3.31535e-10
+
+# dir 7 branch 1 spec 12
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-7.30248e-10 6.55495e-11 4.17048e-10
+elem 1
+-7.18505e-10 1.6698e-10 -3.47503e-10
+
+# dir 7 branch 1 spec 13
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-9.80645e-10 8.70113e-11 5.36612e-10
+elem 1
+-9.42967e-10 2.12855e-10 -3.61991e-10
+
+# dir 7 branch 1 spec 14
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-1.33207e-09 1.17186e-10 6.96276e-10
+elem 1
+-1.24974e-09 2.7515e-10 -3.75775e-10
+
+# dir 7 branch 1 spec 15
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-1.84888e-09 1.61601e-10 9.19961e-10
+elem 1
+-1.68637e-09 3.63474e-10 -3.90421e-10
+
+# dir 7 branch 1 spec 16
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-2.66453e-09 2.31335e-10 1.25751e-09
+elem 1
+-2.34544e-09 4.96642e-10 -4.1075e-10
+
+# dir 7 branch 1 spec 17
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-4.10783e-09 3.51861e-10 1.83442e-09
+elem 1
+-3.43129e-09 7.16788e-10 -4.57146e-10
+
+# dir 7 branch 1 spec 18
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-7.27062e-09 5.95037e-10 3.09159e-09
+elem 1
+-5.50473e-09 1.14357e-09 -6.49536e-10
+
+# dir 7 branch 1 spec 19
+# ndof 3 ne 2
+# direction: 0.142212 0.989836 0 weight 0.337546
+elem 0
+-2.03296e-08 1.29082e-09 8.75924e-09
+elem 1
+-1.22686e-08 2.60773e-09 -2.42707e-09
+
+# dir 8 branch 0 spec 0
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-2.50352e-13 -5.1547e-14 2.98374e-13
+elem 1
+-1.8621e-12 1.08629e-11 -2.65704e-11
+
+# dir 8 branch 0 spec 1
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-2.34063e-12 -4.36487e-13 2.58978e-12
+elem 1
+-1.00537e-11 5.19231e-11 -1.26416e-10
+
+# dir 8 branch 0 spec 2
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-6.76676e-12 -1.02389e-12 6.64075e-12
+elem 1
+-1.43286e-11 5.12355e-11 -1.22668e-10
+
+# dir 8 branch 0 spec 3
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-1.37077e-11 -1.5451e-12 1.18298e-11
+elem 1
+-1.80127e-11 3.15651e-11 -7.15143e-11
+
+# dir 8 branch 0 spec 4
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-2.31984e-11 -1.86899e-12 1.78906e-11
+elem 1
+-2.51321e-11 2.14843e-11 -4.33292e-11
+
+# dir 8 branch 0 spec 5
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-3.51791e-11 -2.0126e-12 2.48372e-11
+elem 1
+-3.51544e-11 1.92334e-11 -3.39387e-11
+
+# dir 8 branch 0 spec 6
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-4.95528e-11 -2.04545e-12 3.27713e-11
+elem 1
+-4.70666e-11 1.99455e-11 -3.15809e-11
+
+# dir 8 branch 0 spec 7
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-6.622e-11 -2.04065e-12 4.17997e-11
+elem 1
+-6.03292e-11 2.1823e-11 -3.2043e-11
+
+# dir 8 branch 0 spec 8
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-8.51009e-11 -2.06251e-12 5.20186e-11
+elem 1
+-7.46402e-11 2.43153e-11 -3.41488e-11
+
+# dir 8 branch 0 spec 9
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-1.0615e-10 -2.16472e-12 6.35184e-11
+elem 1
+-8.98212e-11 2.72226e-11 -3.75418e-11
+
+# dir 8 branch 0 spec 10
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-1.29368e-10 -2.39115e-12 7.63915e-11
+elem 1
+-1.0579e-10 3.04636e-11 -4.21111e-11
+
+# dir 8 branch 0 spec 11
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-1.54808e-10 -2.7773e-12 9.07405e-11
+elem 1
+-1.22551e-10 3.40109e-11 -4.78354e-11
+
+# dir 8 branch 0 spec 12
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-1.82581e-10 -3.35203e-12 1.06685e-10
+elem 1
+-1.40181e-10 3.7868e-11 -5.47334e-11
+
+# dir 8 branch 0 spec 13
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-2.12861e-10 -4.13937e-12 1.24367e-10
+elem 1
+-1.58823e-10 4.2059e-11 -6.28474e-11
+
+# dir 8 branch 0 spec 14
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-2.4589e-10 -5.16051e-12 1.43959e-10
+elem 1
+-1.78676e-10 4.66234e-11 -7.22406e-11
+
+# dir 8 branch 0 spec 15
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-2.81985e-10 -6.43565e-12 1.65671e-10
+elem 1
+-1.99985e-10 5.16145e-11 -8.29983e-11
+
+# dir 8 branch 0 spec 16
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-3.21545e-10 -7.98598e-12 1.89758e-10
+elem 1
+-2.23048e-10 5.70982e-11 -9.52324e-11
+
+# dir 8 branch 0 spec 17
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-3.65066e-10 -9.83558e-12 2.16533e-10
+elem 1
+-2.48211e-10 6.31537e-11 -1.09088e-10
+
+# dir 8 branch 0 spec 18
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-4.13157e-10 -1.20135e-11 2.46377e-10
+elem 1
+-2.75883e-10 6.98761e-11 -1.2475e-10
+
+# dir 8 branch 0 spec 19
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-4.66567e-10 -1.4556e-11 2.7976e-10
+elem 1
+-3.06541e-10 7.73796e-11 -1.42455e-10
+
+# dir 8 branch 1 spec 0
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-4.60066e-13 -3.21853e-14 3.4613e-13
+elem 1
+-4.85496e-13 3.53205e-13 -6.72908e-13
+
+# dir 8 branch 1 spec 1
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-4.23634e-12 -1.04611e-13 2.61501e-12
+elem 1
+-3.80118e-12 1.30535e-12 -1.83948e-12
+
+# dir 8 branch 1 spec 2
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-1.19559e-11 -2.0094e-13 7.04488e-12
+elem 1
+-9.90973e-12 2.89503e-12 -3.92532e-12
+
+# dir 8 branch 1 spec 3
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-2.39667e-11 -3.88396e-13 1.3947e-11
+elem 1
+-1.87379e-11 5.12321e-12 -7.18282e-12
+
+# dir 8 branch 1 spec 4
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-4.08313e-11 -7.29123e-13 2.37403e-11
+elem 1
+-3.04864e-11 8.05557e-12 -1.18952e-11
+
+# dir 8 branch 1 spec 5
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-6.33407e-11 -1.28636e-12 3.69687e-11
+elem 1
+-4.55541e-11 1.18011e-11 -1.83907e-11
+
+# dir 8 branch 1 spec 6
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-9.25681e-11 -2.13193e-12 5.4343e-11
+elem 1
+-6.45343e-11 1.65134e-11 -2.7075e-11
+
+# dir 8 branch 1 spec 7
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-1.29963e-10 -3.35415e-12 7.68071e-11
+elem 1
+-8.82539e-11 2.24023e-11 -3.8473e-11
+
+# dir 8 branch 1 spec 8
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-1.77507e-10 -5.06813e-12 1.05639e-10
+elem 1
+-1.17854e-10 2.97549e-11 -5.32874e-11
+
+# dir 8 branch 1 spec 9
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-2.37953e-10 -7.43071e-12 1.42612e-10
+elem 1
+-1.54928e-10 3.89704e-11 -7.24878e-11
+
+# dir 8 branch 1 spec 10
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-4.06791e-10 -2.42229e-11 3.12458e-10
+elem 1
+-4.32716e-10 2.88976e-10 -4.96136e-10
+
+# dir 8 branch 1 spec 11
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-5.45161e-10 -2.48795e-11 3.97887e-10
+elem 1
+-5.65807e-10 3.2782e-10 -5.25131e-10
+
+# dir 8 branch 1 spec 12
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-7.29306e-10 -2.29315e-11 5.04055e-10
+elem 1
+-7.39206e-10 3.73125e-10 -5.50479e-10
+
+# dir 8 branch 1 spec 13
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-9.79877e-10 -1.66075e-11 6.38798e-10
+elem 1
+-9.69883e-10 4.2834e-10 -5.7271e-10
+
+# dir 8 branch 1 spec 14
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-1.33207e-09 -2.82277e-12 8.15288e-10
+elem 1
+-1.28589e-09 4.98915e-10 -5.92229e-10
+
+# dir 8 branch 1 spec 15
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-1.85112e-09 2.4226e-11 1.05766e-09
+elem 1
+-1.73724e-09 5.94295e-10 -6.09576e-10
+
+# dir 8 branch 1 spec 16
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-2.67312e-09 7.66307e-11 1.41604e-09
+elem 1
+-2.42252e-09 7.32901e-10 -6.26944e-10
+
+# dir 8 branch 1 spec 17
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-4.13676e-09 1.83524e-10 2.01656e-09
+elem 1
+-3.56409e-09 9.56631e-10 -6.57389e-10
+
+# dir 8 branch 1 spec 18
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-7.38382e-09 4.32473e-10 3.30393e-09
+elem 1
+-5.77399e-09 1.38596e-09 -8.00151e-10
+
+# dir 8 branch 1 spec 19
+# ndof 3 ne 2
+# direction: -0.206497 0.978447 0 weight 0.362872
+elem 0
+-2.09149e-08 1.24034e-09 9.03944e-09
+elem 1
+-1.26434e-08 2.81468e-09 -2.49226e-09
+
+# dir 9 branch 0 spec 0
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-2.50673e-13 -1.57339e-13 4.02852e-13
+elem 1
+-1.32001e-12 1.19532e-11 -2.00928e-11
+
+# dir 9 branch 0 spec 1
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-2.34508e-12 -1.2234e-12 3.34861e-12
+elem 1
+-7.69879e-12 5.94061e-11 -9.94685e-11
+
+# dir 9 branch 0 spec 2
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-6.78054e-12 -2.60958e-12 8.10647e-12
+elem 1
+-1.25209e-11 6.28337e-11 -1.03873e-10
+
+# dir 9 branch 0 spec 3
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-1.37304e-11 -3.71972e-12 1.37436e-11
+elem 1
+-1.75723e-11 4.26746e-11 -6.80468e-11
+
+# dir 9 branch 0 spec 4
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-2.32311e-11 -4.42083e-12 2.00429e-11
+elem 1
+-2.5513e-11 3.10092e-11 -4.62682e-11
+
+# dir 9 branch 0 spec 5
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-3.52389e-11 -4.7903e-12 2.71133e-11
+elem 1
+-3.60824e-11 2.76724e-11 -3.8356e-11
+
+# dir 9 branch 0 spec 6
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-4.96793e-11 -4.94133e-12 3.5114e-11
+elem 1
+-4.85721e-11 2.77598e-11 -3.61743e-11
+
+# dir 9 branch 0 spec 7
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-6.64731e-11 -4.97558e-12 4.41828e-11
+elem 1
+-6.25347e-11 2.92641e-11 -3.64958e-11
+
+# dir 9 branch 0 spec 8
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-8.55537e-11 -4.97645e-12 5.44324e-11
+elem 1
+-7.76766e-11 3.15213e-11 -3.83517e-11
+
+# dir 9 branch 0 spec 9
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-1.0688e-10 -5.0113e-12 6.59618e-11
+elem 1
+-9.37981e-11 3.42769e-11 -4.14409e-11
+
+# dir 9 branch 0 spec 10
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-1.30451e-10 -5.13471e-12 7.88675e-11
+elem 1
+-1.10783e-10 3.74203e-11 -4.56767e-11
+
+# dir 9 branch 0 spec 11
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-1.56309e-10 -5.39115e-12 9.32538e-11
+elem 1
+-1.28596e-10 4.09065e-11 -5.10539e-11
+
+# dir 9 branch 0 spec 12
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-1.84555e-10 -5.81722e-12 1.0924e-10
+elem 1
+-1.47279e-10 4.47269e-11 -5.76039e-11
+
+# dir 9 branch 0 spec 13
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-2.15349e-10 -6.44366e-12 1.26969e-10
+elem 1
+-1.66942e-10 4.88976e-11 -6.53792e-11
+
+# dir 9 branch 0 spec 14
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-2.4892e-10 -7.29727e-12 1.46612e-10
+elem 1
+-1.87761e-10 5.34528e-11 -7.44504e-11
+
+# dir 9 branch 0 spec 15
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-2.85572e-10 -8.40289e-12 1.68377e-10
+elem 1
+-2.09969e-10 5.84419e-11 -8.49078e-11
+
+# dir 9 branch 0 spec 16
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-3.25694e-10 -9.78529e-12 1.92521e-10
+elem 1
+-2.33855e-10 6.39287e-11 -9.68662e-11
+
+# dir 9 branch 0 spec 17
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-3.69775e-10 -1.14713e-11 2.19354e-10
+elem 1
+-2.59766e-10 6.99919e-11 -1.10472e-10
+
+# dir 9 branch 0 spec 18
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-4.18419e-10 -1.34917e-11 2.49258e-10
+elem 1
+-2.88113e-10 7.67264e-11 -1.25909e-10
+
+# dir 9 branch 0 spec 19
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-4.72373e-10 -1.5884e-11 2.82704e-10
+elem 1
+-3.19383e-10 8.4247e-11 -1.43414e-10
+
+# dir 9 branch 1 spec 0
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-4.60727e-13 -8.32981e-14 3.89139e-13
+elem 1
+-4.9491e-13 5.17654e-13 -7.44822e-13
+
+# dir 9 branch 1 spec 1
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-4.25449e-12 -2.78675e-13 2.75691e-12
+elem 1
+-3.94488e-12 1.72593e-12 -2.08986e-12
+
+# dir 9 branch 1 spec 2
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-1.20479e-11 -4.84315e-13 7.29417e-12
+elem 1
+-1.03644e-11 3.58915e-12 -4.29306e-12
+
+# dir 9 branch 1 spec 3
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-2.4209e-11 -7.63917e-13 1.43168e-11
+elem 1
+-1.96715e-11 6.115e-12 -7.62674e-12
+
+# dir 9 branch 1 spec 4
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-4.1306e-11 -1.1798e-12 2.42452e-11
+elem 1
+-3.20427e-11 9.36886e-12 -1.23827e-11
+
+# dir 9 branch 1 spec 5
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-6.41314e-11 -1.79613e-12 3.7624e-11
+elem 1
+-4.78556e-11 1.34589e-11 -1.88958e-11
+
+# dir 9 branch 1 spec 6
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-9.37584e-11 -2.68567e-12 5.51645e-11
+elem 1
+-6.76875e-11 1.85381e-11 -2.7577e-11
+
+# dir 9 branch 1 spec 7
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-1.31638e-10 -3.93744e-12 7.78113e-11
+elem 1
+-9.2355e-11 2.48166e-11 -3.89548e-11
+
+# dir 9 branch 1 spec 8
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-1.79752e-10 -5.6669e-12 1.06844e-10
+elem 1
+-1.22993e-10 3.2582e-11 -5.37346e-11
+
+# dir 9 branch 1 spec 9
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-2.40862e-10 -8.03086e-12 1.44035e-10
+elem 1
+-1.61194e-10 4.22349e-11 -7.28878e-11
+
+# dir 9 branch 1 spec 10
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-4.07526e-10 -8.82159e-11 3.66594e-10
+elem 1
+-4.40187e-10 4.34887e-10 -5.77773e-10
+
+# dir 9 branch 1 spec 11
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-5.45923e-10 -1.0087e-10 4.61244e-10
+elem 1
+-5.76425e-10 4.87811e-10 -6.19403e-10
+
+# dir 9 branch 1 spec 12
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-7.3005e-10 -1.11916e-10 5.77156e-10
+elem 1
+-7.5411e-10 5.4656e-10 -6.57049e-10
+
+# dir 9 branch 1 spec 13
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-9.80581e-10 -1.19618e-10 7.22192e-10
+elem 1
+-9.90856e-10 6.14664e-10 -6.91025e-10
+
+# dir 9 branch 1 spec 14
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-1.33281e-09 -1.20909e-10 9.09583e-10
+elem 1
+-1.31593e-09 6.97628e-10 -7.21395e-10
+
+# dir 9 branch 1 spec 15
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-1.85232e-09 -1.09881e-10 1.16357e-09
+elem 1
+-1.78189e-09 8.049e-10 -7.47983e-10
+
+# dir 9 branch 1 spec 16
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-2.67644e-09 -7.39122e-11 1.53451e-09
+elem 1
+-2.49354e-09 9.54886e-10 -7.71159e-10
+
+# dir 9 branch 1 spec 17
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-4.14942e-09 1.83417e-11 2.14926e-09
+elem 1
+-3.69348e-09 1.19018e-09 -7.98099e-10
+
+# dir 9 branch 1 spec 18
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-7.44827e-09 2.65844e-10 3.45678e-09
+elem 1
+-6.07836e-09 1.63781e-09 -9.03836e-10
+
+# dir 9 branch 1 spec 19
+# ndof 3 ne 2
+# direction: -0.548911 0.835881 0 weight 0.382239
+elem 0
+-2.13905e-08 1.17095e-09 9.25694e-09
+elem 1
+-1.3467e-08 3.10744e-09 -2.44989e-09
+
+# dir 10 branch 0 spec 0
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-2.52348e-13 -3.30735e-13 5.69752e-13
+elem 1
+-5.96163e-13 6.02651e-12 -8.04118e-12
+
+# dir 10 branch 0 spec 1
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-2.36437e-12 -2.41679e-12 4.4517e-12
+elem 1
+-4.29071e-12 3.29718e-11 -4.37331e-11
+
+# dir 10 branch 0 spec 2
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-6.83463e-12 -4.7191e-12 9.90012e-12
+elem 1
+-9.37478e-12 4.1571e-11 -5.42658e-11
+
+# dir 10 branch 0 spec 3
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-1.38081e-11 -6.2222e-12 1.56237e-11
+elem 1
+-1.60353e-11 3.58517e-11 -4.5261e-11
+
+# dir 10 branch 0 spec 4
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-2.3295e-11 -7.01878e-12 2.17275e-11
+elem 1
+-2.49348e-11 3.14796e-11 -3.79157e-11
+
+# dir 10 branch 0 spec 5
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-3.52484e-11 -7.37722e-12 2.85519e-11
+elem 1
+-3.59353e-11 3.05247e-11 -3.51137e-11
+
+# dir 10 branch 0 spec 6
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-4.96025e-11 -7.4827e-12 3.63286e-11
+elem 1
+-4.86745e-11 3.1385e-11 -3.48302e-11
+
+# dir 10 branch 0 spec 7
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-6.62897e-11 -7.46096e-12 4.52093e-11
+elem 1
+-6.28334e-11 3.31673e-11 -3.6008e-11
+
+# dir 10 branch 0 spec 8
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-8.52537e-11 -7.4036e-12 5.53049e-11
+elem 1
+-7.8156e-11 3.55158e-11 -3.8306e-11
+
+# dir 10 branch 0 spec 9
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-1.06462e-10 -7.38063e-12 6.67087e-11
+elem 1
+-9.44544e-11 3.82782e-11 -4.1638e-11
+
+# dir 10 branch 0 spec 10
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-1.29919e-10 -7.44746e-12 7.95117e-11
+elem 1
+-1.11615e-10 4.13868e-11 -4.60081e-11
+
+# dir 10 branch 0 spec 11
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-1.55671e-10 -7.6489e-12 9.38134e-11
+elem 1
+-1.29603e-10 4.48176e-11 -5.1456e-11
+
+# dir 10 branch 0 spec 12
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-1.83821e-10 -8.02183e-12 1.0973e-10
+elem 1
+-1.48457e-10 4.85737e-11 -5.80377e-11
+
+# dir 10 branch 0 spec 13
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-2.14531e-10 -8.59733e-12 1.27401e-10
+elem 1
+-1.68288e-10 5.2678e-11 -6.58203e-11
+
+# dir 10 branch 0 spec 14
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-2.48029e-10 -9.40262e-12 1.46995e-10
+elem 1
+-1.89268e-10 5.71687e-11 -7.48836e-11
+
+# dir 10 branch 0 spec 15
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-2.84619e-10 -1.04629e-11 1.6872e-10
+elem 1
+-2.1163e-10 6.2098e-11 -8.53239e-11
+
+# dir 10 branch 0 spec 16
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-3.24688e-10 -1.18034e-11 1.9283e-10
+elem 1
+-2.35663e-10 6.75311e-11 -9.72599e-11
+
+# dir 10 branch 0 spec 17
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-3.68724e-10 -1.34511e-11 2.19634e-10
+elem 1
+-2.61712e-10 7.35477e-11 -1.1084e-10
+
+# dir 10 branch 0 spec 18
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-4.1733e-10 -1.54374e-11 2.49514e-10
+elem 1
+-2.90191e-10 8.02433e-11 -1.26252e-10
+
+# dir 10 branch 0 spec 19
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-4.71251e-10 -1.77998e-11 2.8294e-10
+elem 1
+-3.21586e-10 8.77329e-11 -1.4373e-10
+
+# dir 10 branch 1 spec 0
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-4.62002e-13 -1.34947e-13 4.22302e-13
+elem 1
+-4.87535e-13 5.48065e-13 -6.40242e-13
+
+# dir 10 branch 1 spec 1
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-4.24146e-12 -4.25029e-13 2.81471e-12
+elem 1
+-3.96552e-12 1.95216e-12 -2.07338e-12
+
+# dir 10 branch 1 spec 2
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-1.19992e-11 -7.21409e-13 7.36398e-12
+elem 1
+-1.04391e-11 3.98423e-12 -4.32145e-12
+
+# dir 10 branch 1 spec 3
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-2.41105e-11 -1.09177e-12 1.43949e-11
+elem 1
+-1.98252e-11 6.67463e-12 -7.68706e-12
+
+# dir 10 branch 1 spec 4
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-4.11481e-11 -1.59932e-12 2.43299e-11
+elem 1
+-3.22985e-11 1.00942e-11 -1.24674e-11
+
+# dir 10 branch 1 spec 5
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-6.39067e-11 -2.30881e-12 3.77142e-11
+elem 1
+-4.82348e-11 1.43537e-11 -1.89996e-11
+
+# dir 10 branch 1 spec 6
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-9.34612e-11 -3.29349e-12 5.52597e-11
+elem 1
+-6.82105e-11 1.96083e-11 -2.76955e-11
+
+# dir 10 branch 1 spec 7
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-1.31263e-10 -4.64289e-12 7.79111e-11
+elem 1
+-9.30415e-11 2.60692e-11 -3.90845e-11
+
+# dir 10 branch 1 spec 8
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-1.79295e-10 -6.47299e-12 1.06948e-10
+elem 1
+-1.23863e-10 3.40255e-11 -5.38724e-11
+
+# dir 10 branch 1 spec 9
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-2.40316e-10 -8.94114e-12 1.44143e-10
+elem 1
+-1.62268e-10 4.38791e-11 -7.30309e-11
+
+# dir 10 branch 1 spec 10
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-4.10366e-10 -1.53028e-10 4.09028e-10
+elem 1
+-4.35026e-10 4.80815e-10 -5.18001e-10
+
+# dir 10 branch 1 spec 11
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-5.48932e-10 -1.75078e-10 5.073e-10
+elem 1
+-5.722e-10 5.47009e-10 -5.6819e-10
+
+# dir 10 branch 1 spec 12
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-7.32944e-10 -1.95637e-10 6.25997e-10
+elem 1
+-7.51132e-10 6.19413e-10 -6.15681e-10
+
+# dir 10 branch 1 spec 13
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-9.82873e-10 -2.12938e-10 7.72806e-10
+elem 1
+-9.89478e-10 7.0127e-10 -6.60385e-10
+
+# dir 10 branch 1 spec 14
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-1.33367e-09 -2.23879e-10 9.60742e-10
+elem 1
+-1.31659e-09 7.97758e-10 -7.02018e-10
+
+# dir 10 branch 1 spec 15
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-1.8503e-09 -2.22493e-10 1.21375e-09
+elem 1
+-1.7852e-09 9.17826e-10 -7.40066e-10
+
+# dir 10 branch 1 spec 16
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-2.66885e-09 -1.95977e-10 1.5817e-09
+elem 1
+-2.50051e-09 1.07892e-09 -7.74439e-10
+
+# dir 10 branch 1 spec 17
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-4.13095e-09 -1.12412e-10 2.19065e-09
+elem 1
+-3.70627e-09 1.32142e-09 -8.11343e-10
+
+# dir 10 branch 1 spec 18
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-7.40805e-09 1.29556e-10 3.48805e-09
+elem 1
+-6.10388e-09 1.76671e-09 -9.22786e-10
+
+# dir 10 branch 1 spec 19
+# ndof 3 ne 2
+# direction: -0.8251 0.564987 0 weight 0.39533
+elem 0
+-2.13196e-08 1.04831e-09 9.27222e-09
+elem 1
+-1.35331e-08 3.21221e-09 -2.45995e-09
+
+# dir 11 branch 0 spec 0
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-2.62303e-13 -7.27439e-13 9.22862e-13
+elem 1
+-3.21802e-13 2.11205e-12 -2.24543e-12
+
+# dir 11 branch 0 spec 1
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-2.44098e-12 -4.83278e-12 6.49716e-12
+elem 1
+-2.85163e-12 1.34691e-11 -1.41999e-11
+
+# dir 11 branch 0 spec 2
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-6.98046e-12 -8.15573e-12 1.24654e-11
+elem 1
+-7.73125e-12 2.19212e-11 -2.27134e-11
+
+# dir 11 branch 0 spec 3
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-1.39543e-11 -9.33295e-12 1.73907e-11
+elem 1
+-1.48325e-11 2.49982e-11 -2.5226e-11
+
+# dir 11 branch 0 spec 4
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-2.33427e-11 -9.51841e-12 2.25174e-11
+elem 1
+-2.40058e-11 2.65719e-11 -2.60479e-11
+
+# dir 11 branch 0 spec 5
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-3.5095e-11 -9.40561e-12 2.85911e-11
+elem 1
+-3.49988e-11 2.82955e-11 -2.71039e-11
+
+# dir 11 branch 0 spec 6
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-4.91492e-11 -9.19793e-12 3.5825e-11
+elem 1
+-4.75148e-11 3.03514e-11 -2.87378e-11
+
+# dir 11 branch 0 spec 7
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-6.54426e-11 -8.97993e-12 4.43026e-11
+elem 1
+-6.12731e-11 3.26973e-11 -3.10458e-11
+
+# dir 11 branch 0 spec 8
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-8.39263e-11 -8.81084e-12 5.4086e-11
+elem 1
+-7.60445e-11 3.53007e-11 -3.41179e-11
+
+# dir 11 branch 0 spec 9
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-1.04579e-10 -8.73853e-12 6.52374e-11
+elem 1
+-9.16717e-11 3.81494e-11 -3.80439e-11
+
+# dir 11 branch 0 spec 10
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-1.27416e-10 -8.80275e-12 7.78288e-11
+elem 1
+-1.08078e-10 4.12476e-11 -4.29071e-11
+
+# dir 11 branch 0 spec 11
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-1.52503e-10 -9.0367e-12 9.19474e-11
+elem 1
+-1.25264e-10 4.46128e-11 -4.87843e-11
+
+# dir 11 branch 0 spec 12
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-1.79955e-10 -9.46825e-12 1.07702e-10
+elem 1
+-1.43307e-10 4.82741e-11 -5.57487e-11
+
+# dir 11 branch 0 spec 13
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-2.09949e-10 -1.01214e-11 1.25226e-10
+elem 1
+-1.62346e-10 5.22708e-11 -6.38757e-11
+
+# dir 11 branch 0 spec 14
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-2.42727e-10 -1.10175e-11 1.44687e-10
+elem 1
+-1.82576e-10 5.66519e-11 -7.3249e-11
+
+# dir 11 branch 0 spec 15
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-2.78601e-10 -1.21776e-11 1.66288e-10
+elem 1
+-2.04243e-10 6.14757e-11 -8.39669e-11
+
+# dir 11 branch 0 spec 16
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-3.17968e-10 -1.36235e-11 1.90282e-10
+elem 1
+-2.27644e-10 6.68115e-11 -9.61502e-11
+
+# dir 11 branch 0 spec 17
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-3.61319e-10 -1.53797e-11 2.16978e-10
+elem 1
+-2.53126e-10 7.27403e-11 -1.09949e-10
+
+# dir 11 branch 0 spec 18
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-4.0926e-10 -1.7476e-11 2.46755e-10
+elem 1
+-2.81099e-10 7.93583e-11 -1.25553e-10
+
+# dir 11 branch 0 spec 19
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-4.62535e-10 -1.9949e-11 2.80081e-10
+elem 1
+-3.12045e-10 8.67799e-11 -1.43201e-10
+
+# dir 11 branch 1 spec 0
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-4.62881e-13 -1.83386e-13 4.36333e-13
+elem 1
+-4.71584e-13 4.78787e-13 -4.54247e-13
+
+# dir 11 branch 1 spec 1
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-4.18286e-12 -5.12623e-13 2.7547e-12
+elem 1
+-3.86373e-12 1.93155e-12 -1.80733e-12
+
+# dir 11 branch 1 spec 2
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-1.17753e-11 -8.58479e-13 7.20298e-12
+elem 1
+-1.01162e-11 3.9704e-12 -3.99456e-12
+
+# dir 11 branch 1 spec 3
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-2.36122e-11 -1.29761e-12 1.41134e-11
+elem 1
+-1.91485e-11 6.63827e-12 -7.32471e-12
+
+# dir 11 branch 1 spec 4
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-4.02689e-11 -1.89439e-12 2.39095e-11
+elem 1
+-3.11548e-11 1.00143e-11 -1.2093e-11
+
+# dir 11 branch 1 spec 5
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-6.25435e-11 -2.71372e-12 3.7137e-11
+elem 1
+-4.65298e-11 1.42147e-11 -1.86325e-11
+
+# dir 11 branch 1 spec 6
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-9.15127e-11 -3.82891e-12 5.45075e-11
+elem 1
+-6.58644e-11 1.93981e-11 -2.73515e-11
+
+# dir 11 branch 1 spec 7
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-1.28628e-10 -5.32979e-12 7.69656e-11
+elem 1
+-8.99845e-11 2.57782e-11 -3.87767e-11
+
+# dir 11 branch 1 spec 8
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-1.75869e-10 -7.33307e-12 1.0579e-10
+elem 1
+-1.20032e-10 3.36458e-11 -5.36118e-11
+
+# dir 11 branch 1 spec 9
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-2.35991e-10 -9.99726e-12 1.42752e-10
+elem 1
+-1.57602e-10 4.34036e-11 -7.28269e-11
+
+# dir 11 branch 1 spec 10
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-4.14504e-10 -2.11033e-10 4.24857e-10
+elem 1
+-4.22293e-10 4.33055e-10 -3.6837e-10
+
+# dir 11 branch 1 spec 11
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-5.52621e-10 -2.36843e-10 5.18078e-10
+elem 1
+-5.57611e-10 5.04557e-10 -4.15294e-10
+
+# dir 11 branch 1 spec 12
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-7.3538e-10 -2.60114e-10 6.29587e-10
+elem 1
+-7.33995e-10 5.83458e-10 -4.61687e-10
+
+# dir 11 branch 1 spec 13
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-9.82745e-10 -2.79044e-10 7.66827e-10
+elem 1
+-9.68504e-10 6.72511e-10 -5.07225e-10
+
+# dir 11 branch 1 spec 14
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-1.32876e-09 -2.90531e-10 9.42455e-10
+elem 1
+-1.28937e-09 7.76245e-10 -5.51538e-10
+
+# dir 11 branch 1 spec 15
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-1.83661e-09 -2.88657e-10 1.17985e-09
+elem 1
+-1.74693e-09 9.02583e-10 -5.94348e-10
+
+# dir 11 branch 1 spec 16
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-2.6384e-09 -2.60866e-10 1.52791e-09
+elem 1
+-2.4405e-09 1.06694e-09 -6.36667e-10
+
+# dir 11 branch 1 spec 17
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-4.06456e-09 -1.76375e-10 2.11059e-09
+elem 1
+-3.59431e-09 1.3045e-09 -6.89105e-10
+
+# dir 11 branch 1 spec 18
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-7.23987e-09 5.91612e-11 3.36847e-09
+elem 1
+-5.82705e-09 1.71985e-09 -8.44445e-10
+
+# dir 11 branch 1 spec 19
+# ndof 3 ne 2
+# direction: -0.979819 0.199885 0 weight 0.40193
+elem 0
+-2.06536e-08 9.0078e-10 9.05697e-09
+elem 1
+-1.27632e-08 3.08036e-09 -2.52171e-09
+
+# dir 12 branch 0 spec 0
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-3.17735e-13 -1.83124e-12 1.70287e-12
+elem 1
+-1.48153e-13 4.41602e-13 -3.34531e-13
+
+# dir 12 branch 0 spec 1
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-2.76109e-12 -1.0697e-11 1.0385e-11
+elem 1
+-1.43057e-12 3.49767e-12 -2.75684e-12
+
+# dir 12 branch 0 spec 2
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-7.37915e-12 -1.46102e-11 1.59786e-11
+elem 1
+-4.22878e-12 7.68624e-12 -6.40166e-12
+
+# dir 12 branch 0 spec 3
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-1.41922e-11 -1.3281e-11 1.83244e-11
+elem 1
+-8.56291e-12 1.13585e-11 -9.9985e-12
+
+# dir 12 branch 0 spec 4
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-2.33075e-11 -1.14372e-11 2.15036e-11
+elem 1
+-1.42798e-11 1.42405e-11 -1.32676e-11
+
+# dir 12 branch 0 spec 5
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-3.47107e-11 -1.02552e-11 2.65155e-11
+elem 1
+-2.1209e-11 1.6666e-11 -1.6525e-11
+
+# dir 12 branch 0 spec 6
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-4.83353e-11 -9.51115e-12 3.31558e-11
+elem 1
+-2.92062e-11 1.89265e-11 -2.00954e-11
+
+# dir 12 branch 0 spec 7
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-6.41179e-11 -9.02708e-12 4.12664e-11
+elem 1
+-3.81661e-11 2.11883e-11 -2.41917e-11
+
+# dir 12 branch 0 spec 8
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-8.20164e-11 -8.74441e-12 5.0802e-11
+elem 1
+-4.80341e-11 2.35485e-11 -2.89533e-11
+
+# dir 12 branch 0 spec 9
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-1.02022e-10 -8.65286e-12 6.17738e-11
+elem 1
+-5.881e-11 2.60733e-11 -3.44788e-11
+
+# dir 12 branch 0 spec 10
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-1.24167e-10 -8.75926e-12 7.42268e-11
+elem 1
+-7.05453e-11 2.88158e-11 -4.08449e-11
+
+# dir 12 branch 0 spec 11
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-1.48531e-10 -9.07594e-12 8.82335e-11
+elem 1
+-8.33368e-11 3.18238e-11 -4.81186e-11
+
+# dir 12 branch 0 spec 12
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-1.75249e-10 -9.61655e-12 1.03893e-10
+elem 1
+-9.7319e-11 3.51445e-11 -5.63656e-11
+
+# dir 12 branch 0 spec 13
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-2.04509e-10 -1.03949e-11 1.21335e-10
+elem 1
+-1.12659e-10 3.88268e-11 -6.56584e-11
+
+# dir 12 branch 0 spec 14
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-2.36566e-10 -1.14251e-11 1.40721e-10
+elem 1
+-1.29554e-10 4.29229e-11 -7.6082e-11
+
+# dir 12 branch 0 spec 15
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-2.7174e-10 -1.27228e-11 1.62255e-10
+elem 1
+-1.48231e-10 4.74907e-11 -8.77408e-11
+
+# dir 12 branch 0 spec 16
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-3.10432e-10 -1.43062e-11 1.86185e-10
+elem 1
+-1.68955e-10 5.2596e-11 -1.00764e-10
+
+# dir 12 branch 0 spec 17
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-3.53137e-10 -1.61975e-11 2.12819e-10
+elem 1
+-1.92033e-10 5.83148e-11 -1.15312e-10
+
+# dir 12 branch 0 spec 18
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-4.00458e-10 -1.84251e-11 2.42535e-10
+elem 1
+-2.17827e-10 6.47374e-11 -1.31586e-10
+
+# dir 12 branch 0 spec 19
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-4.5314e-10 -2.1025e-11 2.758e-10
+elem 1
+-2.46773e-10 7.19722e-11 -1.49836e-10
+
+# dir 12 branch 1 spec 0
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-4.61839e-13 -2.1682e-13 4.12056e-13
+elem 1
+-2.80441e-13 2.56947e-13 -2.31662e-13
+
+# dir 12 branch 1 spec 1
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-4.09394e-12 -5.12583e-13 2.56945e-12
+elem 1
+-2.41468e-12 1.2588e-12 -1.45107e-12
+
+# dir 12 branch 1 spec 2
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-1.1479e-11 -8.51536e-13 6.844e-12
+elem 1
+-6.5463e-12 2.74016e-12 -3.73195e-12
+
+# dir 12 branch 1 spec 3
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-2.29943e-11 -1.30855e-12 1.35648e-11
+elem 1
+-1.2826e-11 4.7623e-12 -7.30782e-12
+
+# dir 12 branch 1 spec 4
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-3.92234e-11 -1.94558e-12 2.31545e-11
+elem 1
+-2.1583e-11 7.42035e-12 -1.24355e-11
+
+# dir 12 branch 1 spec 5
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-6.09709e-11 -2.8257e-12 3.61581e-11
+elem 1
+-3.32891e-11 1.08392e-11 -1.94254e-11
+
+# dir 12 branch 1 spec 6
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-8.93175e-11 -4.02103e-12 5.3287e-11
+elem 1
+-4.85759e-11 1.51813e-11 -2.8673e-11
+
+# dir 12 branch 1 spec 7
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-1.25716e-10 -5.62079e-12 7.54846e-11
+elem 1
+-6.82862e-11 2.06611e-11 -4.06979e-11
+
+# dir 12 branch 1 spec 8
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-1.72145e-10 -7.74164e-12 1.04028e-10
+elem 1
+-9.35615e-11 2.75675e-11 -5.6201e-11
+
+# dir 12 branch 1 spec 9
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-2.31355e-10 -1.05426e-11 1.40689e-10
+elem 1
+-1.25983e-10 3.62995e-11 -7.61528e-11
+
+# dir 12 branch 1 spec 10
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-4.16691e-10 -2.41832e-10 3.8663e-10
+elem 1
+-2.45446e-10 2.14625e-10 -1.51839e-10
+
+# dir 12 branch 1 spec 11
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-5.52808e-10 -2.63368e-10 4.65441e-10
+elem 1
+-3.26286e-10 2.58183e-10 -1.82309e-10
+
+# dir 12 branch 1 spec 12
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-7.32262e-10 -2.80832e-10 5.60425e-10
+elem 1
+-4.3223e-10 3.07728e-10 -2.16854e-10
+
+# dir 12 branch 1 spec 13
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-9.74367e-10 -2.92577e-10 6.78949e-10
+elem 1
+-5.73812e-10 3.6501e-10 -2.5675e-10
+
+# dir 12 branch 1 spec 14
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-1.31202e-09 -2.95713e-10 8.33512e-10
+elem 1
+-7.68554e-10 4.32962e-10 -3.04313e-10
+
+# dir 12 branch 1 spec 15
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-1.80621e-09 -2.84696e-10 1.04721e-09
+elem 1
+-1.0479e-09 5.16847e-10 -3.64188e-10
+
+# dir 12 branch 1 spec 16
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-2.58417e-09 -2.47839e-10 1.36842e-09
+elem 1
+-1.47413e-09 6.27161e-10 -4.47378e-10
+
+# dir 12 branch 1 spec 17
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-3.96281e-09 -1.57063e-10 1.92007e-09
+elem 1
+-2.18823e-09 7.88648e-10 -5.87563e-10
+
+# dir 12 branch 1 spec 18
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-7.01364e-09 7.01763e-11 3.13857e-09
+elem 1
+-3.59978e-09 1.08203e-09 -9.37225e-10
+
+# dir 12 branch 1 spec 19
+# ndof 3 ne 2
+# direction: -0.979819 -0.199885 0 weight 0.40193
+elem 0
+-1.99135e-08 8.15493e-10 8.75077e-09
+elem 1
+-8.99786e-09 2.25657e-09 -3.03039e-09
+
+# dir 13 branch 0 spec 0
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-5.03101e-13 -4.18891e-12 2.28217e-12
+elem 1
+1.4718e-13 -1.65277e-13 3.89185e-14
+
+# dir 13 branch 0 spec 1
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-3.67144e-12 -2.17923e-11 1.23377e-11
+elem 1
+1.12882e-12 -9.60488e-13 -6.10524e-14
+
+# dir 13 branch 0 spec 2
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-8.22026e-12 -2.42325e-11 1.56595e-11
+elem 1
+2.61176e-12 -1.21166e-12 -1.37361e-12
+
+# dir 13 branch 0 spec 3
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-1.44657e-11 -1.68128e-11 1.51562e-11
+elem 1
+4.45234e-12 -8.2192e-13 -4.08323e-12
+
+# dir 13 branch 0 spec 4
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-2.30698e-11 -1.15271e-11 1.7052e-11
+elem 1
+6.50517e-12 -2.5469e-13 -7.81519e-12
+
+# dir 13 branch 0 spec 5
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-3.40279e-11 -9.09641e-12 2.16909e-11
+elem 1
+8.4412e-12 3.65585e-13 -1.23772e-11
+
+# dir 13 branch 0 spec 6
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-4.71911e-11 -7.93585e-12 2.82407e-11
+elem 1
+9.8838e-12 1.09649e-12 -1.77122e-11
+
+# dir 13 branch 0 spec 7
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-6.24669e-11 -7.33729e-12 3.63395e-11
+elem 1
+1.0475e-11 2.01411e-12 -2.37896e-11
+
+# dir 13 branch 0 spec 8
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-7.98132e-11 -7.07362e-12 4.58873e-11
+elem 1
+9.89328e-12 3.18457e-12 -3.05885e-11
+
+# dir 13 branch 0 spec 9
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-9.92312e-11 -7.07037e-12 5.68784e-11
+elem 1
+7.86331e-12 4.66332e-12 -3.81011e-11
+
+# dir 13 branch 0 spec 10
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-1.20767e-10 -7.30357e-12 6.93513e-11
+elem 1
+4.15766e-12 6.49685e-12 -4.63369e-11
+
+# dir 13 branch 0 spec 11
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-1.44516e-10 -7.76801e-12 8.33758e-11
+elem 1
+-1.40813e-12 8.72498e-12 -5.53245e-11
+
+# dir 13 branch 0 spec 12
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-1.70624e-10 -8.4662e-12 9.90505e-11
+elem 1
+-8.98609e-12 1.13836e-11 -6.51136e-11
+
+# dir 13 branch 0 spec 13
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-1.99291e-10 -9.40453e-12 1.16504e-10
+elem 1
+-1.87093e-11 1.45074e-11 -7.57752e-11
+
+# dir 13 branch 0 spec 14
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-2.30777e-10 -1.05922e-11 1.35898e-10
+elem 1
+-3.07069e-11 1.81329e-11 -8.74038e-11
+
+# dir 13 branch 0 spec 15
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-2.65409e-10 -1.20416e-11 1.57435e-10
+elem 1
+-4.5119e-11 2.23016e-11 -1.00119e-10
+
+# dir 13 branch 0 spec 16
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-3.03588e-10 -1.3769e-11 1.81364e-10
+elem 1
+-6.21122e-11 2.70628e-11 -1.14067e-10
+
+# dir 13 branch 0 spec 17
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-3.45808e-10 -1.57956e-11 2.07993e-10
+elem 1
+-8.18952e-11 3.2477e-11 -1.2943e-10
+
+# dir 13 branch 0 spec 18
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-3.92672e-10 -1.81493e-11 2.37698e-10
+elem 1
+-1.04735e-10 3.86199e-11 -1.46427e-10
+
+# dir 13 branch 0 spec 19
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-4.44921e-10 -2.08665e-11 2.70947e-10
+elem 1
+-1.30978e-10 4.55863e-11 -1.65327e-10
+
+# dir 13 branch 1 spec 0
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-4.56192e-13 -2.09332e-13 3.20395e-13
+elem 1
+1.29237e-13 -1.55633e-14 -1.38974e-13
+
+# dir 13 branch 1 spec 1
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-3.98612e-12 -4.12098e-13 2.27732e-12
+elem 1
+6.16523e-13 1.198e-13 -1.47886e-12
+
+# dir 13 branch 1 spec 2
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-1.11634e-11 -6.97667e-13 6.34881e-12
+elem 1
+6.15453e-13 5.42439e-13 -4.21418e-12
+
+# dir 13 branch 1 spec 3
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-2.23762e-11 -1.12484e-12 1.28545e-11
+elem 1
+-5.55497e-13 1.37218e-12 -8.45244e-12
+
+# dir 13 branch 1 spec 4
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-3.82189e-11 -1.75045e-12 2.22151e-11
+elem 1
+-3.47459e-12 2.73023e-12 -1.43896e-11
+
+# dir 13 branch 1 spec 5
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-5.95036e-11 -2.63455e-12 3.49749e-11
+elem 1
+-8.7339e-12 4.75266e-12 -2.23057e-11
+
+# dir 13 branch 1 spec 6
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-8.73153e-11 -3.84736e-12 5.18442e-11
+elem 1
+-1.70188e-11 7.60519e-12 -3.25809e-11
+
+# dir 13 branch 1 spec 7
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-1.23109e-10 -5.47698e-12 7.37656e-11
+elem 1
+-2.91868e-11 1.15006e-11 -4.57284e-11
+
+# dir 13 branch 1 spec 8
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-1.68861e-10 -7.63946e-12 1.02015e-10
+elem 1
+-4.63677e-11 1.67225e-11 -6.24487e-11
+
+# dir 13 branch 1 spec 9
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-2.27322e-10 -1.04937e-11 1.38361e-10
+elem 1
+-7.01116e-11 2.36623e-11 -8.37155e-11
+
+# dir 13 branch 1 spec 10
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-4.12211e-10 -2.15365e-10 2.68369e-10
+elem 1
+1.35034e-10 -6.04398e-11 -6.06976e-11
+
+# dir 13 branch 1 spec 11
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-5.44657e-10 -2.26063e-10 3.2823e-10
+elem 1
+1.7445e-10 -7.0362e-11 -8.84491e-11
+
+# dir 13 branch 1 spec 12
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-7.18975e-10 -2.31937e-10 4.03638e-10
+elem 1
+2.23613e-10 -8.08766e-11 -1.26565e-10
+
+# dir 13 branch 1 spec 13
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-9.53826e-10 -2.31625e-10 5.01945e-10
+elem 1
+2.85297e-10 -9.19373e-11 -1.79404e-10
+
+# dir 13 branch 1 spec 14
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-1.28098e-09 -2.22604e-10 6.35591e-10
+elem 1
+3.63157e-10 -1.03289e-10 -2.54209e-10
+
+# dir 13 branch 1 spec 15
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-1.75927e-09 -1.99943e-10 8.27612e-10
+elem 1
+4.61493e-10 -1.14013e-10 -3.64077e-10
+
+# dir 13 branch 1 spec 16
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-2.51119e-09 -1.53296e-10 1.12641e-09
+elem 1
+5.827e-10 -1.21017e-10 -5.35634e-10
+
+# dir 13 branch 1 spec 17
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-3.84077e-09 -5.82989e-11 1.65494e-09
+elem 1
+7.10598e-10 -1.12756e-10 -8.3343e-10
+
+# dir 13 branch 1 spec 18
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-6.77249e-09 1.54211e-10 2.84859e-09
+elem 1
+6.71806e-10 -2.98635e-11 -1.4703e-09
+
+# dir 13 branch 1 spec 19
+# ndof 3 ne 2
+# direction: -0.8251 -0.564987 0 weight 0.39533
+elem 0
+-1.9253e-08 8.02602e-10 8.42051e-09
+elem 1
+-2.61518e-09 8.81901e-10 -4.04363e-09
+
+# dir 14 branch 0 spec 0
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-2.80465e-13 -1.83331e-12 -5.66754e-13
+elem 1
+2.50204e-13 -1.58341e-13 -8.76034e-14
+
+# dir 14 branch 0 spec 1
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-1.72497e-12 -8.89127e-12 -2.43138e-12
+elem 1
+2.30152e-12 -1.20821e-12 -9.31248e-13
+
+# dir 14 branch 0 spec 2
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-3.19738e-12 -8.83962e-12 -9.50929e-13
+elem 1
+6.43584e-12 -2.57944e-12 -2.98226e-12
+
+# dir 14 branch 0 spec 3
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-5.39112e-12 -5.60614e-12 2.84512e-12
+elem 1
+1.24033e-11 -3.8645e-12 -6.27041e-12
+
+# dir 14 branch 0 spec 4
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-9.23953e-12 -4.34418e-12 7.2362e-12
+elem 1
+1.96638e-11 -5.02364e-12 -1.06148e-11
+
+# dir 14 branch 0 spec 5
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-1.50856e-11 -4.65366e-12 1.23621e-11
+elem 1
+2.75236e-11 -6.03055e-12 -1.58797e-11
+
+# dir 14 branch 0 spec 6
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-2.31587e-11 -5.53282e-12 1.86139e-11
+elem 1
+3.52593e-11 -6.81802e-12 -2.19724e-11
+
+# dir 14 branch 0 spec 7
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-3.36788e-11 -6.59797e-12 2.61878e-11
+elem 1
+4.21991e-11 -7.30885e-12 -2.88167e-11
+
+# dir 14 branch 0 spec 8
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-4.6813e-11 -7.73124e-12 3.51892e-11
+elem 1
+4.77703e-11 -7.43076e-12 -3.63556e-11
+
+# dir 14 branch 0 spec 9
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-6.26702e-11 -8.89827e-12 4.5695e-11
+elem 1
+5.15203e-11 -7.12255e-12 -4.45567e-11
+
+# dir 14 branch 0 spec 10
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-8.13211e-11 -1.00986e-11 5.77755e-11
+elem 1
+5.31141e-11 -6.3358e-12 -5.34156e-11
+
+# dir 14 branch 0 spec 11
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-1.02825e-10 -1.13487e-11 7.15069e-11
+elem 1
+5.23184e-11 -5.0335e-12 -6.29555e-11
+
+# dir 14 branch 0 spec 12
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-1.27258e-10 -1.26745e-11 8.69804e-11
+elem 1
+4.89767e-11 -3.18696e-12 -7.32267e-11
+
+# dir 14 branch 0 spec 13
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-1.54729e-10 -1.41063e-11 1.04311e-10
+elem 1
+4.29828e-11 -7.71829e-13 -8.43053e-11
+
+# dir 14 branch 0 spec 14
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-1.85408e-10 -1.56766e-11 1.23645e-10
+elem 1
+3.42545e-11 2.23604e-12 -9.62929e-11
+
+# dir 14 branch 0 spec 15
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-2.19532e-10 -1.74192e-11 1.45169e-10
+elem 1
+2.27092e-11 5.86464e-12 -1.09317e-10
+
+# dir 14 branch 0 spec 16
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-2.57426e-10 -1.93695e-11 1.69118e-10
+elem 1
+8.24291e-12 1.01497e-11 -1.23534e-10
+
+# dir 14 branch 0 spec 17
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-2.99514e-10 -2.15652e-11 1.95785e-10
+elem 1
+-9.29015e-12 1.51384e-11 -1.39133e-10
+
+# dir 14 branch 0 spec 18
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-3.46344e-10 -2.4048e-11 2.25539e-10
+elem 1
+-3.00965e-11 2.08939e-11 -1.56342e-10
+
+# dir 14 branch 0 spec 19
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-3.98609e-10 -2.68654e-11 2.58838e-10
+elem 1
+-5.44641e-11 2.74992e-11 -1.75437e-10
+
+# dir 14 branch 1 spec 0
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-1.84226e-13 -7.92316e-14 1.33677e-13
+elem 1
+3.88874e-13 -1.0379e-13 -2.00106e-13
+
+# dir 14 branch 1 spec 1
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-2.21469e-12 -3.95286e-13 1.66711e-12
+elem 1
+2.59494e-12 -4.44623e-13 -1.79707e-12
+
+# dir 14 branch 1 spec 2
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-7.31826e-12 -9.3532e-13 5.19653e-12
+elem 1
+5.30659e-12 -6.94771e-13 -4.90906e-12
+
+# dir 14 branch 1 spec 3
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-1.6214e-11 -1.67848e-12 1.11108e-11
+elem 1
+7.4922e-12 -6.65925e-13 -9.60016e-12
+
+# dir 14 branch 1 spec 4
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-2.96127e-11 -2.65151e-12 1.98529e-11
+elem 1
+8.41508e-12 -2.08351e-13 -1.60467e-11
+
+# dir 14 branch 1 spec 5
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-4.83674e-11 -3.90233e-12 3.1974e-11
+elem 1
+7.40843e-12 8.27029e-13 -2.45199e-11
+
+# dir 14 branch 1 spec 6
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-7.3574e-11 -5.49648e-12 4.81855e-11
+elem 1
+3.75456e-12 2.61107e-12 -3.53962e-11
+
+# dir 14 branch 1 spec 7
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-1.06684e-10 -7.52082e-12 6.94284e-11
+elem 1
+-3.41137e-12 5.35694e-12 -4.91885e-11
+
+# dir 14 branch 1 spec 8
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-1.49667e-10 -1.00919e-11 9.69759e-11
+elem 1
+-1.521e-11 9.34554e-12 -6.65985e-11
+
+# dir 14 branch 1 spec 9
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-2.05257e-10 -1.337e-11 1.32594e-10
+elem 1
+-3.31691e-11 1.49625e-11 -8.86032e-11
+
+# dir 14 branch 1 spec 10
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-1.49633e-10 -6.0901e-11 6.61184e-11
+elem 1
+3.72347e-10 -1.30248e-10 -1.4591e-10
+
+# dir 14 branch 1 spec 11
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-2.03831e-10 -6.85969e-11 9.77133e-11
+elem 1
+4.89496e-10 -1.61354e-10 -1.93724e-10
+
+# dir 14 branch 1 spec 12
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-2.79113e-10 -7.71912e-11 1.41616e-10
+elem 1
+6.39605e-10 -1.98215e-10 -2.55921e-10
+
+# dir 14 branch 1 spec 13
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-3.86987e-10 -8.68778e-11 2.03681e-10
+elem 1
+8.34323e-10 -2.42388e-10 -3.38226e-10
+
+# dir 14 branch 1 spec 14
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-5.48363e-10 -9.76305e-11 2.94207e-10
+elem 1
+1.09134e-09 -2.96115e-10 -4.50012e-10
+
+# dir 14 branch 1 spec 15
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-8.05001e-10 -1.08716e-10 4.33085e-10
+elem 1
+1.43834e-09 -3.62573e-10 -6.07847e-10
+
+# dir 14 branch 1 spec 16
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-1.2519e-09 -1.17047e-10 6.64043e-10
+elem 1
+1.91893e-09 -4.45804e-10 -8.44256e-10
+
+# dir 14 branch 1 spec 17
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-2.15019e-09 -1.10827e-10 1.1037e-09
+elem 1
+2.59312e-09 -5.4737e-10 -1.23401e-09
+
+# dir 14 branch 1 spec 18
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-4.47665e-09 -3.99435e-11 2.18424e-09
+elem 1
+3.42698e-09 -6.32452e-10 -2.00576e-09
+
+# dir 14 branch 1 spec 19
+# ndof 3 ne 2
+# direction: -0.548911 -0.835881 0 weight 0.382239
+elem 0
+-1.62789e-08 4.096e-10 7.65926e-09
+elem 1
+1.53183e-09 1.37254e-11 -4.7614e-09
+
+# dir 15 branch 0 spec 0
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+8.41085e-13 1.57187e-13 8.25072e-12
+elem 1
+2.49869e-13 -5.23104e-14 -1.9473e-13
+
+# dir 15 branch 0 spec 1
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+4.56609e-12 4.85332e-13 3.85592e-11
+elem 1
+2.30042e-12 -4.58665e-13 -1.70561e-12
+
+# dir 15 branch 0 spec 2
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+6.54177e-12 -5.8617e-13 3.63148e-11
+elem 1
+6.45757e-12 -1.20837e-12 -4.4668e-12
+
+# dir 15 branch 0 spec 3
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+7.89002e-12 -2.6025e-12 2.1248e-11
+elem 1
+1.25402e-11 -2.2264e-12 -8.18426e-12
+
+# dir 15 branch 0 spec 4
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+9.62793e-12 -4.87646e-12 1.46665e-11
+elem 1
+2.00959e-11 -3.4319e-12 -1.27071e-11
+
+# dir 15 branch 0 spec 5
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+1.07147e-11 -7.27837e-12 1.45577e-11
+elem 1
+2.85025e-11 -4.71671e-12 -1.79824e-11
+
+# dir 15 branch 0 spec 6
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+1.00146e-11 -9.74855e-12 1.74636e-11
+elem 1
+3.70757e-11 -5.95517e-12 -2.39841e-11
+
+# dir 15 branch 0 spec 7
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+6.72204e-12 -1.22e-11 2.23657e-11
+elem 1
+4.51475e-11 -7.02207e-12 -3.06883e-11
+
+# dir 15 branch 0 spec 8
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+2.79558e-13 -1.45607e-11 2.90856e-11
+elem 1
+5.21181e-11 -7.80382e-12 -3.80744e-11
+
+# dir 15 branch 0 spec 9
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+-9.67117e-12 -1.67906e-11 3.76336e-11
+elem 1
+5.74851e-11 -8.20409e-12 -4.61332e-11
+
+# dir 15 branch 0 spec 10
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+-2.33292e-11 -1.8882e-11 4.80591e-11
+elem 1
+6.0852e-11 -8.14539e-12 -5.4872e-11
+
+# dir 15 branch 0 spec 11
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+-4.0783e-11 -2.08528e-11 6.04212e-11
+elem 1
+6.19219e-11 -7.56775e-12 -6.43186e-11
+
+# dir 15 branch 0 spec 12
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+-6.20628e-11 -2.27393e-11 7.47874e-11
+elem 1
+6.04809e-11 -6.42539e-12 -7.45234e-11
+
+# dir 15 branch 0 spec 13
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+-8.7188e-11 -2.4589e-11 9.1243e-11
+elem 1
+5.63749e-11 -4.6823e-12 -8.55597e-11
+
+# dir 15 branch 0 spec 14
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+-1.16209e-10 -2.64553e-11 1.09901e-10
+elem 1
+4.94859e-11 -2.30738e-12 -9.75255e-11
+
+# dir 15 branch 0 spec 15
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+-1.49237e-10 -2.83943e-11 1.30914e-10
+elem 1
+3.97078e-11 7.30439e-13 -1.10545e-10
+
+# dir 15 branch 0 spec 16
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+-1.86474e-10 -3.04624e-11 1.54484e-10
+elem 1
+2.69233e-11 4.46693e-12 -1.2477e-10
+
+# dir 15 branch 0 spec 17
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+-2.28234e-10 -3.2717e-11 1.80876e-10
+elem 1
+1.09823e-11 8.94721e-12 -1.40386e-10
+
+# dir 15 branch 0 spec 18
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+-2.74965e-10 -3.52167e-11 2.10431e-10
+elem 1
+-8.31891e-12 1.42305e-11 -1.57621e-10
+
+# dir 15 branch 0 spec 19
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+-3.27276e-10 -3.80236e-11 2.43584e-10
+elem 1
+-3.12605e-11 2.03953e-11 -1.76747e-10
+
+# dir 15 branch 1 spec 0
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+1.84092e-13 -9.15722e-14 2.3651e-13
+elem 1
+3.97569e-13 -6.91526e-14 -2.45143e-13
+
+# dir 15 branch 1 spec 1
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+2.85057e-13 -7.43893e-13 1.38976e-12
+elem 1
+2.79335e-12 -4.3393e-13 -1.91118e-12
+
+# dir 15 branch 1 spec 2
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+-1.69968e-12 -1.77674e-12 4.28408e-12
+elem 1
+6.00441e-12 -8.37048e-13 -5.06924e-12
+
+# dir 15 branch 1 spec 3
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+-7.00839e-12 -3.08916e-12 9.43002e-12
+elem 1
+8.99021e-12 -1.06446e-12 -9.80422e-12
+
+# dir 15 branch 1 spec 4
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+-1.65752e-11 -4.6703e-12 1.73292e-11
+elem 1
+1.09844e-11 -9.48599e-13 -1.63004e-11
+
+# dir 15 branch 1 spec 5
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+-3.13506e-11 -6.55117e-12 2.85598e-11
+elem 1
+1.12955e-11 -3.29246e-13 -2.48319e-11
+
+# dir 15 branch 1 spec 6
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+-5.247e-11 -8.79018e-12 4.38452e-11
+elem 1
+9.18984e-12 9.70833e-13 -3.57765e-11
+
+# dir 15 branch 1 spec 7
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+-8.13965e-11 -1.14718e-11 6.41307e-11
+elem 1
+3.79514e-12 3.16774e-12 -4.96479e-11
+
+# dir 15 branch 1 spec 8
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+-1.20096e-10 -1.47128e-11 9.06894e-11
+elem 1
+-6.00895e-12 6.54266e-12 -6.71482e-11
+
+# dir 15 branch 1 spec 9
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+-1.71291e-10 -1.86749e-11 1.25285e-10
+elem 1
+-2.1743e-11 1.14793e-11 -8.92552e-11
+
+# dir 15 branch 1 spec 10
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+1.97504e-10 -6.29685e-11 1.59701e-10
+elem 1
+3.75232e-10 -7.08071e-11 -2.1618e-10
+
+# dir 15 branch 1 spec 11
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+2.46876e-10 -8.47551e-11 1.75837e-10
+elem 1
+4.94988e-10 -9.25945e-11 -2.77073e-10
+
+# dir 15 branch 1 spec 12
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+3.03971e-10 -1.12696e-10 1.95737e-10
+elem 1
+6.49513e-10 -1.20439e-10 -3.53232e-10
+
+# dir 15 branch 1 spec 13
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+3.67928e-10 -1.48707e-10 2.2276e-10
+elem 1
+8.5172e-10 -1.56524e-10 -4.50276e-10
+
+# dir 15 branch 1 spec 14
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+4.34419e-10 -1.9554e-10 2.63088e-10
+elem 1
+1.12167e-09 -2.04199e-10 -5.77383e-10
+
+# dir 15 branch 1 spec 15
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+4.88823e-10 -2.57138e-10 3.29611e-10
+elem 1
+1.49188e-09 -2.68791e-10 -7.50751e-10
+
+# dir 15 branch 1 spec 16
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+4.82805e-10 -3.38686e-10 4.53721e-10
+elem 1
+2.01715e-09 -3.58909e-10 -1.00225e-09
+
+# dir 15 branch 1 spec 17
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+2.36531e-10 -4.43307e-10 7.30018e-10
+elem 1
+2.78752e-09 -4.87111e-10 -1.40585e-09
+
+# dir 15 branch 1 spec 18
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+-1.11604e-09 -5.42951e-10 1.55809e-09
+elem 1
+3.86648e-09 -6.49593e-10 -2.19164e-09
+
+# dir 15 branch 1 spec 19
+# ndof 3 ne 2
+# direction: -0.206497 -0.978447 0 weight 0.362872
+elem 0
+-1.18538e-08 -2.91503e-10 6.72758e-09
+elem 1
+2.74991e-09 -2.37552e-10 -4.98244e-09
+
+# dir 16 branch 0 spec 0
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+1.37051e-12 -7.04034e-12 1.92544e-11
+elem 1
+1.86988e-13 2.42998e-14 -2.09522e-13
+
+# dir 16 branch 0 spec 1
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+7.21947e-12 -3.29469e-11 8.93869e-11
+elem 1
+1.71625e-12 1.00439e-13 -1.73966e-12
+
+# dir 16 branch 0 spec 2
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+9.76858e-12 -3.13632e-11 8.23609e-11
+elem 1
+4.79815e-12 -9.8347e-14 -4.27575e-12
+
+# dir 16 branch 0 spec 3
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+1.13648e-11 -1.90838e-11 4.47067e-11
+elem 1
+9.28674e-12 -6.83901e-13 -7.50855e-12
+
+# dir 16 branch 0 spec 4
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+1.43004e-11 -1.39357e-11 2.61107e-11
+elem 1
+1.48507e-11 -1.54627e-12 -1.14228e-11
+
+# dir 16 branch 0 spec 5
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+1.73858e-11 -1.37867e-11 2.13214e-11
+elem 1
+2.10357e-11 -2.55104e-12 -1.60505e-11
+
+# dir 16 branch 0 spec 6
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+1.92138e-11 -1.53251e-11 2.18226e-11
+elem 1
+2.73291e-11 -3.57035e-12 -2.1406e-11
+
+# dir 16 branch 0 spec 7
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+1.88141e-11 -1.7395e-11 2.49763e-11
+elem 1
+3.32102e-11 -4.48123e-12 -2.74909e-11
+
+# dir 16 branch 0 spec 8
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+1.54845e-11 -1.96209e-11 3.01939e-11
+elem 1
+3.81883e-11 -5.17059e-12 -3.43024e-11
+
+# dir 16 branch 0 spec 9
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+8.72279e-12 -2.18494e-11 3.73764e-11
+elem 1
+4.18282e-11 -5.53941e-12 -4.18423e-11
+
+# dir 16 branch 0 spec 10
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+-1.80268e-12 -2.40147e-11 4.65479e-11
+elem 1
+4.37629e-11 -5.50437e-12 -5.01233e-11
+
+# dir 16 branch 0 spec 11
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+-1.6289e-11 -2.60992e-11 5.77665e-11
+elem 1
+4.36953e-11 -4.99732e-12 -5.9174e-11
+
+# dir 16 branch 0 spec 12
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+-3.48435e-11 -2.81151e-11 7.11039e-11
+elem 1
+4.13898e-11 -3.96313e-12 -6.90415e-11
+
+# dir 16 branch 0 spec 13
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+-5.75304e-11 -3.00945e-11 8.66469e-11
+elem 1
+3.6659e-11 -2.35627e-12 -7.97938e-11
+
+# dir 16 branch 0 spec 14
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+-8.44156e-11 -3.20812e-11 1.04506e-10
+elem 1
+2.93455e-11 -1.36862e-13 -9.15219e-11
+
+# dir 16 branch 0 spec 15
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+-1.15605e-10 -3.41261e-11 1.24827e-10
+elem 1
+1.93033e-11 2.73382e-12 -1.04342e-10
+
+# dir 16 branch 0 spec 16
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+-1.51276e-10 -3.62845e-11 1.47801e-10
+elem 1
+6.37747e-12 6.29777e-12 -1.18401e-10
+
+# dir 16 branch 0 spec 17
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+-1.91709e-10 -3.86141e-11 1.73682e-10
+elem 1
+-9.61529e-12 1.0605e-11 -1.33876e-10
+
+# dir 16 branch 0 spec 18
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+-2.37316e-10 -4.11759e-11 2.02798e-10
+elem 1
+-2.89077e-11 1.57182e-11 -1.50987e-10
+
+# dir 16 branch 0 spec 19
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+-2.88666e-10 -4.40349e-11 2.35572e-10
+elem 1
+-5.18038e-11 2.17182e-11 -1.70003e-10
+
+# dir 16 branch 1 spec 0
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+2.74606e-13 -2.35827e-13 4.13319e-13
+elem 1
+2.94035e-13 -2.87842e-14 -2.23482e-13
+
+# dir 16 branch 1 spec 1
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+1.05293e-12 -1.03902e-12 1.50637e-12
+elem 1
+2.05413e-12 -2.77087e-13 -1.71861e-12
+
+# dir 16 branch 1 spec 2
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+3.26788e-13 -2.28439e-12 4.18174e-12
+elem 1
+4.34672e-12 -5.63141e-13 -4.61854e-12
+
+# dir 16 branch 1 spec 3
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+-3.29616e-12 -3.85487e-12 8.9828e-12
+elem 1
+6.28902e-12 -6.88308e-13 -9.04483e-12
+
+# dir 16 branch 1 spec 4
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+-1.08657e-11 -5.72927e-12 1.64455e-11
+elem 1
+7.1781e-12 -4.89016e-13 -1.51969e-11
+
+# dir 16 branch 1 spec 5
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+-2.34066e-11 -7.93106e-12 2.71703e-11
+elem 1
+6.34817e-12 1.94584e-13 -2.33554e-11
+
+# dir 16 branch 1 spec 6
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+-4.20985e-11 -1.05138e-11 4.18939e-11
+elem 1
+3.0751e-12 1.54039e-12 -3.39013e-11
+
+# dir 16 branch 1 spec 7
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+-6.8429e-11 -1.35592e-11 6.15691e-11
+elem 1
+-3.5115e-12 3.76525e-12 -4.73485e-11
+
+# dir 16 branch 1 spec 8
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+-1.04375e-10 -1.71827e-11 8.74728e-11
+elem 1
+-1.4534e-11 7.15083e-12 -6.43986e-11
+
+# dir 16 branch 1 spec 9
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+-1.52661e-10 -2.15458e-11 1.21369e-10
+elem 1
+-3.15169e-11 1.20809e-11 -8.60274e-11
+
+# dir 16 branch 1 spec 10
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+2.76548e-10 -1.93267e-10 3.21927e-10
+elem 1
+2.78594e-10 -1.33528e-11 -2.10349e-10
+
+# dir 16 branch 1 spec 11
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+3.50549e-10 -2.2282e-10 3.39892e-10
+elem 1
+3.67421e-10 -2.25006e-11 -2.67245e-10
+
+# dir 16 branch 1 spec 12
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+4.40356e-10 -2.57976e-10 3.57696e-10
+elem 1
+4.82089e-10 -3.58062e-11 -3.37729e-10
+
+# dir 16 branch 1 spec 13
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+5.48866e-10 -3.01063e-10 3.77791e-10
+elem 1
+6.32259e-10 -5.50444e-11 -4.2675e-10
+
+# dir 16 branch 1 spec 14
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+6.78131e-10 -3.55389e-10 4.04554e-10
+elem 1
+8.32969e-10 -8.29954e-11 -5.42431e-10
+
+# dir 16 branch 1 spec 15
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+8.2526e-10 -4.25846e-10 4.47312e-10
+elem 1
+1.10865e-09 -1.2421e-10 -6.99183e-10
+
+# dir 16 branch 1 spec 16
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+9.65919e-10 -5.19675e-10 5.30026e-10
+elem 1
+1.50049e-09 -1.86352e-10 -9.25665e-10
+
+# dir 16 branch 1 spec 17
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+9.76375e-10 -6.45651e-10 7.30263e-10
+elem 1
+2.07549e-09 -2.81485e-10 -1.28971e-09
+
+# dir 16 branch 1 spec 18
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+1.34255e-10 -7.93043e-10 1.40526e-09
+elem 1
+2.86612e-09 -4.10306e-10 -2.00947e-09
+
+# dir 16 branch 1 spec 19
+# ndof 3 ne 2
+# direction: 0.142212 -0.989836 0 weight 0.337546
+elem 0
+-9.59518e-09 -6.49719e-10 6.26831e-09
+elem 1
+1.41364e-09 -6.06492e-12 -4.69018e-09
+
+# dir 17 branch 0 spec 0
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+5.19262e-13 -4.2572e-12 7.81693e-12
+elem 1
+8.26453e-14 3.75535e-14 -1.19887e-13
+
+# dir 17 branch 0 spec 1
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+2.85515e-12 -2.05718e-11 3.75761e-11
+elem 1
+7.44716e-13 1.60128e-13 -9.2259e-13
+
+# dir 17 branch 0 spec 2
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+4.12044e-12 -2.09893e-11 3.76439e-11
+elem 1
+2.01943e-12 -5.65932e-14 -2.13103e-12
+
+# dir 17 branch 0 spec 3
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+4.91283e-12 -1.43399e-11 2.44964e-11
+elem 1
+3.76798e-12 -6.10611e-13 -3.81564e-12
+
+# dir 17 branch 0 spec 4
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+5.89341e-12 -1.14329e-11 1.83467e-11
+elem 1
+5.78381e-12 -1.24515e-12 -6.25939e-12
+
+# dir 17 branch 0 spec 5
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+6.45611e-12 -1.15072e-11 1.80776e-11
+elem 1
+7.81411e-12 -1.8098e-12 -9.58224e-12
+
+# dir 17 branch 0 spec 6
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+5.84892e-12 -1.27431e-11 2.06358e-11
+elem 1
+9.5748e-12 -2.22954e-12 -1.37924e-11
+
+# dir 17 branch 0 spec 7
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+3.44583e-12 -1.44439e-11 2.50368e-11
+elem 1
+1.07661e-11 -2.44445e-12 -1.88699e-11
+
+# dir 17 branch 0 spec 8
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+-1.28216e-12 -1.63591e-11 3.10918e-11
+elem 1
+1.10891e-11 -2.39646e-12 -2.47946e-11
+
+# dir 17 branch 0 spec 9
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+-8.77401e-12 -1.83749e-11 3.88234e-11
+elem 1
+1.02594e-11 -2.02927e-12 -3.1556e-11
+
+# dir 17 branch 0 spec 10
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+-1.93795e-11 -2.04346e-11 4.83131e-11
+elem 1
+8.01659e-12 -1.28984e-12 -3.91574e-11
+
+# dir 17 branch 0 spec 11
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+-3.33694e-11 -2.25138e-11 5.96611e-11
+elem 1
+4.12744e-12 -1.29272e-13 -4.76187e-11
+
+# dir 17 branch 0 spec 12
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+-5.09557e-11 -2.46104e-11 7.29771e-11
+elem 1
+-1.61559e-12 1.49737e-12 -5.6978e-11
+
+# dir 17 branch 0 spec 13
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+-7.23179e-11 -2.67382e-11 8.8383e-11
+elem 1
+-9.4008e-12 3.63227e-12 -6.72938e-11
+
+# dir 17 branch 0 spec 14
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+-9.76322e-11 -2.89228e-11 1.06021e-10
+elem 1
+-1.94069e-11 6.31694e-12 -7.86473e-11
+
+# dir 17 branch 0 spec 15
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+-1.27101e-10 -3.11986e-11 1.26063e-10
+elem 1
+-3.18152e-11 9.59489e-12 -9.11448e-11
+
+# dir 17 branch 0 spec 16
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+-1.6098e-10 -3.36067e-11 1.48723e-10
+elem 1
+-4.68233e-11 1.35149e-11 -1.04922e-10
+
+# dir 17 branch 0 spec 17
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+-1.99612e-10 -3.61942e-11 1.74271e-10
+elem 1
+-6.46614e-11 1.81344e-11 -1.20147e-10
+
+# dir 17 branch 0 spec 18
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+-2.43448e-10 -3.90136e-11 2.03048e-10
+elem 1
+-8.5609e-11 2.35242e-11 -1.37032e-10
+
+# dir 17 branch 0 spec 19
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+-2.93086e-10 -4.21242e-11 2.35485e-10
+elem 1
+-1.10016e-10 2.97728e-11 -1.55836e-10
+
+# dir 17 branch 1 spec 0
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+1.11607e-13 -1.89316e-13 2.95693e-13
+elem 1
+1.14897e-13 -1.90452e-14 -1.25803e-13
+
+# dir 17 branch 1 spec 1
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+1.22101e-13 -8.56159e-13 1.52637e-12
+elem 1
+6.4849e-13 -1.38157e-13 -1.20075e-12
+
+# dir 17 branch 1 spec 2
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+-1.44346e-12 -1.92478e-12 4.34531e-12
+elem 1
+9.34841e-13 -1.64209e-13 -3.5505e-12
+
+# dir 17 branch 1 spec 3
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+-5.73562e-12 -3.33321e-12 9.25705e-12
+elem 1
+3.44489e-13 5.88275e-14 -7.34127e-12
+
+# dir 17 branch 1 spec 4
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+-1.37408e-11 -5.07506e-12 1.67806e-11
+elem 1
+-1.69661e-12 6.70516e-13 -1.27901e-11
+
+# dir 17 branch 1 spec 5
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+-2.64777e-11 -7.17684e-12 2.75129e-11
+elem 1
+-5.78768e-12 1.81793e-12 -2.01859e-11
+
+# dir 17 branch 1 spec 6
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+-4.51362e-11 -9.69139e-12 4.21917e-11
+elem 1
+-1.26207e-11 3.67248e-12 -2.99125e-11
+
+# dir 17 branch 1 spec 7
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+-7.12163e-11 -1.26989e-11 6.17718e-11
+elem 1
+-2.30548e-11 6.44825e-12 -4.24837e-11
+
+# dir 17 branch 1 spec 8
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+-1.06703e-10 -1.63132e-11 8.75316e-11
+elem 1
+-3.82154e-11 1.04266e-11 -5.8599e-11
+
+# dir 17 branch 1 spec 9
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+-1.54327e-10 -2.06952e-11 1.21236e-10
+elem 1
+-5.9641e-11 1.59928e-11 -7.923e-11
+
+# dir 17 branch 1 spec 10
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+1.17789e-10 -1.43795e-10 2.07275e-10
+elem 1
+1.15541e-10 3.22398e-12 -1.17835e-10
+
+# dir 17 branch 1 spec 11
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+1.46713e-10 -1.64844e-10 2.30738e-10
+elem 1
+1.50946e-10 5.09867e-13 -1.51716e-10
+
+# dir 17 branch 1 spec 12
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+1.80021e-10 -1.89404e-10 2.58207e-10
+elem 1
+1.9591e-10 -3.81143e-12 -1.94945e-10
+
+# dir 17 branch 1 spec 13
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+2.17053e-10 -2.19002e-10 2.92824e-10
+elem 1
+2.53609e-10 -1.03195e-11 -2.5138e-10
+
+# dir 17 branch 1 spec 14
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+2.54828e-10 -2.5584e-10 3.40193e-10
+elem 1
+3.28652e-10 -1.9857e-11 -3.27464e-10
+
+# dir 17 branch 1 spec 15
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+2.83419e-10 -3.03243e-10 4.11666e-10
+elem 1
+4.27604e-10 -3.36317e-11 -4.34865e-10
+
+# dir 17 branch 1 spec 16
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+2.69864e-10 -3.66381e-10 5.34236e-10
+elem 1
+5.5842e-10 -5.30662e-11 -5.97403e-10
+
+# dir 17 branch 1 spec 17
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+8.86111e-11 -4.52595e-10 7.88277e-10
+elem 1
+7.19637e-10 -7.73408e-11 -8.73412e-10
+
+# dir 17 branch 1 spec 18
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+-9.12301e-10 -5.60975e-10 1.52028e-09
+elem 1
+7.84437e-10 -7.74397e-11 -1.4598e-09
+
+# dir 17 branch 1 spec 19
+# ndof 3 ne 2
+# direction: 0.448646 -0.893709 0 weight 0.306678
+elem 0
+-1.01886e-08 -4.76069e-10 6.3225e-09
+elem 1
+-2.10842e-09 5.85499e-10 -3.90929e-09
+
+# dir 18 branch 0 spec 0
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+2.95193e-14 -2.99476e-13 4.51341e-13
+elem 1
+7.35952e-15 3.32098e-15 -1.20033e-14
+
+# dir 18 branch 0 spec 1
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+1.88569e-13 -1.87903e-12 2.86523e-12
+elem 1
+4.03401e-14 -1.60069e-13 1.35861e-14
+
+# dir 18 branch 0 spec 2
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+2.77077e-13 -3.34001e-12 5.26184e-12
+elem 1
+-8.37935e-15 -8.57629e-13 1.72185e-13
+
+# dir 18 branch 0 spec 3
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+6.56578e-14 -4.48886e-12 7.47982e-12
+elem 1
+-2.88972e-13 -1.78973e-12 -8.01103e-14
+
+# dir 18 branch 0 spec 4
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-7.21724e-13 -5.60454e-12 1.00686e-11
+elem 1
+-9.4287e-13 -2.5042e-12 -1.28353e-12
+
+# dir 18 branch 0 spec 5
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-2.42238e-12 -6.86663e-12 1.34633e-11
+elem 1
+-2.11194e-12 -2.85171e-12 -3.57181e-12
+
+# dir 18 branch 0 spec 6
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-5.41335e-12 -8.33364e-12 1.79397e-11
+elem 1
+-3.95005e-12 -2.82839e-12 -6.8978e-12
+
+# dir 18 branch 0 spec 7
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-1.00833e-11 -9.98018e-12 2.36505e-11
+elem 1
+-6.62264e-12 -2.44505e-12 -1.11957e-11
+
+# dir 18 branch 0 spec 8
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-1.68046e-11 -1.17637e-11 3.07148e-11
+elem 1
+-1.03008e-11 -1.70098e-12 -1.64181e-11
+
+# dir 18 branch 0 spec 9
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-2.59159e-11 -1.36498e-11 3.92493e-11
+elem 1
+-1.51554e-11 -5.84665e-13 -2.25398e-11
+
+# dir 18 branch 0 spec 10
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-3.77158e-11 -1.56167e-11 4.93718e-11
+elem 1
+-2.13527e-11 9.22834e-13 -2.95564e-11
+
+# dir 18 branch 0 spec 11
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-5.24651e-11 -1.76542e-11 6.12024e-11
+elem 1
+-2.90538e-11 2.8452e-12 -3.74831e-11
+
+# dir 18 branch 0 spec 12
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-7.03985e-11 -1.97631e-11 7.48674e-11
+elem 1
+-3.84165e-11 5.20967e-12 -4.63547e-11
+
+# dir 18 branch 0 spec 13
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-9.17395e-11 -2.19537e-11 9.05057e-11
+elem 1
+-4.95995e-11 8.04691e-12 -5.62262e-11
+
+# dir 18 branch 0 spec 14
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-1.16721e-10 -2.42446e-11 1.08277e-10
+elem 1
+-6.27698e-11 1.1392e-11 -6.71747e-11
+
+# dir 18 branch 0 spec 15
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-1.45605e-10 -2.66616e-11 1.28369e-10
+elem 1
+-7.81115e-11 1.52858e-11 -7.93019e-11
+
+# dir 18 branch 0 spec 16
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-1.78708e-10 -2.92369e-11 1.51015e-10
+elem 1
+-9.58361e-11 1.97777e-11 -9.27381e-11
+
+# dir 18 branch 0 spec 17
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-2.16423e-10 -3.20094e-11 1.76497e-10
+elem 1
+-1.16195e-10 2.49277e-11 -1.07647e-10
+
+# dir 18 branch 0 spec 18
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-2.59249e-10 -3.50246e-11 2.05169e-10
+elem 1
+-1.39496e-10 3.08107e-11 -1.24233e-10
+
+# dir 18 branch 0 spec 19
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-3.07821e-10 -3.83358e-11 2.37473e-10
+elem 1
+-1.66119e-10 3.75204e-11 -1.42751e-10
+
+# dir 18 branch 1 spec 0
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-1.69464e-14 -8.8017e-14 1.63253e-13
+elem 1
+-1.80085e-14 -3.97588e-14 -3.15904e-14
+
+# dir 18 branch 1 spec 1
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-7.1083e-13 -5.90757e-13 1.46673e-12
+elem 1
+-4.47164e-13 -1.20487e-13 -7.40595e-13
+
+# dir 18 branch 1 spec 2
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-3.2388e-12 -1.44215e-12 4.42518e-12
+elem 1
+-1.84334e-12 2.89088e-14 -2.61384e-12
+
+# dir 18 branch 1 spec 3
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-8.53818e-12 -2.62406e-12 9.50119e-12
+elem 1
+-4.67796e-12 5.36267e-13 -5.84335e-12
+
+# dir 18 branch 1 spec 4
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-1.74983e-11 -4.14673e-12 1.71881e-11
+elem 1
+-9.43373e-12 1.52201e-12 -1.06577e-11
+
+# dir 18 branch 1 spec 5
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-3.10921e-11 -6.04402e-12 2.80697e-11
+elem 1
+-1.6658e-11 3.12175e-12 -1.73517e-11
+
+# dir 18 branch 1 spec 6
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-5.04874e-11 -8.3722e-12 4.28765e-11
+elem 1
+-2.70161e-11 5.50054e-12 -2.63113e-11
+
+# dir 18 branch 1 spec 7
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-7.71717e-11 -1.1213e-11 6.25593e-11
+elem 1
+-4.1359e-11 8.86973e-12 -3.805e-11
+
+# dir 18 branch 1 spec 8
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-1.13122e-10 -1.46816e-11 8.83936e-11
+elem 1
+-6.08176e-11 1.35107e-11 -5.32649e-11
+
+# dir 18 branch 1 spec 9
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-1.6106e-10 -1.89396e-11 1.22142e-10
+elem 1
+-8.69485e-11 1.98112e-11 -7.29233e-11
+
+# dir 18 branch 1 spec 10
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-4.17134e-12 -4.12904e-11 7.50384e-11
+elem 1
+-3.86428e-12 -1.49409e-11 -2.46295e-11
+
+# dir 18 branch 1 spec 11
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-1.0825e-11 -5.18695e-11 9.82905e-11
+elem 1
+-7.97199e-12 -1.86732e-11 -3.70296e-11
+
+# dir 18 branch 1 spec 12
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-2.27932e-11 -6.49225e-11 1.29264e-10
+elem 1
+-1.48563e-11 -2.24966e-11 -5.53131e-11
+
+# dir 18 branch 1 spec 13
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-4.42375e-11 -8.12665e-11 1.71824e-10
+elem 1
+-2.64596e-11 -2.60049e-11 -8.24831e-11
+
+# dir 18 branch 1 spec 14
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-8.35088e-11 -1.0213e-10 2.32911e-10
+elem 1
+-4.65814e-11 -2.83926e-11 -1.23625e-10
+
+# dir 18 branch 1 spec 15
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-1.59116e-10 -1.29426e-10 3.26311e-10
+elem 1
+-8.34803e-11 -2.78953e-11 -1.88147e-10
+
+# dir 18 branch 1 spec 16
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-3.18234e-10 -1.66183e-10 4.83496e-10
+elem 1
+-1.57943e-10 -2.00373e-11 -2.95729e-10
+
+# dir 18 branch 1 spec 17
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-7.09126e-10 -2.16719e-10 7.93072e-10
+elem 1
+-3.35172e-10 9.35346e-12 -4.96036e-10
+
+# dir 18 branch 1 spec 18
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-1.99671e-09 -2.80453e-10 1.61274e-09
+elem 1
+-9.13975e-10 1.25908e-10 -9.63581e-10
+
+# dir 18 branch 1 spec 19
+# ndof 3 ne 2
+# direction: 0.684831 -0.728701 0 weight 0.270774
+elem 0
+-1.12641e-08 -2.13662e-10 6.47549e-09
+elem 1
+-5.37167e-09 1.10112e-09 -3.173e-09
+
+# dir 19 branch 0 spec 0
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-1.23452e-13 1.22532e-12 -1.60253e-12
+elem 1
+-5.69776e-14 -8.37937e-14 1.35306e-13
+
+# dir 19 branch 0 spec 1
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-8.83337e-13 6.14743e-12 -7.86236e-12
+elem 1
+-5.65156e-13 -8.59268e-13 1.1951e-12
+
+# dir 19 branch 0 spec 2
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-1.97903e-12 5.96733e-12 -6.84493e-12
+elem 1
+-1.75784e-12 -2.3588e-12 2.79172e-12
+
+# dir 19 branch 0 spec 3
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-3.66053e-12 2.61638e-12 -1.00809e-12
+elem 1
+-3.78761e-12 -3.80992e-12 3.79169e-12
+
+# dir 19 branch 0 spec 4
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-6.31539e-12 -3.91485e-14 4.55894e-12
+elem 1
+-6.73446e-12 -4.62038e-12 3.52336e-12
+
+# dir 19 branch 0 spec 5
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-1.0165e-11 -1.8765e-12 9.7792e-12
+elem 1
+-1.06527e-11 -4.72602e-12 1.95488e-12
+
+# dir 19 branch 0 spec 6
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-1.54158e-11 -3.48192e-12 1.55439e-11
+elem 1
+-1.55985e-11 -4.23315e-12 -7.65718e-13
+
+# dir 19 branch 0 spec 7
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-2.23044e-11 -5.10048e-12 2.2299e-11
+elem 1
+-2.16357e-11 -3.23267e-12 -4.51806e-12
+
+# dir 19 branch 0 spec 8
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-3.10789e-11 -6.80113e-12 3.02579e-11
+elem 1
+-2.88351e-11 -1.77962e-12 -9.23063e-12
+
+# dir 19 branch 0 spec 9
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-4.19859e-11 -8.60121e-12 3.95652e-11
+elem 1
+-3.72749e-11 9.70338e-14 -1.48692e-11
+
+# dir 19 branch 0 spec 10
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-5.52653e-11 -1.05045e-11 5.03464e-11
+elem 1
+-4.70411e-11 2.38581e-12 -2.1427e-11
+
+# dir 19 branch 0 spec 11
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-7.11514e-11 -1.2513e-11 6.27252e-11
+elem 1
+-5.82298e-11 5.08765e-12 -2.89196e-11
+
+# dir 19 branch 0 spec 12
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-8.98794e-11 -1.46315e-11 7.68326e-11
+elem 1
+-7.09501e-11 8.21319e-12 -3.73827e-11
+
+# dir 19 branch 0 spec 13
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-1.11694e-10 -1.68691e-11 9.2815e-11
+elem 1
+-8.53284e-11 1.17817e-11 -4.68713e-11
+
+# dir 19 branch 0 spec 14
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-1.36862e-10 -1.92403e-11 1.10842e-10
+elem 1
+-1.01515e-10 1.58213e-11 -5.74618e-11
+
+# dir 19 branch 0 spec 15
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-1.6569e-10 -2.1765e-11 1.31113e-10
+elem 1
+-1.19688e-10 2.03694e-11 -6.92544e-11
+
+# dir 19 branch 0 spec 16
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-1.98538e-10 -2.44693e-11 1.53872e-10
+elem 1
+-1.40065e-10 2.54745e-11 -8.23767e-11
+
+# dir 19 branch 0 spec 17
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-2.35843e-10 -2.73857e-11 1.79414e-10
+elem 1
+-1.62913e-10 3.11986e-11 -9.69891e-11
+
+# dir 19 branch 0 spec 18
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-2.78144e-10 -3.0554e-11 2.08103e-10
+elem 1
+-1.88557e-10 3.76194e-11 -1.13292e-10
+
+# dir 19 branch 0 spec 19
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-3.26111e-10 -3.4023e-11 2.40391e-10
+elem 1
+-2.17403e-10 4.4835e-11 -1.31536e-10
+
+# dir 19 branch 1 spec 0
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-1.26503e-13 1.27796e-14 6.97375e-14
+elem 1
+-1.32351e-13 -7.7022e-14 5.93617e-14
+
+# dir 19 branch 1 spec 1
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-1.46769e-12 -3.03261e-13 1.40743e-12
+elem 1
+-1.39408e-12 -1.49601e-13 -3.41326e-13
+
+# dir 19 branch 1 spec 2
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-4.94132e-12 -9.29931e-13 4.49607e-12
+elem 1
+-4.26787e-12 1.4469e-13 -1.81801e-12
+
+# dir 19 branch 1 spec 3
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-1.13042e-11 -1.87508e-12 9.7484e-12
+elem 1
+-9.10286e-12 9.06787e-13 -4.57654e-12
+
+# dir 19 branch 1 spec 4
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-2.13534e-11 -3.16161e-12 1.76317e-11
+elem 1
+-1.63085e-11 2.23992e-12 -8.85362e-12
+
+# dir 19 branch 1 spec 5
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-3.60132e-11 -4.82967e-12 2.87152e-11
+elem 1
+-2.63896e-11 4.26933e-12 -1.49483e-11
+
+# dir 19 branch 1 spec 6
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-5.6424e-11 -6.93872e-12 4.3721e-11
+elem 1
+-3.999e-11 7.1543e-12 -2.32484e-11
+
+# dir 19 branch 1 spec 7
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-8.40577e-11 -9.5723e-12 6.35949e-11
+elem 1
+-5.79545e-11 1.11038e-11 -3.4267e-11
+
+# dir 19 branch 1 spec 8
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-1.20881e-10 -1.28465e-11 8.96089e-11
+elem 1
+-8.14211e-11 1.63996e-11 -4.86988e-11
+
+# dir 19 branch 1 spec 9
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-1.69605e-10 -1.69241e-11 1.23523e-10
+elem 1
+-1.11964e-10 2.3432e-11 -6.75072e-11
+
+# dir 19 branch 1 spec 10
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-1.07401e-10 6.48925e-11 -2.51021e-11
+elem 1
+-1.06547e-10 -5.33422e-11 6.90755e-11
+
+# dir 19 branch 1 spec 11
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-1.45218e-10 6.70988e-11 -5.19247e-12
+elem 1
+-1.44491e-10 -6.11747e-11 7.60507e-11
+
+# dir 19 branch 1 spec 12
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-1.97059e-10 6.76367e-11 2.54287e-11
+elem 1
+-1.95738e-10 -6.7744e-11 7.97512e-11
+
+# dir 19 branch 1 spec 13
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-2.70344e-10 6.62099e-11 7.14563e-11
+elem 1
+-2.66627e-10 -7.17295e-11 7.78466e-11
+
+# dir 19 branch 1 spec 14
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-3.78534e-10 6.23332e-11 1.41235e-10
+elem 1
+-3.68213e-10 -7.08033e-11 6.63464e-11
+
+# dir 19 branch 1 spec 15
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-5.48575e-10 5.51916e-11 2.51045e-10
+elem 1
+-5.21641e-10 -6.04415e-11 3.77165e-11
+
+# dir 19 branch 1 spec 16
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-8.42384e-10 4.34486e-11 4.37049e-10
+elem 1
+-7.72959e-10 -3.06279e-11 -2.42296e-11
+
+# dir 19 branch 1 spec 17
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-1.43473e-09 2.52775e-11 7.97126e-10
+elem 1
+-1.24435e-09 4.55849e-11 -1.61623e-10
+
+# dir 19 branch 1 spec 18
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-3.02417e-09 1.52022e-12 1.70552e-09
+elem 1
+-2.39312e-09 2.69965e-10 -5.28747e-10
+
+# dir 19 branch 1 spec 19
+# ndof 3 ne 2
+# direction: 0.844331 -0.535822 0 weight 0.230425
+elem 0
+-1.24327e-08 5.68167e-11 6.66396e-09
+elem 1
+-8.29809e-09 1.55273e-09 -2.525e-09
+
+# dir 20 branch 0 spec 0
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-1.75571e-13 1.45644e-12 -1.69805e-12
+elem 1
+-1.17673e-13 -2.47251e-13 3.46698e-13
+
+# dir 20 branch 0 spec 1
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-1.4265e-12 7.95657e-12 -9.00442e-12
+elem 1
+-1.13652e-12 -2.04204e-12 2.73986e-12
+
+# dir 20 branch 0 spec 2
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-3.59585e-12 9.45004e-12 -9.54819e-12
+elem 1
+-3.39957e-12 -4.57657e-12 5.79904e-12
+
+# dir 20 branch 0 spec 3
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-6.79697e-12 6.8307e-12 -4.3137e-12
+elem 1
+-7.03856e-12 -6.46849e-12 7.73778e-12
+
+# dir 20 branch 0 spec 4
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-1.1263e-11 4.32209e-12 1.61872e-12
+elem 1
+-1.20613e-11 -7.19068e-12 8.01259e-12
+
+# dir 20 branch 0 spec 5
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-1.71053e-11 2.5206e-12 7.55858e-12
+elem 1
+-1.84394e-11 -6.89438e-12 6.82735e-12
+
+# dir 20 branch 0 spec 6
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-2.44139e-11 9.7547e-13 1.41005e-11
+elem 1
+-2.61423e-11 -5.82481e-12 4.44691e-12
+
+# dir 20 branch 0 spec 7
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-3.33071e-11 -5.62904e-13 2.16094e-11
+elem 1
+-3.51429e-11 -4.14789e-12 1.03087e-12
+
+# dir 20 branch 0 spec 8
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-4.39314e-11 -2.18627e-12 3.02714e-11
+elem 1
+-4.54236e-11 -1.96374e-12 -3.34111e-12
+
+# dir 20 branch 0 spec 9
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-5.64587e-11 -3.92844e-12 4.02144e-11
+elem 1
+-5.69809e-11 6.67669e-13 -8.63749e-12
+
+# dir 20 branch 0 spec 10
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-7.10834e-11 -5.8022e-12 5.1553e-11
+elem 1
+-6.98312e-11 3.71205e-12 -1.48572e-11
+
+# dir 20 branch 0 spec 11
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-8.80225e-11 -7.81292e-12 6.44059e-11
+elem 1
+-8.40154e-11 7.15341e-12 -2.20213e-11
+
+# dir 20 branch 0 spec 12
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-1.07516e-10 -9.96464e-12 7.89045e-11
+elem 1
+-9.96024e-11 1.09903e-11 -3.01695e-11
+
+# dir 20 branch 0 spec 13
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-1.2983e-10 -1.22633e-11 9.51996e-11
+elem 1
+-1.16693e-10 1.52342e-11 -3.93595e-11
+
+# dir 20 branch 0 spec 14
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-1.55265e-10 -1.47184e-11 1.13468e-10
+elem 1
+-1.35426e-10 1.99086e-11 -4.96689e-11
+
+# dir 20 branch 0 spec 15
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-1.84163e-10 -1.73449e-11 1.33919e-10
+elem 1
+-1.55977e-10 2.50495e-11 -6.11973e-11
+
+# dir 20 branch 0 spec 16
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-2.16923e-10 -2.01633e-11 1.56805e-10
+elem 1
+-1.78573e-10 3.07064e-11 -7.4071e-11
+
+# dir 20 branch 0 spec 17
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-2.54019e-10 -2.32014e-11 1.82431e-10
+elem 1
+-2.03493e-10 3.69434e-11 -8.84484e-11
+
+# dir 20 branch 0 spec 18
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-2.96023e-10 -2.64948e-11 2.1117e-10
+elem 1
+-2.31083e-10 4.38422e-11 -1.04527e-10
+
+# dir 20 branch 0 spec 19
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-3.43632e-10 -3.00886e-11 2.4348e-10
+elem 1
+-2.61769e-10 5.15053e-11 -1.22554e-10
+
+# dir 20 branch 1 spec 0
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-2.23825e-13 9.44427e-14 1.80284e-14
+elem 1
+-2.37398e-13 -1.22884e-13 1.44093e-13
+
+# dir 20 branch 1 spec 1
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-2.14915e-12 -3.6397e-14 1.38304e-12
+elem 1
+-2.24441e-12 -1.86562e-13 -1.04338e-14
+
+# dir 20 branch 1 spec 2
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-6.47522e-12 -4.58115e-13 4.59491e-12
+elem 1
+-6.42266e-12 2.46803e-13 -1.17242e-12
+
+# dir 20 branch 1 spec 3
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-1.38037e-11 -1.19237e-12 1.00161e-11
+elem 1
+-1.30084e-11 1.24768e-12 -3.55561e-12
+
+# dir 20 branch 1 spec 4
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-2.48565e-11 -2.2697e-12 1.80908e-11
+elem 1
+-2.23447e-11 2.9023e-12 -7.40345e-12
+
+# dir 20 branch 1 spec 5
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-4.05199e-11 -3.73365e-12 2.93759e-11
+elem 1
+-3.48982e-11 5.32598e-12 -1.30189e-11
+
+# dir 20 branch 1 spec 6
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-6.19152e-11 -5.64513e-12 4.45873e-11
+elem 1
+-5.12933e-11 8.67252e-12 -2.07912e-11
+
+# dir 20 branch 1 spec 7
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-9.05042e-11 -8.08818e-12 6.46667e-11
+elem 1
+-7.23692e-11 1.31486e-11 -3.12335e-11
+
+# dir 20 branch 1 spec 8
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-1.28248e-10 -1.1179e-11 9.08844e-11
+elem 1
+-9.92694e-11 1.90362e-11 -4.50387e-11
+
+# dir 20 branch 1 spec 9
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-1.77854e-10 -1.50805e-11 1.24999e-10
+elem 1
+-1.33584e-10 2.67278e-11 -6.31672e-11
+
+# dir 20 branch 1 spec 10
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-1.99271e-10 1.53939e-10 -8.48064e-11
+elem 1
+-2.01623e-10 -1.03216e-10 1.59032e-10
+
+# dir 20 branch 1 spec 11
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-2.654e-10 1.69512e-10 -6.82994e-11
+elem 1
+-2.70433e-10 -1.15697e-10 1.82328e-10
+
+# dir 20 branch 1 spec 12
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-3.5347e-10 1.84309e-10 -3.88259e-11
+elem 1
+-3.61967e-10 -1.25331e-10 2.04115e-10
+
+# dir 20 branch 1 spec 13
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-4.73823e-10 1.98363e-10 9.18042e-12
+elem 1
+-4.86447e-10 -1.29919e-10 2.22603e-10
+
+# dir 20 branch 1 spec 14
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-6.44499e-10 2.1168e-10 8.54446e-11
+elem 1
+-6.61322e-10 -1.25697e-10 2.34703e-10
+
+# dir 20 branch 1 spec 15
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-8.99985e-10 2.24175e-10 2.08609e-10
+elem 1
+-9.19053e-10 -1.05561e-10 2.34438e-10
+
+# dir 20 branch 1 spec 16
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-1.31527e-09 2.35571e-10 4.1916e-10
+elem 1
+-1.32774e-09 -5.43592e-11 2.08551e-10
+
+# dir 20 branch 1 spec 17
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-2.08785e-09 2.45251e-10 8.23269e-10
+elem 1
+-2.05882e-09 6.65342e-11 1.21241e-10
+
+# dir 20 branch 1 spec 18
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-3.93986e-09 2.51523e-10 1.80863e-09
+elem 1
+-3.7032e-09 3.91028e-10 -1.65012e-10
+
+# dir 20 branch 1 spec 19
+# ndof 3 ne 2
+# direction: 0.937007 -0.349311 0 weight 0.186292
+elem 0
+-1.34653e-08 2.86194e-10 6.84783e-09
+elem 1
+-1.08126e-08 1.94429e-09 -1.99103e-09
+
+# dir 21 branch 0 spec 0
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-2.13903e-13 1.37496e-12 -1.45043e-12
+elem 1
+-1.77158e-13 -5.04672e-13 6.31522e-13
+
+# dir 21 branch 0 spec 1
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-1.85884e-12 8.00039e-12 -8.10584e-12
+elem 1
+-1.68811e-12 -3.75423e-12 4.64931e-12
+
+# dir 21 branch 0 spec 2
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-4.96354e-12 1.07509e-11 -9.51619e-12
+elem 1
+-4.95114e-12 -7.41229e-12 9.06345e-12
+
+# dir 21 branch 0 spec 3
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-9.52742e-12 9.39636e-12 -5.36004e-12
+elem 1
+-1.0051e-11 -9.47847e-12 1.15099e-11
+
+# dir 21 branch 0 spec 4
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-1.56048e-11 7.53382e-12 3.1934e-13
+elem 1
+-1.69194e-11 -9.83261e-12 1.19222e-11
+
+# dir 21 branch 0 spec 5
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-2.31808e-11 6.02028e-12 6.54512e-12
+elem 1
+-2.54496e-11 -8.95883e-12 1.08311e-11
+
+# dir 21 branch 0 spec 6
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-3.22324e-11 4.63301e-12 1.3567e-11
+elem 1
+-3.55284e-11 -7.22876e-12 8.58626e-12
+
+# dir 21 branch 0 spec 7
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-4.27745e-11 3.19478e-12 2.16027e-11
+elem 1
+-4.70436e-11 -4.85643e-12 5.35092e-12
+
+# dir 21 branch 0 spec 8
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-5.48728e-11 1.63093e-12 3.07773e-11
+elem 1
+-5.98963e-11 -1.96785e-12 1.19143e-12
+
+# dir 21 branch 0 spec 9
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-6.86474e-11 -8.75242e-14 4.11884e-11
+elem 1
+-7.4012e-11 1.35888e-12 -3.87503e-12
+
+# dir 21 branch 0 spec 10
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-8.427e-11 -1.96999e-12 5.29355e-11
+elem 1
+-8.93493e-11 5.07582e-12 -9.85919e-12
+
+# dir 21 branch 0 spec 11
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-1.01958e-10 -4.01768e-12 6.61319e-11
+elem 1
+-1.05907e-10 9.15702e-12 -1.67907e-11
+
+# dir 21 branch 0 spec 12
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-1.2197e-10 -6.2296e-12 8.09099e-11
+elem 1
+-1.23725e-10 1.35945e-11 -2.47151e-11
+
+# dir 21 branch 0 spec 13
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-1.44602e-10 -8.60621e-12 9.74252e-11
+elem 1
+-1.42892e-10 1.83962e-11 -3.36934e-11
+
+# dir 21 branch 0 spec 14
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-1.70187e-10 -1.11519e-11 1.15862e-10
+elem 1
+-1.63541e-10 2.35848e-11 -4.38046e-11
+
+# dir 21 branch 0 spec 15
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-1.99103e-10 -1.38763e-11 1.36437e-10
+elem 1
+-1.85855e-10 2.91975e-11 -5.51484e-11
+
+# dir 21 branch 0 spec 16
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-2.31782e-10 -1.67961e-11 1.59412e-10
+elem 1
+-2.10072e-10 3.52864e-11 -6.78498e-11
+
+# dir 21 branch 0 spec 17
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-2.68726e-10 -1.99354e-11 1.85099e-10
+elem 1
+-2.36487e-10 4.19195e-11 -8.20655e-11
+
+# dir 21 branch 0 spec 18
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-3.10531e-10 -2.33272e-11 2.13878e-10
+elem 1
+-2.65466e-10 4.91828e-11 -9.7991e-11
+
+# dir 21 branch 0 spec 19
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-3.57916e-10 -2.70143e-11 2.46212e-10
+elem 1
+-2.97457e-10 5.71838e-11 -1.15871e-10
+
+# dir 21 branch 1 spec 0
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-3.09344e-13 1.55609e-13 -4.84325e-15
+elem 1
+-3.33086e-13 -1.70015e-13 2.17576e-13
+
+# dir 21 branch 1 spec 1
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-2.73346e-12 1.84372e-13 1.39456e-12
+elem 1
+-2.99108e-12 -2.12618e-13 2.46708e-13
+
+# dir 21 branch 1 spec 2
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-7.75957e-12 -7.24235e-14 4.71786e-12
+elem 1
+-8.27538e-12 3.55598e-13 -6.79575e-13
+
+# dir 21 branch 1 spec 3
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-1.58621e-11 -6.43271e-13 1.02843e-11
+elem 1
+-1.63138e-11 1.57271e-12 -2.78142e-12
+
+# dir 21 branch 1 spec 4
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-2.77108e-11 -1.56157e-12 1.85202e-11
+elem 1
+-2.73887e-11 3.5087e-12 -6.30846e-12
+
+# dir 21 branch 1 spec 5
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-4.41701e-11 -2.87137e-12 2.99746e-11
+elem 1
+-4.19333e-11 6.26974e-12 -1.15672e-11
+
+# dir 21 branch 1 spec 6
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-6.63535e-11 -4.63314e-12 4.53595e-11
+elem 1
+-6.05549e-11 1.00047e-11 -1.89484e-11
+
+# dir 21 branch 1 spec 7
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-9.57206e-11 -6.93018e-12 6.56152e-11
+elem 1
+-8.40876e-11 1.49182e-11 -2.89652e-11
+
+# dir 21 branch 1 spec 8
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-1.34233e-10 -9.87794e-12 9.20114e-11
+elem 1
+-1.13678e-10 2.12921e-11 -4.23096e-11
+
+# dir 21 branch 1 spec 9
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-1.846e-10 -1.36385e-11 1.26307e-10
+elem 1
+-1.50927e-10 2.95207e-11 -5.99399e-11
+
+# dir 21 branch 1 spec 10
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-2.80664e-10 2.21775e-10 -1.1357e-10
+elem 1
+-2.89238e-10 -1.55702e-10 2.3835e-10
+
+# dir 21 branch 1 spec 11
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-3.71948e-10 2.49324e-10 -9.88641e-11
+elem 1
+-3.85918e-10 -1.71876e-10 2.74235e-10
+
+# dir 21 branch 1 spec 12
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-4.92083e-10 2.77024e-10 -6.95016e-11
+elem 1
+-5.13606e-10 -1.83393e-10 3.09701e-10
+
+# dir 21 branch 1 spec 13
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-6.53865e-10 3.05079e-10 -1.91187e-11
+elem 1
+-6.85868e-10 -1.8726e-10 3.43406e-10
+
+# dir 21 branch 1 spec 14
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-8.79113e-10 3.33764e-10 6.32308e-11
+elem 1
+-9.2562e-10 -1.78417e-10 3.73001e-10
+
+# dir 21 branch 1 spec 15
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-1.20838e-09 3.6336e-10 1.98202e-10
+elem 1
+-1.27488e-09 -1.47462e-10 3.93782e-10
+
+# dir 21 branch 1 spec 16
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-1.72661e-09 3.93983e-10 4.29795e-10
+elem 1
+-1.8201e-09 -7.47535e-11 3.9486e-10
+
+# dir 21 branch 1 spec 17
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-2.6462e-09 4.2479e-10 8.70262e-10
+elem 1
+-2.77251e-09 8.82541e-11 3.45447e-10
+
+# dir 21 branch 1 spec 18
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-4.69094e-09 4.48456e-10 1.91396e-09
+elem 1
+-4.82437e-09 5.01087e-10 1.2057e-10
+
+# dir 21 branch 1 spec 19
+# ndof 3 ne 2
+# direction: 0.981257 -0.192703 0 weight 0.139102
+elem 0
+-1.42497e-08 4.53086e-10 7.00078e-09
+elem 1
+-1.28341e-08 2.26762e-09 -1.58298e-09
+
+# dir 22 branch 0 spec 0
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-2.49024e-13 1.28402e-12 -1.24902e-12
+elem 1
+-2.31832e-13 -8.21175e-13 9.4735e-13
+
+# dir 22 branch 0 spec 1
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-2.22584e-12 7.80726e-12 -7.22302e-12
+elem 1
+-2.18009e-12 -5.73378e-12 6.63275e-12
+
+# dir 22 branch 0 spec 2
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-6.08052e-12 1.13619e-11 -8.99688e-12
+elem 1
+-6.28891e-12 -1.03855e-11 1.21152e-11
+
+# dir 22 branch 0 spec 3
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-1.17301e-11 1.10078e-11 -5.54651e-12
+elem 1
+-1.25845e-11 -1.23182e-11 1.46634e-11
+
+# dir 22 branch 0 spec 4
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-1.90811e-11 9.74389e-12 -1.00991e-13
+elem 1
+-2.09358e-11 -1.21097e-11 1.49285e-11
+
+# dir 22 branch 0 spec 5
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-2.79962e-11 8.52487e-12 6.2715e-12
+elem 1
+-3.11692e-11 -1.06038e-11 1.37607e-11
+
+# dir 22 branch 0 spec 6
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-3.83491e-11 7.28888e-12 1.35979e-11
+elem 1
+-4.30974e-11 -8.24622e-12 1.15346e-11
+
+# dir 22 branch 0 spec 7
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-5.00715e-11 5.92716e-12 2.19811e-11
+elem 1
+-5.6534e-11 -5.26316e-12 8.38412e-12
+
+# dir 22 branch 0 spec 8
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-6.31741e-11 4.39075e-12 3.14931e-11
+elem 1
+-7.13125e-11 -1.78717e-12 4.3487e-12
+
+# dir 22 branch 0 spec 9
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-7.77507e-11 2.66335e-12 4.22063e-11
+elem 1
+-8.73024e-11 2.09714e-12 -5.73765e-13
+
+# dir 22 branch 0 spec 10
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-9.39715e-11 7.44363e-13 5.42096e-11
+elem 1
+-1.04421e-10 6.33613e-12 -6.40715e-12
+
+# dir 22 branch 0 spec 11
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-1.1207e-10 -1.36e-12 6.76138e-11
+elem 1
+-1.22639e-10 1.08999e-11 -1.31896e-11
+
+# dir 22 branch 0 spec 12
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-1.32333e-10 -3.64224e-12 8.25546e-11
+elem 1
+-1.41984e-10 1.57786e-11 -2.09718e-11
+
+# dir 22 branch 0 spec 13
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-1.55085e-10 -6.09723e-12 9.91935e-11
+elem 1
+-1.62539e-10 2.09803e-11 -2.98175e-11
+
+# dir 22 branch 0 spec 14
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-1.80691e-10 -8.72466e-12 1.17721e-10
+elem 1
+-1.8444e-10 2.65293e-11 -3.98066e-11
+
+# dir 22 branch 0 spec 15
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-2.09558e-10 -1.15307e-11 1.38362e-10
+elem 1
+-2.07884e-10 3.24658e-11 -5.10384e-11
+
+# dir 22 branch 0 spec 16
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-2.42141e-10 -1.45293e-11 1.61382e-10
+elem 1
+-2.33119e-10 3.88456e-11 -6.36372e-11
+
+# dir 22 branch 0 spec 17
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-2.78962e-10 -1.77425e-11 1.871e-10
+elem 1
+-2.60458e-10 4.57408e-11 -7.77579e-11
+
+# dir 22 branch 0 spec 18
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-3.20631e-10 -2.12022e-11 2.15899e-10
+elem 1
+-2.90284e-10 5.32418e-11 -9.35942e-11
+
+# dir 22 branch 0 spec 19
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-3.67881e-10 -2.49505e-11 2.48249e-10
+elem 1
+-3.23061e-10 6.14603e-11 -1.11389e-10
+
+# dir 22 branch 1 spec 0
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-3.77822e-13 1.97993e-13 -1.17956e-14
+elem 1
+-4.12111e-13 -2.10417e-13 2.73801e-13
+
+# dir 22 branch 1 spec 1
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-3.18146e-12 3.44559e-13 1.42472e-12
+elem 1
+-3.58432e-12 -2.23851e-13 4.2711e-13
+
+# dir 22 branch 1 spec 2
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-8.71063e-12 2.01973e-13 4.83621e-12
+elem 1
+-9.71262e-12 4.60109e-13 -3.38198e-13
+
+# dir 22 branch 1 spec 3
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-1.73489e-11 -2.60477e-13 1.05102e-11
+elem 1
+-1.88311e-11 1.8507e-12 -2.24853e-12
+
+# dir 22 branch 1 spec 4
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-2.97372e-11 -1.07566e-12 1.8862e-11
+elem 1
+-3.11733e-11 4.00441e-12 -5.55876e-12
+
+# dir 22 branch 1 spec 5
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-4.67331e-11 -2.28627e-12 3.04365e-11
+elem 1
+-4.71463e-11 7.02017e-12 -1.05781e-11
+
+# dir 22 branch 1 spec 6
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-6.94503e-11 -3.95133e-12 4.59445e-11
+elem 1
+-6.73452e-11 1.10431e-11 -1.76987e-11
+
+# dir 22 branch 1 spec 7
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-9.93514e-11 -6.1529e-12 6.63265e-11
+elem 1
+-9.25998e-11 1.62762e-11 -2.74339e-11
+
+# dir 22 branch 1 spec 8
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-1.38402e-10 -9.00531e-12 9.28525e-11
+elem 1
+-1.24059e-10 2.30013e-11 -4.04747e-11
+
+# dir 22 branch 1 spec 9
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-1.89315e-10 -1.26697e-11 1.27282e-10
+elem 1
+-1.63331e-10 3.16136e-11 -5.77784e-11
+
+# dir 22 branch 1 spec 10
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-3.46631e-10 2.69088e-10 -1.23904e-10
+elem 1
+-3.62429e-10 -2.0104e-10 2.99379e-10
+
+# dir 22 branch 1 spec 11
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-4.58143e-10 3.05805e-10 -1.09421e-10
+elem 1
+-4.81932e-10 -2.19416e-10 3.43906e-10
+
+# dir 22 branch 1 spec 12
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-6.03913e-10 3.43435e-10 -7.90449e-11
+elem 1
+-6.39054e-10 -2.31415e-10 3.88645e-10
+
+# dir 22 branch 1 spec 13
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-7.98548e-10 3.82251e-10 -2.57927e-11
+elem 1
+-8.49969e-10 -2.33405e-10 4.32602e-10
+
+# dir 22 branch 1 spec 14
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-1.06658e-09 4.2262e-10 6.22113e-11
+elem 1
+-1.1418e-09 -2.19292e-10 4.73996e-10
+
+# dir 22 branch 1 spec 15
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-1.45273e-09 4.64901e-10 2.07096e-10
+elem 1
+-1.56385e-09 -1.77859e-10 5.09073e-10
+
+# dir 22 branch 1 spec 16
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-2.04813e-09 5.09087e-10 4.55255e-10
+elem 1
+-2.21618e-09 -8.59826e-11 5.2868e-10
+
+# dir 22 branch 1 spec 17
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-3.07151e-09 5.53126e-10 9.22373e-10
+elem 1
+-3.33846e-09 1.1228e-10 5.05557e-10
+
+# dir 22 branch 1 spec 18
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-5.23132e-09 5.82967e-10 2.00332e-09
+elem 1
+-5.68914e-09 5.94016e-10 3.22842e-10
+
+# dir 22 branch 1 spec 19
+# ndof 3 ne 2
+# direction: 0.99685 -0.0793092 0 weight 0.089634
+elem 0
+-1.47611e-08 5.57156e-10 7.10887e-09
+elem 1
+-1.42864e-08 2.50698e-09 -1.30331e-09
+
+# dir 23 branch 0 spec 0
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-2.73075e-13 1.23466e-12 -1.14119e-12
+elem 1
+-2.70251e-13 -1.07955e-12 1.18856e-12
+
+# dir 23 branch 0 spec 1
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-2.46615e-12 7.6909e-12 -6.71775e-12
+elem 1
+-2.51551e-12 -7.28974e-12 8.08727e-12
+
+# dir 23 branch 0 spec 2
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-6.79156e-12 1.16732e-11 -8.61036e-12
+elem 1
+-7.17213e-12 -1.258e-11 1.42048e-11
+
+# dir 23 branch 0 spec 3
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-1.31151e-11 1.18892e-11 -5.49193e-12
+elem 1
+-1.42216e-11 -1.42667e-11 1.66612e-11
+
+# dir 23 branch 0 spec 4
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-2.12479e-11 1.09905e-11 -1.60617e-13
+elem 1
+-2.34967e-11 -1.35723e-11 1.67227e-11
+
+# dir 23 branch 0 spec 5
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-3.09664e-11 9.95829e-12 6.29416e-12
+elem 1
+-3.47793e-11 -1.15976e-11 1.54507e-11
+
+# dir 23 branch 0 spec 6
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-4.20749e-11 8.81395e-12 1.37881e-11
+elem 1
+-4.78314e-11 -8.81069e-12 1.32066e-11
+
+# dir 23 branch 0 spec 7
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-5.44545e-11 7.49034e-12 2.23599e-11
+elem 1
+-6.24169e-11 -5.42972e-12 1.009e-11
+
+# dir 23 branch 0 spec 8
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-6.80878e-11 5.95735e-12 3.20508e-11
+elem 1
+-7.83262e-11 -1.58392e-12 6.11645e-12
+
+# dir 23 branch 0 spec 9
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-8.30611e-11 4.20944e-12 4.2919e-11
+elem 1
+-9.53956e-11 2.64181e-12 1.26909e-12
+
+# dir 23 branch 0 spec 10
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-9.95526e-11 2.25365e-12 5.50485e-11
+elem 1
+-1.13519e-10 7.19274e-12 -4.4852e-12
+
+# dir 23 branch 0 spec 11
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-1.17814e-10 1.02205e-13 6.85508e-11
+elem 1
+-1.32655e-10 1.20384e-11 -1.11902e-11
+
+# dir 23 branch 0 spec 12
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-1.38153e-10 -2.23259e-12 8.35648e-11
+elem 1
+-1.52825e-10 1.71694e-11 -1.88995e-11
+
+# dir 23 branch 0 spec 13
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-1.60917e-10 -4.74187e-12 1.00256e-10
+elem 1
+-1.74114e-10 2.2595e-11 -2.76785e-11
+
+# dir 23 branch 0 spec 14
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-1.86493e-10 -7.42261e-12 1.18821e-10
+elem 1
+-1.96665e-10 2.83421e-11 -3.76073e-11
+
+# dir 23 branch 0 spec 15
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-2.15301e-10 -1.02791e-11 1.39486e-10
+elem 1
+-2.20681e-10 3.44532e-11 -4.8785e-11
+
+# dir 23 branch 0 spec 16
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-2.47812e-10 -1.33239e-11 1.62523e-10
+elem 1
+-2.46423e-10 4.09871e-11 -6.13351e-11
+
+# dir 23 branch 0 spec 17
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-2.84556e-10 -1.65787e-11 1.88253e-10
+elem 1
+-2.74216e-10 4.8019e-11 -7.54114e-11
+
+# dir 23 branch 0 spec 18
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-3.26152e-10 -2.00748e-11 2.17061e-10
+elem 1
+-3.04451e-10 5.56424e-11 -9.12065e-11
+
+# dir 23 branch 0 spec 19
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-3.73335e-10 -2.38544e-11 2.49417e-10
+elem 1
+-3.37605e-10 6.39718e-11 -1.08962e-10
+
+# dir 23 branch 1 spec 0
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-4.20498e-13 2.21963e-13 -1.23578e-14
+elem 1
+-4.6246e-13 -2.36207e-13 3.07214e-13
+
+# dir 23 branch 1 spec 1
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-3.44924e-12 4.35955e-13 1.45123e-12
+elem 1
+-3.95096e-12 -2.25773e-13 5.28558e-13
+
+# dir 23 branch 1 spec 2
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-9.26105e-12 3.55224e-13 4.91591e-12
+elem 1
+-1.05835e-11 5.32908e-13 -1.47739e-13
+
+# dir 23 branch 1 spec 3
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-1.81897e-11 -5.0705e-14 1.06514e-11
+elem 1
+-2.03333e-11 2.03024e-12 -1.95277e-12
+
+# dir 23 branch 1 spec 4
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-3.08654e-11 -8.13116e-13 1.90676e-11
+elem 1
+-3.3404e-11 4.31429e-12 -5.14474e-12
+
+# dir 23 branch 1 spec 5
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-4.81455e-11 -1.97315e-12 3.07083e-11
+elem 1
+-5.01874e-11 7.47969e-12 -1.00346e-11
+
+# dir 23 branch 1 spec 6
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-7.11469e-11 -3.58859e-12 4.62843e-11
+elem 1
+-7.12716e-11 1.16694e-11 -1.7015e-11
+
+# dir 23 branch 1 spec 7
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-1.01336e-10 -5.74047e-12 6.67364e-11
+elem 1
+-9.74844e-11 1.70855e-11 -2.65995e-11
+
+# dir 23 branch 1 spec 8
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-1.40681e-10 -8.54235e-12 9.33353e-11
+elem 1
+-1.29976e-10 2.40097e-11 -3.94789e-11
+
+# dir 23 branch 1 spec 9
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-1.919e-10 -1.21547e-11 1.27841e-10
+elem 1
+-1.70359e-10 3.2838e-11 -5.66096e-11
+
+# dir 23 branch 1 spec 10
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-3.88215e-10 2.9594e-10 -1.26003e-10
+elem 1
+-4.09464e-10 -2.2999e-10 3.35645e-10
+
+# dir 23 branch 1 spec 11
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-5.12357e-10 3.38078e-10 -1.11096e-10
+elem 1
+-5.43422e-10 -2.4931e-10 3.84929e-10
+
+# dir 23 branch 1 spec 12
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-6.7404e-10 3.81586e-10 -7.95515e-11
+elem 1
+-7.19106e-10 -2.61076e-10 4.34741e-10
+
+# dir 23 branch 1 spec 13
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-8.88911e-10 4.26743e-10 -2.40183e-11
+elem 1
+-9.54273e-10 -2.61261e-10 4.84306e-10
+
+# dir 23 branch 1 spec 14
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-1.18301e-09 4.73919e-10 6.79216e-11
+elem 1
+-1.27859e-09 -2.43137e-10 5.32182e-10
+
+# dir 23 branch 1 spec 15
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-1.60325e-09 5.23415e-10 2.19225e-10
+elem 1
+-1.74566e-09 -1.94377e-10 5.75179e-10
+
+# dir 23 branch 1 spec 16
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-2.24356e-09 5.74936e-10 4.77518e-10
+elem 1
+-2.46351e-09 -8.97672e-11 6.05145e-10
+
+# dir 23 branch 1 spec 17
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-3.32362e-09 6.25211e-10 9.59815e-10
+elem 1
+-3.68764e-09 1.3091e-10 5.96774e-10
+
+# dir 23 branch 1 spec 18
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-5.53507e-09 6.55259e-10 2.05909e-09
+elem 1
+-6.21031e-09 6.54093e-10 4.37308e-10
+
+# dir 23 branch 1 spec 19
+# ndof 3 ne 2
+# direction: 0.999886 -0.0151192 0 weight 0.0387711
+elem 0
+-1.50254e-08 6.08904e-10 7.16832e-09
+elem 1
+-1.51124e-08 2.64628e-09 -1.14961e-09
+

@@ -1,7 +1,7 @@
 CMakeFiles/pbte.dir/src/AngularQuadrature.cpp.o: \
- /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/src/AngularQuadrature.cpp \
+ /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/src/AngularQuadrature.cpp \
  /usr/include/stdc-predef.h \
- /home/bryan/projects/DG-Solver-for-PBTE-with-MFEM/include/AngularQuadrature.hpp \
+ /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/AngularQuadrature.hpp \
  /usr/include/c++/13/array /usr/include/c++/13/compare \
  /usr/include/c++/13/initializer_list \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \

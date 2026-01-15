@@ -21,4 +21,4 @@ angles:
 numerical:
   n_spectral: 20
   tolerance: 1e-7
-  max_iter: 1000000
+  max_iter: 101

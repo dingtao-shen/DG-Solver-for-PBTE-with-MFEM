@@ -15,6 +15,8 @@
 #include <stdexcept>
 #include <vector>
 
+#include <yaml-cpp/yaml.h>
+
 int main(int argc, char *argv[])
 {
     std::string mesh_spec;  // optional override; if empty, read from config
@@ -199,49 +201,49 @@ int main(int argc, char *argv[])
 
     pbte::DGElementIntegrator integrator(spatial.FESpace());
     const auto element_data = integrator.AssembleAll();
-    if (is_root)
-    {
-        std::cout << "Computed DG integrals for " << element_data.size()
-                  << " elements.\n";
-        if (!element_data.empty())
-        {
-            const auto &m0 = element_data.front().mass_matrix;
-            std::cout << "Element 0 mass matrix size: " << m0.Height() << "x"
-                      << m0.Width() << std::endl;
+    // if (is_root)
+    // {
+    //     std::cout << "Computed DG integrals for " << element_data.size()
+    //               << " elements.\n";
+    //     if (!element_data.empty())
+    //     {
+    //         const auto &m0 = element_data.front().mass_matrix;
+    //         std::cout << "Element 0 mass matrix size: " << m0.Height() << "x"
+    //                   << m0.Width() << std::endl;
 
-            // Sanity checks on face couplings and boundary data for element 0.
-            const auto &fcs = element_data.front().face_couplings;
-            std::cout << "Element 0 face couplings: " << fcs.size()
-                      << " entries.\n";
-            for (size_t k = 0; k < fcs.size(); ++k)
-            {
-                const auto &fc = fcs[k];
-                std::string type = "boundary";
-                if (fc.is_shared)
-                {
-                    type = "shared";
-                }
-                else if (fc.neighbor_elem >= 0)
-                {
-                    type = "interior";
-                }
-                std::cout << "  face " << fc.face_id << " " << type
-                          << ", neigh=" << fc.neighbor_elem
-                          << ", attr=" << fc.boundary_attr;
-                if (fc.neighbor_elem >= 0 || fc.is_shared)
-                {
-                    std::cout << ", coupling " << fc.coupling.Height() << "x"
-                              << fc.coupling.Width();
-                }
-                else
-                {
-                    std::cout << ", isothermal_rhs size "
-                              << fc.isothermal_rhs.Size();
-                }
-                std::cout << "\n";
-            }
-        }
-    }
+    //         // Sanity checks on face couplings and boundary data for element 0.
+    //         const auto &fcs = element_data.front().face_couplings;
+    //         std::cout << "Element 0 face couplings: " << fcs.size()
+    //                   << " entries.\n";
+    //         for (size_t k = 0; k < fcs.size(); ++k)
+    //         {
+    //             const auto &fc = fcs[k];
+    //             std::string type = "boundary";
+    //             if (fc.is_shared)
+    //             {
+    //                 type = "shared";
+    //             }
+    //             else if (fc.neighbor_elem >= 0)
+    //             {
+    //                 type = "interior";
+    //             }
+    //             std::cout << "  face " << fc.face_id << " " << type
+    //                       << ", neigh=" << fc.neighbor_elem
+    //                       << ", attr=" << fc.boundary_attr;
+    //             if (fc.neighbor_elem >= 0 || fc.is_shared)
+    //             {
+    //                 std::cout << ", coupling " << fc.coupling.Height() << "x"
+    //                           << fc.coupling.Width();
+    //             }
+    //             else
+    //             {
+    //                 std::cout << ", isothermal_rhs size "
+    //                           << fc.isothermal_rhs.Size();
+    //             }
+    //             std::cout << "\n";
+    //         }
+    //     }
+    // }
 
     // Build phonon properties from material config.
     if (is_root)
@@ -277,39 +279,66 @@ int main(int argc, char *argv[])
     pbte::MacroscopicQuantities macro(spatial.FESpace(), props, angle_quad);
     macro.Reset();
 
-    // Debug: print isothermal BC map and all boundary faces carrying them
-    const auto &bc_map = spatial.IsothermalBoundaryTemps();
-    if (is_root)
+    double solver_tol = 1e-7;
+    int solver_max_iter = 1000;
+    try
     {
-        std::cout << "Isothermal BC count = " << bc_map.size() << std::endl;
-        for (const auto &kv : bc_map)
+        YAML::Node config = YAML::LoadFile(config_path);
+        if (config["numerical"])
         {
-            std::cout << "  attr " << kv.first << " -> T = " << kv.second << std::endl;
+            const YAML::Node numer = config["numerical"];
+            if (numer["tolerance"])
+            {
+                solver_tol = numer["tolerance"].as<double>();
+            }
+            if (numer["max_iter"])
+            {
+                solver_max_iter = numer["max_iter"].as<int>();
+            }
         }
-        const mfem::Mesh &m = spatial.Mesh();
-        const int nbe = m.GetNBE();
-        std::cout << "Boundary faces with isothermal attributes:" << std::endl;
-        for (int be = 0; be < nbe; ++be)
+    }
+    catch (const std::exception &ex)
+    {
+        if (is_root)
         {
-            const int face_id = m.GetBdrElementFaceIndex(be);
-            const int attr = m.GetBdrAttribute(be);
-            if (!bc_map.count(attr))
-            {
-                continue;
-            }
-            mfem::Array<int> fv;
-            m.GetFaceVertices(face_id, fv);
-            std::cout << "  be " << be << " face " << face_id << " attr=" << attr
-                      << " verts=";
-            for (int i = 0; i < fv.Size(); ++i)
-            {
-                std::cout << fv[i] << (i + 1 < fv.Size() ? "," : "");
-            }
-            std::cout << std::endl;
+            std::cerr << "Warning: failed to read numerical config (using defaults): "
+                      << ex.what() << std::endl;
         }
     }
 
-#ifdef MFEM_USE_MPI
+    // Debug: print isothermal BC map and all boundary faces carrying them
+    const auto &bc_map = spatial.IsothermalBoundaryTemps();
+    // if (is_root)
+    // {
+    //     std::cout << "Isothermal BC count = " << bc_map.size() << std::endl;
+    //     for (const auto &kv : bc_map)
+    //     {
+    //         std::cout << "  attr " << kv.first << " -> T = " << kv.second << std::endl;
+    //     }
+    //     const mfem::Mesh &m = spatial.Mesh();
+    //     const int nbe = m.GetNBE();
+    //     std::cout << "Boundary faces with isothermal attributes:" << std::endl;
+    //     for (int be = 0; be < nbe; ++be)
+    //     {
+    //         const int face_id = m.GetBdrElementFaceIndex(be);
+    //         const int attr = m.GetBdrAttribute(be);
+    //         if (!bc_map.count(attr))
+    //         {
+    //             continue;
+    //         }
+    //         mfem::Array<int> fv;
+    //         m.GetFaceVertices(face_id, fv);
+    //         std::cout << "  be " << be << " face " << face_id << " attr=" << attr
+    //                   << " verts=";
+    //         for (int i = 0; i < fv.Size(); ++i)
+    //         {
+    //             std::cout << fv[i] << (i + 1 < fv.Size() ? "," : "");
+    //         }
+    //         std::cout << std::endl;
+    //     }
+    // }
+
+// #ifdef MFEM_USE_MPI
     // if (use_parallel)
     // {
     //     pbte::AngularSweepOrder sweep = pbte::AngularSweepOrder::Build(spatial.Mesh(), angle_quad);
@@ -349,7 +378,7 @@ int main(int argc, char *argv[])
     //     }
     //     return 0;
     // }
-#endif
+// #endif
 
     // Serial path
     {
@@ -362,16 +391,13 @@ int main(int argc, char *argv[])
                                 props,
                                 spatial.IsothermalBoundaryTemps(),
                                 pbte::CachePolicy::FullLU,
-                                1e-7,
-                                1); // 1 million-step test
+                                solver_tol,
+                                solver_max_iter);
 
         auto coeff = solver.CreateInitialCoefficients();
-
         double res = solver.Solve(coeff, macro);
-        if (is_root)
-        {
-            std::cout << "[Serial] final residual = " << res << std::endl;
-        }
+        utils::DumpCoefficients(coeff, angle_quad, is_root);
+        utils::DumpTemperature(macro.Tc(), is_root);
 
         macro.WriteParaView("pbte_fields");
         // For debugging/validation, export a sampled 2D temperature slice instead of ParaView.

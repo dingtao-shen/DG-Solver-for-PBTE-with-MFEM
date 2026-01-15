@@ -259,11 +259,9 @@ void SpatialMesh::BuildDGSpace(int order, mfem::Ordering::Type ordering,
     last_parallel_ = false;
     last_order_ = order;
 
-    // nodal basis function based on Gauss-Lobatto quadrature
-    // fec_ = std::make_unique<mfem::L2_FECollection>(order, mesh_->Dimension(),mfem::BasisType::GaussLobatto);
-    // fec_ = std::make_unique<mfem::L2_FECollection>(order, mesh_->Dimension(),mfem::BasisType::ClosedUniform);
-    // fec_ = std::make_unique<mfem::L2_FECollection>(order, mesh_->Dimension());
-    fec_ = std::make_unique<mfem::DG_FECollection>(order, mesh_->Dimension());
+    // Use discontinuous nodal basis with equi-distributed nodes to match
+    // reference Lagrange nodes on element boundaries.
+    fec_ = std::make_unique<mfem::L2_FECollection>(order, mesh_->Dimension());
     fes_ = std::make_unique<mfem::FiniteElementSpace>(mesh_.get(), fec_.get(), 1, ordering);
 
     LogSummary(log_path);
@@ -497,7 +495,7 @@ std::string SpatialMesh::MakeSummary() const
 void SpatialMesh::LogSummary(const std::string &log_path) const
 {
     const std::string summary = MakeSummary();
-    bool should_print = true;
+    bool should_print = false;
 #ifdef MFEM_USE_MPI
     if (last_parallel_)
     {
@@ -520,7 +518,7 @@ void SpatialMesh::LogSummary(const std::string &log_path) const
             if (ofs)
             {
                 ofs << summary;
-                std::cout << "Log written to: " << path << std::endl;
+                std::cout << "Mesh summary written to: " << path << std::endl;
             }
             else
             {

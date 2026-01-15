@@ -1,5 +1,6 @@
 #include "Utils.hpp"
 #include "ElementIntegrator.hpp"
+#include "AngularQuadrature.hpp"
 
 #include <filesystem>
 #include <fstream>
@@ -160,5 +161,195 @@ bool DumpElementIntegrals(const std::vector<pbte::ElementIntegralData> &element_
 #endif
 
     return true;
+}
+
+bool DumpCoefficients(const std::vector<std::vector<std::vector<mfem::DenseMatrix>>> &coeff,
+                      const pbte::AngleQuadrature &quad,
+                      bool is_root)
+{
+#ifdef MFEM_USE_MPI
+    if (!is_root) { return true; }
+#endif
+    const fs::path out_dir = fs::path("output/log");
+    fs::create_directories(out_dir);
+    const fs::path fname = out_dir / "coeff_all.txt";
+    std::ofstream ofs(fname);
+    if (!ofs)
+    {
+        std::cerr << "Failed to open " << fname << " for writing.\n";
+        return false;
+    }
+
+    const auto &dirs = quad.Directions();
+    const int ndir = static_cast<int>(coeff.size());
+    for (int d = 0; d < ndir; ++d)
+    {
+        const int nbranch = static_cast<int>(coeff[d].size());
+        const auto &dir = dirs[d];
+        for (int b = 0; b < nbranch; ++b)
+        {
+            const int nspec = static_cast<int>(coeff[d][b].size());
+            for (int s = 0; s < nspec; ++s)
+            {
+                const auto &m = coeff[d][b][s];
+                const int ndof = m.Height();
+                const int ne = m.Width();
+                ofs << "# dir " << d << " branch " << b << " spec " << s << "\n";
+                ofs << "# ndof " << ndof << " ne " << ne << "\n";
+                ofs << "# direction: ";
+                for (size_t k = 0; k < dir.direction.size(); ++k)
+                {
+                    ofs << dir.direction[k];
+                    if (k + 1 < dir.direction.size()) { ofs << " "; }
+                }
+                ofs << " weight " << dir.weight << "\n";
+
+                for (int e = 0; e < ne; ++e)
+                {
+                    ofs << "elem " << e << "\n";
+                    for (int i = 0; i < ndof; ++i)
+                    {
+                        ofs << m(i, e);
+                        if (i + 1 < ndof) { ofs << " "; }
+                    }
+                    ofs << "\n";
+                }
+                ofs << "\n";
+            }
+        }
+    }
+    ofs << std::flush;
+    std::cout << "Coefficient blocks written to: " << fname << std::endl;
+    return true;
+}
+
+bool DumpTemperature(const mfem::DenseMatrix &Tc, bool is_root)
+{
+#ifdef MFEM_USE_MPI
+    if (!is_root) { return true; }
+#endif
+    const fs::path out_dir = fs::path("output/log");
+    fs::create_directories(out_dir);
+    const fs::path fname = out_dir / "Tc_all.txt";
+    std::ofstream ofs(fname);
+    if (!ofs)
+    {
+        std::cerr << "Failed to open " << fname << " for writing.\n";
+        return false;
+    }
+
+    const int ndof = Tc.Height();
+    const int ne = Tc.Width();
+    ofs << "# Tc matrix\n";
+    ofs << "# ndof " << ndof << " ne " << ne << "\n";
+
+    for (int e = 0; e < ne; ++e)
+    {
+        ofs << "elem " << e << "\n";
+        for (int i = 0; i < ndof; ++i)
+        {
+            ofs << Tc(i, e);
+            if (i + 1 < ndof) { ofs << " "; }
+        }
+        ofs << "\n";
+    }
+
+    ofs << std::flush;
+    std::cout << "Macroscopic temperature Tc written to: " << fname << std::endl;
+    return true;
+}
+
+mfem::Vector ComputeFaceNormal(const mfem::Mesh &mesh, int face_id)
+{
+    mfem::Array<int> verts;
+    mesh.GetFaceVertices(face_id, verts);
+    const int sdim = mesh.SpaceDimension();
+    mfem::Vector n(sdim);
+    n = 0.0;
+
+    if (sdim == 2 && verts.Size() >= 2)
+    {
+        const double *v0 = mesh.GetVertex(verts[0]);
+        const double *v1 = mesh.GetVertex(verts[1]);
+        const double dx = v1[0] - v0[0];
+        const double dy = v1[1] - v0[1];
+        n[0] = dy;
+        n[1] = -dx;
+    }
+    else if (sdim == 3 && verts.Size() >= 3)
+    {
+        const double *v0 = mesh.GetVertex(verts[0]);
+        const double *v1 = mesh.GetVertex(verts[1]);
+        const double *v2 = mesh.GetVertex(verts[2]);
+        mfem::Vector e1(3), e2(3);
+        e1[0] = v1[0] - v0[0];
+        e1[1] = v1[1] - v0[1];
+        e1[2] = v1[2] - v0[2];
+        e2[0] = v2[0] - v0[0];
+        e2[1] = v2[1] - v0[1];
+        e2[2] = v2[2] - v0[2];
+        mfem::Vector c(3);
+        c[0] = e1[1] * e2[2] - e1[2] * e2[1];
+        c[1] = e1[2] * e2[0] - e1[0] * e2[2];
+        c[2] = e1[0] * e2[1] - e1[1] * e2[0];
+        n = c;
+    }
+
+    const double norm = n.Norml2();
+    if (norm > 0.0)
+    {
+        n /= norm;
+    }
+    return n;
+}
+
+mfem::Vector ComputeOutwardFaceNormal(const mfem::Mesh &mesh,
+                                      int face_id,
+                                      int elem_id)
+{
+    mfem::Vector n = ComputeFaceNormal(mesh, face_id);
+    const int sdim = mesh.SpaceDimension();
+
+    mfem::Vector elem_c(sdim), face_c(sdim);
+    elem_c = 0.0;
+    face_c = 0.0;
+
+    mfem::Array<int> e_verts;
+    mesh.GetElementVertices(elem_id, e_verts);
+    for (int v : e_verts)
+    {
+        const double *pv = mesh.GetVertex(v);
+        for (int d = 0; d < sdim; ++d)
+        {
+            elem_c[d] += pv[d];
+        }
+    }
+    if (e_verts.Size() > 0)
+    {
+        elem_c /= static_cast<double>(e_verts.Size());
+    }
+
+    mfem::Array<int> f_verts;
+    mesh.GetFaceVertices(face_id, f_verts);
+    for (int v : f_verts)
+    {
+        const double *pv = mesh.GetVertex(v);
+        for (int d = 0; d < sdim; ++d)
+        {
+            face_c[d] += pv[d];
+        }
+    }
+    if (f_verts.Size() > 0)
+    {
+        face_c /= static_cast<double>(f_verts.Size());
+    }
+
+    mfem::Vector to_face = face_c;
+    to_face -= elem_c;
+    if (n * to_face < 0.0)
+    {
+        n *= -1.0;
+    }
+    return n;
 }
 } // namespace utils
