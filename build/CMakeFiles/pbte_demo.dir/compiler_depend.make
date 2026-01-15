@@ -33,7 +33,6 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
   /usr/include/c++/13/bits/basic_string.tcc \
   /usr/include/c++/13/bits/char_traits.h \
   /usr/include/c++/13/bits/charconv.h \
-  /usr/include/c++/13/bits/chrono.h \
   /usr/include/c++/13/bits/codecvt.h \
   /usr/include/c++/13/bits/concept_check.h \
   /usr/include/c++/13/bits/cpp_type_traits.h \
@@ -44,10 +43,6 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
   /usr/include/c++/13/bits/exception.h \
   /usr/include/c++/13/bits/exception_defines.h \
   /usr/include/c++/13/bits/exception_ptr.h \
-  /usr/include/c++/13/bits/fs_dir.h \
-  /usr/include/c++/13/bits/fs_fwd.h \
-  /usr/include/c++/13/bits/fs_ops.h \
-  /usr/include/c++/13/bits/fs_path.h \
   /usr/include/c++/13/bits/fstream.tcc \
   /usr/include/c++/13/bits/functexcept.h \
   /usr/include/c++/13/bits/functional_hash.h \
@@ -78,7 +73,6 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
   /usr/include/c++/13/bits/node_handle.h \
   /usr/include/c++/13/bits/ostream.tcc \
   /usr/include/c++/13/bits/ostream_insert.h \
-  /usr/include/c++/13/bits/parse_numbers.h \
   /usr/include/c++/13/bits/postypes.h \
   /usr/include/c++/13/bits/predefined_ops.h \
   /usr/include/c++/13/bits/ptr_traits.h \
@@ -139,7 +133,6 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
   /usr/include/c++/13/cerrno \
   /usr/include/c++/13/clocale \
   /usr/include/c++/13/cmath \
-  /usr/include/c++/13/codecvt \
   /usr/include/c++/13/compare \
   /usr/include/c++/13/complex \
   /usr/include/c++/13/cstddef \
@@ -160,7 +153,6 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
   /usr/include/c++/13/ext/numeric_traits.h \
   /usr/include/c++/13/ext/string_conversions.h \
   /usr/include/c++/13/ext/type_traits.h \
-  /usr/include/c++/13/filesystem \
   /usr/include/c++/13/fstream \
   /usr/include/c++/13/functional \
   /usr/include/c++/13/initializer_list \
@@ -185,7 +177,6 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
   /usr/include/c++/13/pstl/glue_numeric_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/random \
-  /usr/include/c++/13/ratio \
   /usr/include/c++/13/set \
   /usr/include/c++/13/sstream \
   /usr/include/c++/13/stdexcept \
@@ -587,6 +578,8 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 
 /usr/local/include/mfem/fem/integrator.hpp:
 
+/usr/local/include/mfem/fem/hyperbolic.hpp:
+
 /usr/local/include/mfem/fem/hybridization.hpp:
 
 /usr/local/include/mfem/fem/gslib.hpp:
@@ -634,6 +627,8 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 /usr/include/yaml-cpp/stlemitter.h:
 
 /usr/include/yaml-cpp/parser.h:
+
+/usr/include/yaml-cpp/null.h:
 
 /usr/include/yaml-cpp/noexcept.h:
 
@@ -757,29 +752,27 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+/usr/include/c++/13/bits/valarray_before.h:
 
-/usr/include/yaml-cpp/node/ptr.h:
+/usr/local/include/mfem/mesh/vertex.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+/usr/local/include/mfem/general/hip.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+/usr/include/yaml-cpp/node/detail/memory.h:
 
-/usr/local/include/mfem/fem/linearform_ext.hpp:
+/usr/include/c++/13/bits/stringfwd.h:
 
-/usr/include/x86_64-linux-gnu/bits/timex.h:
+/home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/MacroscopicQuantities.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+/usr/include/c++/13/bits/refwrap.h:
 
-/usr/local/include/mfem/general/cuda.hpp:
+/usr/include/c++/13/bits/gslice.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:
+/usr/include/c++/13/bits/stl_function.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+/usr/local/include/mfem/general/sort_pairs.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-least.h:
+/usr/include/c++/13/tr1/beta_function.tcc:
 
 /usr/local/include/mfem/fem/kernel_reporter.hpp:
 
@@ -831,6 +824,10 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 
 /usr/include/c++/13/bits/uses_allocator.h:
 
+/usr/local/include/mfem/fem/fe/fe_rt.hpp:
+
+/usr/include/c++/13/bits/std_abs.h:
+
 /usr/include/c++/13/bits/postypes.h:
 
 /usr/include/c++/13/bits/stl_multiset.h:
@@ -851,25 +848,11 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 
 /usr/include/c++/13/cwctype:
 
-/usr/include/c++/13/ratio:
-
-/usr/local/include/mfem/mesh/vertex.hpp:
-
-/usr/local/include/mfem/general/hip.hpp:
-
-/usr/include/yaml-cpp/node/detail/memory.h:
-
-/usr/include/c++/13/bits/stringfwd.h:
-
-/home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/MacroscopicQuantities.hpp:
-
-/usr/include/c++/13/bits/valarray_before.h:
-
 /usr/include/c++/13/bits/shared_ptr.h:
 
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+/usr/include/yaml-cpp/node/ptr.h:
 
-/usr/include/c++/13/bits/string_view.tcc:
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
 /usr/include/c++/13/bits/locale_facets.tcc:
 
@@ -883,13 +866,9 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 
 /usr/include/strings.h:
 
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
 /usr/include/c++/13/bits/ptr_traits.h:
-
-/usr/local/include/mfem/fem/fe/fe_rt.hpp:
-
-/usr/include/c++/13/bits/std_abs.h:
-
-/usr/include/c++/13/bits/parse_numbers.h:
 
 /usr/local/include/mfem/fem/nonlinearform.hpp:
 
@@ -901,23 +880,11 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 
 /usr/include/c++/13/bits/ostream.tcc:
 
-/usr/include/c++/13/bits/stl_function.h:
-
-/usr/local/include/mfem/general/sort_pairs.hpp:
-
-/usr/include/c++/13/tr1/beta_function.tcc:
-
 /usr/include/c++/13/bits/move.h:
 
 /usr/local/include/mfem/fem/estimators.hpp:
 
 /usr/include/c++/13/bits/memoryfwd.h:
-
-/usr/include/c++/13/bits/fs_fwd.h:
-
-/usr/include/x86_64-linux-gnu/bits/setjmp.h:
-
-/usr/include/time.h:
 
 /usr/local/include/mfem/linalg/blockvector.hpp:
 
@@ -937,47 +904,11 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 
 /usr/include/c++/13/utility:
 
-/usr/local/include/mfem/fem/normal_deriv_restriction.hpp:
-
-/usr/include/c++/13/bits/locale_facets.h:
-
-/usr/include/yaml-cpp/node/detail/node_iterator.h:
-
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
-
-/usr/include/c++/13/bits/locale_classes.h:
-
-/usr/local/include/mfem/fem/hyperbolic.hpp:
-
-/usr/include/c++/13/bits/fs_ops.h:
-
-/usr/include/c++/13/bits/stl_relops.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
-
-/usr/include/c++/13/clocale:
-
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/usr/include/c++/13/bits/stl_multimap.h:
-
-/usr/include/c++/13/bits/locale_conv.h:
-
-/usr/include/c++/13/bits/istream.tcc:
-
-/usr/local/include/mfem/linalg/operator.hpp:
-
-/usr/local/include/mfem/fem/pbilinearform.hpp:
-
-/usr/include/c++/13/bits/exception_ptr.h:
-
-/usr/include/c++/13/bits/uniform_int_dist.h:
-
-/usr/include/c++/13/bits/locale_classes.tcc:
-
 /usr/include/c++/13/backward/binders.h:
 
 /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/src/PhononBTE.cpp:
+
+/usr/include/c++/13/clocale:
 
 /usr/include/c++/13/bits/predefined_ops.h:
 
@@ -1003,15 +934,19 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 
 /usr/include/c++/13/bits/node_handle.h:
 
+/usr/include/c++/13/bits/valarray_array.h:
+
+/usr/include/c++/13/bits/atomic_lockfree_defines.h:
+
 /usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/local/include/mfem/fem/normal_deriv_restriction.hpp:
+
+/usr/include/c++/13/bits/locale_facets.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
 /usr/include/c++/13/bits/charconv.h:
-
-/usr/include/yaml-cpp/null.h:
-
-/usr/include/c++/13/bits/fs_path.h:
 
 /usr/local/include/mfem/general/binaryio.hpp:
 
@@ -1047,6 +982,8 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 
 /usr/include/libintl.h:
 
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
+
 /usr/include/c++/13/bits/shared_ptr_base.h:
 
 /usr/include/wchar.h:
@@ -1063,6 +1000,10 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 
 /usr/include/c++/13/bits/cxxabi_forced.h:
 
+/usr/include/c++/13/bits/string_view.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+
 /usr/local/include/mfem/fem/linearform.hpp:
 
 /usr/include/yaml-cpp/yaml.h:
@@ -1073,13 +1014,13 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 
 /usr/include/c++/13/bits/indirect_array.h:
 
+/usr/include/c++/13/bits/valarray_array.tcc:
+
 /usr/local/include/mfem/fem/qspace.hpp:
 
 /usr/local/include/mfem/fem/intrules_cut.hpp:
 
 /usr/include/c++/13/bits/functional_hash.h:
-
-/usr/include/c++/13/bits/valarray_array.tcc:
 
 /usr/include/errno.h:
 
@@ -1104,6 +1045,10 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 /usr/include/c++/13/bits/streambuf.tcc:
 
 /home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/PhononProperties.hpp:
+
+/usr/include/c++/13/bits/locale_facets_nonio.h:
+
+/home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/SpatialMesh.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
@@ -1151,31 +1096,9 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 
 /usr/include/alloca.h:
 
-/usr/include/c++/13/bits/refwrap.h:
-
-/usr/include/c++/13/bits/gslice.h:
-
-/usr/include/c++/13/bits/atomic_lockfree_defines.h:
-
-/usr/include/c++/13/bits/valarray_array.h:
-
 /usr/local/include/mfem/linalg/complex_operator.hpp:
 
 /usr/include/c++/13/bits/fstream.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
-
-/usr/include/c++/13/bits/chrono.h:
-
-/home/dtshen/Dev/DG-Solver-for-PBTE-with-MFEM/include/SpatialMesh.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
-
-/usr/include/c++/13/bits/std_function.h:
-
-/usr/include/c++/13/bits/char_traits.h:
-
-/usr/include/c++/13/bits/hashtable_policy.h:
 
 /usr/local/include/mfem/fem/coefficient.hpp:
 
@@ -1203,6 +1126,14 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 
 /usr/include/math.h:
 
+/usr/include/c++/13/bits/hashtable_policy.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
+
+/usr/include/c++/13/bits/std_function.h:
+
+/usr/include/c++/13/bits/char_traits.h:
+
 /usr/local/include/mfem/fem/fe/fe_l2.hpp:
 
 /usr/include/c++/13/bits/cxxabi_init_exception.h:
@@ -1213,13 +1144,37 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 
 /usr/include/c++/13/bits/exception.h:
 
-/usr/include/c++/13/bits/locale_facets_nonio.h:
+/usr/include/c++/13/bits/valarray_after.h:
 
-/usr/include/c++/13/bits/fs_dir.h:
+/usr/include/c++/13/bits/memory_resource.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+/usr/include/c++/13/streambuf:
 
-/usr/include/c++/13/sstream:
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/local/include/mfem/linalg/operator.hpp:
+
+/usr/local/include/mfem/fem/pbilinearform.hpp:
+
+/usr/include/c++/13/bits/exception_ptr.h:
+
+/usr/include/c++/13/bits/locale_conv.h:
+
+/usr/include/c++/13/bits/istream.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/usr/include/c++/13/bits/stl_multimap.h:
+
+/usr/include/yaml-cpp/node/detail/iterator.h:
+
+/usr/include/c++/13/bits/vector.tcc:
+
+/usr/include/c++/13/optional:
+
+/usr/local/include/mfem/mesh/submesh/submesh.hpp:
+
+/usr/include/string.h:
 
 /usr/local/include/mfem/fem/tmop_tools.hpp:
 
@@ -1227,21 +1182,19 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 
 /usr/include/c++/13/bits/hashtable.h:
 
-/usr/local/include/mfem/mesh/submesh/submesh.hpp:
+/usr/include/yaml-cpp/node/detail/node_iterator.h:
 
-/usr/include/string.h:
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
 
-/usr/include/c++/13/bits/memory_resource.h:
+/usr/include/c++/13/bits/locale_classes.h:
 
-/usr/include/c++/13/streambuf:
+/usr/include/c++/13/bits/stl_relops.h:
 
-/usr/include/c++/13/bits/valarray_after.h:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
-/usr/include/yaml-cpp/node/detail/iterator.h:
+/usr/include/c++/13/bits/uniform_int_dist.h:
 
-/usr/include/c++/13/optional:
-
-/usr/include/c++/13/bits/vector.tcc:
+/usr/include/c++/13/bits/locale_classes.tcc:
 
 /usr/include/c++/13/bits/cpp_type_traits.h:
 
@@ -1263,11 +1216,9 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 
 /usr/include/c++/13/cerrno:
 
+/usr/include/x86_64-linux-gnu/bits/stdint-least.h:
+
 /usr/include/c++/13/cmath:
-
-/usr/include/c++/13/codecvt:
-
-/usr/include/c++/13/ctime:
 
 /usr/local/include/mfem/mesh/wedge.hpp:
 
@@ -1277,13 +1228,13 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 
 /usr/include/c++/13/compare:
 
-/usr/include/c++/13/filesystem:
-
 /usr/include/c++/13/complex:
 
 /usr/local/include/mfem/mesh/submesh/submesh_utils.hpp:
 
 /usr/include/c++/13/cstring:
+
+/usr/include/c++/13/ctime:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
@@ -1385,6 +1336,10 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 
 /usr/include/c++/13/set:
 
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/usr/include/c++/13/sstream:
+
 /usr/include/c++/13/stdexcept:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
@@ -1413,9 +1368,9 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 
 /usr/include/stdc-predef.h:
 
-/usr/include/c++/13/bits/list.tcc:
-
 /usr/include/c++/13/bits/nested_exception.h:
+
+/usr/include/c++/13/bits/list.tcc:
 
 /usr/include/c++/13/tuple:
 
@@ -1496,3 +1451,21 @@ CMakeFiles/pbte_demo.dir/src/PhononBTE.cpp.o: /home/dtshen/Dev/DG-Solver-for-PBT
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/include/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
+/usr/local/include/mfem/general/cuda.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/usr/local/include/mfem/fem/linearform_ext.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/timex.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:

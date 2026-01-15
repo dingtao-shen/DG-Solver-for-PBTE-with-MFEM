@@ -261,7 +261,8 @@ void SpatialMesh::BuildDGSpace(int order, mfem::Ordering::Type ordering,
 
     // Use discontinuous nodal basis with equi-distributed nodes to match
     // reference Lagrange nodes on element boundaries.
-    fec_ = std::make_unique<mfem::L2_FECollection>(order, mesh_->Dimension());
+    // fec_ = std::make_unique<mfem::L2_FECollection>(order, mesh_->Dimension());
+    fec_ = std::make_unique<mfem::DG_FECollection>(order, mesh_->Dimension(), mfem::BasisType::GaussLegendre);
     fes_ = std::make_unique<mfem::FiniteElementSpace>(mesh_.get(), fec_.get(), 1, ordering);
 
     LogSummary(log_path);
